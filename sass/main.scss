@@ -1,0 +1,53 @@
+//custom variable
+//update custom variable above import. This is because when they are referenced the have the !default keyword 
+$primary: #25408f;
+$secondary: #8f5325;
+$success: #3e8d63;
+$info: #13101c;
+$warning: #945707;
+$danger: #d62518;
+$light: #f8f9fa;
+$dark: #343a40;
+$font-family-sans-serif:      Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+//import the functions, variables and mixins
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+
+// //Add colors
+// //Define new map
+// $custom-theme-colors : (
+//     "altlight": #f2ebfa,
+//     "altdark": #522192
+// );
+// //merge maps
+// $theme-colors: map-merge($custom-theme-colors,$theme-colors);
+  
+// 4. Include any optional Bootstrap components as you like
+
+@import "../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../node_modules/bootstrap/scss/_images";
+@import "../node_modules/bootstrap/scss/_navbar";
+@import "../node_modules/bootstrap/scss/_card";
+@import "../node_modules/bootstrap/scss/_nav";
+@import "../node_modules/bootstrap/scss/_transitions";
+@import "../node_modules/bootstrap/scss/_forms";
+@import "../node_modules/bootstrap/scss/_buttons";
+@import "../node_modules/bootstrap/scss/_breadcrumb";
+
+
+// // //TO import ALL bootstrap
+//  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// //overwrite h1
+// h1 {
+//     color: $secondary;
+//   }
+
+//compile sass into css using `npm run css-build` and `npm run css-build-min`
+
+//remove unused css
+//https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772

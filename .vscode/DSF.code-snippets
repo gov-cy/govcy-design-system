@@ -1,0 +1,114 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"dsf-html-start": {
+		"scope": "html",
+		"prefix": "dsf-html-start",
+		"body": [
+			"<!doctype html>",
+			"<html lang=\"en\">",
+			"\t<head>",
+			"\t<!-- Required meta tags -->",
+			"\t\t<meta charset=\"utf-8\">",
+			"\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"\t\t<!-- Bootstrap CSS -->",
+			"\t\t<link href=\"css/main.css\" rel=\"stylesheet\" >",
+			"\t\t<title>gov.cy</title>",
+			"\t</head>",
+			"\t<body>",
+			"\t<nav class=\"navbar navbar-expand-md\" aria-label=\"Navbar example\">",
+			"\t<div class=\"container-md\">",
+			"\t\t<a class=\"navbar-brand\" href=\"#\"><img class=\"p-3\" src=\"img/thyreos.gif\" alt=\"Cyprus Government\">gov.cy</a>",
+			"\t\t<button class=\"navbar-toggler navbar-light\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarsExample07XL\" aria-controls=\"navbarsExample07XL\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+			"\t\t\t<span class=\"navbar-toggler-icon\"></span>",
+			"\t\t</button>",
+			"\t\t<div class=\"collapse navbar-collapse\" id=\"navbarsExample07XL\">",
+			"\t\t\t<ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">",
+			"\t\t\t\t<li class=\"nav-item\">",
+			"\t\t\t\t\t<a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>",
+			"\t\t\t\t</li>",
+			"\t\t\t<li class=\"nav-item\">",
+			"\t\t\t\t<a class=\"nav-link\" href=\"#\">Link</a>",
+			"\t\t\t</li>",
+			"\t\t</ul>",
+			"\t\t\t<form>",
+			"\t\t\t\t<input class=\"form-control\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">",
+			"\t\t\t</form>",
+			"\t\t</div>",
+			"\t</div>",
+		  	"\t</nav>",
+			"\t<div class=\"container-md\">",
+			"\t\t<h1>$2</h1>",
+			"\t\t<p>$3</p>",
+			"\t</div>",
+			"\t<div class=\"container\">",
+			"\t\t<footer class=\"py-3 my-4\">",
+			"\t\t\t<ul class=\"nav justify-content-center border-bottom pb-3 mb-3\">",
+			"\t\t\t\t<li class=\"nav-item\"><a href=\"#\" class=\"nav-link px-2 text-muted\">Home</a></li>",
+			"\t\t\t\t<li class=\"nav-item\"><a href=\"#\" class=\"nav-link px-2 text-muted\">Features</a></li>",
+			"\t\t\t\t<li class=\"nav-item\"><a href=\"#\" class=\"nav-link px-2 text-muted\">Pricing</a></li>",
+			"\t\t\t\t<li class=\"nav-item\"><a href=\"#\" class=\"nav-link px-2 text-muted\">FAQs</a></li>",
+			"\t\t\t\t<li class=\"nav-item\"><a href=\"#\" class=\"nav-link px-2 text-muted\">About</a></li>",
+			"\t\t\t</ul>",
+			"\t\t\t<p class=\"text-center text-muted\">© 2021 Company, Inc</p>",
+			"\t\t</footer>",
+			"\t</div>",
+			"\t\t<!-- Option 1: Bootstrap Bundle with Popper -->",
+			"\t\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ\" crossorigin=\"anonymous\"></script>",
+			"\t</body>",
+			"</html>"
+		],
+		"description": "Starting template including head body."
+	},
+	"dsf-sample-form": {
+		"scope": "html",
+		"prefix": "dsf-sample-form",
+		"body": [
+			"\t<form>",
+			"\t\t<div class=\"mb-3\">",
+			"\t\t\t<label for=\"exampleInputEmail1\" class=\"form-label\">Email address</label>",
+			"\t\t\t<input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\">",
+			"\t\t\t<div id=\"emailHelp\" class=\"form-text\">We'll never share your email with anyone else.</div>",
+			"\t\t</div>",
+			"\t\t<div class=\"mb-3\">",
+			"\t\t\t<label for=\"exampleInputPassword1\" class=\"form-label\">Password</label>",
+			"\t\t\t<input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\">",
+			"\t\t</div>",
+			"\t\t<div class=\"mb-3 form-check\">",
+			"\t\t\t<input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">",
+			"\t\t\t<label class=\"form-check-label\" for=\"exampleCheck1\">Check me out</label>",
+			"\t\t</div>",
+			"\t\t<button type=\"submit\" class=\"btn btn-primary\">Submit</button>",
+			"\t</form>"
+		],
+		"description": "sample form to demonstrate"
+	},
+	"dsf-breadcrumb-level3": {
+		"scope": "html",
+		"prefix": "dsf-breadcrumb-level3",
+		"body": [
+			"\t<nav aria-label=\"breadcrumb\">",
+			"\t<ol class=\"breadcrumb\">",
+			"\t\t<li class=\"breadcrumb-item\"><a href=\"$1\">$2</a></li>",
+			"\t\t<li class=\"breadcrumb-item\"><a href=\"$3\">$4</a></li>",
+			"\t\t<li class=\"breadcrumb-item active\" aria-current=\"page\">$5</li>",
+			"\t\t</ol>",
+			"\t</nav>"
+		],
+		"description": "Breadcrumb with 3 levels"
+	}
+}
