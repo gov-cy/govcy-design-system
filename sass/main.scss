@@ -9,38 +9,49 @@ $danger: #d62518;
 $light: #f8f9fa;
 $dark: #343a40;
 $font-family-sans-serif:      Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$input-focus-border-color: 	#0b0c0c;
+$input-focus-box-shadow: 0 0 0 .25rem #ffdd00;
+$form-check-input-focus-box-shadow: 0 0 0 .25rem #ffdd00;
+$form-check-input-border-radius:0px;
+$form-check-input-width: 2em;
+$form-check-min-height: 2em;
+$form-check-input-border: 2px solid #0b0c0c;
+
+$input-border-width: 2px;
+$border-radius:0px;
+$input-border-color:#0b0c0c;
 
 //import the functions, variables and mixins
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/_mixins";
 
-// //Add colors
-// //Define new map
-// $custom-theme-colors : (
-//     "altlight": #f2ebfa,
-//     "altdark": #522192
-// );
-// //merge maps
-// $theme-colors: map-merge($custom-theme-colors,$theme-colors);
+//Add colors
+//Define new map
+$govcy-brand-colors : (
+    "govcy-brand-color": #1d70b8,
+    "govcy-brand-bg": #faf7fd
+);
+//merge maps
+$theme-colors: map-merge($govcy-brand-colors,$theme-colors);
   
 // 4. Include any optional Bootstrap components as you like
 
-@import "../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../node_modules/bootstrap/scss/bootstrap-utilities";
-@import "../node_modules/bootstrap/scss/_images";
-@import "../node_modules/bootstrap/scss/_navbar";
-@import "../node_modules/bootstrap/scss/_card";
-@import "../node_modules/bootstrap/scss/_nav";
-@import "../node_modules/bootstrap/scss/_transitions";
-@import "../node_modules/bootstrap/scss/_forms";
-@import "../node_modules/bootstrap/scss/_buttons";
-@import "../node_modules/bootstrap/scss/_breadcrumb";
+// @import "../node_modules/bootstrap/scss/bootstrap-reboot";
+// @import "../node_modules/bootstrap/scss/bootstrap-grid";
+// @import "../node_modules/bootstrap/scss/bootstrap-utilities";
+// @import "../node_modules/bootstrap/scss/_images";
+// @import "../node_modules/bootstrap/scss/_navbar";
+// @import "../node_modules/bootstrap/scss/_card";
+// @import "../node_modules/bootstrap/scss/_nav";
+// @import "../node_modules/bootstrap/scss/_transitions";
+// @import "../node_modules/bootstrap/scss/_forms";
+// @import "../node_modules/bootstrap/scss/_buttons";
+// @import "../node_modules/bootstrap/scss/_breadcrumb";
 
 
-// // //TO import ALL bootstrap
-//  @import '../node_modules/bootstrap/scss/bootstrap.scss';
+//TO import ALL bootstrap
+ @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 // //overwrite h1
 // h1 {
