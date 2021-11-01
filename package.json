@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "",
     "main": "index.html",
-    "author": "Constantinos Evangelou",
+    "author": "DMRID - DSF Team",
     "license": "MIT",
     "scripts": {
         "css-build": "node-sass --omit-source-map-url sass/main.scss docs/css/main.css",
