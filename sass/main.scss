@@ -9,17 +9,24 @@ $danger: #d62518;
 $light: #f8f9fa;
 $dark: #343a40;
 $font-family-sans-serif:      Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$input-focus-border-color: 	#0b0c0c;
-$input-focus-box-shadow: 0 0 0 .25rem #ffdd00;
-$form-check-input-focus-box-shadow: 0 0 0 .25rem #ffdd00;
+
+//De-round form inputs
 $form-check-input-border-radius:0px;
+$border-radius:0px;
+//change input border colors
+$input-border-width: 2px;
+$form-check-input-border: 2px solid #0b0c0c;
+$input-border-color:#0b0c0c;
+//make larger checkboxes
 $form-check-input-width: 2em;
 $form-check-min-height: 2em;
-$form-check-input-border: 2px solid #0b0c0c;
+//Form focus changes
+$input-focus-border-color: 	#0b0c0c;
+$input-focus-box-shadow: 0 0 0 .25rem #ffdd00;
+//$input-btn-focus-box-shadow:0 0 0 .25rem #ffdd00 !important;
+$form-check-input-focus-box-shadow: 0 0 0 .25rem #ffdd00;
 
-$input-border-width: 2px;
-$border-radius:0px;
-$input-border-color:#0b0c0c;
+
 
 //import the functions, variables and mixins
 @import "../node_modules/bootstrap/scss/_functions";
@@ -62,3 +69,5 @@ $theme-colors: map-merge($govcy-brand-colors,$theme-colors);
 
 //remove unused css
 //https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772
+
+//https://bootstrap-cheatsheet.themeselection.com/

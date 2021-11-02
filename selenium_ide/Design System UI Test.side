@@ -1,0 +1,177 @@
+{
+  "id": "c39ba35d-8eeb-406d-bda0-31933ad8c251",
+  "version": "2.0",
+  "name": "Design System UI Test",
+  "url": "http://127.0.0.1:8081",
+  "tests": [{
+    "id": "3cf0fa86-cb5f-47ac-9191-bc9164bb7b71",
+    "name": "_InputTextStyle",
+    "commands": [{
+      "id": "32fcfb1f-14cb-4380-afb3-8ed62fbb4ade",
+      "comment": "Set arguments",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15022a14-8845-439d-8302-5e86772baee5",
+      "comment": "",
+      "command": "store",
+      "target": "#exampleInputEmail1",
+      "targets": [],
+      "value": "elementSelector"
+    }, {
+      "id": "7adc4ce9-74b6-475b-bfa3-03555b48ec6f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return['box-shadow','border','color','background-color']",
+      "targets": [],
+      "value": "styleProperties"
+    }, {
+      "id": "221e03fa-a93c-428d-94d7-e0d3c216d17d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return['rgb(255, 221, 0) 0px 0px 0px 4px','2px solid rgb(11, 12, 12)','rgb(33, 37, 41)','rgb(255, 255, 255)']",
+      "targets": [],
+      "value": "styleTests"
+    }, {
+      "id": "cf583d47-c1a9-46db-ad09-a17149552a74",
+      "comment": "Start",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe368c93-2a1a-4759-9036-d7d4bded378f",
+      "comment": "",
+      "command": "open",
+      "target": "/docs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9c29c1b-1dec-46b5-a0e2-340b0d04ad6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=${elementSelector}",
+      "targets": [
+        ["id=exampleInputEmail1", "id"],
+        ["css=#exampleInputEmail1", "css:finder"],
+        ["xpath=//input[@id='exampleInputEmail1']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "612efa7f-2d03-46a7-b0d9-766d28674747",
+      "comment": "Run check element",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53718e91-fa50-4261-8a40-435c5c8fb312",
+      "comment": "",
+      "command": "run",
+      "target": "_CheckElementStyle",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5d48c899-2bca-473a-b25b-5c5a6287fab0",
+    "name": "_CheckElementStyle",
+    "commands": [{
+      "id": "95c64f65-e109-4097-8109-af03c8a3bfa3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "ddc69ab4-7f1b-42c9-ae7f-a28acfa2ffac",
+      "comment": "",
+      "command": "forEach",
+      "target": "styleProperties",
+      "targets": [],
+      "value": "styleProperty"
+    }, {
+      "id": "396bc97b-a251-4ad9-af81-b393c33c0c7f",
+      "comment": "",
+      "command": "echo",
+      "target": "------------------------------------",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faaa6e9a-d2d2-45fb-97f5-7879f35111ff",
+      "comment": "",
+      "command": "echo",
+      "target": "Checking element \"${elementSelector}\" for style property \"${styleProperty}\" ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed19aada-b9c3-42cf-b229-66fbf91a3a4f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.document.defaultView.getComputedStyle(window.document.querySelector(${elementSelector})).getPropertyValue(${styleProperty})",
+      "targets": [],
+      "value": "tmp1"
+    }, {
+      "id": "bf8c4f7b-4352-4965-8bfd-4b81de9be69c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var t = ${tmp1}; return t.includes(${styleTests}[${i}]);",
+      "targets": [],
+      "value": "testResult"
+    }, {
+      "id": "9dba4b41-0c8e-4886-8e20-7184ad5e6f5c",
+      "comment": "",
+      "command": "if",
+      "target": "${testResult}==false",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6eac06df-420e-4ddc-a086-b6cb8998f5ad",
+      "comment": "",
+      "command": "verify",
+      "target": "testResult",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "c5a8f065-37fd-4788-b1ce-0a5f6ac78b10",
+      "comment": "",
+      "command": "echo",
+      "target": "Problem with element \"${elementSelector}\" and style property \"${styleProperty}\". Actula value is \"${tmp1}\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a9c66f0-8a84-4f07-9de7-a065fe1af806",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94759259-2b95-4e4a-b3c6-f8e31b233e0b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${i}+1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "1e0fb4b0-38bb-451d-b30f-93baa9445767",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e9512bc-8ede-4a86-9298-10ac5bd6ffd5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3cf0fa86-cb5f-47ac-9191-bc9164bb7b71"]
+  }],
+  "urls": ["http://127.0.0.1:8081/"],
+  "plugins": []
+}

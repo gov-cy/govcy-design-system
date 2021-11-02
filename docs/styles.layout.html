@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="css/main.css" rel="stylesheet" >
+        <link href="css/design-system.css" rel="stylesheet" >
+        <link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/github.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+        <title>Layout - Gov.cy - Design System</title>
+    </head>
+    <body>
+      <!--Header-->
+    <div class="container-fluid" id="headerContainer"></div>
+      <!--Top Menu-->
+      <div class="container-fluid" id="topMenuContainer"><div class="container-md"><nav class="nav" id="topMenu"></nav></div></div>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-md-9 order-md-last">
+            <p class="lead">Styling</p>
+            <h1>Layout</h1>
+            
+            <p>The design system utilizes the containers and grid system described below.</p>
+            
+            <h2>Breakpoints</h2>
+            <p>The table below illustrates the six default breakpoints, for building responsively.</p>
+            <p>The default maximum container width is 1400px</p>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Breakpoint</th>
+                        <th>Class infix</th>
+                        <th>Dimensions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>X-Small</td>
+                        <td><em>None</em></td>
+                        <td>&lt;576px</td>
+                      </tr>
+                      <tr>
+                        <td>Small</td>
+                        <td><code>sm</code></td>
+                        <td>≥576px</td>
+                      </tr>
+                      <tr>
+                        <td>Medium</td>
+                        <td><code>md</code></td>
+                        <td>≥768px</td>
+                      </tr>
+                      <tr>
+                        <td>Large</td>
+                        <td><code>lg</code></td>
+                        <td>≥992px</td>
+                      </tr>
+                      <tr>
+                        <td>Extra large</td>
+                        <td><code>xl</code></td>
+                        <td>≥1200px</td>
+                      </tr>
+                      <tr>
+                        <td>Extra extra large</td>
+                        <td><code>xxl</code></td>
+                        <td>≥1400px</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>                
+                <p>For more information from <a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/" target="_blank">Bootstrap</a></p>
+            <h2>Containers</h2>
+            <p>Containers are the most basic layout element in the design system and are <strong>required when using our default grid system</strong>.
+               Containers are used to contain, pad, and (sometimes) center the content within them. 
+               While containers <em>can</em> be nested, most layouts do not require a nested container.</p>
+            <p>The design system comes with three different containers:</p>
+
+            <ul>
+                <li><code>.container</code>, which sets a <code>max-width</code> at each responsive breakpoint</li>
+                <li><code>.container-fluid</code>, which is <code>width: 100%</code> at all breakpoints</li>
+                <li><code>.container-{breakpoint}</code>, which is <code>width: 100%</code> until the specified breakpoint</li>
+            </ul>
+            <p>For more information from <a href="https://getbootstrap.com/docs/5.1/layout/containers/" target="_blank">Bootstrap</a></p>
+            <h2>Grid</h2>
+            <p>The grid system uses a series of containers, rows, and columns to layout and align content.</p>
+            <p>Design for small screens first, starting with a single-column layout.</p>
+            <div class="example-box">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="border language-html"><div class="container">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div></code></pre>
+            <p>The above example creates three equal-width columns across all devices and viewports using our predefined grid classes. Those columns are centered in the page with the parent <code>.container</code>.</p>
+            <p>There are <strong>12 template columns available per row</strong>, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., <code>col-4</code> spans four). <code>width</code>s are set in percentages so you always have the same relative sizing.</p>
+            <p>The columns support the <strong>6 breakpoints</strong> described above, meaning you can control container and column sizing and behavior by each breakpoint (e.g., <code>.col-sm-4</code> applies to <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>) as shown in the example below.</p>
+            <div class="example-box">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">col-8</div>
+                  <div class="col-md-4">col-4</div>
+                </div>
+              </div>
+            </div>
+            <pre><code class="border language-html"><div class="container">
+  <div class="row">
+    <div class="col-md-8">col-8</div>
+    <div class="col-md-4">col-4</div>
+  </div>
+</div></code></pre>
+          <p>For more information from <a href="https://getbootstrap.com/docs/5.1/layout/grid/" target="_blank">Bootstrap</a></p>
+        </div>
+        <!--Side menu-->
+        <div class="col-md-3 order-md-first">
+          <nav class="nav flex-column" id="sideMenu"></nav>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <div class="px-0 mx-0 container-fluid" id="footerContainer"></div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>        
+        <!-- jquery and app-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>//Define page id
+          DSFpageId = "styles.layout";
+          </script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

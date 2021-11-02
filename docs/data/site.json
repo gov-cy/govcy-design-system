@@ -1,0 +1,34 @@
+{
+    "header" : "HEADER",
+    "footer" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'>Terms and Conditions</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Accessibility</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Data protection</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Built by the <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Republic of Cyprus, 2021 </p> </footer>",
+    "topMenus" : 
+        {
+            "general": [
+                {"id" :"styles", "label":"Styles", "url" :"styles.html"}
+                ,{"id" :"components", "label":"Components", "url" :"components.html"}
+                ,{"id" :"patterns", "label":"Patterns", "url" :"patterns.html"}
+            ]
+        },
+    "sideMenus": 
+        {
+            "styles" : [
+                {"id" :"styles.layout", "label":"Layout", "url" :"styles.layout.html"}
+                ,{"id" :"styles.page.layout", "label":"Page layout", "url" :"styles.page.layout.html"}
+            ]
+        }
+    ,
+    "pages" : {
+        "index":{
+            "topMenu" : "general",
+            "sideMenu" : false
+        },
+        "styles":{
+            "topMenu" : "general",
+            "sideMenu" : "styles"
+        },
+        "styles.layout":{
+            "topMenu" : "general",
+            "sideMenu" : "styles"
+        }
+    }
+}
