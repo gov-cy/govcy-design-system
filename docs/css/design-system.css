@@ -15,3 +15,10 @@
     padding-top:10px; padding-bottom:10px ;
   }
   
+  .w-100-px{
+    width: 100px !important;
+  }
+
+  .hljs {
+    border: 1px solid #dee2e6 !important;
+  }

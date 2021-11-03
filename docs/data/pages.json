@@ -1,0 +1,55 @@
+{
+    "defaultPage" : "index",
+    "templates": {
+        "3_3" : "<div id='main'></div>"
+        ,"1_3_sidemenu" : "<div class='row'><div class='col-md-9 order-md-last' id='main'></div><div class='col-md-3 order-md-first'><nav class='nav flex-column' id='sideMenu'></nav></div></div>"
+    },
+    "header" : {
+        "en": "<nav class='navbar navbar-expand-md' aria-label='Top navigation bar'><div class='container-md'><a class='navbar-brand' href='#'><img class='p-3' src='img/thyreos.gif' alt='Cyprus Government'>gov.cy</a><button class='navbar-toggler navbar-light' type='button' data-bs-toggle='collapse' data-bs-target='#navbarsTopLevel' aria-controls='navbarsTopLevel' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='navbarsTopLevel'><ul class='navbar-nav me-auto mb-2 mb-lg-0'><li class='nav-item'><a class='nav-link active' aria-current='page' href='#'>Home</a></li></ul><form><select class='form-control w-100-px' id='changeLangSel'><option value='en' selected>English</option><option value='el'>Ελληνικά</option></select></form></div></div></nav>"
+        ,"el" : "<nav class='navbar navbar-expand-md' aria-label='Top navigation bar'><div class='container-md'><a class='navbar-brand' href='#'><img class='p-3' src='img/thyreos.gif' alt='Cyprus Government'>gov.cy</a><button class='navbar-toggler navbar-light' type='button' data-bs-toggle='collapse' data-bs-target='#navbarsTopLevel' aria-controls='navbarsTopLevel' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='navbarsTopLevel'><ul class='navbar-nav me-auto mb-2 mb-lg-0'><li class='nav-item'><a class='nav-link active' aria-current='page' href='#'>Αρχική</a></li></ul><form><select class='form-control w-100-px' id='changeLangSel'><option value='en'>English</option><option value='el' selected>Ελληνικά</option></select></form></div></div></nav>"
+    },
+    "footer" : {
+        "en" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'>Terms and Conditions</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Accessibility</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Data protection</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Built by the <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Republic of Cyprus, 2021 </p> </footer>"
+        ,"el" : "<footer class='py-3 my-4 bg-light border-top'>  <p class='justify-content-center mb-0 text-muted text-center'> <a class='text-muted' href='#'> Όροι χρήσης</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προσβασιμότητα</a>&nbsp;/&nbsp;      <a class='text-muted' href='#'>Προστασία Προσωπικών Δεδομένων</a>  </p> <p class='justify-content-center mb-0 text-muted text-center'>     Ανάπτυξη <a class='text-muted' href='#'>DSF Design System team</a>&nbsp;/&nbsp; </p>  <p class='justify-content-center mb-0 text-muted text-center'>     <img class='pe-3' src='img/thyreos.gif' alt='Cyprus Government'> © Κυπριακή Δημοκρατία, 202 </p> </footer>"
+    },
+    "topMenus" : 
+        {
+            "general": [
+                {"id" :"styles", "label":{"en":"Styles","el": "Style EL"}, "url" :"#p/styles"}
+                ,{"id" :"components", "label":{"en":"Components","el":"Components"}, "url" :"#"}
+                ,{"id" :"patterns", "label":{"en":"Patterns","el":"Patterns"}, "url" :"#"}
+            ]
+        },
+    "sideMenus": 
+        {
+            "styles" : [
+                {"id" :"styles.layout", "label":{"en":"Layout","el":"Layout EL"}, "url" :"#p/styles.layout"}
+                ,{"id" :"styles.page.layout", "label":{"en":"Page layout","el":"Page layout"}, "url" :"#"}
+                ,{"id" :"styles.colour", "label":{"en":"Colour","el":"Colour"}, "url" :"#"}
+            ]
+        }
+    ,
+    "pages" : {
+        "index":{
+            "id":"index",
+            "topMenu" : "general",
+            "sideMenu" : false,
+            "template" : "3_3",
+            "MDFile" : {"en":"content/index-en.MD","el":"content/index-el.MD"}
+        },
+        "styles":{
+            "id":"styles",
+            "topMenu" : "general",
+            "sideMenu" : "styles",
+            "template" : "1_3_sidemenu",
+            "MDFile" : {"en" : "content/styles-en.MD", "el": "content/styles-el.MD"}
+        },
+        "styles.layout":{
+            "id":"styles.layout",
+            "topMenu" : "general",
+            "sideMenu" : "styles",
+            "template" : "1_3_sidemenu",
+            "MDFile" :{"en" : "content/styles.layout-en.MD", "el" : "content/styles.layout-en.MD"}
+        }
+    }
+}
