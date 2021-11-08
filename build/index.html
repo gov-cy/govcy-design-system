@@ -1,19 +1,40 @@
 <!doctype html>
 <html lang="en">
-    <head>
+
+<head>
     <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="css/main.css" rel="stylesheet" >
-        
-        <title>Styles - Gov.cy - Design System</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>Styles - Gov.cy - Design System</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="">
+        <nav class="navbar navbar-expand-md" aria-label="Top navigation bar">
+            <div class="container-md"><a class="navbar-brand" href="#"><img class="p-3" src="img/thyreos.gif"
+                        alt="Cyprus Government">gov.cy</a><button class="navbar-toggler navbar-light" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarsTopLevel" aria-controls="navbarsTopLevel"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarsTopLevel">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    </ul>
+                    <form><select class="form-control w-100-px" id="changeLangSel">
+                            <option value="en" selected="">English</option>
+                            <option value="el">Ελληνικά</option>
+                        </select></form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     </div>
     <!-- Footer -->
-        <script src="js/app.js"></script>
-    </body>
+    <script src="js/app.js"></script>
+</body>
+
 </html>

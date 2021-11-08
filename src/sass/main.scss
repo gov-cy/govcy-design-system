@@ -1,9 +1,14 @@
-// Import our overrides before importing Bootstrap
+
+// Import ALL bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+ 
+
 
 // Import resets, variables, typograply, mixins, and any utility classes
 @import "base/reset";
-@import "base/typography";
 @import "base/variables";
+@import "base/typography";
+
 
 // Import buttons, carousels, sliders, and similar page components (think widgets).
 @import "components/slider";
@@ -20,6 +25,5 @@
 @import "layout/sidebar";
 
 
-// Import ALL bootstrap
- @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 
