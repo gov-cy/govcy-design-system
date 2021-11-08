@@ -7812,8 +7812,5 @@ textarea.form-control-lg {
 /* Only use this colour to indicate which element is focused on. For example, when a user tabs to an element with their keyboard */
 /* Use for error messages */
 /* Use for success messages */
-h1, .h1 {
-  color: #d4351c; }
-
 .nav-link {
   color: #d4351c; }
