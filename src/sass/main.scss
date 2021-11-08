@@ -1,28 +1,24 @@
 // Import our overrides before importing Bootstrap
-@import "base/_variables.scss";
-@import "components/dropdown.scss";
-// Import the functions, variables and mixins from Bootstrap
 
-// @import "../../node_modules/bootstrap/scss/_functions";
-// @import "../../node_modules/bootstrap/scss/_variables";
-// @import "../../node_modules/bootstrap/scss/_mixins";
+// Import resets, variables, typograply, mixins, and any utility classes
+@import "base/reset";
+@import "base/typography";
+@import "base/variables";
 
+// Import buttons, carousels, sliders, and similar page components (think widgets).
+@import "components/slider";
+@import "components/buttons";
+@import "components/carousel";
+@import "components/dropdown";
 
-  
-// Include any optional Bootstrap components as you like
-// We may want to consider this in the future
+// Import layout styles for the header, footer, navigation and the grid system etc.
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
 
-// @import "../node_modules/bootstrap/scss/bootstrap-reboot";
-// @import "../node_modules/bootstrap/scss/bootstrap-grid";
-// @import "../node_modules/bootstrap/scss/bootstrap-utilities";
-// @import "../node_modules/bootstrap/scss/_images";
-// @import "../node_modules/bootstrap/scss/_navbar";
-// @import "../node_modules/bootstrap/scss/_card";
-// @import "../node_modules/bootstrap/scss/_nav";
-// @import "../node_modules/bootstrap/scss/_transitions";
-// @import "../node_modules/bootstrap/scss/_forms";
-// @import "../node_modules/bootstrap/scss/_buttons";
-// @import "../node_modules/bootstrap/scss/_breadcrumb";
 
 // Import ALL bootstrap
  @import '../../node_modules/bootstrap/scss/bootstrap.scss';
