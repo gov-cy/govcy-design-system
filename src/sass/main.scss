@@ -1,28 +1,34 @@
 
-// Import ALL bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
- 
 
 
-// Import resets, variables, typograply, mixins, and any utility classes
-@import "base/reset";
-@import "base/variables";
-@import "base/typography";
+// Include any default variable overrides here (though functions won't be available)
+    @import "base/dsf-reset";
+    @import "base/dsf-variables";
+    @import "base/dsf-typography";
 
 
-// Import buttons, carousels, sliders, and similar page components (think widgets).
-@import "components/slider";
-@import "components/buttons";
-@import "components/carousel";
-@import "components/dropdown";
+// Include all of Bootstrap
+    @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-// Import layout styles for the header, footer, navigation and the grid system etc.
-@import "layout/footer";
-@import "layout/forms";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
-@import "layout/sidebar";
+
+// Add additional custom code here
+
+    // Components
+        @import "components/dsf-slider";
+        @import "components/dsf-buttons";
+        @import "components/dsf-carousel";
+        @import "components/dsf-dropdown";
+
+    //Layout
+        @import "layout/dsf-footer";
+        @import "layout/dsf-forms";
+        @import "layout/dsf-grid";
+        @import "layout/dsf-header";
+        @import "layout/dsf-navigation";
+        @import "layout/dsf-sidebar";
+
+
+
 
 
 
