@@ -6,17 +6,18 @@
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "scripts": {
-        "css-build": "node-sass --omit-source-map-url sass/main.scss docs/css/main.css",
-        "css-build-min": "node-sass --omit-source-map-url sass/main.scss docs/css/main.min.css --output-style compressed",
+        "css-build": "node-sass --omit-source-map-url src/sass/main.scss build/css/main.css && cp src/js/app.js build/js/app.js ",
+        "css-build-distribution": "node-sass --omit-source-map-url src/sass/main.scss dist/css/main.min.css --output-style compressed",
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
-        "css-purgecss": "purgecss --css docs/css/main.min.css --content docs/index.html --output docs/css/dist/",
-        "start": "http-server -c-1 -p 8081 -o docs/"
+        "watch-css": "nodemon -e scss -x \"npm run css-build\"",
+        "start": "http-server -c-1 -p 3000 -o build/"
     },
     "dependencies": {
-        "bootstrap": "5.1.3",
+        "bootstrap": "^5.1.3"
+    },
+    "devDependencies": {
         "http-server": "^13.0.2",
-        "node-sass": "^6.0.1",
-        "purgecss": "^4.0.3"
+        "node-sass": "^6.0.1"
     }
 }
