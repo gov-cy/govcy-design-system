@@ -2,9 +2,9 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [  dsf-design-system-minikube ]
+    branches: [ main ]
   pull_request:
-    branches: [ dsf-design-system-minikube ]
+    branches: [ main ]
 
 jobs:
   build:
