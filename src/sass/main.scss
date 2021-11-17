@@ -6,9 +6,8 @@
     @import "base/dsf-variables";
     @import "base/dsf-typography";
 
-
 // Include all of Bootstrap
-    @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 // Add additional custom code here
@@ -26,9 +25,6 @@
         @import "layout/dsf-header";
         @import "layout/dsf-navigation";
         @import "layout/dsf-sidebar";
-
-
-
 
 
 
