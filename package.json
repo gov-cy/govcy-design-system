@@ -6,7 +6,7 @@
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "scripts": {
-        "css-build": "node-sass --omit-source-map-url src/sass/main.scss build/css/main.css && cp src/js/app.js build/js/app.js ",
+        "css-build": "node-sass --omit-source-map-url src/sass/main.scss build/css/main.css && copyfiles src/js/app.js build/js ",
         "css-build-distribution": "node-sass --omit-source-map-url src/sass/main.scss dist/css/main.min.css --output-style compressed",
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
@@ -18,6 +18,8 @@
     },
     "devDependencies": {
         "http-server": "^13.0.2",
-        "node-sass": "^6.0.1"
+        "node-sass": "^6.0.1",
+        "nodemon":"^2.0.15",
+        "copyfiles":"^2.4.1"
     }
 }
