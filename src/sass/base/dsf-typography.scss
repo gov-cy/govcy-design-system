@@ -1,5 +1,14 @@
 // ------------------------------------
 // Basic typography style for copy text
 // ------------------------------------
+@mixin Roboto {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
 
+@mixin Roboto-bold {
+    @include Roboto;
+    font-weight: 500;
+    font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
+
+}
 

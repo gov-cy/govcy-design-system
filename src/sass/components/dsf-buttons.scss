@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains the custom styles for the buttons, if any.
 // --------------------------------------------------------------------------
+
+@import "../base/dsf-variables.scss";
+//@import "../base/dsf-fonts.scss";
+@import"../base/dsf-typography.scss";
+
+
+.btn-primary {
+    background-color: $dsf-secondary;
+    border: $dsf-secondary;
+    @include Roboto;
+}

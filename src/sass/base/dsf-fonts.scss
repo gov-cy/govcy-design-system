@@ -1,3 +1,100 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
+
+// Roboto Regular
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Regular.ttf") format("truetype");
+  }
+
+
+// Roboto Black
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Black.ttf") format("truetype");
+  }
+  
+  // Roboto Black Italic
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-BlackItalic.ttf") format("truetype");
+  }
+  
+  // Roboto Bold
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Bold.ttf") format("truetype");
+  }
+
+  // Roboto Bold Italic
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-BoldItalic.ttf") format("truetype");
+  }
+
+  // Roboto Italic
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Italic.ttf") format("truetype");
+  }
+
+  // Roboto Light
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Light.ttf") format("truetype");
+  }
+
+  // Roboto Light Italic
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-LightItalic.ttf") format("truetype");
+  }
+
+  // Roboto Medium
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Medium.ttf") format("truetype");
+  }
+
+  // Roboto Medium Italic
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-MediumItalic.ttf") format("truetype");
+  }
+
+  // Roboto Thin
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-Thin.ttf") format("truetype");
+  }
+
+  // Roboto Thin Italic
+  @font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-display: swap;
+    src: url("../../../build/fonts/Roboto-ThinItalic.ttf") format("truetype");
+  }

@@ -3,9 +3,45 @@
 // // -----------------------------------------------------------------------------
 
 
-// Include any default variable overrides here
+// base colours
+ 
 
-$theme-colors: (
-    "primary":  green,
-    "secondary": yellow,
+$dsf-base-colors: (
+    "dark-blue": #31576F,
+    "gold": #B09038,
+    "dark-green": #505E31,
+    "red": #D62518,
+    "blue": #52879D,
+    "gray": #808183,
+    "light-gray": #BBBCBF,
+    "dark-gray": #272525,
+    "purple": #2c1a4d,
 );
+
+$dsf-primary: map-get($dsf-base-colors, "dark-blue");
+$dsf-secondary: map-get($dsf-base-colors, "gold");
+$dsf-success: map-get($dsf-base-colors, "dark-green");
+$dsf-danger: map-get($dsf-base-colors, "red");
+$dsf-info: map-get($dsf-base-colors, "blue");
+
+// typography colors
+
+$dsf-heading-text: map-get($dsf-base-colors, "dark-gray");
+$dsf-body-text: map-get($dsf-base-colors, "dark-gray");
+$dsf-hint-text: map-get($dsf-base-colors, "gray");
+
+// link colors
+
+$dsf-link-color: map-get($dsf-base-colors, "blue");
+$dsf-link-hover-color: map-get($dsf-base-colors, "dark-blue");
+$dsf-link-visited-color: map-get($dsf-base-colors, "purple");
+$dsf-link-active-color: map-get($dsf-base-colors, "dark-gray");
+
+// border colors
+
+$dsf-border-color: map-get($dsf-base-colors, "light-gray");
+$dsf-border-input-color: map-get($dsf-base-colors, "dark-gray");
+
+
+
+
