@@ -1,14 +1,76 @@
 // ------------------------------------
 // Basic typography style for copy text
 // ------------------------------------
+
 @mixin Roboto {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-@mixin Roboto-bold {
+@mixin Roboto-Thin {
+    @include Roboto;
+    font-weight: 100;
+}
+
+@mixin Roboto-ThinItalic {
+    @include Roboto;
+    font-weight: 100;
+    font-style: italic;
+}
+
+@mixin Roboto-Light {
+    @include Roboto;
+    font-weight: 300;
+}
+
+@mixin Roboto-LightItalic {
+    @include Roboto;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin Roboto-Regular {
+    @include Roboto;
+    font-weight: 400;
+}
+
+@mixin Roboto-Italic {
+    @include Roboto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin Roboto-Medium {
     @include Roboto;
     font-weight: 500;
-    font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
-
 }
+
+@mixin Roboto-MediumItalic {
+    @include Roboto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin Roboto-Bold {
+    @include Roboto;
+    font-weight: 700;
+}
+
+@mixin Roboto-BoldItalic {
+    @include Roboto;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@mixin Roboto-Black {
+    @include Roboto;
+    font-weight: 900;
+}
+
+@mixin Roboto-BlackItalic {
+    @include Roboto;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
 
