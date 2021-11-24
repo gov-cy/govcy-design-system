@@ -2,75 +2,17 @@
 // Basic typography style for copy text
 // ------------------------------------
 
-@mixin Roboto {
-    font-family: 'Roboto', sans-serif;
-}
+//Importing Roboto fonts from googleapis CDN
 
-@mixin Roboto-Thin {
-    @include Roboto;
-    font-weight: 100;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@mixin Roboto-ThinItalic {
-    @include Roboto;
-    font-weight: 100;
-    font-style: italic;
-}
+//DSF base font-family and font styles
 
-@mixin Roboto-Light {
-    @include Roboto;
-    font-weight: 300;
-}
-
-@mixin Roboto-LightItalic {
-    @include Roboto;
-    font-weight: 300;
-    font-style: italic;
-}
-
-@mixin Roboto-Regular {
-    @include Roboto;
-    font-weight: 400;
-}
-
-@mixin Roboto-Italic {
-    @include Roboto;
-    font-weight: 400;
-    font-style: italic;
-}
-
-@mixin Roboto-Medium {
-    @include Roboto;
-    font-weight: 500;
-}
-
-@mixin Roboto-MediumItalic {
-    @include Roboto;
-    font-weight: 500;
-    font-style: italic;
-}
-
-@mixin Roboto-Bold {
-    @include Roboto;
-    font-weight: 700;
-}
-
-@mixin Roboto-BoldItalic {
-    @include Roboto;
-    font-weight: 700;
-    font-style: italic;
-}
-
-@mixin Roboto-Black {
-    @include Roboto;
-    font-weight: 900;
-}
-
-@mixin Roboto-BlackItalic {
-    @include Roboto;
-    font-weight: 900;
-    font-style: italic;
-}
+$dsf-font-family: 'Roboto', sans-serif;
+$dsf-font-size-base: 1.188rem; // 19px
 
 
+//Overiding bootstrap font-family and font styles
 
+$font-family-sans-serif: $dsf-font-family;
+$font-size-base: $dsf-font-size-base;

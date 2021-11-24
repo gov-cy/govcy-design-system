@@ -3,7 +3,8 @@
 // --------------------------------------------------------------------------
 
 .dsf-btn-primary {
+    @extend .btn;
     background-color: $dsf-secondary;
     border: $dsf-secondary;
-    @include Roboto-BlackItalic;
+    font-weight: 100;
 }
