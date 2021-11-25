@@ -2,4 +2,17 @@
 // Basic typography style for copy text
 // ------------------------------------
 
+//Importing Roboto fonts from googleapis CDN
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+//DSF base font-family and font styles
+
+$dsf-font-family: 'Roboto', sans-serif;
+$dsf-font-size-base: 1.188rem; // 19px
+
+
+//Overiding bootstrap font-family and font styles
+
+$font-family-sans-serif: $dsf-font-family;
+$font-size-base: $dsf-font-size-base;

@@ -10,7 +10,6 @@
         "css-build-distribution": "node-sass --omit-source-map-url src/sass/main.scss dist/css/main.min.css --output-style compressed",
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
-        "css-start": "npm run css-watch",
         "watch-css": "npm run css-watch",
         "start": "http-server -c-1 -p 3000 -o build/"
     },

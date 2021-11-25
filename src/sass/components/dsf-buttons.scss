@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains the custom styles for the buttons, if any.
 // --------------------------------------------------------------------------
+
+.dsf-btn-primary {
+    @extend .btn;
+    background-color: $dsf-secondary;
+    border: $dsf-secondary;
+    font-weight: 100;
+}
