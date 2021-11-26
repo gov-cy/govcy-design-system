@@ -7,7 +7,6 @@
     "license": "MIT",
     "scripts": {
         "css-build": "copyfiles -u 2 src/js/app.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
-        "sass": "sass",
         "css-build-distribution": "sass --no-source-map src/sass/main.scss dist/css/main.min.css --style compressed",
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
