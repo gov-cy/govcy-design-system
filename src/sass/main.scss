@@ -1,31 +1,21 @@
-
-
-
+// 1.
 // Include any default variable overrides here (though functions won't be available)
-    @import "base/dsf-reset";
-    @import "base/dsf-variables";
-    @import "base/dsf-typography";
+// Overriding bootstrap variables must be done before we import bootstrap
+@import "base/dsf-variables";
+@import "base/dsf-typography";
 
-// Include all of Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// 2.
+// Include the relevant parts of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
+// 3.
+// Include Bootstrap components here that we extend in our dsf- components file
+@import "../../node_modules/bootstrap/scss/buttons";
 
-// Add additional custom code here
-
-    // Components
-        @import "components/dsf-slider";
-        @import "components/dsf-buttons";
-        @import "components/dsf-carousel";
-        @import "components/dsf-dropdown";
-
-    //Layout
-        @import "layout/dsf-footer";
-        @import "layout/dsf-forms";
-        @import "layout/dsf-grid";
-        @import "layout/dsf-header";
-        @import "layout/dsf-navigation";
-        @import "layout/dsf-sidebar";
-
-
-
-
+// 4.
+// Our dsf- components files. In here we create components that inherit from Bootstrap components
+@import "components/dsf-buttons";
