@@ -15,10 +15,12 @@
 
 // 3.
 // Include Bootstrap components here that we extend in our dsf- components file
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/alert";
 
+
 // 4.
 // Our dsf- components files. In here we create components that inherit from Bootstrap components
-@import "components/dsf-buttons";
+
 @import "components/dsf-alerts";

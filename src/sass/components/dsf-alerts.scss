@@ -7,12 +7,17 @@
     font-weight: bold;
     border: solid 5px;
     background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
     h2 {
         height:50px; 
     }
     p {
         padding-left: 10px;
-        font-size: large;
+        font-size: x-large;
+    }
+    a {
+        font-size:x-large;
     }
 }
 
@@ -48,7 +53,13 @@
     p {
         color: red;
        margin-bottom: 0px
+
+
     }
+         a {
+           color:red;
+       }
+
 }
 
 .alert-success {
@@ -86,7 +97,8 @@
     display: flex;
     height: 150px;
     background-color: olivedrab;
-
+    margin-left:10px;
+    margin-right:10px;
     h1 {
         color:white;
     }

@@ -8,12 +8,13 @@
 
     <link href="css/main.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <title>Styles - GOV.CY - Design System</title>
 </head>
 
 <body>
 
+<<<<<<< HEAD
     <!-- Button component -->
     <h2>Buttons:</h2>
         <div class="p-3">   
@@ -52,80 +53,91 @@
         </div>
 
     <hr>
+=======
+   <div class="container-fluid">  
+      <div class="row" style="margin-top: 10px;">   <!--  the inline style  is to separate the alerts from the top of the page -->
+            <!-- alert-important -->
+      
+            <div class="row">
+                <div class="alert-error">
+                    <h2>
+                        There is a problem
+                    </h2>
+                    <p>
+                        <a href="#">Enter your fullname</a> 
+                    </p>
+                    <p>
+                       <a href="#"> Second Error</a>
+                    </p>
+              </div>
+            </div>
+>>>>>>> aa8a67c (Alert Components)
 
-    <!-- Headings -->
-    <h2>Headings:</h2>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    <hr>
 
-    <!-- Alerts -->
-    <h2>Alerts:</h2>
-    <div class="row">
-        <div class="alert-important">
-            <h2>This is the IMPORTANT alert</h2>
-            <p>Success: AIt is a long established fact that a reader will be distracted by the readable content
-                of a page when looking at its layout. </p>
-            <a href="#">
-                View your application
-            </a>
-        </div>
-    </div>
+            <div class="row">
+                <div class="alert-important">
+                    <h2>Important</h2>
+                    <p>Success: AIt is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout. 
+                    </p>
+                    <a href="#">
+                        View your application
+                    </a>
+                </div>
+            </div>
 
-    <!-- alert-success -->
-    <div class="row">
-        <div class="alert-success">
-            <h2>This is the success alert</h2>
-            <p>Success: AIt is a long established fact that a reader will be distracted by the readable content
-                of a page when looking at its layout.</p>
-           <div class="dsf-link-text">
-            <p>
-               Contact <a href="mailto:support@gov.cy">support@gov.cy</a> if you think your application has a problem.
-            </p>
-        </div>
-        </div>
-    </div>
+            <!-- alert-success -->
+            <div class="row">
+                <div class="alert-success">
+                    <h2>Success</h2>
+                    <p>Success: AIt is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout.</p>
+                   <div class="dsf-link-text">
+                    <p>
+                       Contact <a href="mailto:support@gov.cy">support@gov.cy</a> if you think your application has a problem.
+                    </p>
+                </div>
+                </div>
+            </div>
 
-    <!-- dsf panel -->
-    <div class="row">
-        <div class="dsf-panel">
-            <div class="col">
-                <div class="row">
-                    <div class="col align-items-center justify-content-center d-flex">
-                        <h1> This is a panel Header</h1>
+            <!-- dsf panel -->
+            <div class="row">
+                <div class="dsf-panel">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col align-items-center justify-content-center d-flex">
+                                <h1> This is a panel Header</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col align-items-center align-content-center justify-content-center d-flex">
+                                <p>This is a panel paragraph text</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col align-items-center align-content-center justify-content-center d-flex">
-                        <p>This is a panel paragraph text</p>
+            </div>
+
+            <!-- dsf warning -->
+            <!-- The margin-top style here is just to separate this control from the ones above -->
+            <div class="row" style="margin-top: 20px;">
+                <div class="dsf-warning">
+                    <div class="col align-items-center justify-content-start d-flex">
+                        <p><i class="bi bi-exclamation-circle-fill"></i>&nbsp;Warning message here</p>
+   
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- dsf warning -->
-    <!-- The margin-top style here is just to separate this control from the ones above -->
-    <div class="row" style="margin-top: 20px;">
-        <div class="dsf-warning">
-            <div class="col align-items-center justify-content-start d-flex">
-                <p><i class="bi bi-exclamation-circle-fill"></i>&nbsp;Warning message here</p>
-            </div>
-        </div>
+    <div id="dsf-tables">
 
     </div>
-    <hr>
-
-    <!-- Headers -->
-    <h2>Headers:</h2>
-    <hr>
-
     <script src="js/app.js"></script>
-
+    </div>
+</div>
 </body>
 
 </html>
