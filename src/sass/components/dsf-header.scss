@@ -1,8 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-$dsf-primary: #31576F;
- $dsf-white: #ffffff;
+//$dsf-primary: #31576F;
+$dsf-white: #ffffff;
+@import "../../../src/sass/base/dsf-variables.scss";
 .navbar {
     background-color: $dsf-white !important;
    .container-fluid {
