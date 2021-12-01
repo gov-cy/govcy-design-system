@@ -9,14 +9,21 @@
 $dsf-base-colors: (
     "dark-blue": #31576F,
     "gold": #B09038,
+    "yellow": #ffdd00,
     "dark-green": #505E31,
     "red": #D62518,
+    "red-400": #AA1D13,
+    "danger": #D4351C,
     "blue": #52879D,
-    "gray": #808183,
-    "light-gray": #BBBCBF,
+    "gray-200": #D0D1D3, 
+    "gray": #BBBCBF,
+    "gray-400": #A6A8AA,
     "dark-gray": #272525,
     "purple": #2c1a4d,
-);
+    "white" : #FFFFFF,
+    "black": #000000,
+    "dark-blue-200": #254355,
+    );
 
 $dsf-primary: map-get($dsf-base-colors, "dark-blue");
 $dsf-secondary: map-get($dsf-base-colors, "gold");
@@ -25,10 +32,13 @@ $dsf-danger: map-get($dsf-base-colors, "red");
 $dsf-info: map-get($dsf-base-colors, "blue");
 
 // typography colors
-
-$dsf-heading-text: map-get($dsf-base-colors, "dark-gray");
-$dsf-body-text: map-get($dsf-base-colors, "dark-gray");
+$dsf-body: map-get($dsf-base-colors, "dark-gray");
+$dsf-heading-text: $dsf-body;
 $dsf-hint-text: map-get($dsf-base-colors, "gray");
+
+$dsf-white: map-get($dsf-base-colors, "white");
+$dsf-black: map-get($dsf-base-colors, "black");
+
 
 // link colors
 
@@ -41,6 +51,20 @@ $dsf-link-active-color: map-get($dsf-base-colors, "dark-gray");
 
 $dsf-border-color: map-get($dsf-base-colors, "light-gray");
 $dsf-border-input-color: map-get($dsf-base-colors, "dark-gray");
+
+// button colors
+
+$dsf-btn-primary-hover-bg: map-get($dsf-base-colors, "dark-blue-200");
+
+$dsf-btn-secondary-bg: map-get($dsf-base-colors, "gray-200");
+$dsf-btn-secondary-hover-bg: map-get($dsf-base-colors, "gray-400");
+
+$dsf-btn-success-bg: map-get($dsf-base-colors, "danger");
+$dsf-btn-success-hover-bg: map-get($dsf-base-colors, "red-400");
+
+
+$dsf-btn-focus-bg :map-get($dsf-base-colors, "yellow");
+
 
 
 
