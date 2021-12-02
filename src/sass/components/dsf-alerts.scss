@@ -3,7 +3,8 @@
 // This file contains the custom styles for the alerts.
 // -----------------------------------------------------------------------------
 
-@mixin all-alerts {
+
+@mixin dsf-all-alerts {
     font-weight: bold;
     border: solid 5px;
     background-color: #fff;
@@ -21,10 +22,10 @@
     }
 }
 
-@mixin alert-success-important {
+@mixin dsf-alert-success-important {
 
     @extend .alert;
-    @include all-alerts();
+    @include dsf-all-alerts();
     
     padding-top:0px;
     padding-right: 0px;
@@ -42,9 +43,9 @@
     }    
 }
 
-.alert-error {
+.dsf-alert-error {
     @extend .alert;
-    @include all-alerts();
+    @include dsf-all-alerts();
     border-color:   red;
     h2 {
          color: black;
@@ -62,11 +63,11 @@
 
 }
 
-.alert-success {
+.dsf-alert-success {
 
     @extend .alert;
-    @include all-alerts();
-    @include alert-success-important();
+    @include dsf-all-alerts();
+    @include dsf-alert-success-important();
     border-color: olivedrab;
 
     h2 {
@@ -78,11 +79,11 @@
     }
 }
 
-.alert-important {
+.dsf-alert-important {
 
     @extend .alert;
-    @include all-alerts();
-    @include alert-success-important();
+    @include dsf-all-alerts();
+    @include dsf-alert-success-important();
     border-color: steelblue;
     
     h2 {
