@@ -4,33 +4,92 @@
 //$dsf-primary: #31576F;
 //$dsf-white: #ffffff;
 @import "../../../src/sass/base/dsf-variables.scss";
+@import "../../../src/sass/base/dsf-typography.scss";
 
-@mixin dsf-navbar-mixin {
-  @extend .navbar;
-  background-color: $dsf-white !important;
- 
-}
 .dsf-navbar{
-  @include dsf-navbar-mixin;
-  .container-fluid {
-    background-color: $dsf-primary;
-    img {
-      content: $dsf-logo;
-           
+  font-family: $dsf-font-family;
+  background-color: $dsf-primary;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 0px;
+    text-decoration: none;
+    content:$dsf-logo;
+    
+  }
+  .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    .nav-icon {
+      background: #ffffff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
     }
-    .nav-link  span {
-      letter-spacing: 3px;
-      
-      }
-      .nav-link  span :focus {
-        background-color: $dsf-primary;
-        color:$dsf-white;
-        }
-        .dropdown-item {
-          letter-spacing: 3px;
-        }
+    .nav-icon:before,
+    .nav-icon:after {
+  background: #ffffff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.nav-icon:before {
+  top: 6px;
+}
+
+.nav-icon:after {
+  top: -6px;
+}
+  }
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+  }
   }
 
+  /* 48em = 768px @ 16pt font */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
 
 
