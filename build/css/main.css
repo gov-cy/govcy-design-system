@@ -7,6 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10394,7 +10395,7 @@ textarea.form-control-lg {
   top: -1px;
 }
 
-.alert, .alert-important, .alert-success, .alert-error {
+.alert, .dsf-alert-important, .dsf-alert-success, .dsf-alert-error {
   position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
@@ -17217,7 +17218,7 @@ textarea.form-control-lg {
   border-radius: 0.2rem;
 }
 
-.alert, .alert-important, .alert-success, .alert-error {
+.alert, .dsf-alert-important, .dsf-alert-success, .dsf-alert-error {
   position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
@@ -17316,7 +17317,7 @@ textarea.form-control-lg {
   color: #101214;
 }
 
-.alert-error {
+.dsf-alert-error {
   font-weight: bold;
   border: solid 5px;
   background-color: #fff;
@@ -17324,28 +17325,28 @@ textarea.form-control-lg {
   margin-right: 10px;
   border-color: red;
 }
-.alert-error h2, .alert-error .h2 {
+.dsf-alert-error h2, .dsf-alert-error .h2 {
   height: 50px;
 }
-.alert-error p {
+.dsf-alert-error p {
   padding-left: 10px;
   font-size: x-large;
 }
-.alert-error a {
+.dsf-alert-error a {
   font-size: x-large;
 }
-.alert-error h2, .alert-error .h2 {
+.dsf-alert-error h2, .dsf-alert-error .h2 {
   color: black;
 }
-.alert-error p {
+.dsf-alert-error p {
   color: red;
   margin-bottom: 0px;
 }
-.alert-error a {
+.dsf-alert-error a {
   color: red;
 }
 
-.alert-success {
+.dsf-alert-success {
   font-weight: bold;
   border: solid 5px;
   background-color: #fff;
@@ -17361,43 +17362,43 @@ textarea.form-control-lg {
   padding-left: 0px;
   border-color: olivedrab;
 }
-.alert-success h2, .alert-success .h2 {
+.dsf-alert-success h2, .dsf-alert-success .h2 {
   height: 50px;
 }
-.alert-success p {
+.dsf-alert-success p {
   padding-left: 10px;
   font-size: x-large;
 }
-.alert-success a {
+.dsf-alert-success a {
   font-size: x-large;
 }
-.alert-success h2, .alert-success .h2 {
+.dsf-alert-success h2, .dsf-alert-success .h2 {
   height: 50px;
 }
-.alert-success p {
+.dsf-alert-success p {
   padding-left: 10px;
   font-size: x-large;
 }
-.alert-success a {
+.dsf-alert-success a {
   font-size: x-large;
 }
-.alert-success h2, .alert-success .h2, .alert-success p, .alert-success a {
+.dsf-alert-success h2, .dsf-alert-success .h2, .dsf-alert-success p, .dsf-alert-success a {
   padding-left: 20px;
 }
-.alert-success h2, .alert-success .h2 {
+.dsf-alert-success h2, .dsf-alert-success .h2 {
   color: white;
 }
-.alert-success p {
+.dsf-alert-success p {
   color: black;
 }
-.alert-success h2, .alert-success .h2 {
+.dsf-alert-success h2, .dsf-alert-success .h2 {
   background-color: olivedrab;
 }
-.alert-success a {
+.dsf-alert-success a {
   padding-left: 0px;
 }
 
-.alert-important {
+.dsf-alert-important {
   font-weight: bold;
   border: solid 5px;
   background-color: #fff;
@@ -17413,36 +17414,36 @@ textarea.form-control-lg {
   padding-left: 0px;
   border-color: steelblue;
 }
-.alert-important h2, .alert-important .h2 {
+.dsf-alert-important h2, .dsf-alert-important .h2 {
   height: 50px;
 }
-.alert-important p {
+.dsf-alert-important p {
   padding-left: 10px;
   font-size: x-large;
 }
-.alert-important a {
+.dsf-alert-important a {
   font-size: x-large;
 }
-.alert-important h2, .alert-important .h2 {
+.dsf-alert-important h2, .dsf-alert-important .h2 {
   height: 50px;
 }
-.alert-important p {
+.dsf-alert-important p {
   padding-left: 10px;
   font-size: x-large;
 }
-.alert-important a {
+.dsf-alert-important a {
   font-size: x-large;
 }
-.alert-important h2, .alert-important .h2, .alert-important p, .alert-important a {
+.dsf-alert-important h2, .dsf-alert-important .h2, .dsf-alert-important p, .dsf-alert-important a {
   padding-left: 20px;
 }
-.alert-important h2, .alert-important .h2 {
+.dsf-alert-important h2, .dsf-alert-important .h2 {
   color: white;
 }
-.alert-important p {
+.dsf-alert-important p {
   color: black;
 }
-.alert-important h2, .alert-important .h2 {
+.dsf-alert-important h2, .dsf-alert-important .h2 {
   background-color: steelblue;
 }
 
