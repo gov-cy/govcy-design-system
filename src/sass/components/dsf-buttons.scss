@@ -5,7 +5,7 @@
 
     // Create dsf-btn mixin by extending bootstrap .btn class
 
-    @mixin dsf-btn {
+    @mixin dsf-btn-variants{
         @extend .btn;
         &:not(.disabled):not(:disabled) {
             &:hover {
@@ -19,6 +19,10 @@
                 box-shadow: none;
             }
         }
+    }
+
+    .dsf-btn{
+        @include dsf-btn-variants; 
         &-sm{
             @extend .btn-sm;
         }
@@ -26,11 +30,10 @@
             @extend .btn-lg;
         }
     }
-
     // create DSF Primary button by using dsf-btn mixin
 
     .dsf-btn-primary {
-        @include dsf-btn;
+        @include dsf-btn-variants;
         background-color: $dsf-primary; 
         color: $dsf-white;
         &:hover {
@@ -42,7 +45,7 @@
     // create DSF secondary button by using dsf-btn mixin
 
     .dsf-btn-secondary {
-        @include dsf-btn;
+        @include dsf-btn-variants;
         background-color: $dsf-btn-secondary-bg; 
         color: $dsf-body !important;
         &:hover {
@@ -53,7 +56,7 @@
     // create DSF Success button by using dsf-btn mixin
 
     .dsf-btn-success {
-        @include dsf-btn;
+        @include dsf-btn-variants;
         background-color: $dsf-btn-success-bg; 
         color: $dsf-white;
         &:hover {
