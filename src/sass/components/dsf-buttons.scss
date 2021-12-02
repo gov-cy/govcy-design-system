@@ -2,9 +2,64 @@
 // This file contains the custom styles for the buttons, if any.
 // --------------------------------------------------------------------------
 
-.dsf-btn-primary {
-    @extend .btn;
-    background-color: $dsf-secondary;
-    border: $dsf-secondary;
-    font-weight: 100;
-}
+
+    // Create dsf-btn mixin by extending bootstrap .btn class
+
+    @mixin dsf-btn-variants{
+        @extend .btn;
+        &:not(.disabled):not(:disabled) {
+            &:hover {
+                color: $dsf-white;
+            }
+
+            &:focus {
+                color: $dsf-body;
+                background-color: $dsf-btn-focus-bg;
+                border: 2px solid;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .dsf-btn{
+        @include dsf-btn-variants; 
+        &-sm{
+            @extend .btn-sm;
+        }
+        &-lg{
+            @extend .btn-lg;
+        }
+    }
+    // create DSF Primary button by using dsf-btn mixin
+
+    .dsf-btn-primary {
+        @include dsf-btn-variants;
+        background-color: $dsf-primary; 
+        color: $dsf-white;
+        &:hover {
+            background-color: $dsf-btn-primary-hover-bg;
+        }    
+    }
+
+
+    // create DSF secondary button by using dsf-btn mixin
+
+    .dsf-btn-secondary {
+        @include dsf-btn-variants;
+        background-color: $dsf-btn-secondary-bg; 
+        color: $dsf-body !important;
+        &:hover {
+            background-color: $dsf-btn-secondary-hover-bg;
+        }    
+    }
+
+    // create DSF Success button by using dsf-btn mixin
+
+    .dsf-btn-success {
+        @include dsf-btn-variants;
+        background-color: $dsf-btn-success-bg; 
+        color: $dsf-white;
+        &:hover {
+            background-color: $dsf-btn-success-hover-bg;
+        } 
+    }
