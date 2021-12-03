@@ -8058,7 +8058,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .dsf-btn-success, .btn-check[disabled] + .dsf-btn-secondary, .btn-check[disabled] + .dsf-btn-primary, .btn-check[disabled] + .dsf-btn, .btn-check:disabled + .btn, .btn-check:disabled + .dsf-btn-success, .btn-check:disabled + .dsf-btn-secondary, .btn-check:disabled + .dsf-btn-primary, .btn-check:disabled + .dsf-btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -8217,11 +8217,11 @@ textarea.form-control-lg {
 .input-group > .form-select:focus {
   z-index: 3;
 }
-.input-group .btn {
+.input-group .btn, .input-group .dsf-btn-success, .input-group .dsf-btn-secondary, .input-group .dsf-btn-primary, .input-group .dsf-btn {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus {
+.input-group .btn:focus, .input-group .dsf-btn-success:focus, .input-group .dsf-btn-secondary:focus, .input-group .dsf-btn-primary:focus, .input-group .dsf-btn:focus {
   z-index: 3;
 }
 
@@ -8243,7 +8243,11 @@ textarea.form-control-lg {
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn {
+.input-group-lg > .btn,
+.input-group-lg > .dsf-btn-success,
+.input-group-lg > .dsf-btn-secondary,
+.input-group-lg > .dsf-btn-primary,
+.input-group-lg > .dsf-btn {
   padding: 0.5rem 1rem;
   font-size: calc(1.2735rem + 0.282vw);
   border-radius: 0.3rem;
@@ -8252,7 +8256,11 @@ textarea.form-control-lg {
   .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn {
+.input-group-lg > .btn,
+.input-group-lg > .dsf-btn-success,
+.input-group-lg > .dsf-btn-secondary,
+.input-group-lg > .dsf-btn-primary,
+.input-group-lg > .dsf-btn {
     font-size: 1.485rem;
   }
 }
@@ -8260,7 +8268,11 @@ textarea.form-control-lg {
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn {
+.input-group-sm > .btn,
+.input-group-sm > .dsf-btn-success,
+.input-group-sm > .dsf-btn-secondary,
+.input-group-sm > .dsf-btn-primary,
+.input-group-sm > .dsf-btn {
   padding: 0.25rem 0.5rem;
   font-size: 1.0395rem;
   border-radius: 0.2rem;
@@ -8465,7 +8477,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.btn {
+.btn, .dsf-btn-success, .dsf-btn-secondary, .dsf-btn-primary, .dsf-btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -8483,18 +8495,18 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn {
+  .btn, .dsf-btn-success, .dsf-btn-secondary, .dsf-btn-primary, .dsf-btn {
     transition: none;
   }
 }
-.btn:hover {
+.btn:hover, .dsf-btn-success:hover, .dsf-btn-secondary:hover, .dsf-btn-primary:hover, .dsf-btn:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn:focus {
+.btn-check:focus + .btn, .btn-check:focus + .dsf-btn-success, .btn-check:focus + .dsf-btn-secondary, .btn-check:focus + .dsf-btn-primary, .btn-check:focus + .dsf-btn, .btn:focus, .dsf-btn-success:focus, .dsf-btn-secondary:focus, .dsf-btn-primary:focus, .dsf-btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+.btn:disabled, .dsf-btn-success:disabled, .dsf-btn-secondary:disabled, .dsf-btn-primary:disabled, .dsf-btn:disabled, .btn.disabled, .disabled.dsf-btn-success, .disabled.dsf-btn-secondary, .disabled.dsf-btn-primary, .disabled.dsf-btn, fieldset:disabled .btn, fieldset:disabled .dsf-btn-success, fieldset:disabled .dsf-btn-secondary, fieldset:disabled .dsf-btn-primary, fieldset:disabled .dsf-btn {
   pointer-events: none;
   opacity: 0.65;
 }
@@ -8951,18 +8963,18 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .dsf-btn-lg, .btn-group-lg > .btn, .btn-group-lg > .dsf-btn-success, .btn-group-lg > .dsf-btn-secondary, .btn-group-lg > .dsf-btn-primary, .btn-group-lg > .dsf-btn {
   padding: 0.5rem 1rem;
   font-size: calc(1.2735rem + 0.282vw);
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
-  .btn-lg, .btn-group-lg > .btn {
+  .btn-lg, .dsf-btn-lg, .btn-group-lg > .btn, .btn-group-lg > .dsf-btn-success, .btn-group-lg > .dsf-btn-secondary, .btn-group-lg > .dsf-btn-primary, .btn-group-lg > .dsf-btn {
     font-size: 1.485rem;
   }
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .dsf-btn-sm, .btn-group-sm > .btn, .btn-group-sm > .dsf-btn-success, .btn-group-sm > .dsf-btn-secondary, .btn-group-sm > .dsf-btn-primary, .btn-group-sm > .dsf-btn {
   padding: 0.25rem 0.5rem;
   font-size: 1.0395rem;
   border-radius: 0.2rem;
@@ -9317,23 +9329,71 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, .btn-group > .dsf-btn-success, .btn-group > .dsf-btn-secondary, .btn-group > .dsf-btn-primary, .btn-group > .dsf-btn,
+.btn-group-vertical > .btn,
+.btn-group-vertical > .dsf-btn-success,
+.btn-group-vertical > .dsf-btn-secondary,
+.btn-group-vertical > .dsf-btn-primary,
+.btn-group-vertical > .dsf-btn {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .dsf-btn-success, .btn-group > .btn-check:checked + .dsf-btn-secondary, .btn-group > .btn-check:checked + .dsf-btn-primary, .btn-group > .btn-check:checked + .dsf-btn,
 .btn-group > .btn-check:focus + .btn,
+.btn-group > .btn-check:focus + .dsf-btn-success,
+.btn-group > .btn-check:focus + .dsf-btn-secondary,
+.btn-group > .btn-check:focus + .dsf-btn-primary,
+.btn-group > .btn-check:focus + .dsf-btn,
 .btn-group > .btn:hover,
+.btn-group > .dsf-btn-success:hover,
+.btn-group > .dsf-btn-secondary:hover,
+.btn-group > .dsf-btn-primary:hover,
+.btn-group > .dsf-btn:hover,
 .btn-group > .btn:focus,
+.btn-group > .dsf-btn-success:focus,
+.btn-group > .dsf-btn-secondary:focus,
+.btn-group > .dsf-btn-primary:focus,
+.btn-group > .dsf-btn:focus,
 .btn-group > .btn:active,
+.btn-group > .dsf-btn-success:active,
+.btn-group > .dsf-btn-secondary:active,
+.btn-group > .dsf-btn-primary:active,
+.btn-group > .dsf-btn:active,
 .btn-group > .btn.active,
+.btn-group > .active.dsf-btn-success,
+.btn-group > .active.dsf-btn-secondary,
+.btn-group > .active.dsf-btn-primary,
+.btn-group > .active.dsf-btn,
 .btn-group-vertical > .btn-check:checked + .btn,
+.btn-group-vertical > .btn-check:checked + .dsf-btn-success,
+.btn-group-vertical > .btn-check:checked + .dsf-btn-secondary,
+.btn-group-vertical > .btn-check:checked + .dsf-btn-primary,
+.btn-group-vertical > .btn-check:checked + .dsf-btn,
 .btn-group-vertical > .btn-check:focus + .btn,
+.btn-group-vertical > .btn-check:focus + .dsf-btn-success,
+.btn-group-vertical > .btn-check:focus + .dsf-btn-secondary,
+.btn-group-vertical > .btn-check:focus + .dsf-btn-primary,
+.btn-group-vertical > .btn-check:focus + .dsf-btn,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > .dsf-btn-success:hover,
+.btn-group-vertical > .dsf-btn-secondary:hover,
+.btn-group-vertical > .dsf-btn-primary:hover,
+.btn-group-vertical > .dsf-btn:hover,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > .dsf-btn-success:focus,
+.btn-group-vertical > .dsf-btn-secondary:focus,
+.btn-group-vertical > .dsf-btn-primary:focus,
+.btn-group-vertical > .dsf-btn:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.btn-group-vertical > .dsf-btn-success:active,
+.btn-group-vertical > .dsf-btn-secondary:active,
+.btn-group-vertical > .dsf-btn-primary:active,
+.btn-group-vertical > .dsf-btn:active,
+.btn-group-vertical > .btn.active,
+.btn-group-vertical > .active.dsf-btn-success,
+.btn-group-vertical > .active.dsf-btn-secondary,
+.btn-group-vertical > .active.dsf-btn-primary,
+.btn-group-vertical > .active.dsf-btn {
   z-index: 1;
 }
 
@@ -9346,18 +9406,30 @@ textarea.form-control-lg {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .dsf-btn-success:not(:first-child), .btn-group > .dsf-btn-secondary:not(:first-child), .btn-group > .dsf-btn-primary:not(:first-child), .btn-group > .dsf-btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn {
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .dsf-btn-success:not(:last-child):not(.dropdown-toggle), .btn-group > .dsf-btn-secondary:not(:last-child):not(.dropdown-toggle), .btn-group > .dsf-btn-primary:not(:last-child):not(.dropdown-toggle), .btn-group > .dsf-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .dsf-btn-success,
+.btn-group > .btn-group:not(:last-child) > .dsf-btn-secondary,
+.btn-group > .btn-group:not(:last-child) > .dsf-btn-primary,
+.btn-group > .btn-group:not(:last-child) > .dsf-btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .dsf-btn-success:nth-child(n+3), .btn-group > .dsf-btn-secondary:nth-child(n+3), .btn-group > .dsf-btn-primary:nth-child(n+3), .btn-group > .dsf-btn:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
-.btn-group > .btn-group:not(:first-child) > .btn {
+.btn-group > :not(.btn-check) + .dsf-btn-success,
+.btn-group > :not(.btn-check) + .dsf-btn-secondary,
+.btn-group > :not(.btn-check) + .dsf-btn-primary,
+.btn-group > :not(.btn-check) + .dsf-btn,
+.btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .dsf-btn-success,
+.btn-group > .btn-group:not(:first-child) > .dsf-btn-secondary,
+.btn-group > .btn-group:not(:first-child) > .dsf-btn-primary,
+.btn-group > .btn-group:not(:first-child) > .dsf-btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -9373,12 +9445,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .dsf-btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .dsf-btn-success + .dropdown-toggle-split, .btn-group-sm > .dsf-btn-secondary + .dropdown-toggle-split, .btn-group-sm > .dsf-btn-primary + .dropdown-toggle-split, .btn-group-sm > .dsf-btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .dsf-btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .dsf-btn-success + .dropdown-toggle-split, .btn-group-lg > .dsf-btn-secondary + .dropdown-toggle-split, .btn-group-lg > .dsf-btn-primary + .dropdown-toggle-split, .btn-group-lg > .dsf-btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -9388,21 +9460,29 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn,
+.btn-group-vertical > .btn, .btn-group-vertical > .dsf-btn-success, .btn-group-vertical > .dsf-btn-secondary, .btn-group-vertical > .dsf-btn-primary, .btn-group-vertical > .dsf-btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .dsf-btn-success:not(:first-child), .btn-group-vertical > .dsf-btn-secondary:not(:first-child), .btn-group-vertical > .dsf-btn-primary:not(:first-child), .btn-group-vertical > .dsf-btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .dsf-btn-success:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .dsf-btn-secondary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .dsf-btn-primary:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .dsf-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .dsf-btn-success,
+.btn-group-vertical > .btn-group:not(:last-child) > .dsf-btn-secondary,
+.btn-group-vertical > .btn-group:not(:last-child) > .dsf-btn-primary,
+.btn-group-vertical > .btn-group:not(:last-child) > .dsf-btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .btn {
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .dsf-btn-success ~ .btn, .btn-group-vertical > .btn ~ .dsf-btn-success, .btn-group-vertical > .dsf-btn-success ~ .dsf-btn-success, .btn-group-vertical > .dsf-btn-secondary ~ .btn, .btn-group-vertical > .dsf-btn-secondary ~ .dsf-btn-success, .btn-group-vertical > .btn ~ .dsf-btn-secondary, .btn-group-vertical > .dsf-btn-success ~ .dsf-btn-secondary, .btn-group-vertical > .dsf-btn-secondary ~ .dsf-btn-secondary, .btn-group-vertical > .dsf-btn-primary ~ .btn, .btn-group-vertical > .dsf-btn-primary ~ .dsf-btn-success, .btn-group-vertical > .dsf-btn-primary ~ .dsf-btn-secondary, .btn-group-vertical > .btn ~ .dsf-btn-primary, .btn-group-vertical > .dsf-btn-success ~ .dsf-btn-primary, .btn-group-vertical > .dsf-btn-secondary ~ .dsf-btn-primary, .btn-group-vertical > .dsf-btn-primary ~ .dsf-btn-primary, .btn-group-vertical > .dsf-btn ~ .btn, .btn-group-vertical > .dsf-btn ~ .dsf-btn-success, .btn-group-vertical > .dsf-btn ~ .dsf-btn-secondary, .btn-group-vertical > .dsf-btn ~ .dsf-btn-primary, .btn-group-vertical > .btn ~ .dsf-btn, .btn-group-vertical > .dsf-btn-success ~ .dsf-btn, .btn-group-vertical > .dsf-btn-secondary ~ .dsf-btn, .btn-group-vertical > .dsf-btn-primary ~ .dsf-btn, .btn-group-vertical > .dsf-btn ~ .dsf-btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .dsf-btn-success,
+.btn-group-vertical > .btn-group:not(:first-child) > .dsf-btn-secondary,
+.btn-group-vertical > .btn-group:not(:first-child) > .dsf-btn-primary,
+.btn-group-vertical > .btn-group:not(:first-child) > .dsf-btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -10390,7 +10470,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge {
+.btn .badge, .dsf-btn-success .badge, .dsf-btn-secondary .badge, .dsf-btn-primary .badge, .dsf-btn .badge {
   position: relative;
   top: -1px;
 }
@@ -11829,7 +11909,7 @@ textarea.form-control-lg {
   background-color: currentColor;
   opacity: 0.5;
 }
-.placeholder.btn::before {
+.placeholder.btn::before, .placeholder.dsf-btn-success::before, .placeholder.dsf-btn-secondary::before, .placeholder.dsf-btn-primary::before, .placeholder.dsf-btn::before {
   display: inline-block;
   content: "";
 }
@@ -16715,7 +16795,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.btn {
+.btn, .dsf-btn-success, .dsf-btn-secondary, .dsf-btn-primary, .dsf-btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -16733,18 +16813,18 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn {
+  .btn, .dsf-btn-success, .dsf-btn-secondary, .dsf-btn-primary, .dsf-btn {
     transition: none;
   }
 }
-.btn:hover {
+.btn:hover, .dsf-btn-success:hover, .dsf-btn-secondary:hover, .dsf-btn-primary:hover, .dsf-btn:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn:focus {
+.btn-check:focus + .btn, .btn-check:focus + .dsf-btn-success, .btn-check:focus + .dsf-btn-secondary, .btn-check:focus + .dsf-btn-primary, .btn-check:focus + .dsf-btn, .btn:focus, .dsf-btn-success:focus, .dsf-btn-secondary:focus, .dsf-btn-primary:focus, .dsf-btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+.btn:disabled, .dsf-btn-success:disabled, .dsf-btn-secondary:disabled, .dsf-btn-primary:disabled, .dsf-btn:disabled, .btn.disabled, .disabled.dsf-btn-success, .disabled.dsf-btn-secondary, .disabled.dsf-btn-primary, .disabled.dsf-btn, fieldset:disabled .btn, fieldset:disabled .dsf-btn-success, fieldset:disabled .dsf-btn-secondary, fieldset:disabled .dsf-btn-primary, fieldset:disabled .dsf-btn {
   pointer-events: none;
   opacity: 0.65;
 }
@@ -17201,18 +17281,18 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .dsf-btn-lg, .btn-group-lg > .btn, .btn-group-lg > .dsf-btn-success, .btn-group-lg > .dsf-btn-secondary, .btn-group-lg > .dsf-btn-primary, .btn-group-lg > .dsf-btn {
   padding: 0.5rem 1rem;
   font-size: calc(1.2735rem + 0.282vw);
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
-  .btn-lg, .btn-group-lg > .btn {
+  .btn-lg, .dsf-btn-lg, .btn-group-lg > .btn, .btn-group-lg > .dsf-btn-success, .btn-group-lg > .dsf-btn-secondary, .btn-group-lg > .dsf-btn-primary, .btn-group-lg > .dsf-btn {
     font-size: 1.485rem;
   }
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .dsf-btn-sm, .btn-group-sm > .btn, .btn-group-sm > .dsf-btn-success, .btn-group-sm > .dsf-btn-secondary, .btn-group-sm > .dsf-btn-primary, .btn-group-sm > .dsf-btn {
   padding: 0.25rem 0.5rem;
   font-size: 1.0395rem;
   border-radius: 0.2rem;
@@ -17482,4 +17562,64 @@ textarea.form-control-lg {
 }
 .dsf-link-text p {
   margin-bottom: 0px;
+}
+
+.dsf-btn:not(.disabled):not(:disabled):hover {
+  color: #FFFFFF;
+}
+.dsf-btn:not(.disabled):not(:disabled):focus {
+  color: #272525;
+  background-color: #ffdd00;
+  border: 2px solid;
+  box-shadow: none;
+}
+.dsf-btn-primary {
+  background-color: #31576F;
+  color: #FFFFFF;
+}
+.dsf-btn-primary:not(.disabled):not(:disabled):hover {
+  color: #FFFFFF;
+}
+.dsf-btn-primary:not(.disabled):not(:disabled):focus {
+  color: #272525;
+  background-color: #ffdd00;
+  border: 2px solid;
+  box-shadow: none;
+}
+.dsf-btn-primary:hover {
+  background-color: #254355;
+}
+
+.dsf-btn-secondary {
+  background-color: #D0D1D3;
+  color: #272525 !important;
+}
+.dsf-btn-secondary:not(.disabled):not(:disabled):hover {
+  color: #FFFFFF;
+}
+.dsf-btn-secondary:not(.disabled):not(:disabled):focus {
+  color: #272525;
+  background-color: #ffdd00;
+  border: 2px solid;
+  box-shadow: none;
+}
+.dsf-btn-secondary:hover {
+  background-color: #A6A8AA;
+}
+
+.dsf-btn-success {
+  background-color: #D4351C;
+  color: #FFFFFF;
+}
+.dsf-btn-success:not(.disabled):not(:disabled):hover {
+  color: #FFFFFF;
+}
+.dsf-btn-success:not(.disabled):not(:disabled):focus {
+  color: #272525;
+  background-color: #ffdd00;
+  border: 2px solid;
+  box-shadow: none;
+}
+.dsf-btn-success:hover {
+  background-color: #AA1D13;
 }
