@@ -1,3 +1,140 @@
+
 // -----------------------------------------------------------------------------
 // This file contains the custom styles for the alerts.
 // -----------------------------------------------------------------------------
+
+
+@mixin dsf-all-alerts {
+    font-weight: bold;
+    border: solid 5px;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    h2 {
+        height:50px; 
+    }
+    p {
+        padding-left: 10px;
+        font-size: x-large;
+    }
+    a {
+        font-size:x-large;
+    }
+}
+
+@mixin dsf-alert-success-important {
+
+    @extend .alert;
+    @include dsf-all-alerts();
+    
+    padding-top:0px;
+    padding-right: 0px;
+    padding-left:0px;
+
+    h2, p , a {
+        
+         padding-left: 20px;
+    }
+    h2 {
+        color :white
+    }
+    p {
+        color : black;
+    }    
+}
+
+.dsf-alert-error {
+    @extend .alert;
+    @include dsf-all-alerts();
+    border-color:   red;
+    h2 {
+         color: black;
+    }
+   
+    p {
+        color: red;
+       margin-bottom: 0px
+
+
+    }
+         a {
+           color:red;
+       }
+
+}
+
+.dsf-alert-success {
+
+    @extend .alert;
+    @include dsf-all-alerts();
+    @include dsf-alert-success-important();
+    border-color: olivedrab;
+
+    h2 {
+        background-color: olivedrab;
+    }   
+
+    a {
+        padding-left: 0px;
+    }
+}
+
+.dsf-alert-important {
+
+    @extend .alert;
+    @include dsf-all-alerts();
+    @include dsf-alert-success-important();
+    border-color: steelblue;
+    
+    h2 {
+        background-color: steelblue;
+    }   
+}
+
+.dsf-panel {
+
+    align-items:center;
+    justify-content:center ;
+    display: flex;
+    height: 150px;
+    background-color: olivedrab;
+    margin-left:10px;
+    margin-right:10px;
+    h1 {
+        color:white;
+    }
+
+        p {
+            color:white;
+            font-size: large;
+        }
+}
+
+.dsf-warning {
+
+         p,i {
+           
+            font-weight: bold;
+            align-items: center;
+            vertical-align: middle;
+            display: flex;
+        }
+        p {
+            font-size: x-large;
+        }
+        i {
+            font-size: xx-large;
+        }
+}
+
+.dsf-link-text {
+
+
+    font-weight: normal;
+
+    p {
+        margin-bottom: 0px;
+    }
+
+}
+
