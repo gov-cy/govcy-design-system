@@ -1,0 +1,136 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+//$dsf-primary: #31576F;
+$dsf-link-color: #254355;
+
+/* menu */
+/* menu icon */
+/* menu btn */
+.dsf-header {
+	font-family: $dsf-font-family;
+	background-color: $dsf-primary;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	// position: fixed;
+	width: 100%;
+	z-index: 3;
+	max-height:100px;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+	}
+	li {
+		a {
+			display: block;
+			padding: 15px !important;
+			color:$dsf-white;
+			//letter-spacing: 3px;
+			text-decoration: none;
+			&:hover {
+				background-color: $dsf-link-color;
+			}
+		}
+	}
+	.menu-btn {
+		&:hover {
+			background-color: $dsf-link-color;
+		}
+		display: none;
+		&:checked {
+			~ {
+				.menu {
+					max-height: 240px;
+				}
+				.menu-icon {
+					.nav-icon {
+						background: transparent;
+						&:before {
+							transform: rotate(-45deg);
+							top: 0;
+						}
+						&:after {
+							transform: rotate(45deg);
+							top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.logo {
+		display: block;
+		float: left;
+		font-size: 2em;
+		padding: 0px;
+		text-decoration: none;
+		content: $dsf-logo;
+	}
+	.menu {
+		clear: both;
+		max-height: 0;
+		transition: max-height .2s ease-out;
+	}
+	.menu-icon {
+		cursor: pointer;
+		float: right;
+		padding: 28px 20px;
+		position: relative;
+		user-select: none;
+		.nav-icon {
+			background: $dsf-white;
+			display: block;
+			height: 2px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 18px;
+			&:before {
+				background: $dsf-white;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: 6px;
+			}
+			&:after {
+				background: $dsf-white;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: -6px;
+			}
+		}
+	}
+}
+  
+
+  /* 48em = 768px @ 16pt font */
+
+  @media (min-width: 48em) {
+    .dsf-header {
+      li {
+        float: left;
+        a {
+          padding: 20px 30px;
+        }
+      }
+      .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .menu-icon {
+        display: none;
+      }
+    }
+  }
+
+
+
+ 
