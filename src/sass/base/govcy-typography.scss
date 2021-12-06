@@ -8,12 +8,12 @@
 
 //DSF base font-family and font styles
 
-$dsf-font-family: 'Roboto', sans-serif;
+$govcy-font-family: 'Roboto', sans-serif;
 
-$dsf-font-size-base: 1.188rem; // 19px
+$govcy-font-size-base: 1.188rem; // 19px
 
 
 //Overiding bootstrap font-family and font styles
 
-$font-family-sans-serif: $dsf-font-family;
-$font-size-base: $dsf-font-size-base;
+$font-family-sans-serif: $govcy-font-family;
+$font-size-base: $govcy-font-size-base;

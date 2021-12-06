@@ -1,15 +1,15 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-//$dsf-primary: #31576F;
-$dsf-link-color: #254355;
+//$govcy-primary: #31576F;
+$govcy-link-color: #254355;
 
 /* menu */
 /* menu icon */
 /* menu btn */
-.dsf-header {
-	font-family: $dsf-font-family;
-	background-color: $dsf-primary;
+.govcy-header {
+	font-family: $govcy-font-family;
+	background-color: $govcy-primary;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	// position: fixed;
 	width: 100%;
@@ -25,17 +25,17 @@ $dsf-link-color: #254355;
 		a {
 			display: block;
 			padding: 15px !important;
-			color:$dsf-white;
+			color:$govcy-white;
 			//letter-spacing: 3px;
 			text-decoration: none;
 			&:hover {
-				background-color: $dsf-link-color;
+				background-color: $govcy-link-color;
 			}
 		}
 	}
 	.menu-btn {
 		&:hover {
-			background-color: $dsf-link-color;
+			background-color: $govcy-link-color;
 		}
 		display: none;
 		&:checked {
@@ -65,7 +65,7 @@ $dsf-link-color: #254355;
 		font-size: 2em;
 		padding: 0px;
 		text-decoration: none;
-		content: $dsf-logo;
+		content: $govcy-logo;
 	}
 	.menu {
 		clear: both;
@@ -79,14 +79,14 @@ $dsf-link-color: #254355;
 		position: relative;
 		user-select: none;
 		.nav-icon {
-			background: $dsf-white;
+			background: $govcy-white;
 			display: block;
 			height: 2px;
 			position: relative;
 			transition: background .2s ease-out;
 			width: 18px;
 			&:before {
-				background: $dsf-white;
+				background: $govcy-white;
 				content: '';
 				display: block;
 				height: 100%;
@@ -96,7 +96,7 @@ $dsf-link-color: #254355;
 				top: 6px;
 			}
 			&:after {
-				background: $dsf-white;
+				background: $govcy-white;
 				content: '';
 				display: block;
 				height: 100%;
@@ -113,7 +113,7 @@ $dsf-link-color: #254355;
   /* 48em = 768px @ 16pt font */
 
   @media (min-width: 48em) {
-    .dsf-header {
+    .govcy-header {
       li {
         float: left;
         a {

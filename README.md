@@ -1,9 +1,9 @@
-# dsf-design-system
+# govcy-design-system
 Gov.cy DSF design system code and documentation.
 
-This is the readme for the dsf-design-system repository.
+This is the readme for the govcy-design-system repository.
 
-The DSF Design System is a package containing:
+The GovCy Design System is a package containing:
 * [SASS](https://sass-lang.com/) files (in `/src`) which compile into a [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) you can use in your services html files to get the look and feel of a GOV.CY service
 * An already compiled and minified [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) so you don't have to compile it yourself, located in `/dist`
 * A set of development dependencies to make developing easier, these are installed by [npm](https://www.npmjs.com/) and listed in `package.json`

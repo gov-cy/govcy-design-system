@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the buttons, if any.
+// --------------------------------------------------------------------------
+
+
+    // Create govcy-btn mixin by extending bootstrap .btn class
+
+    @mixin govcy-btn-variants{
+        @extend .btn;
+        &:not(.disabled):not(:disabled) {
+            &:hover {
+                color: $govcy-white;
+            }
+
+            &:focus {
+                color: $govcy-body;
+                background-color: $govcy-btn-focus-bg;
+                border: 2px solid;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .govcy-btn{
+        @include govcy-btn-variants; 
+        &-sm{
+            @extend .btn-sm;
+        }
+        &-lg{
+            @extend .btn-lg;
+        }
+    }
+    // create DSF Primary button by using govcy-btn mixin
+
+    .govcy-btn-primary {
+        @include govcy-btn-variants;
+        background-color: $govcy-primary; 
+        color: $govcy-white;
+        &:hover {
+            background-color: $govcy-btn-primary-hover-bg;
+        }    
+    }
+
+
+    // create DSF secondary button by using govcy-btn mixin
+
+    .govcy-btn-secondary {
+        @include govcy-btn-variants;
+        background-color: $govcy-btn-secondary-bg; 
+        color: $govcy-body !important;
+        &:hover {
+            background-color: $govcy-btn-secondary-hover-bg;
+        }    
+    }
+
+    // create DSF Success button by using govcy-btn mixin
+
+    .govcy-btn-success {
+        @include govcy-btn-variants;
+        background-color: $govcy-btn-success-bg; 
+        color: $govcy-white;
+        &:hover {
+            background-color: $govcy-btn-success-hover-bg;
+        } 
+    }
