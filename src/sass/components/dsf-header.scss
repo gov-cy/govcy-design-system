@@ -14,6 +14,7 @@ $dsf-link-color: #254355;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
+	max-height:100px;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -24,7 +25,8 @@ $dsf-link-color: #254355;
 		a {
 			display: block;
 			padding: 15px !important;
-			letter-spacing: 3px;
+			color:$dsf-white;
+			//letter-spacing: 3px;
 			text-decoration: none;
 			&:hover {
 				background-color: $dsf-link-color;

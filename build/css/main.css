@@ -17634,6 +17634,7 @@ textarea.form-control-lg {
   position: fixed;
   width: 100%;
   z-index: 3;
+  max-height: 100px;
 }
 .dsf-header ul {
   margin: 0;
@@ -17644,7 +17645,7 @@ textarea.form-control-lg {
 .dsf-header li a {
   display: block;
   padding: 15px !important;
-  letter-spacing: 3px;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .dsf-header li a:hover {
