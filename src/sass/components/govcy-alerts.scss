@@ -4,7 +4,7 @@
 // -----------------------------------------------------------------------------
 
 
-@mixin dsf-all-alerts {
+@mixin govcy-all-alerts {
     font-weight: bold;
     border: solid 5px;
     background-color: #fff;
@@ -22,10 +22,10 @@
     }
 }
 
-@mixin dsf-alert-success-important {
+@mixin govcy-alert-success-important {
 
     @extend .alert;
-    @include dsf-all-alerts();
+    @include govcy-all-alerts();
     
     padding-top:0px;
     padding-right: 0px;
@@ -43,9 +43,9 @@
     }    
 }
 
-.dsf-alert-error {
+.govcy-alert-error {
     @extend .alert;
-    @include dsf-all-alerts();
+    @include govcy-all-alerts();
     border-color:   red;
     h2 {
          color: black;
@@ -63,11 +63,11 @@
 
 }
 
-.dsf-alert-success {
+.govcy-alert-success {
 
     @extend .alert;
-    @include dsf-all-alerts();
-    @include dsf-alert-success-important();
+    @include govcy-all-alerts();
+    @include govcy-alert-success-important();
     border-color: olivedrab;
 
     h2 {
@@ -79,11 +79,11 @@
     }
 }
 
-.dsf-alert-important {
+.govcy-alert-important {
 
     @extend .alert;
-    @include dsf-all-alerts();
-    @include dsf-alert-success-important();
+    @include govcy-all-alerts();
+    @include govcy-alert-success-important();
     border-color: steelblue;
     
     h2 {
@@ -91,7 +91,7 @@
     }   
 }
 
-.dsf-panel {
+.govcy-panel {
 
     align-items:center;
     justify-content:center ;
@@ -110,7 +110,7 @@
         }
 }
 
-.dsf-warning {
+.govcy-warning {
 
          p,i {
            
@@ -127,7 +127,7 @@
         }
 }
 
-.dsf-link-text {
+.govcy-link-text {
 
 
     font-weight: normal;
