@@ -17640,6 +17640,7 @@ textarea.form-control-lg {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  background-color: #31576F;
 }
 .govcy-header li a {
   display: block;
