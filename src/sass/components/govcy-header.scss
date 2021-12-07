@@ -22,6 +22,8 @@ $govcy-link-color: #254355;
 		overflow: hidden;
 		background-color: $govcy-primary;
 	}
+	
+	
 	li {
 		a {
 			display: block;
@@ -67,6 +69,11 @@ $govcy-link-color: #254355;
 		padding: 0px;
 		text-decoration: none;
 		content: $govcy-logo;
+	}
+	.service-name {
+		float: left;
+		color: $govcy-white;
+		padding: 1rem;
 	}
 	.menu {
 		clear: both;
