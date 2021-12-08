@@ -31,7 +31,7 @@ $govcy-link-color: #254355;
 			display: block;
 			padding: 0.9rem !important;
 			color:$govcy-white;
-			//letter-spacing: 3px;
+			border-top: 2px solid #31576F;
 			text-decoration: none;
 			&:hover {
 				background-color: $govcy-link-color;
@@ -94,6 +94,7 @@ $govcy-link-color: #254355;
 	}  
 	  }
 	.service-name {
+		display: none;
 		float: left;
 		color: $govcy-white;
 		padding: 0.9rem;
@@ -107,13 +108,16 @@ $govcy-link-color: #254355;
 	.menu-icon {
 		cursor: pointer;
 		float: right;
-		// padding: 28px 20px;
-		//position: relative;
-	//	user-select: none;
-		padding: 1rem;
+		//  padding: 28px 20px;
+		position: relative;
+		user-select: none;
+		padding: 0.1rem;
+		display:flex;
+		align-items: center;
     color: white;
-		.carot {
-			background: $govcy-white;
+		.carot-icon {
+			margin: 0.9rem;
+			//background: $govcy-white;
 			//display: block;
 			//height: 2px;
 		//position: relative;
@@ -142,7 +146,12 @@ $govcy-link-color: #254355;
           padding: 20px 30px;
         }
       }
-	 
+	  .service-name {
+		  display: block;
+		float: left;
+		color: $govcy-white;
+		padding: 0.9rem;
+	}
 	
       .menu {
         clear: none;
