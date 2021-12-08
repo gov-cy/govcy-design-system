@@ -8,6 +8,7 @@ $govcy-link-color: #254355;
 /* menu icon */
 /* menu btn */
 .govcy-header {
+	padding: 0px;
 	font-family: $govcy-font-family;
 	background-color: $govcy-primary;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -20,14 +21,15 @@ $govcy-link-color: #254355;
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		background-color: $govcy-primary;
+	    background-color: #577589;
 	}
 	
 	
 	li {
+		
 		a {
 			display: block;
-			padding: 15px !important;
+			padding: 0.9rem !important;
 			color:$govcy-white;
 			//letter-spacing: 3px;
 			text-decoration: none;
@@ -36,6 +38,7 @@ $govcy-link-color: #254355;
 			}
 		}
 	}
+}
 	.menu-btn {
 		&:hover {
 			background-color: $govcy-link-color;
@@ -70,64 +73,77 @@ $govcy-link-color: #254355;
 		text-decoration: none;
 		content: $govcy-logo;
 	}
+	form {
+		  
+		#lang-menu {
+		// cursor: pointer;
+		float: right;
+	   // padding: 28px 20px;
+		// position: relative;
+		// user-select: none;
+		color:$govcy-white;
+		margin: 0.9rem;
+		background-color: $govcy-primary;
+			option {
+			background-color: #577589;
+			// display: block;
+			// padding: 15px !important;
+			
+			// width:100% !important;
+		}
+	}  
+	  }
 	.service-name {
 		float: left;
 		color: $govcy-white;
-		padding: 1rem;
+		padding: 0.9rem;
 	}
 	.menu {
 		clear: both;
 		max-height: 0;
 		transition: max-height .2s ease-out;
+		
 	}
 	.menu-icon {
 		cursor: pointer;
 		float: right;
-		padding: 28px 20px;
-		position: relative;
-		user-select: none;
-		.nav-icon {
+		// padding: 28px 20px;
+		//position: relative;
+	//	user-select: none;
+		padding: 1rem;
+    color: white;
+		.carot {
 			background: $govcy-white;
-			display: block;
-			height: 2px;
-			position: relative;
-			transition: background .2s ease-out;
-			width: 18px;
-			&:before {
-				background: $govcy-white;
-				content: '';
-				display: block;
-				height: 100%;
-				position: absolute;
-				transition: all .2s ease-out;
-				width: 100%;
-				top: 6px;
-			}
-			&:after {
-				background: $govcy-white;
-				content: '';
-				display: block;
-				height: 100%;
-				position: absolute;
-				transition: all .2s ease-out;
-				width: 100%;
-				top: -6px;
-			}
+			//display: block;
+			//height: 2px;
+		//position: relative;
+			//transition: background .2s ease-out;
+			//width: 18px;
+		
+			
 		}
 	}
-}
+
   
 
   /* 48em = 768px @ 16pt font */
 
   @media (min-width: 48em) {
     .govcy-header {
+		ul{
+			background-color: $govcy-primary;
+		}
+	 
       li {
+		
         float: left;
         a {
+			
           padding: 20px 30px;
         }
       }
+	 
+	
       .menu {
         clear: none;
         float: right;
