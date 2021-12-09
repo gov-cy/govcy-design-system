@@ -6,64 +6,73 @@
 // base colours
  
 
-$govcy-base-colors: (
-    "dark-blue": #31576F,
-    "gold": #B09038,
-    "yellow": #ffdd00,
-    "dark-green": #505E31,
-    "red": #D62518,
-    "red-400": #AA1D13,
+$govcy-brand-colors: (
+    "primary": #31576F,
+    "secondary": #B09038,
+    "success": #505E31,
     "danger": #D4351C,
-    "blue": #52879D,
-    "gray-200": #D0D1D3, 
-    "gray": #BBBCBF,
-    "gray-400": #A6A8AA,
-    "dark-gray": #272525,
-    "purple": #2c1a4d,
-    "white" : #FFFFFF,
-    "black": #000000,
-    "dark-blue-200": #254355,
-    );
+    "info": #52879D,
+    "focus" : #ffdd00,
+    "body" : #272525,
+    "hint" : #6D6E70,
+    "link-standard" : #1d70b8,
+    "link-hover" : #003078,
+    "link-visited" : #4c2c92,
+    "danger-hover" : #942514,
+    "border-standard" : #BBBCBF,
+    "button-primary-hover" : #254355,
+    "button-secondary" : #D0D1D3,
+    "button-secondary-hover" : #A6A8AA,
+    "button-tirtiary-hover" : #AA1D13,
+    "button-success-hover" : #274e13,
+    "black" : #000000,
+    "white" : #ffffff,
+);
 
-$govcy-primary: map-get($govcy-base-colors, "dark-blue");
-$govcy-secondary: map-get($govcy-base-colors, "gold");
-$govcy-success: map-get($govcy-base-colors, "dark-green");
-$govcy-danger: map-get($govcy-base-colors, "red");
-$govcy-info: map-get($govcy-base-colors, "blue");
+
+$govcy-primary: map-get($govcy-brand-colors, "primary");
+$govcy-secondary: map-get($govcy-brand-colors, "secondary");
+
+// status colors
+$govcy-success: map-get($govcy-brand-colors, "success");
+$govcy-danger: map-get($govcy-brand-colors, "danger");
+$govcy-info: map-get($govcy-brand-colors, "info");
 
 // typography colors
-$govcy-body: map-get($govcy-base-colors, "dark-gray");
-$govcy-heading-text: $govcy-body;
-$govcy-hint-text: map-get($govcy-base-colors, "gray");
-
-$govcy-white: map-get($govcy-base-colors, "white");
-$govcy-black: map-get($govcy-base-colors, "black");
-
+$govcy-body: map-get($govcy-brand-colors, "body");
+$govcy-heading: $govcy-body;
+$govcy-hint: map-get($govcy-brand-colors, "hint");
+$govcy-white: map-get($govcy-brand-colors, "white");
+$govcy-black: map-get($govcy-brand-colors, "black");
 
 // link colors
-
-$govcy-link-color: map-get($govcy-base-colors, "blue");
-$govcy-link-hover-color: map-get($govcy-base-colors, "dark-blue");
-$govcy-link-visited-color: map-get($govcy-base-colors, "purple");
-$govcy-link-active-color: map-get($govcy-base-colors, "dark-gray");
+$govcy-link: map-get($govcy-brand-colors, "link-standard");
+$govcy-link-hover: map-get($govcy-brand-colors, "link-hover");
+$govcy-link-visited: map-get($govcy-brand-colors, "link-visited");
+$govcy-link-active: $govcy-body;
+$govcy-danger-hover: map-get($govcy-brand-colors, "danger-hover");
 
 // border colors
-
-$govcy-border-color: map-get($govcy-base-colors, "light-gray");
-$govcy-border-input-color: map-get($govcy-base-colors, "dark-gray");
+$govcy-border-standard: map-get($govcy-brand-colors, "border-standard");
+$govcy-border-input: $govcy-body;
 
 // button colors
+$govcy-btn-primary: $govcy-primary;
+$govcy-btn-primary-hover: map-get($govcy-brand-colors, "button-primary-hover");
 
-$govcy-btn-primary-hover-bg: map-get($govcy-base-colors, "dark-blue-200");
+$govcy-btn-secondary: map-get($govcy-brand-colors, "button-secondary");
+$govcy-btn-secondary-hover: map-get($govcy-brand-colors, "button-secondary-hover");
 
-$govcy-btn-secondary-bg: map-get($govcy-base-colors, "gray-200");
-$govcy-btn-secondary-hover-bg: map-get($govcy-base-colors, "gray-400");
+$govcy-btn-tirtiary: $govcy-danger;
+$govcy-btn-tirtiary-hover: map-get($govcy-brand-colors, "button-tirtiary-hover");
 
-$govcy-btn-success-bg: map-get($govcy-base-colors, "danger");
-$govcy-btn-success-hover-bg: map-get($govcy-base-colors, "red-400");
+$govcy-btn-success: $govcy-success;
+$govcy-btn-success-hover: map-get($govcy-brand-colors, "button-success-hover");
+
+$govcy-btn-focus :map-get($govcy-brand-colors, "focus");
 
 
-$govcy-btn-focus-bg :map-get($govcy-base-colors, "yellow");
+
 
 
 //logo variable
