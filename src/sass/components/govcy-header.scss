@@ -47,16 +47,14 @@ $padding:0.9rem;
 			~ {
 				.menu {
 					max-height: 240px;
-					.carot-icon{
-						&:before {
-							transform: rotate(-25deg);
-							top: 0;
-						}
-						&:after {
-							transform: rotate(25deg);
-							top: 0;
-						}
-					}
+					 }
+				.menu-icon{
+				.carot-icon{
+				display: block;		
+				transform: rotate(180deg);
+				top: 0;	
+				}
+					
 				}
 				
 			}

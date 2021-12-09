@@ -17666,12 +17666,9 @@ textarea.form-control-lg {
 .menu-btn:checked ~ .menu {
   max-height: 240px;
 }
-.menu-btn:checked ~ .menu .carot-icon:before {
-  transform: rotate(-25deg);
-  top: 0;
-}
-.menu-btn:checked ~ .menu .carot-icon:after {
-  transform: rotate(25deg);
+.menu-btn:checked ~ .menu-icon .carot-icon {
+  display: block;
+  transform: rotate(180deg);
   top: 0;
 }
 
