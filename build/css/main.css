@@ -17565,7 +17565,7 @@ textarea.form-control-lg {
 }
 
 .govcy-btn:not(.disabled):not(:disabled):hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .govcy-btn:not(.disabled):not(:disabled):focus {
   color: #272525;
@@ -17575,10 +17575,10 @@ textarea.form-control-lg {
 }
 .govcy-btn-primary {
   background-color: #31576F;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .govcy-btn-primary:not(.disabled):not(:disabled):hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .govcy-btn-primary:not(.disabled):not(:disabled):focus {
   color: #272525;
@@ -17595,7 +17595,7 @@ textarea.form-control-lg {
   color: #272525 !important;
 }
 .govcy-btn-secondary:not(.disabled):not(:disabled):hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .govcy-btn-secondary:not(.disabled):not(:disabled):focus {
   color: #272525;
@@ -17608,11 +17608,11 @@ textarea.form-control-lg {
 }
 
 .govcy-btn-success {
-  background-color: #D4351C;
-  color: #FFFFFF;
+  background-color: #505E31;
+  color: #ffffff;
 }
 .govcy-btn-success:not(.disabled):not(:disabled):hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .govcy-btn-success:not(.disabled):not(:disabled):focus {
   color: #272525;
@@ -17621,7 +17621,7 @@ textarea.form-control-lg {
   box-shadow: none;
 }
 .govcy-btn-success:hover {
-  background-color: #AA1D13;
+  background-color: #274e13;
 }
 
 /* menu */
@@ -17645,7 +17645,7 @@ textarea.form-control-lg {
 .govcy-header li a {
   display: block;
   padding: 15px !important;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 .govcy-header li a:hover {
@@ -17692,7 +17692,7 @@ textarea.form-control-lg {
   user-select: none;
 }
 .govcy-header .menu-icon .nav-icon {
-  background: #FFFFFF;
+  background: #ffffff;
   display: block;
   height: 2px;
   position: relative;
@@ -17700,7 +17700,7 @@ textarea.form-control-lg {
   width: 18px;
 }
 .govcy-header .menu-icon .nav-icon:before {
-  background: #FFFFFF;
+  background: #ffffff;
   content: "";
   display: block;
   height: 100%;
@@ -17710,7 +17710,7 @@ textarea.form-control-lg {
   top: 6px;
 }
 .govcy-header .menu-icon .nav-icon:after {
-  background: #FFFFFF;
+  background: #ffffff;
   content: "";
   display: block;
   height: 100%;

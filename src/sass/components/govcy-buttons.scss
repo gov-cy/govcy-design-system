@@ -14,7 +14,7 @@
 
             &:focus {
                 color: $govcy-body;
-                background-color: $govcy-btn-focus-bg;
+                background-color: $govcy-btn-focus;
                 border: 2px solid;
                 box-shadow: none;
             }
@@ -37,7 +37,7 @@
         background-color: $govcy-primary; 
         color: $govcy-white;
         &:hover {
-            background-color: $govcy-btn-primary-hover-bg;
+            background-color: $govcy-btn-primary-hover;
         }    
     }
 
@@ -46,10 +46,10 @@
 
     .govcy-btn-secondary {
         @include govcy-btn-variants;
-        background-color: $govcy-btn-secondary-bg; 
+        background-color: $govcy-btn-secondary; 
         color: $govcy-body !important;
         &:hover {
-            background-color: $govcy-btn-secondary-hover-bg;
+            background-color: $govcy-btn-secondary-hover;
         }    
     }
 
@@ -57,9 +57,9 @@
 
     .govcy-btn-success {
         @include govcy-btn-variants;
-        background-color: $govcy-btn-success-bg; 
+        background-color: $govcy-btn-success; 
         color: $govcy-white;
         &:hover {
-            background-color: $govcy-btn-success-hover-bg;
+            background-color: $govcy-btn-success-hover;
         } 
     }
