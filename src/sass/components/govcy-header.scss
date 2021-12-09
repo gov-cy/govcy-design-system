@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 //$govcy-primary: #31576F;
 $govcy-link-color: #254355;
-
+$govcy-sub-menu-color:#577589;
 /* menu */
 /* menu icon */
 /* menu btn */
@@ -12,7 +12,6 @@ $govcy-link-color: #254355;
 	font-family: $govcy-font-family;
 	background-color: $govcy-primary;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-	// position: fixed;
 	width: 100%;
 	z-index: 3;
 	max-height:100px;
@@ -21,12 +20,9 @@ $govcy-link-color: #254355;
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-	    background-color: #577589;
+	    background-color: $govcy-sub-menu-color;
 	}
-	
-	
 	li {
-		
 		a {
 			display: block;
 			padding: 0.9rem !important;
@@ -49,19 +45,7 @@ $govcy-link-color: #254355;
 				.menu {
 					max-height: 240px;
 				}
-				.menu-icon {
-					.nav-icon {
-						background: transparent;
-						&:before {
-							transform: rotate(-45deg);
-							top: 0;
-						}
-						&:after {
-							transform: rotate(45deg);
-							top: 0;
-						}
-					}
-				}
+				
 			}
 		}
 	}
@@ -76,21 +60,13 @@ $govcy-link-color: #254355;
 	form {
 		  
 		#lang-menu {
-		// cursor: pointer;
 		float: right;
-	   // padding: 28px 20px;
-		// position: relative;
-		// user-select: none;
-		color:$govcy-white;
+	   	color:$govcy-white;
 		margin: 0.9rem;
 		background-color: $govcy-primary;
 			option {
-			background-color: #577589;
-			// display: block;
-			// padding: 15px !important;
-			
-			// width:100% !important;
-		}
+			background-color: $govcy-sub-menu-color;
+			}
 	}  
 	  }
 	.service-name {
@@ -103,12 +79,10 @@ $govcy-link-color: #254355;
 		clear: both;
 		max-height: 0;
 		transition: max-height .2s ease-out;
-		
 	}
 	.menu-icon {
 		cursor: pointer;
 		float: right;
-		//  padding: 28px 20px;
 		position: relative;
 		user-select: none;
 		padding: 0.1rem;
@@ -117,14 +91,6 @@ $govcy-link-color: #254355;
     color: white;
 		.carot-icon {
 			margin: 0.9rem;
-			//background: $govcy-white;
-			//display: block;
-			//height: 2px;
-		//position: relative;
-			//transition: background .2s ease-out;
-			//width: 18px;
-		
-			
 		}
 	}
 

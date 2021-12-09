@@ -17672,17 +17672,6 @@ textarea.form-control-lg {
 .menu-btn:checked ~ .menu {
   max-height: 240px;
 }
-.menu-btn:checked ~ .menu-icon .nav-icon {
-  background: transparent;
-}
-.menu-btn:checked ~ .menu-icon .nav-icon:before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-.menu-btn:checked ~ .menu-icon .nav-icon:after {
-  transform: rotate(45deg);
-  top: 0;
-}
 
 .logo {
   display: block;
