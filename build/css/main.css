@@ -17646,17 +17646,9 @@ textarea.form-control-lg {
 }
 .govcy-header li a {
   display: block;
-<<<<<<< HEAD
-  padding: 15px !important;
-  color: #ffffff;
-=======
   padding: 0.9rem !important;
-  color: #FFFFFF;
-<<<<<<< HEAD
->>>>>>> 73944c0 (govcy-changes)
-=======
+  color: #ffffff;
   border-top: 2px solid #31576F;
->>>>>>> 07bbb25 (goccyHeaderFixes)
   text-decoration: none;
 }
 .govcy-header li a:hover {
@@ -17684,7 +17676,7 @@ textarea.form-control-lg {
 
 form #lang-menu {
   float: right;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0.9rem;
   background-color: #31576F;
 }
@@ -17695,7 +17687,7 @@ form #lang-menu option {
 .service-name {
   display: none;
   float: left;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.9rem;
 }
 
@@ -17708,47 +17700,6 @@ form #lang-menu option {
 .menu-icon {
   cursor: pointer;
   float: right;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-.govcy-header .menu-icon .nav-icon {
-  background: #ffffff;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-.govcy-header .menu-icon .nav-icon:before {
-  background: #ffffff;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-  top: 6px;
-}
-.govcy-header .menu-icon .nav-icon:after {
-  background: #ffffff;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-  top: -6px;
-=======
-  padding: 1rem;
-  color: white;
-}
-.menu-icon .carot {
-  background: #FFFFFF;
->>>>>>> 73944c0 (govcy-changes)
-=======
   position: relative;
   user-select: none;
   padding: 0.1rem;
@@ -17758,7 +17709,6 @@ form #lang-menu option {
 }
 .menu-icon .carot-icon {
   margin: 0.9rem;
->>>>>>> 07bbb25 (goccyHeaderFixes)
 }
 
 /* 48em = 768px @ 16pt font */
@@ -17775,7 +17725,7 @@ form #lang-menu option {
   .govcy-header .service-name {
     display: block;
     float: left;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0.9rem;
   }
   .govcy-header .menu {
