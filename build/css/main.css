@@ -584,7 +584,7 @@ progress {
     max-width: 1320px;
   }
 }
-.row {
+.row, .govcy-text-input-label-error, .govcy-text-input-label {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -593,7 +593,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > * {
+.row > *, .govcy-text-input-label-error > *, .govcy-text-input-label > * {
   box-sizing: border-box;
   flex-shrink: 0;
   width: 100%;
@@ -6204,7 +6204,7 @@ progress {
     max-width: 1320px;
   }
 }
-.row {
+.row, .govcy-text-input-label-error, .govcy-text-input-label {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -6213,7 +6213,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > * {
+.row > *, .govcy-text-input-label-error > *, .govcy-text-input-label > * {
   box-sizing: border-box;
   flex-shrink: 0;
   width: 100%;
@@ -7724,13 +7724,13 @@ progress {
   font-size: 1.0395rem;
 }
 
-.form-text {
+.form-text, .govcy-text-input-base, .govcy-text-input-error {
   margin-top: 0.25rem;
   font-size: 0.875em;
   color: #6c757d;
 }
 
-.form-control {
+.form-control, .govcy-text-input-base, .govcy-text-input-error {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -7746,35 +7746,35 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control {
+  .form-control, .govcy-text-input-base, .govcy-text-input-error {
     transition: none;
   }
 }
-.form-control[type=file] {
+.form-control[type=file], [type=file].govcy-text-input-base, [type=file].govcy-text-input-error {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]), [type=file].govcy-text-input-base:not(:disabled):not([readonly]), [type=file].govcy-text-input-error:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus {
+.form-control:focus, .govcy-text-input-base:focus, .govcy-text-input-error:focus {
   color: #212529;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.form-control::-webkit-date-and-time-value {
+.form-control::-webkit-date-and-time-value, .govcy-text-input-base::-webkit-date-and-time-value, .govcy-text-input-error::-webkit-date-and-time-value {
   height: 1.5em;
 }
-.form-control::placeholder {
+.form-control::placeholder, .govcy-text-input-base::placeholder, .govcy-text-input-error::placeholder {
   color: #6c757d;
   opacity: 1;
 }
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled, .govcy-text-input-base:disabled, .govcy-text-input-error:disabled, .form-control[readonly], [readonly].govcy-text-input-base, [readonly].govcy-text-input-error {
   background-color: #e9ecef;
   opacity: 1;
 }
-.form-control::file-selector-button {
+.form-control::file-selector-button, .govcy-text-input-base::file-selector-button, .govcy-text-input-error::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -7789,14 +7789,14 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::file-selector-button {
+  .form-control::file-selector-button, .govcy-text-input-base::file-selector-button, .govcy-text-input-error::file-selector-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .govcy-text-input-base:hover:not(:disabled):not([readonly])::file-selector-button, .govcy-text-input-error:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
-.form-control::-webkit-file-upload-button {
+.form-control::-webkit-file-upload-button, .govcy-text-input-base::-webkit-file-upload-button, .govcy-text-input-error::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -7811,11 +7811,11 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::-webkit-file-upload-button {
+  .form-control::-webkit-file-upload-button, .govcy-text-input-base::-webkit-file-upload-button, .govcy-text-input-error::-webkit-file-upload-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, .govcy-text-input-base:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, .govcy-text-input-error:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
   background-color: #dde0e3;
 }
 
@@ -7874,7 +7874,7 @@ progress {
   margin-inline-end: 1rem;
 }
 
-textarea.form-control {
+textarea.form-control, textarea.govcy-text-input-base, textarea.govcy-text-input-error {
   min-height: calc(1.5em + 0.75rem + 2px);
 }
 textarea.form-control-sm {
@@ -8150,7 +8150,7 @@ textarea.form-control-lg {
 .form-floating {
   position: relative;
 }
-.form-floating > .form-control,
+.form-floating > .form-control, .form-floating > .govcy-text-input-base, .form-floating > .govcy-text-input-error,
 .form-floating > .form-select {
   height: calc(3.5rem + 2px);
   line-height: 1.25;
@@ -8171,17 +8171,17 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.form-floating > .form-control {
+.form-floating > .form-control, .form-floating > .govcy-text-input-base, .form-floating > .govcy-text-input-error {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::placeholder {
+.form-floating > .form-control::placeholder, .form-floating > .govcy-text-input-base::placeholder, .form-floating > .govcy-text-input-error::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+.form-floating > .form-control:focus, .form-floating > .govcy-text-input-base:focus, .form-floating > .govcy-text-input-error:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .govcy-text-input-base:not(:placeholder-shown), .form-floating > .govcy-text-input-error:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:-webkit-autofill {
+.form-floating > .form-control:-webkit-autofill, .form-floating > .govcy-text-input-base:-webkit-autofill, .form-floating > .govcy-text-input-error:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
@@ -8189,13 +8189,15 @@ textarea.form-control-lg {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:focus ~ label, .form-floating > .govcy-text-input-base:focus ~ label, .form-floating > .govcy-text-input-error:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .govcy-text-input-base:not(:placeholder-shown) ~ label,
+.form-floating > .govcy-text-input-error:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:-webkit-autofill ~ label {
+.form-floating > .form-control:-webkit-autofill ~ label, .form-floating > .govcy-text-input-base:-webkit-autofill ~ label, .form-floating > .govcy-text-input-error:-webkit-autofill ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -8207,14 +8209,14 @@ textarea.form-control-lg {
   align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control,
+.input-group > .form-control, .input-group > .govcy-text-input-base, .input-group > .govcy-text-input-error,
 .input-group > .form-select {
   position: relative;
   flex: 1 1 auto;
   width: 1%;
   min-width: 0;
 }
-.input-group > .form-control:focus,
+.input-group > .form-control:focus, .input-group > .govcy-text-input-base:focus, .input-group > .govcy-text-input-error:focus,
 .input-group > .form-select:focus {
   z-index: 3;
 }
@@ -8241,7 +8243,7 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
 }
 
-.input-group-lg > .form-control,
+.input-group-lg > .form-control, .input-group-lg > .govcy-text-input-base, .input-group-lg > .govcy-text-input-error,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
@@ -8254,7 +8256,7 @@ textarea.form-control-lg {
   border-radius: 0.3rem;
 }
 @media (min-width: 1200px) {
-  .input-group-lg > .form-control,
+  .input-group-lg > .form-control, .input-group-lg > .govcy-text-input-base, .input-group-lg > .govcy-text-input-error,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
@@ -8266,7 +8268,7 @@ textarea.form-control-lg {
   }
 }
 
-.input-group-sm > .form-control,
+.input-group-sm > .form-control, .input-group-sm > .govcy-text-input-base, .input-group-sm > .govcy-text-input-error,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
@@ -8329,7 +8331,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:valid, .form-control.is-valid {
+.was-validated .form-control:valid, .was-validated .govcy-text-input-base:valid, .was-validated .govcy-text-input-error:valid, .form-control.is-valid, .is-valid.govcy-text-input-base, .is-valid.govcy-text-input-error {
   border-color: #198754;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -8337,12 +8339,12 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+.was-validated .form-control:valid:focus, .was-validated .govcy-text-input-base:valid:focus, .was-validated .govcy-text-input-error:valid:focus, .form-control.is-valid:focus, .is-valid.govcy-text-input-base:focus, .is-valid.govcy-text-input-error:focus {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 
-.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+.was-validated textarea.form-control:valid, .was-validated textarea.govcy-text-input-base:valid, .was-validated textarea.govcy-text-input-error:valid, textarea.form-control.is-valid, textarea.is-valid.govcy-text-input-base, textarea.is-valid.govcy-text-input-error {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -8378,12 +8380,12 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group .form-control:valid, .input-group .form-control.is-valid,
+.was-validated .input-group .form-control:valid, .was-validated .input-group .govcy-text-input-base:valid, .was-validated .input-group .govcy-text-input-error:valid, .input-group .form-control.is-valid, .input-group .is-valid.govcy-text-input-base, .input-group .is-valid.govcy-text-input-error,
 .was-validated .input-group .form-select:valid,
 .input-group .form-select.is-valid {
   z-index: 1;
 }
-.was-validated .input-group .form-control:valid:focus, .input-group .form-control.is-valid:focus,
+.was-validated .input-group .form-control:valid:focus, .was-validated .input-group .govcy-text-input-base:valid:focus, .was-validated .input-group .govcy-text-input-error:valid:focus, .input-group .form-control.is-valid:focus, .input-group .is-valid.govcy-text-input-base:focus, .input-group .is-valid.govcy-text-input-error:focus,
 .was-validated .input-group .form-select:valid:focus,
 .input-group .form-select.is-valid:focus {
   z-index: 3;
@@ -8418,7 +8420,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid {
+.was-validated .form-control:invalid, .was-validated .govcy-text-input-base:invalid, .was-validated .govcy-text-input-error:invalid, .form-control.is-invalid, .is-invalid.govcy-text-input-base, .is-invalid.govcy-text-input-error {
   border-color: #dc3545;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
@@ -8426,12 +8428,12 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+.was-validated .form-control:invalid:focus, .was-validated .govcy-text-input-base:invalid:focus, .was-validated .govcy-text-input-error:invalid:focus, .form-control.is-invalid:focus, .is-invalid.govcy-text-input-base:focus, .is-invalid.govcy-text-input-error:focus {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+.was-validated textarea.form-control:invalid, .was-validated textarea.govcy-text-input-base:invalid, .was-validated textarea.govcy-text-input-error:invalid, textarea.form-control.is-invalid, textarea.is-invalid.govcy-text-input-base, textarea.is-invalid.govcy-text-input-error {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -8467,12 +8469,12 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group .form-control:invalid, .input-group .form-control.is-invalid,
+.was-validated .input-group .form-control:invalid, .was-validated .input-group .govcy-text-input-base:invalid, .was-validated .input-group .govcy-text-input-error:invalid, .input-group .form-control.is-invalid, .input-group .is-invalid.govcy-text-input-base, .input-group .is-invalid.govcy-text-input-error,
 .was-validated .input-group .form-select:invalid,
 .input-group .form-select.is-invalid {
   z-index: 2;
 }
-.was-validated .input-group .form-control:invalid:focus, .input-group .form-control.is-invalid:focus,
+.was-validated .input-group .form-control:invalid:focus, .was-validated .input-group .govcy-text-input-base:invalid:focus, .was-validated .input-group .govcy-text-input-error:invalid:focus, .input-group .form-control.is-invalid:focus, .input-group .is-invalid.govcy-text-input-base:focus, .input-group .is-invalid.govcy-text-input-error:focus,
 .was-validated .input-group .form-select:invalid:focus,
 .input-group .form-select.is-invalid:focus {
   z-index: 3;
@@ -17398,6 +17400,183 @@ textarea.form-control-lg {
   color: #101214;
 }
 
+.form-control, .govcy-text-input-base, .govcy-text-input-error {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.188rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control, .govcy-text-input-base, .govcy-text-input-error {
+    transition: none;
+  }
+}
+.form-control[type=file], [type=file].govcy-text-input-base, [type=file].govcy-text-input-error {
+  overflow: hidden;
+}
+.form-control[type=file]:not(:disabled):not([readonly]), [type=file].govcy-text-input-base:not(:disabled):not([readonly]), [type=file].govcy-text-input-error:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-control:focus, .govcy-text-input-base:focus, .govcy-text-input-error:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-control::-webkit-date-and-time-value, .govcy-text-input-base::-webkit-date-and-time-value, .govcy-text-input-error::-webkit-date-and-time-value {
+  height: 1.5em;
+}
+.form-control::placeholder, .govcy-text-input-base::placeholder, .govcy-text-input-error::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-control:disabled, .govcy-text-input-base:disabled, .govcy-text-input-error:disabled, .form-control[readonly], [readonly].govcy-text-input-base, [readonly].govcy-text-input-error {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+.form-control::file-selector-button, .govcy-text-input-base::file-selector-button, .govcy-text-input-error::file-selector-button {
+  padding: 0.375rem 0.75rem;
+  margin: -0.375rem -0.75rem;
+  margin-inline-end: 0.75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control::file-selector-button, .govcy-text-input-base::file-selector-button, .govcy-text-input-error::file-selector-button {
+    transition: none;
+  }
+}
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .govcy-text-input-base:hover:not(:disabled):not([readonly])::file-selector-button, .govcy-text-input-error:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: #dde0e3;
+}
+.form-control::-webkit-file-upload-button, .govcy-text-input-base::-webkit-file-upload-button, .govcy-text-input-error::-webkit-file-upload-button {
+  padding: 0.375rem 0.75rem;
+  margin: -0.375rem -0.75rem;
+  margin-inline-end: 0.75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control::-webkit-file-upload-button, .govcy-text-input-base::-webkit-file-upload-button, .govcy-text-input-error::-webkit-file-upload-button {
+    transition: none;
+  }
+}
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, .govcy-text-input-base:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, .govcy-text-input-error:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+  background-color: #dde0e3;
+}
+
+.form-control-plaintext {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #212529;
+  background-color: transparent;
+  border: solid transparent;
+  border-width: 1px 0;
+}
+.form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form-control-sm {
+  min-height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.0395rem;
+  border-radius: 0.2rem;
+}
+.form-control-sm::file-selector-button {
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  margin-inline-end: 0.5rem;
+}
+.form-control-sm::-webkit-file-upload-button {
+  padding: 0.25rem 0.5rem;
+  margin: -0.25rem -0.5rem;
+  margin-inline-end: 0.5rem;
+}
+
+.form-control-lg {
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: calc(1.2735rem + 0.282vw);
+  border-radius: 0.3rem;
+}
+@media (min-width: 1200px) {
+  .form-control-lg {
+    font-size: 1.485rem;
+  }
+}
+.form-control-lg::file-selector-button {
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+  margin-inline-end: 1rem;
+}
+.form-control-lg::-webkit-file-upload-button {
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+  margin-inline-end: 1rem;
+}
+
+textarea.form-control, textarea.govcy-text-input-base, textarea.govcy-text-input-error {
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+textarea.form-control-sm {
+  min-height: calc(1.5em + 0.5rem + 2px);
+}
+textarea.form-control-lg {
+  min-height: calc(1.5em + 1rem + 2px);
+}
+
+.form-control-color {
+  width: 3rem;
+  height: auto;
+  padding: 0.375rem;
+}
+.form-control-color:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-control-color::-moz-color-swatch {
+  height: 1.5em;
+  border-radius: 0.25rem;
+}
+.form-control-color::-webkit-color-swatch {
+  height: 1.5em;
+  border-radius: 0.25rem;
+}
+
+.form-text, .govcy-text-input-base, .govcy-text-input-error {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+
 .govcy-alert-error {
   font-weight: bold;
   border: solid 5px;
@@ -17736,4 +17915,82 @@ form #lang-menu option {
   .govcy-header .menu-icon {
     display: none;
   }
+}
+textarea:focus,
+input[type=text]:focus,
+input[type=password].focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+.uneditable-input:focus {
+  border-color: gray;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 5px solid yellow;
+  border-radius: 1px;
+}
+
+.govcy-text-input-base, .govcy-text-input-error {
+  border-width: 3px;
+  border-color: gray;
+  border-radius: 1px;
+  font-size: x-large;
+}
+
+.govcy-text-input-error {
+  border-color: red;
+}
+
+.govcy-text-input-label label {
+  margin-left: 0px;
+  padding-left: 0px;
+  color: #141414;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.govcy-text-input-label-hint {
+  margin-left: 0px;
+  padding-left: 0px;
+  color: gray;
+  display: inline-block;
+}
+
+.govcy-text-input-label-error label {
+  margin-left: 0px;
+  padding-left: 0px;
+  color: red;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.govcy-text-input-width-40em {
+  width: 40em;
+}
+
+.govcy-text-input-width-20em {
+  width: 20em;
+}
+
+.govcy-text-input-width-10em {
+  width: 10em;
+}
+
+.govcy-text-input-width-5em {
+  width: 5em;
+}
+
+.govcy-textarea-base {
+  border-width: 3px;
+  border-color: gray;
+  border-radius: 1px;
+  font-size: x-large;
 }

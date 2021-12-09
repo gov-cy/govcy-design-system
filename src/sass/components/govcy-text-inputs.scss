@@ -1,0 +1,113 @@
+  $border-radius : 1px;
+  $govcy-outline-color:yellow;
+  
+  
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="password"].focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    .uneditable-input:focus {   
+       border-color: gray; 
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+      outline: 5px solid $govcy-outline-color;
+      border-radius: $border-radius;
+    }
+
+  @mixin govcy-text-inputs-borders-fonts {
+
+    border-width: 3px;
+    border-color: gray;
+    border-radius: $border-radius;
+    font-size: x-large;
+  }  
+
+.govcy-text-input-base {
+   
+    @extend .form-control;
+    @extend .form-text;
+    @include govcy-text-inputs-borders-fonts();
+}
+
+.govcy-text-input-error 
+{
+    @extend .govcy-text-input-base;
+
+    border-color:red;
+}
+
+.govcy-text-input-label
+{
+    @extend .row;
+
+    label {
+        margin-left:0px;
+        padding-left: 0px;
+        color:rgb(20, 20, 20);
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+}
+
+
+.govcy-text-input-label-hint
+{
+
+  margin-left:0px;
+  padding-left: 0px;
+  color:gray;
+  display:inline-block;
+
+}
+
+.govcy-text-input-label-error
+{
+    @extend .row;
+
+    label {
+        margin-left:0px;
+        padding-left: 0px;
+        color:red;
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+}
+
+.govcy-text-input-width-40em
+{
+    width: 40em;  
+}
+
+.govcy-text-input-width-20em
+{
+    width: 20em;
+}
+
+.govcy-text-input-width-10em
+{
+    width: 10em;
+    
+}
+
+.govcy-text-input-width-5em
+{
+    width: 5em;
+    
+}
+
+.govcy-textarea-base {
+
+    @include govcy-text-inputs-borders-fonts();    
+}

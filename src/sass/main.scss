@@ -18,6 +18,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/forms/form-control";
+@import "../../node_modules/bootstrap/scss/forms/form-text";
 
 
 // 4.
@@ -26,6 +28,7 @@
 @import "components/govcy-alerts";
 @import "components/govcy-buttons";
 @import "components/govcy-header";
+@import "components/govcy-text-inputs.scss";
 
 
 //5. bi-icons
