@@ -15,7 +15,7 @@ $padding:0.9rem;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	width: 100%;
 	z-index: 3;
-	max-height:100px;
+	max-height:200px;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -24,14 +24,13 @@ $padding:0.9rem;
 	    background-color: $govcy-sub-menu-color;
 	}
 	li {
-		a {
+	a {
 			display: block;
 		    padding: $padding !important;
 			color:$govcy-white;
 			border-bottom: 2px solid #31576F;
 			text-decoration: none;
 			margin-left: 10px;
-			max-height: 50px;
 			&:hover {
 				background-color: $govcy-link-color;
 			}
@@ -69,23 +68,35 @@ $padding:0.9rem;
 		content: $govcy-logo;
 	}
 	form {
-		  
+		
 		#lang-menu {
 		float: right;
 	   	color:$govcy-white;
-		margin: 0.9rem;
+		margin: 1rem;
 		background-color: $govcy-primary;
 			option {
 			background-color: $govcy-sub-menu-color;
+			
 			}
 	}  
 	  }
 	.service-name {
-		display: none;
 		float: left;
 		color: $govcy-white;
 		padding: $padding;
+		margin-left: 10px;
+		
 	}
+	.service-name-mob {
+		display:block;
+		float: left;
+		color: $govcy-white;
+		padding: $padding;
+		margin-left: 10px;
+		background-color: $govcy-primary;
+		width: 100%;
+		z-index: 3;
+}
 	.menu {
 		clear: both;
 		max-height: 0;
@@ -96,15 +107,15 @@ $padding:0.9rem;
 		float: right;
 		position: relative;
 		user-select: none;
-	//	padding: 0.1rem;
+		padding: 0.1rem;
 		display:flex;
 		align-items: center;
 		flex-direction: row;
-    color: white;
+        color: white;
 		.carot-icon {
-		    margin-left: 0;
-    margin-top: 0.9rem;
-    margin-bottom: 0.9rem;
+		margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 		}
 	}
 
@@ -114,6 +125,7 @@ $padding:0.9rem;
 
   @media (min-width: 48em) {
     .govcy-header {
+		max-height: 100px;
 		ul{
 			background-color: $govcy-primary;
 			display:flex;
@@ -129,12 +141,12 @@ $padding:0.9rem;
         }
       }
 	  .service-name {
-		  display: block;
+		display: block;
 		float: left;
 		color: $govcy-white;
 		padding: $padding;
-	}
-	
+	  }
+	  
       .menu {
         clear: none;
         float: right;
@@ -144,6 +156,9 @@ $padding:0.9rem;
         display: none;
       }
     }
+	.service-name-mob {
+		display:none;
+	}
   }
 
 

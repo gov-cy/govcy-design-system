@@ -17635,7 +17635,7 @@ textarea.form-control-lg {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
   z-index: 3;
-  max-height: 100px;
+  max-height: 200px;
 }
 .govcy-header ul {
   margin: 0;
@@ -17651,7 +17651,6 @@ textarea.form-control-lg {
   border-bottom: 2px solid #31576F;
   text-decoration: none;
   margin-left: 10px;
-  max-height: 50px;
 }
 .govcy-header li a:hover {
   background-color: #254355;
@@ -17684,7 +17683,7 @@ textarea.form-control-lg {
 form #lang-menu {
   float: right;
   color: #ffffff;
-  margin: 0.9rem;
+  margin: 1rem;
   background-color: #31576F;
 }
 form #lang-menu option {
@@ -17692,10 +17691,21 @@ form #lang-menu option {
 }
 
 .service-name {
-  display: none;
   float: left;
   color: #ffffff;
   padding: 0.9rem;
+  margin-left: 10px;
+}
+
+.service-name-mob {
+  display: block;
+  float: left;
+  color: #ffffff;
+  padding: 0.9rem;
+  margin-left: 10px;
+  background-color: #31576F;
+  width: 100%;
+  z-index: 3;
 }
 
 .menu {
@@ -17709,6 +17719,7 @@ form #lang-menu option {
   float: right;
   position: relative;
   user-select: none;
+  padding: 0.1rem;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -17716,12 +17727,15 @@ form #lang-menu option {
 }
 .menu-icon .carot-icon {
   margin-left: 0;
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* 48em = 768px @ 16pt font */
 @media (min-width: 48em) {
+  .govcy-header {
+    max-height: 100px;
+  }
   .govcy-header ul {
     background-color: #31576F;
     display: flex;
@@ -17746,6 +17760,10 @@ form #lang-menu option {
     max-height: none;
   }
   .govcy-header .menu-icon {
+    display: none;
+  }
+
+  .service-name-mob {
     display: none;
   }
 }
