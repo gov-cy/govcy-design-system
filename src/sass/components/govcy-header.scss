@@ -4,7 +4,7 @@
 //$govcy-primary: #31576F;
 $govcy-link-color: #254355;
 $govcy-sub-menu-color:#577589;
-$padding:0.9rem;
+$padding:0.8rem;
 /* menu */
 /* menu icon */
 /* menu btn */
@@ -118,11 +118,7 @@ $padding:0.9rem;
     margin-bottom: 1rem;
 		}
 	}
-
-  
-
   /* 48em = 768px @ 16pt font */
-
   @media (min-width: 48em) {
     .govcy-header {
 		max-height: 100px;

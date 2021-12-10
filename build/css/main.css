@@ -17646,7 +17646,7 @@ textarea.form-control-lg {
 }
 .govcy-header li a {
   display: block;
-  padding: 0.9rem !important;
+  padding: 0.8rem !important;
   color: #ffffff;
   border-bottom: 2px solid #31576F;
   text-decoration: none;
@@ -17693,7 +17693,7 @@ form #lang-menu option {
 .service-name {
   float: left;
   color: #ffffff;
-  padding: 0.9rem;
+  padding: 0.8rem;
   margin-left: 10px;
 }
 
@@ -17701,7 +17701,7 @@ form #lang-menu option {
   display: block;
   float: left;
   color: #ffffff;
-  padding: 0.9rem;
+  padding: 0.8rem;
   margin-left: 10px;
   background-color: #31576F;
   width: 100%;
@@ -17752,7 +17752,7 @@ form #lang-menu option {
     display: block;
     float: left;
     color: #ffffff;
-    padding: 0.9rem;
+    padding: 0.8rem;
   }
   .govcy-header .menu {
     clear: none;
