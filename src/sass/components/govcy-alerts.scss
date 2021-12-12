@@ -46,19 +46,19 @@
 .govcy-alert-error {
     @extend .alert;
     @include govcy-all-alerts();
-    border-color:   red;
+    border-color:   $govcy-danger;
     h2 {
          color: black;
     }
    
     p {
-        color: red;
+        color: $govcy-danger;
        margin-bottom: 0px
 
 
     }
          a {
-           color:red;
+           color:$govcy-danger;
        }
 
 }
@@ -68,10 +68,10 @@
     @extend .alert;
     @include govcy-all-alerts();
     @include govcy-alert-success-important();
-    border-color: olivedrab;
+    border-color: $govcy-success;
 
     h2 {
-        background-color: olivedrab;
+        background-color: $govcy-success;
     }   
 
     a {
@@ -84,10 +84,10 @@
     @extend .alert;
     @include govcy-all-alerts();
     @include govcy-alert-success-important();
-    border-color: steelblue;
+    border-color: $govcy-info;
     
     h2 {
-        background-color: steelblue;
+        background-color: $govcy-info;
     }   
 }
 
@@ -97,7 +97,7 @@
     justify-content:center ;
     display: flex;
     height: 150px;
-    background-color: olivedrab;
+    background-color: $govcy-success;
     margin-left:10px;
     margin-right:10px;
     h1 {

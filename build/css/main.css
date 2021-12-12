@@ -17672,7 +17672,7 @@ textarea.form-control-lg {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  border-color: steelblue;
+  border-color: #52879D;
 }
 .govcy-alert-important h2, .govcy-alert-important .h2 {
   height: 50px;
@@ -17704,7 +17704,7 @@ textarea.form-control-lg {
   color: black;
 }
 .govcy-alert-important h2, .govcy-alert-important .h2 {
-  background-color: steelblue;
+  background-color: #52879D;
 }
 
 .govcy-panel {
