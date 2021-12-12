@@ -17583,7 +17583,7 @@ textarea.form-control-lg {
   background-color: #fff;
   margin-left: 10px;
   margin-right: 10px;
-  border-color: red;
+  border-color: #D4351C;
 }
 .govcy-alert-error h2, .govcy-alert-error .h2 {
   height: 50px;
@@ -17599,11 +17599,11 @@ textarea.form-control-lg {
   color: black;
 }
 .govcy-alert-error p {
-  color: red;
+  color: #D4351C;
   margin-bottom: 0px;
 }
 .govcy-alert-error a {
-  color: red;
+  color: #D4351C;
 }
 
 .govcy-alert-success {
@@ -17620,7 +17620,7 @@ textarea.form-control-lg {
   padding-top: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  border-color: olivedrab;
+  border-color: #505E31;
 }
 .govcy-alert-success h2, .govcy-alert-success .h2 {
   height: 50px;
@@ -17652,7 +17652,7 @@ textarea.form-control-lg {
   color: black;
 }
 .govcy-alert-success h2, .govcy-alert-success .h2 {
-  background-color: olivedrab;
+  background-color: #505E31;
 }
 .govcy-alert-success a {
   padding-left: 0px;
@@ -17712,7 +17712,7 @@ textarea.form-control-lg {
   justify-content: center;
   display: flex;
   height: 150px;
-  background-color: olivedrab;
+  background-color: #505E31;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -17945,8 +17945,26 @@ input[type=color]:focus,
   font-size: x-large;
 }
 
+.govcy-textarea-base, .govcy-textarea-error {
+  border-width: 3px;
+  border-color: gray;
+  border-radius: 1px;
+  font-size: x-large;
+}
+
+.govcy-error-indicator-marker {
+  width: 8px;
+  height: 95%;
+  background-color: #D4351C;
+  margin-top: 5px;
+}
+
 .govcy-text-input-error {
-  border-color: red;
+  border-color: #D4351C;
+}
+
+.govcy-textarea-error {
+  border-color: #D4351C;
 }
 
 .govcy-text-input-label label {
@@ -17962,12 +17980,13 @@ input[type=color]:focus,
   padding-left: 0px;
   color: gray;
   display: inline-block;
+  font-size: 1.25rem;
 }
 
 .govcy-text-input-label-error label {
   margin-left: 0px;
   padding-left: 0px;
-  color: red;
+  color: #D4351C;
   font-weight: bold;
   font-size: x-large;
 }
@@ -17986,11 +18005,4 @@ input[type=color]:focus,
 
 .govcy-text-input-width-5em {
   width: 5em;
-}
-
-.govcy-textarea-base {
-  border-width: 3px;
-  border-color: gray;
-  border-radius: 1px;
-  font-size: x-large;
 }

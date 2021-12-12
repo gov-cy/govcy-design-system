@@ -199,7 +199,7 @@
 
             <!-- govcy-text-box-base -->
             <div class="row">
-                <span class="govcy-text-input-label-hint">Test</span>
+              <!--  <span class="govcy-text-input-label-hint">Test</span> -->
                 <input type="text" class="govcy-text-input-base" />
                
             </div>
@@ -230,9 +230,7 @@
             <!-- govcy-text-box-with-label-error -->
             <div class="row" style="margin-top: 20px;">
                 <div class="col-1" style="width:30px">
-                    <div style="width: 8px; height: 95%; background-color: red;margin-top: 5px;">
-
-                    </div>
+                    <div class="govcy-error-indicator-marker"></div>
                 </div>
                 <div class="col-11">
                     <div class="govcy-text-input-label">
@@ -302,6 +300,26 @@
                 <div class="row">
                     <textarea rows="3"  class="govcy-textarea-base"></textarea>
 
+                </div>
+            </div>
+
+
+            <!-- govcy-text-area-with-label-error -->
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-1" style="width:30px">
+                    <div class="govcy-error-indicator-marker"></div>
+                </div>
+                <div class="col-11">
+                    <div class="govcy-text-input-label">
+                        <label>Text Area Label</label>
+                    </div>
+                    <div class="govcy-text-input-label-error">
+                        <label>There is an error</label>
+                    </div>
+                    <div class="row">
+                        <textarea rows="3"  class="govcy-textarea-error"></textarea>
+
+                    </div>
                 </div>
             </div>
 

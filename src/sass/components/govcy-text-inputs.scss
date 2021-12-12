@@ -39,13 +39,34 @@
     @include govcy-text-inputs-borders-fonts();
 }
 
+.govcy-textarea-base {
+
+
+    @include govcy-text-inputs-borders-fonts();    
+}
+
+
+.govcy-error-indicator-marker{
+    width: 8px; 
+    height: 95%;
+    background-color: $govcy-danger;
+    margin-top: 5px;
+}
+
+
 .govcy-text-input-error 
 {
     @extend .govcy-text-input-base;
 
-    border-color:red;
+    border-color:$govcy-danger;
 }
 
+.govcy-textarea-error 
+{
+    @extend .govcy-textarea-base;
+
+    border-color:$govcy-danger;
+}
 .govcy-text-input-label
 {
     @extend .row;
@@ -68,6 +89,8 @@
   padding-left: 0px;
   color:gray;
   display:inline-block;
+  font-size: 1.25rem;
+ 
 
 }
 
@@ -78,7 +101,7 @@
     label {
         margin-left:0px;
         padding-left: 0px;
-        color:red;
+        color:$govcy-danger;
         font-weight: bold;
         font-size: x-large;
     }
@@ -107,7 +130,3 @@
     
 }
 
-.govcy-textarea-base {
-
-    @include govcy-text-inputs-borders-fonts();    
-}
