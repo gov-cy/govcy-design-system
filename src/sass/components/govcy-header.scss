@@ -1,51 +1,50 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-//$govcy-primary: #31576F;
-$govcy-link-color: #254355;
+
 $govcy-sub-menu-color:#577589;
 $padding:0.8rem;
 /* menu */
 /* menu icon */
 /* menu btn */
 .govcy-header {
-	padding: 0px;
+	padding: 0;
 	font-family: $govcy-font-family;
 	background-color: $govcy-primary;
-	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	box-shadow: 0.0625rem 0.0625rem 0.25rem 0 rgba(0,0,0,.1);
 	width: 100%;
 	z-index: 3;
-	max-height:200px;
+	max-height:12.5rem;
 	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		overflow: hidden;
-	    background-color: $govcy-sub-menu-color;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: $govcy-sub-menu-color;
 	}
 	li {
 	a {
-			display: block;
-		    padding: $padding !important;
-			color:$govcy-white;
-			border-bottom: 2px solid #31576F;
-			text-decoration: none;
-			margin-left: 10px;
-			&:hover {
-				background-color: $govcy-link-color;
+	display: block;
+	padding: $padding !important;
+	color:$govcy-white;
+	border-bottom: 0.125rem solid #31576F;
+	text-decoration: none;
+	margin-left: 0.625rem;
+	&:hover {
+	background-color: $govcy-btn-primary-hover;
 			}
 		}
 	}
-}
+
 	.menu-btn {
 		&:hover {
-			background-color: $govcy-link-color;
+			background-color: $govcy-btn-primary-hover;
 		}
 		display: none;
 		&:checked {
 			~ {
 				.menu {
-					max-height: 240px;
+					max-height: 15rem;
 					 }
 				.menu-icon{
 				.carot-icon{
@@ -63,7 +62,7 @@ $padding:0.8rem;
 		display: block;
 		float: left;
 		font-size: 2em;
-		padding: 0px;
+		padding: 0;
 		text-decoration: none;
 		content: $govcy-logo;
 	}
@@ -84,7 +83,7 @@ $padding:0.8rem;
 		float: left;
 		color: $govcy-white;
 		padding: $padding;
-		margin-left: 10px;
+		margin-left:0.625rem;
 		
 	}
 	.menu {
@@ -108,10 +107,11 @@ $padding:0.8rem;
     margin-bottom: 1rem;
 		}
 	}
+}
   /* 48em = 768px @ 16pt font */
   @media (min-width: 48em) {
     .govcy-header {
-		max-height: 100px;
+		max-height: 6.25rem;
 		ul{
 			background-color: $govcy-primary;
 			display:flex;
@@ -122,8 +122,8 @@ $padding:0.8rem;
 		
         float: left;
         a {
-		 max-height: 100px;
-          padding: 20px 30px;
+		 max-height: 6.25rem;
+          padding: 1.25rem 1.875rem;
         }
       }
 	  .service-name {
