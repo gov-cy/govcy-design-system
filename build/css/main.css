@@ -17644,16 +17644,20 @@ textarea.form-control-lg {
   overflow: hidden;
   background-color: #577589;
 }
-.govcy-header li a {
+.govcy-header ul li a {
   display: block;
   padding: 0.8rem !important;
   color: #ffffff;
   border-bottom: 0.125rem solid #31576F;
   text-decoration: none;
   margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
-.govcy-header li a:hover {
+.govcy-header ul li a:hover {
   background-color: #254355;
+}
+.govcy-header ul li:last-child a {
+  border-bottom: none;
 }
 .govcy-header .menu-btn {
   display: none;

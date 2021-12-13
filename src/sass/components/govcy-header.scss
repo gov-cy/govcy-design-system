@@ -2,147 +2,153 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-$govcy-sub-menu-color:#577589;
-$padding:0.8rem;
-/* menu */
-/* menu icon */
-/* menu btn */
-.govcy-header {
-	padding: 0;
-	font-family: $govcy-font-family;
-	background-color: $govcy-primary;
-	box-shadow: 0.0625rem 0.0625rem 0.25rem 0 rgba(0,0,0,.1);
-	width: 100%;
-	z-index: 3;
-	max-height:12.5rem;
-	ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-	background-color: $govcy-sub-menu-color;
-	}
-	li {
-	a {
-	display: block;
-	padding: $padding !important;
-	color:$govcy-white;
-	border-bottom: 0.125rem solid #31576F;
-	text-decoration: none;
-	margin-left: 0.625rem;
-	&:hover {
-	background-color: $govcy-btn-primary-hover;
+ $govcy-sub-menu-color:#577589;
+	// $govcy-sub-menu-color:$govcy-info;
+	$padding:0.8rem;
+	/* menu */
+	/* menu icon */
+	/* menu btn */
+	.govcy-header {
+			padding: 0;
+			font-family: $govcy-font-family;
+			background-color: $govcy-primary;
+			box-shadow: 0.0625rem 0.0625rem 0.25rem 0 rgba(0,0,0,.1);
+			width: 100%;
+			z-index: 3;
+			max-height:12.5rem;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			overflow: hidden;
+			background-color: $govcy-sub-menu-color;
+			li {
+				a {
+					display: block;
+					padding: $padding !important;
+					color:$govcy-white;
+					border-bottom: 0.125rem solid #31576F;
+					text-decoration: none;
+					margin-left: 0.625rem;
+					margin-right: 0.625rem;
+					&:hover {
+						background-color: $govcy-btn-primary-hover;
+					}
+				}
+					&:last-child a {
+						border-bottom: none;
+					}
 			}
-		}
-	}
 
-	.menu-btn {
-		&:hover {
-			background-color: $govcy-btn-primary-hover;
 		}
-		display: none;
-		&:checked {
-			~ {
-				.menu {
-					max-height: 15rem;
-					 }
-				.menu-icon{
-				.carot-icon{
-				display: block;		
-				transform: rotate(180deg);
-				top: 0;	
+		
+			.menu-btn {
+				&:hover {
+					background-color: $govcy-btn-primary-hover;
 				}
+				display: none;
+				&:checked {
+					~ {
+						.menu {
+							max-height: 15rem;
+							}
+						.menu-icon{
+						.carot-icon{
+						display: block;		
+						transform: rotate(180deg);
+						top: 0;	
+						}
+							
+						}
+						
+					}
+				}
+			}
+			.logo {
+				display: block;
+				float: left;
+				font-size: 2em;
+				padding: 0;
+				text-decoration: none;
+				content: $govcy-logo;
+			}
+			form {
+				
+				#lang-menu {
+				float: right;
+				color:$govcy-white;
+				margin: 1rem;
+				background-color: $govcy-primary;
+					option {
+					background-color: $govcy-sub-menu-color;
 					
-				}
+					}
+			}  
+			}
+			.service-name {
+				float: left;
+				color: $govcy-white;
+				padding: $padding;
+				margin-left:0.625rem;
 				
 			}
-		}
-	}
-	.logo {
-		display: block;
-		float: left;
-		font-size: 2em;
-		padding: 0;
-		text-decoration: none;
-		content: $govcy-logo;
-	}
-	form {
-		
-		#lang-menu {
-		float: right;
-	   	color:$govcy-white;
-		margin: 1rem;
-		background-color: $govcy-primary;
-			option {
-			background-color: $govcy-sub-menu-color;
-			
+			.menu {
+				clear: both;
+				max-height: 0;
+				transition: max-height .2s ease-out;
 			}
-	}  
-	  }
-	.service-name {
-		float: left;
-		color: $govcy-white;
-		padding: $padding;
-		margin-left:0.625rem;
-		
-	}
-	.menu {
-		clear: both;
-		max-height: 0;
-		transition: max-height .2s ease-out;
-	}
-	.menu-icon {
-		cursor: pointer;
-		float: right;
-		position: relative;
-		user-select: none;
-		padding: 0.1rem;
-		display:flex;
-		align-items: center;
-		flex-direction: row;
-        color: white;
-		.carot-icon {
-		margin-left: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+			.menu-icon {
+				cursor: pointer;
+				float: right;
+				position: relative;
+				user-select: none;
+				padding: 0.1rem;
+				display:flex;
+				align-items: center;
+				flex-direction: row;
+				color: white;
+				.carot-icon {
+				margin-left: 0;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+				}
+			}
 		}
-	}
-}
   /* 48em = 768px @ 16pt font */
-  @media (min-width: 48em) {
-    .govcy-header {
-		max-height: 6.25rem;
-		ul{
-			background-color: $govcy-primary;
-			display:flex;
-			justify-content: space-between;
-		}
-	 
-      li {
-		
-        float: left;
-        a {
-		 max-height: 6.25rem;
-          padding: 1.25rem 1.875rem;
-        }
-      }
-	  .service-name {
-		display: block;
-		float: left;
-		color: $govcy-white;
-		padding: $padding;
-	  }
-	  
-      .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-      }
-      .menu-icon {
-        display: none;
-      }
-    }
+		@media (min-width: 48em) {
+			.govcy-header {
+				max-height: 6.25rem;
+				ul{
+					background-color: $govcy-primary;
+					display:flex;
+					justify-content: space-between;
+				}
+			
+			li {
+				
+				float: left;
+				a {
+				max-height: 6.25rem;
+				padding: 1.25rem 1.875rem;
+				}
+			}
+			.service-name {
+				display: block;
+				float: left;
+				color: $govcy-white;
+				padding: $padding;
+			}
+			
+			.menu {
+				clear: none;
+				float: right;
+				max-height: none;
+			}
+			.menu-icon {
+				display: none;
+			}
+			}
 
-  }
+		}
 
 
