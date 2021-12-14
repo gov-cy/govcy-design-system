@@ -115,42 +115,42 @@
 					}
 			}
 	/* 48em = 768px @ 16pt font */
-			@media (min-width: 48em) {
-						.govcy-header {
-							max-height: 6.37rem;
-										ul{
-											background-color: $govcy-primary;
-											display:flex;
-											justify-content: space-between;
-										li {
-										display: block;
-										float: left;
-										a {
-										max-height: 6.25rem;
-										padding: 1.25rem 1.875rem;
-										}
-										}
-										}
+				@media (min-width: 48em) {
+							.govcy-header {
+								max-height: 6.37rem;
+												ul{
+													background-color: $govcy-primary;
+													display:flex;
+													justify-content: space-between;
+													li {
+													display: block;
+													float: left;
+														a {
+														max-height: 6.25rem;
+														padding: 1.25rem 1.875rem;
+														}
+													}
+												}
+							
+								.service-name {
+									display: block;
+									float: left;
+									color: $govcy-white;
+									padding: $padding 0;
+								}
+							
+								.menu {
+									clear: none;
+									float: right;
+									max-height: none;
+									}
+								.menu-icon {
+									display: none;
+									padding: 0;
+								}
 						
-						.service-name {
-							display: block;
-							float: left;
-							color: $govcy-white;
-							padding: $padding 0;
-						}
-						
-						.menu {
-							clear: none;
-							float: right;
-							max-height: none;
-							}
-						.menu-icon {
-							display: none;
-							padding: 0;
-						}
-					
 
-				}
+					}
 
 
-		}
+			}
