@@ -17729,6 +17729,7 @@ textarea.form-control-lg {
     justify-content: space-between;
   }
   .govcy-header li {
+    display: block;
     float: left;
   }
   .govcy-header li a {
@@ -17739,7 +17740,7 @@ textarea.form-control-lg {
     display: block;
     float: left;
     color: #ffffff;
-    padding: 0.8rem;
+    padding: 0.8rem 0;
   }
   .govcy-header .menu {
     clear: none;

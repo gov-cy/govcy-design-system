@@ -42,112 +42,112 @@
 
 		}
 		
-			.menu-btn {
-				&:hover {
-					background-color: $govcy-btn-primary-hover;
-				}
-				display: none;
-				&:checked {
-					~ {
-						.menu {
-							max-height: 15rem;
+				.menu-btn {
+					&:hover {
+						background-color: $govcy-btn-primary-hover;
+					}
+					display: none;
+					&:checked {
+						~ {
+							.menu {
+								max-height: 15rem;
+								}
+							.menu-icon{
+							.carot-icon{
+							display: block;		
+							transform: rotate(180deg);
+							top: 0;	
 							}
-						.menu-icon{
-						.carot-icon{
-						display: block;		
-						transform: rotate(180deg);
-						top: 0;	
-						}
+								
+							}
 							
 						}
-						
 					}
 				}
-			}
-			.logo {
-				display: block;
-				float: left;
-				font-size: 2em;
-				padding: 0;
-				text-decoration: none;
-				content: $govcy-logo;
-			}
-			form {
-				
-				#lang-menu {
-				float: right;
-				color:$govcy-white;
-				margin: 1rem;
-				background-color: $govcy-primary;
-					option {
-					background-color: $govcy-sub-menu-color;
+				.logo {
+					display: block;
+					float: left;
+					font-size: 2em;
+					padding: 0;
+					text-decoration: none;
+					content: $govcy-logo;
+				}
+				form {
 					
-					}
-			}  
-			}
-			.service-name {
-				float: left;
-				color: $govcy-white;
-				padding: $padding;
-				margin-left:0.625rem;
-				
-			}
-			.menu {
-				clear: both;
-				max-height: 0;
-				transition: max-height .2s ease-out;
-			}
-			.menu-icon {
-				cursor: pointer;
-				float: right;
-				position: relative;
-				user-select: none;
-				padding: 0.1rem;
-				display:flex;
-				align-items: center;
-				flex-direction: row;
-				color: white;
-				.carot-icon {
-				margin-left: 0;
-			margin-top: 1rem;
-			margin-bottom: 1rem;
+					#lang-menu {
+					float: right;
+					color:$govcy-white;
+					margin: 1rem;
+					background-color: $govcy-primary;
+						option {
+						background-color: $govcy-sub-menu-color;
+						
+						}
+				}  
 				}
-			}
+				.service-name {
+					float: left;
+					color: $govcy-white;
+					padding: $padding;
+					margin-left:0.625rem;
+					
+				}
+				.menu {
+					clear: both;
+					max-height: 0;
+					transition: max-height .2s ease-out;
+				}
+				.menu-icon {
+						cursor: pointer;
+						float: right;
+						position: relative;
+						user-select: none;
+						padding: 0.1rem;
+						display:flex;
+						align-items: center;
+						flex-direction: row;
+						color: white;
+							.carot-icon {
+							margin-left: 0;
+							margin-top: 1rem;
+							margin-bottom: 1rem;
+						}
+				}
 		}
   /* 48em = 768px @ 16pt font */
 		@media (min-width: 48em) {
-			.govcy-header {
-				max-height: 6.25rem;
-				ul{
-					background-color: $govcy-primary;
-					display:flex;
-					justify-content: space-between;
-				}
-			
-			li {
+				.govcy-header {
+					max-height: 6.25rem;
+					ul{
+						background-color: $govcy-primary;
+						display:flex;
+						justify-content: space-between;
+					}
 				
-				float: left;
-				a {
-				max-height: 6.25rem;
-				padding: 1.25rem 1.875rem;
+				li {
+					display: block;
+					float: left;
+					a {
+					max-height: 6.25rem;
+					padding: 1.25rem 1.875rem;
+					}
 				}
-			}
-			.service-name {
-				display: block;
-				float: left;
-				color: $govcy-white;
-				padding: $padding;
-			}
-			
-			.menu {
-				clear: none;
-				float: right;
-				max-height: none;
-			}
-			.menu-icon {
-				display: none;
-			}
-			}
+				.service-name {
+					display: block;
+					float: left;
+					color: $govcy-white;
+					padding: $padding 0;
+				}
+				
+				.menu {
+					clear: none;
+					float: right;
+				     max-height: none;
+					}
+				.menu-icon {
+					display: none;
+				}
+				}
 
 		}
 
