@@ -15,7 +15,7 @@
 			box-shadow: 0.0625rem 0.0625rem 0.25rem 0 rgba(0,0,0,.1);
 			width: 100%;
 			z-index: 3;
-			max-height:12.5rem;
+			max-height:12.8rem;
 		ul {
 			margin: 0;
 			padding: 0;
@@ -88,7 +88,7 @@
 				.service-name {
 					float: left;
 					color: $govcy-white;
-					padding: $padding;
+					padding:0.9rem 0.5rem;
 					margin-left:0.625rem;
 					
 				}
@@ -116,39 +116,41 @@
 		}
   /* 48em = 768px @ 16pt font */
 		@media (min-width: 48em) {
-				.govcy-header {
-					max-height: 6.25rem;
-					ul{
-						background-color: $govcy-primary;
-						display:flex;
-						justify-content: space-between;
+					.govcy-header {
+						max-height: 6.37rem;
+									ul{
+										background-color: $govcy-primary;
+										display:flex;
+										justify-content: space-between;
+									li {
+									display: block;
+									float: left;
+									a {
+									max-height: 6.25rem;
+									padding: 1.25rem 1.875rem;
+									}
+									}
+									}
+					
+					.service-name {
+						display: block;
+						float: left;
+						color: $govcy-white;
+						padding: $padding 0;
+					}
+					
+					.menu {
+						clear: none;
+						float: right;
+						max-height: none;
+						}
+					.menu-icon {
+						display: none;
+						padding: 0;
 					}
 				
-				li {
-					display: block;
-					float: left;
-					a {
-					max-height: 6.25rem;
-					padding: 1.25rem 1.875rem;
-					}
-				}
-				.service-name {
-					display: block;
-					float: left;
-					color: $govcy-white;
-					padding: $padding 0;
-				}
-				
-				.menu {
-					clear: none;
-					float: right;
-				     max-height: none;
-					}
-				.menu-icon {
-					display: none;
-				}
-				}
 
-		}
+			}
 
 
+	}
