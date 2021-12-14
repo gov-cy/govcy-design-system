@@ -1,6 +1,21 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+a.danger:hover {
+  color: #942514;
+}
+a:visited {
+  color: #4c2c92;
+  border-color: #4c2c92;
+}
+a:active {
+  color: #272525;
+  border-color: #272525;
+}
+
 /*!
  * Bootstrap Reboot v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -8,7 +23,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -50,7 +64,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 39, 37, 37;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Roboto", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -59,7 +73,7 @@
   --bs-body-font-size: 1.188rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #272525;
   --bs-body-bg: #fff;
 }
 
@@ -237,11 +251,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -532,7 +546,7 @@ progress {
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 39, 37, 37;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Roboto", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -541,7 +555,7 @@ progress {
   --bs-body-font-size: 1.188rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #272525;
   --bs-body-bg: #fff;
 }
 
@@ -5581,7 +5595,7 @@ progress {
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 39, 37, 37;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: "Roboto", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -5590,7 +5604,7 @@ progress {
   --bs-body-font-size: 1.188rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #272525;
   --bs-body-bg: #fff;
 }
 
@@ -5768,11 +5782,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7499,15 +7513,15 @@ progress {
 .table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #212529;
+  --bs-table-striped-color: #272525;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
-  --bs-table-active-color: #212529;
+  --bs-table-active-color: #272525;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
-  --bs-table-hover-color: #212529;
+  --bs-table-hover-color: #272525;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #272525;
   vertical-align: top;
   border-color: #dee2e6;
 }
@@ -7737,7 +7751,7 @@ progress {
   font-size: 1.188rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -7757,7 +7771,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus, .govcy-text-input-base:focus, .govcy-text-input-error:focus {
-  color: #212529;
+  color: #272525;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
@@ -7778,7 +7792,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #272525;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -7800,7 +7814,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #272525;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -7825,7 +7839,7 @@ progress {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -7909,7 +7923,7 @@ textarea.form-control-lg {
   font-size: 1.188rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -7939,7 +7953,7 @@ textarea.form-control-lg {
 }
 .form-select:-moz-focusring {
   color: transparent;
-  text-shadow: 0 0 0 #212529;
+  text-shadow: 0 0 0 #272525;
 }
 
 .form-select-sm {
@@ -8235,7 +8249,7 @@ textarea.form-control-lg {
   font-size: 1.188rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -8484,7 +8498,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -8503,7 +8517,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover, .govcy-btn-success:hover, .govcy-btn-secondary:hover, .govcy-btn-primary:hover, .govcy-btn:hover {
-  color: #212529;
+  color: #272525;
 }
 .btn-check:focus + .btn, .btn-check:focus + .govcy-btn-success, .btn-check:focus + .govcy-btn-secondary, .btn-check:focus + .govcy-btn-primary, .btn-check:focus + .govcy-btn, .btn:focus, .govcy-btn-success:focus, .govcy-btn-secondary:focus, .govcy-btn-primary:focus, .govcy-btn:focus {
   outline: 0;
@@ -8956,11 +8970,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -9052,7 +9066,7 @@ textarea.form-control-lg {
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1.188rem;
-  color: #212529;
+  color: #272525;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -9501,7 +9515,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -9511,7 +9525,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #003078;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -10076,7 +10090,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.card {
+.card, .govcy-alert-base {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10087,26 +10101,27 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-.card > hr {
+.card > hr, .govcy-alert-base > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group {
+.card > .list-group, .govcy-alert-base > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child {
+.card > .list-group:first-child, .govcy-alert-base > .list-group:first-child {
   border-top-width: 0;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-.card > .list-group:last-child {
+.card > .list-group:last-child, .govcy-alert-base > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
-.card > .card-header + .list-group,
-.card > .list-group + .card-footer {
+.card > .card-header + .list-group, .govcy-alert-base > .card-header + .list-group,
+.card > .list-group + .card-footer,
+.govcy-alert-base > .list-group + .card-footer {
   border-top: 0;
 }
 
@@ -10191,7 +10206,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card-group > .card {
+.card-group > .card, .card-group > .govcy-alert-base {
   margin-bottom: 0.75rem;
 }
 @media (min-width: 576px) {
@@ -10199,36 +10214,40 @@ textarea.form-control-lg {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card {
+  .card-group > .card, .card-group > .govcy-alert-base {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card {
+  .card-group > .card + .card, .card-group > .govcy-alert-base + .card, .card-group > .card + .govcy-alert-base, .card-group > .govcy-alert-base + .govcy-alert-base {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child) {
+  .card-group > .card:not(:last-child), .card-group > .govcy-alert-base:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top,
-.card-group > .card:not(:last-child) .card-header {
+  .card-group > .card:not(:last-child) .card-img-top, .card-group > .govcy-alert-base:not(:last-child) .card-img-top,
+.card-group > .card:not(:last-child) .card-header,
+.card-group > .govcy-alert-base:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom,
-.card-group > .card:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .govcy-alert-base:not(:last-child) .card-img-bottom,
+.card-group > .card:not(:last-child) .card-footer,
+.card-group > .govcy-alert-base:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child) {
+  .card-group > .card:not(:first-child), .card-group > .govcy-alert-base:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top,
-.card-group > .card:not(:first-child) .card-header {
+  .card-group > .card:not(:first-child) .card-img-top, .card-group > .govcy-alert-base:not(:first-child) .card-img-top,
+.card-group > .card:not(:first-child) .card-header,
+.card-group > .govcy-alert-base:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom,
-.card-group > .card:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .govcy-alert-base:not(:first-child) .card-img-bottom,
+.card-group > .card:not(:first-child) .card-footer,
+.card-group > .govcy-alert-base:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
@@ -10240,7 +10259,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 1rem 1.25rem;
   font-size: 1.188rem;
-  color: #212529;
+  color: #272525;
   text-align: left;
   background-color: #fff;
   border: 0;
@@ -10268,7 +10287,7 @@ textarea.form-control-lg {
   height: 1.25rem;
   margin-left: auto;
   content: "";
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23272525'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
@@ -10372,7 +10391,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -10385,13 +10404,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
+  color: #003078;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0a58ca;
+  color: #003078;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -10651,7 +10670,7 @@ textarea.form-control-lg {
   background-color: #f8f9fa;
 }
 .list-group-item-action:active {
-  color: #212529;
+  color: #272525;
   background-color: #e9ecef;
 }
 
@@ -11544,7 +11563,7 @@ textarea.form-control-lg {
 
 .popover-body {
   padding: 1rem 1rem;
-  color: #212529;
+  color: #272525;
 }
 
 .carousel {
@@ -16802,7 +16821,7 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -16821,7 +16840,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover, .govcy-btn-success:hover, .govcy-btn-secondary:hover, .govcy-btn-primary:hover, .govcy-btn:hover {
-  color: #212529;
+  color: #272525;
 }
 .btn-check:focus + .btn, .btn-check:focus + .govcy-btn-success, .btn-check:focus + .govcy-btn-secondary, .btn-check:focus + .govcy-btn-primary, .btn-check:focus + .govcy-btn, .btn:focus, .govcy-btn-success:focus, .govcy-btn-secondary:focus, .govcy-btn-primary:focus, .govcy-btn:focus {
   outline: 0;
@@ -17274,11 +17293,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -17407,7 +17426,7 @@ textarea.form-control-lg {
   font-size: 1.188rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -17427,7 +17446,7 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 .form-control:focus, .govcy-text-input-base:focus, .govcy-text-input-error:focus {
-  color: #212529;
+  color: #272525;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
@@ -17448,7 +17467,7 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #272525;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -17470,7 +17489,7 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
-  color: #212529;
+  color: #272525;
   background-color: #e9ecef;
   pointer-events: none;
   border-color: inherit;
@@ -17495,7 +17514,7 @@ textarea.form-control-lg {
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #272525;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -17742,6 +17761,47 @@ textarea.form-control-lg {
 }
 .govcy-link-text p {
   margin-bottom: 0px;
+}
+
+.govcy-alert-base {
+  border-width: 5px;
+  color: white;
+  padding: 0;
+  margin: auto;
+}
+.govcy-alert-base-important {
+  border-color: #52879D;
+}
+.govcy-alert-base-success {
+  border-color: #505E31;
+}
+.govcy-alert-base .card-body {
+  color: black;
+}
+.govcy-alert-base .card-header-important {
+  background-color: #52879D;
+}
+.govcy-alert-base .card-header-success {
+  background-color: #505E31;
+}
+
+.govcy-banner {
+  padding: 30px;
+  margin: 30px auto 30px auto;
+  text-align: center;
+  color: white;
+}
+.govcy-banner h4, .govcy-banner .h4 {
+  font-weight: normal;
+}
+.govcy-banner-primary {
+  background-color: #31576F;
+}
+.govcy-banner-danger {
+  background-color: #D4351C;
+}
+.govcy-banner-success {
+  background-color: #505E31;
 }
 
 .govcy-btn:not(.disabled):not(:disabled):hover {

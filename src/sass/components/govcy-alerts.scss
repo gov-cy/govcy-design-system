@@ -138,3 +138,53 @@
 
 }
 
+// new govcy alerts
+
+// new govcy important alert
+.govcy-alert-base {
+
+    @extend .card;
+    border-width: 5px;
+    color:white;
+    padding:0;
+    margin:auto;    
+
+    &-important {
+        border-color: $govcy-info;
+    }
+    &-success {
+        border-color: $govcy-success;
+    }
+    .card-body {
+        color: black;
+    }
+        .card-header {
+            &-important {
+              background-color: $govcy-info;
+            }
+            &-success {
+              background-color: $govcy-success;
+            }
+        }
+      }
+    
+
+.govcy-banner {
+    padding:30px;
+    margin: 30px auto 30px auto;
+    text-align: center;
+    color: white;
+    h4 {
+        font-weight: normal;
+    }
+    &-primary {
+        background-color: $govcy-primary;
+    }
+    &-danger {
+        background-color: $govcy-danger;
+    }
+    &-success {
+        background-color: $govcy-success;
+    }
+}
+
