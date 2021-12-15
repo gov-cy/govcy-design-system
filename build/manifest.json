@@ -1,0 +1,26 @@
+{
+    "short_name": "DSF Design",
+    "name": "DSF Design System - GOV.CY",
+    "icons": [
+        {
+            "src": "img/icons-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "img/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "index.html",
+    "background_color": "#31576F",
+    "display": "browser",
+    "scope": "/",
+    "theme_color": "#31576F"
+}
