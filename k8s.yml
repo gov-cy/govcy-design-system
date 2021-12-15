@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dsf-design-system
+  labels:
+    app: dsf-design-system
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dsf-design-system
+  template:
+    metadata:
+      labels:
+        app: dsf-design-system
+    spec:
+      #imagePullSecrets:
+      #- name: regcred
+      containers:
+      - name: dsf-design-system-k8s
+        image: ghcr.io/gov-cy/dsf-design-system:main
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "250m"
+          limits:
+            memory: "200Mi"
+            cpu: "500m"
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80
