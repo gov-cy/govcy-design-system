@@ -69,4 +69,4 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          kubectl apply -f k8s.yaml
+          kubectl apply -f k8s.yml
