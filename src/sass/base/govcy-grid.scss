@@ -1,0 +1,62 @@
+// GOVCY Grid variables
+
+// container max-width change to 1280px and store in $govcy-container-max-width variable
+$govcy-container-max-width:(
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1280px
+);
+// override default bootstrap container width
+$container-max-widths: $govcy-container-max-width;
+
+// Create govcy-container by extending bootstrap .container-md
+.govcy-container {
+    @extend .container-md;
+}
+
+// create govcy-container-fluid by extending bootstrap .container-fluid
+.govcy-container-fluid {
+    @extend .container-fluid;
+}
+
+// create custom govcy-grid (.govcy-col-*) with one break-point (<768) by extending bootstrap .col-md-*  
+.govcy-col-1 {
+    @extend .col-md-1;
+}
+.govcy-col-2 {
+    @extend .col-md-2;
+}
+.govcy-col-3 {
+    @extend .col-md-3;
+}
+.govcy-col-4 {
+    @extend .col-md-4;
+}
+.govcy-col-5 {
+    @extend .col-md-5;
+}
+.govcy-col-6 {
+    @extend .col-md-6;
+}
+.govcy-col-7 {
+    @extend .col-md-7;
+}
+.govcy-col-8 {
+    @extend .col-md-8;
+}
+
+.govcy-col-9 {
+    @extend .col-md-9;
+}
+
+.govcy-col-10 {
+    @extend .col-md-10;
+}
+.govcy-col-11 {
+    @extend .col-md-11;
+}
+.govcy-col-12 {
+    @extend .col-md-12;
+}
