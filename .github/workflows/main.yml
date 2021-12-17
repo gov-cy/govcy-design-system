@@ -6,10 +6,6 @@ name: Docker
 # documentation.
 
 on:
-  push:
-    branches: [ main ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ main ]
 
@@ -69,4 +65,4 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          kubectl apply -f k8s.yaml
+          kubectl apply -f k8s.yml
