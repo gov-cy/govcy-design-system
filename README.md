@@ -1,3 +1,5 @@
+[![Docker](https://github.com/gov-cy/dsf-design-system/actions/workflows/main.yml/badge.svg)](https://github.com/gov-cy/dsf-design-system/actions/workflows/main.yml)
+
 # govcy-design-system
 Gov.cy DSF design system code and documentation.
 
