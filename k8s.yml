@@ -17,7 +17,7 @@ spec:
       #imagePullSecrets:
       #- name: regcred
       containers:
-      - name: dsf-design-system-k8s
+      - name: dsf-design-system
         image: ghcr.io/gov-cy/dsf-design-system:main
         resources:
           requests:
