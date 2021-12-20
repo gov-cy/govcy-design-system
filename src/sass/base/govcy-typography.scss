@@ -1,19 +1,56 @@
+
 // ------------------------------------
 // Basic typography style for copy text
 // ------------------------------------
 
 //Importing Roboto fonts from googleapis CDN
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+//Importing Google icons from googleapis CDN
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-//DSF base font-family and font styles
 
+//Govcy base font-family and font styles
 $govcy-font-family: 'Roboto', sans-serif;
-
 $govcy-font-size-base: 1.188rem; // 19px
 
 
-//Overiding bootstrap font-family and font styles
+//Govcy body color
+$govcy-body-color: $govcy-body;
 
+//Overiding bootstrap font-family and font styles
 $font-family-sans-serif: $govcy-font-family;
 $font-size-base: $govcy-font-size-base;
+
+//Overiding bootstrap defalult body color
+$body-color: $govcy-body-color;
+
+// Links
+//Overiding bootstrap link colors
+$link-color: $govcy-link;
+$link-hover-color: $govcy-link-hover;
+
+//defining govcy - danger:hover :visited and :active link state
+a{
+  &.danger:hover {
+    color: $govcy-danger-hover;
+  }
+  
+  &:visited{
+    color: $govcy-link-visited;
+    border-color: $govcy-link-visited;
+  }
+
+  &:active{
+      color: $govcy-link-active;
+      border-color: $govcy-link-active;
+    }
+}
+
+
+
+
+
+
+
+
+

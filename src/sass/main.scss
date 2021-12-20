@@ -3,6 +3,7 @@
 // Overriding bootstrap variables must be done before we import bootstrap
 @import "base/govcy-variables";
 @import "base/govcy-typography";
+@import "base/govcy-grid";
 
 // 2.
 // Include the relevant parts of Bootstrap
@@ -11,10 +12,12 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities/api";
 
 
 // 3.
 // Include Bootstrap components here that we extend in our govcy- components file
+@import "components/govcy-utilities.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/alert";
