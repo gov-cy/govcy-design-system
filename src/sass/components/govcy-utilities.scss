@@ -363,6 +363,33 @@ $utilities: map-merge((
     )
   ),
 
+  // utility: govcy-valign
+  // usage:   govcy-valign-*
+  "govcy-valign": (
+    property: vertical-align,
+    class: govcy-valign,
+    values: baseline top middle bottom text-bottom text-top
+  ),
+
+  // utility: govcy-float
+  // usage:   govcy-float-*, govcy-float-*-*
+  "govcy-float": (
+    responsive: true,
+    property: govcy-float,
+    values: (
+      start: left,
+      end: right,
+      none: none,
+    )
+  ),
+
+  // utility: govcy-overflow
+  // usage:   govcy-overflow-*
+  "govcy-overflow": (
+    property: govcy-overflow,
+    values: auto hidden visible scroll,
+  ),
+
   // utility: govcy-display
   // usage:   govcy-d-*, govcy-d-*-*
   "govcy-display": (
@@ -371,5 +398,203 @@ $utilities: map-merge((
     property: display,
     class: govcy-d,
     values: inline inline-block block grid table table-row table-cell flex inline-flex none,
-  ),   
+  ),
+
+  
+  // utility: govcy-flex-fill
+  // usage:   govcy-flex-fill, govcy-flex-*-fill
+  "govcy-flex": (
+    responsive: true,
+    property: flex,
+    class: govcy-flex,
+    values: (fill: 1 1 auto)
+  ),
+
+  // utility: govcy-flex-direction
+  // usage:   govcy-flex-*, govcy-flex-*-*
+  "govcy-flex-direction": (
+    responsive: true,
+    property: flex-direction,
+    class: govcy-flex,
+    values: row column row-reverse column-reverse
+  ),
+
+  // utility: govcy-grow
+  // usage:   govcy-grow-*, govcy-grow-*-*
+  "govcy-flex-grow": (
+    responsive: true,
+    property: flex-grow,
+    class: govcy-flex-grow,
+    values: (
+      0: 0,
+      1: 1,
+    )
+  ),
+
+  // utility: govcy-shrink
+  // usage:   govcy-shrink-*, govcy-shrink-*-*
+  "govcy-flex-shrink": (
+    responsive: true,
+    property: flex-shrink,
+    class: govcy-flex-shrink,
+    values: (
+      0: 0,
+      1: 1,
+    )
+  ),
+
+  // utility: govcy-gap
+  // usage:   govcy-gap-*, govcy-gap-*-*
+  "govcy-gap": (
+    responsive: true,
+    property: gap,
+    class: govcy-gap,
+    values: $spacers,
+  ),
+
+  // utility: govcy-flex-wrap
+  // usage:   govcy-wrap-*, govcy-wrap-*-*
+  "govcy-flex-wrap": (
+    responsive: true,
+    property: flex-wrap,
+    class: govcy-flex,
+    values: wrap nowrap wrap-reverse
+  ),
+
+  // utility: govcy-justify-content
+  // usage:   govcy-justify-content-*, govcy-justify-content-*-*
+  "govcy-justify-content": (
+    responsive: true,
+    property: justify-content,
+    class: govcy-justify-content,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      evenly: space-evenly,
+    )
+  ),
+
+  // utility: govcy-align-items
+  // usage:   govcy-align-items-*, govcy-align-items-*-*
+  "govcy-align-items": (
+    responsive: true,
+    property: align-items,
+    class: govcy-align-items,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      baseline: baseline,
+      stretch: stretch,
+    )
+  ),
+
+  // utility: govcy-align-content
+  // usage:   govcy-align-content-*, govcy-align-content-*-*
+  "govcy-align-content": (
+    responsive: true,
+    property: align-content,
+    class: govcy-align-content,
+    values: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      stretch: stretch,
+    )
+  ),
+
+  // utility: govcy-align-self
+  // usage:   govcy-align-self-*, govcy-align-self-*-*
+  "govcy-align-self": (
+    responsive: true,
+    property: align-self,
+    class: govcy-align-self,
+    values: (
+      auto: auto,
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      baseline: baseline,
+      stretch: stretch,
+    )
+  ),
+
+  // utility: govcy-order
+  // usage:   govcy-order-*, govcy-order-*-*
+  "govcy-order": (
+    responsive: true,
+    property: order,
+    class: govcy-order,
+    values: (
+      first: -1,
+      0: 0,
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+      last: 6,
+    ),
+  ),
+  
+  // utility: govcy-position
+  // usage:   govcy-position-*
+  "govcy-position": (
+    property: position,
+    class: govcy-position,
+    values: static relative absolute fixed sticky
+  ),
+
+  // utility: govcy-top
+  // usage:   govcy-top-*
+  "govcy-top": (
+    property: top,
+    class: govcy-top,
+    values: $position-values
+  ),
+
+  // utility: govcy-bottom
+  // usage:   govcy-bottom-*
+  "govcy-bottom": (
+    property: bottom,
+    class: govcy-bottom,
+    values: $position-values
+  ),
+
+  // utility: govcy-left
+  // usage:   govcy-left-*
+  "govcy-left": (
+    property: left,
+    class: govcy-left,
+    values: $position-values
+  ),
+
+  // utility: govcy-right
+  // usage:   govcy-right-*
+  "govcy-right": (
+    property: right,
+    class: govcy-right,
+    values: $position-values
+  ),
+
+  // utility: govcy-user-select
+  // usage:   govcy-user-select-*
+  "govcy-user-select": (
+    property: user-select,
+    class: govcy-user-select,
+    values: all auto none
+  ),
+
+  // utility: govcy-pointer-events
+  // usage:   govcy-pe-*
+  "govcy-pointer-events": (
+    property: pointer-events,
+    class: govcy-pe,
+    values: none auto,
+  ),
 ),$utilities);
