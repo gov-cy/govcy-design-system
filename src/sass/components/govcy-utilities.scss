@@ -375,7 +375,8 @@ $utilities: map-merge((
   // usage:   govcy-float-*, govcy-float-*-*
   "govcy-float": (
     responsive: true,
-    property: govcy-float,
+    property: float,
+    class: govcy-float,
     values: (
       start: left,
       end: right,
@@ -386,7 +387,8 @@ $utilities: map-merge((
   // utility: govcy-overflow
   // usage:   govcy-overflow-*
   "govcy-overflow": (
-    property: govcy-overflow,
+    property: overflow,
+    class: govcy-overflow,
     values: auto hidden visible scroll,
   ),
 

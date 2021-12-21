@@ -9493,31 +9493,31 @@ textarea.form-control-lg {
 }
 
 .govcy-float-start {
-  govcy-float: left !important;
+  float: left !important;
 }
 
 .govcy-float-end {
-  govcy-float: right !important;
+  float: right !important;
 }
 
 .govcy-float-none {
-  govcy-float: none !important;
+  float: none !important;
 }
 
 .govcy-overflow-auto {
-  govcy-overflow: auto !important;
+  overflow: auto !important;
 }
 
 .govcy-overflow-hidden {
-  govcy-overflow: hidden !important;
+  overflow: hidden !important;
 }
 
 .govcy-overflow-visible {
-  govcy-overflow: visible !important;
+  overflow: visible !important;
 }
 
 .govcy-overflow-scroll {
-  govcy-overflow: scroll !important;
+  overflow: scroll !important;
 }
 
 .govcy-d-inline {
@@ -10360,15 +10360,15 @@ textarea.form-control-lg {
   }
 
   .govcy-float-sm-start {
-    govcy-float: left !important;
+    float: left !important;
   }
 
   .govcy-float-sm-end {
-    govcy-float: right !important;
+    float: right !important;
   }
 
   .govcy-float-sm-none {
-    govcy-float: none !important;
+    float: none !important;
   }
 
   .govcy-d-sm-inline {
@@ -11123,15 +11123,15 @@ textarea.form-control-lg {
   }
 
   .govcy-float-md-start {
-    govcy-float: left !important;
+    float: left !important;
   }
 
   .govcy-float-md-end {
-    govcy-float: right !important;
+    float: right !important;
   }
 
   .govcy-float-md-none {
-    govcy-float: none !important;
+    float: none !important;
   }
 
   .govcy-d-md-inline {
@@ -11886,15 +11886,15 @@ textarea.form-control-lg {
   }
 
   .govcy-float-lg-start {
-    govcy-float: left !important;
+    float: left !important;
   }
 
   .govcy-float-lg-end {
-    govcy-float: right !important;
+    float: right !important;
   }
 
   .govcy-float-lg-none {
-    govcy-float: none !important;
+    float: none !important;
   }
 
   .govcy-d-lg-inline {
@@ -12649,15 +12649,15 @@ textarea.form-control-lg {
   }
 
   .govcy-float-xl-start {
-    govcy-float: left !important;
+    float: left !important;
   }
 
   .govcy-float-xl-end {
-    govcy-float: right !important;
+    float: right !important;
   }
 
   .govcy-float-xl-none {
-    govcy-float: none !important;
+    float: none !important;
   }
 
   .govcy-d-xl-inline {
@@ -13412,15 +13412,15 @@ textarea.form-control-lg {
   }
 
   .govcy-float-xxl-start {
-    govcy-float: left !important;
+    float: left !important;
   }
 
   .govcy-float-xxl-end {
-    govcy-float: right !important;
+    float: right !important;
   }
 
   .govcy-float-xxl-none {
-    govcy-float: none !important;
+    float: none !important;
   }
 
   .govcy-d-xxl-inline {
