@@ -22,39 +22,75 @@ $utilities: map-merge((
   ),
 
   // utility: govcy-border-top
-  // usage:   govcy-br-top-0, govcy-br-top-*-0  
+  // usage:   govcy-br-top-0, govcy-br-top-*-* 
   "govcy-border-top": (
     property: border-top,
     class: govcy-br-top,
     responsive: true,
-    values: (0:0)
+    values: $govcy-border-widths,
   ),
 
   // utility: govcy-border-end
-  // usage:   govcy-br-right-0, govcy-br-right-*-0 
+  // usage:   govcy-br-right-0, govcy-br-right-*-* 
   "govcy-border-end": (
     property: border-right,
     class: govcy-br-right,
     responsive: true,
-    values: (0:0),
+    values: $govcy-border-widths,
   ),
 
   // utility: govcy-border-bottom
-  // usage:   govcy-br-bottom-0, govcy-br-bottom-*-0
+  // usage:   govcy-br-bottom-0, govcy-br-bottom-*-*
   "govcy-border-bottom": (
     property: border-bottom,
     class: govcy-br-bottom,
     responsive: true,
-    values: (0:0),
+    values: $govcy-border-widths,
   ),
   
   // utility: govcy-border-start
-  // usage:   govcy-br-left-0, govcy-br-left-*-0
+  // usage:   govcy-br-left-0, govcy-br-left-*-*
   "govcy-border-start": (
     property: border-left,
     class: govcy-br-left,
     responsive: true,
-    values: (0:0),
+    values: $govcy-border-widths,
+  ),
+
+  // utility: govcy-border-top-color
+  // usage:   govcy-br-top-*, govcy-br-top-*-*
+  "govcy-border-top-color": (
+    property: border-top-color,
+    class: govcy-br-top,
+    responsive: true,
+    values: $govcy-border-colors,
+  ),
+
+  // utility: govcy-border-right-color
+  // usage:   govcy-br-right-*, govcy-br-right-*-*
+  "govcy-border-right-color": (
+    property: border-right-color,
+    class: govcy-br-right,
+    responsive: true,
+    values: $govcy-border-colors,
+  ),
+
+  // utility: govcy-border-bottom-color
+  // usage:   govcy-br-bottom-*, govcy-br-bottom-*-*
+  "govcy-border-bottom-color": (
+    property: border-bottom-color,
+    class: govcy-br-bottom,
+    responsive: true,
+    values: $govcy-border-colors,
+  ),
+
+  // utility: govcy-border-left-color
+  // usage:   govcy-br-left-*, govcy-br-left-*-*
+  "govcy-border-left-color": (
+    property: border-left-color,
+    class: govcy-br-left,
+    responsive: true,
+    values: $govcy-border-colors,
   ),
 
   // utility: govcy-rounded
@@ -326,6 +362,15 @@ $utilities: map-merge((
     property: font-size,
     class: govcy-fs,
     values: $font-sizes,
+  ),
+
+  // utility: govcy-extra-font-size
+  // usage:   govcy-efs-*
+  "govcy-extra-font-size": (
+    rfs: true,
+    property: font-size,
+    class: govcy-efs,
+    values: $govcy-font-sizes,
   ),
 
   // utility: govcy-font-style
