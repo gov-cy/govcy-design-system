@@ -46,7 +46,9 @@ $govcy-heading: $govcy-body;
 $govcy-hint: map-get($govcy-brand-colors, "hint");
 $govcy-white: map-get($govcy-brand-colors, "white");
 $govcy-black: map-get($govcy-brand-colors, "black");
-$govcy-light: map-get($govcy-brand-colors, "gray-100");
+$govcy-gray: map-get($govcy-brand-colors, "gray-100");
+$govcy-light: map-get($govcy-brand-colors, "cyan-100");
+
 
 // Govcy link colors
 $govcy-link: map-get($govcy-brand-colors, "link-standard");
@@ -127,6 +129,7 @@ $govcy-bg-colors: (
   "light":      hexToRGB($govcy-light),
   "dark":       hexToRGB($govcy-black),
   "white":      hexToRGB($govcy-white),
+  "gray":       hexToRGB($govcy-gray),
 );
 
 //Govcy text color

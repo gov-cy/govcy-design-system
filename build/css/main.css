@@ -18102,7 +18102,7 @@ textarea.form-control-lg {
 }
 
 .govcy-bg-light {
-  background-color: rgb(230,230,231) !important;
+  background-color: rgb(235,241,243) !important;
 }
 
 .govcy-bg-dark {
@@ -18111,6 +18111,10 @@ textarea.form-control-lg {
 
 .govcy-bg-white {
   background-color: rgb(255,255,255) !important;
+}
+
+.govcy-bg-gray {
+  background-color: rgb(230,230,231) !important;
 }
 
 .govcy-opacity-10 {
@@ -20075,7 +20079,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-sm-light {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(235,241,243) !important;
   }
 
   .govcy-bg-sm-dark {
@@ -20084,6 +20088,10 @@ textarea.form-control-lg {
 
   .govcy-bg-sm-white {
     background-color: rgb(255,255,255) !important;
+  }
+
+  .govcy-bg-sm-gray {
+    background-color: rgb(230,230,231) !important;
   }
 
   .govcy-text-sm-start {
@@ -21728,7 +21736,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-md-light {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(235,241,243) !important;
   }
 
   .govcy-bg-md-dark {
@@ -21737,6 +21745,10 @@ textarea.form-control-lg {
 
   .govcy-bg-md-white {
     background-color: rgb(255,255,255) !important;
+  }
+
+  .govcy-bg-md-gray {
+    background-color: rgb(230,230,231) !important;
   }
 
   .govcy-text-md-start {
@@ -23381,7 +23393,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-lg-light {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(235,241,243) !important;
   }
 
   .govcy-bg-lg-dark {
@@ -23390,6 +23402,10 @@ textarea.form-control-lg {
 
   .govcy-bg-lg-white {
     background-color: rgb(255,255,255) !important;
+  }
+
+  .govcy-bg-lg-gray {
+    background-color: rgb(230,230,231) !important;
   }
 
   .govcy-text-lg-start {
@@ -25034,7 +25050,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-xl-light {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(235,241,243) !important;
   }
 
   .govcy-bg-xl-dark {
@@ -25043,6 +25059,10 @@ textarea.form-control-lg {
 
   .govcy-bg-xl-white {
     background-color: rgb(255,255,255) !important;
+  }
+
+  .govcy-bg-xl-gray {
+    background-color: rgb(230,230,231) !important;
   }
 
   .govcy-text-xl-start {
@@ -26687,7 +26707,7 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-xxl-light {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(235,241,243) !important;
   }
 
   .govcy-bg-xxl-dark {
@@ -26696,6 +26716,10 @@ textarea.form-control-lg {
 
   .govcy-bg-xxl-white {
     background-color: rgb(255,255,255) !important;
+  }
+
+  .govcy-bg-xxl-gray {
+    background-color: rgb(230,230,231) !important;
   }
 
   .govcy-text-xxl-start {
