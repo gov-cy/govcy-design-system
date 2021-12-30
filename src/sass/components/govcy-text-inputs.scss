@@ -41,11 +41,11 @@ input[type="color"]:focus,
         font-weight: 500;;
 
     }
-    .govcy-text-input {
+    .govcy-text-input, .govcy-text-area {
         border: 2px solid $govcy-body;
         width: 100%;
         &-error {
-            outline: 1px solid $govcy-danger;
+            //outline: 1px solid $govcy-danger;
             border-color: $govcy-danger; 
         }
     }

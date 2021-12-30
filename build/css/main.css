@@ -16106,11 +16106,10 @@ input[type=color]:focus,
   color: #D4351C;
   font-weight: 500;
 }
-.govcy-form .govcy-text-input {
+.govcy-form .govcy-text-input, .govcy-form .govcy-text-area {
   border: 2px solid #272525;
   width: 100%;
 }
-.govcy-form .govcy-text-input-error {
-  outline: 1px solid #D4351C;
+.govcy-form .govcy-text-input-error, .govcy-form .govcy-text-area-error {
   border-color: #D4351C;
 }
