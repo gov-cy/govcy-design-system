@@ -118,86 +118,6 @@
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
-    <hr>
-
-    <!-- Alerts -->
-    <h2>Alerts:</h2>
-
-   <div class="container-fluid">  
-      <div class="row" style="margin-top: 10px;">   <!--  the inline style  is to separate the alerts from the top of the page -->
-            <!-- alert-important -->
-      
-            <div class="row">
-                <div class="govcy-alert-error">
-                    <h2>
-                        There is a problem
-                    </h2>
-                    <p>
-                        <a href="#">Enter your fullname</a> 
-                    </p>
-                    <p>
-                       <a href="#"> Second Error</a>
-                    </p>
-              </div>
-            </div>
-
-            <div class="row">
-                <div class="govcy-alert-important">
-                    <h2>Important</h2>
-                    <p>Success: AIt is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout. 
-                    </p>
-                    <a href="#">
-                        View your application
-                    </a>
-                </div>
-            </div>
-
-            <!-- alert-success -->
-            <div class="row">
-                <div class="govcy-alert-success">
-                    <h2>Success</h2>
-                    <p>Success: AIt is a long established fact that a reader will be distracted by the readable content
-                        of a page when looking at its layout.</p>
-                   <div class="govcy-link-text">
-                    <p>
-                       Contact <a href="mailto:support@gov.cy">support@gov.cy</a> if you think your application has a problem.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <!-- dsf panel -->
-            <div class="row">
-                <div class="govcy-panel">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col align-items-center justify-content-center d-flex">
-                                <h1> This is a panel Header</h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col align-items-center align-content-center justify-content-center d-flex">
-                                <p>This is a panel paragraph text</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- dsf warning -->
-            <!-- The margin-top style here is just to separate this control from the ones above -->
-            <div class="row" style="margin-top: 20px;">
-                <div class="govcy-warning">
-                    <div class="col align-items-center justify-content-start d-flex">
-                        <p><i class="bi bi-exclamation-circle-fill"></i>&nbsp;Warning message here</p>
-   
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
 
     <hr>
     <h2>Border Width</h2>
@@ -472,7 +392,81 @@
             <span class="govcy-d-block govcy-fs-6 govcy-text-primary">govcy-col-12</span>
         </div>
     </div>
-   
+
+    <hr>
+    <!-- Govcy Alert-Error English -->
+    <h2>Govcy Alert-Error</h2>
+    <div class="govcy-container-fluid">
+        <div class="row govcy-px-2">
+            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+                <h3>There is a problem</h3>
+                <p class="govcy-mb-0">
+                    <a href="">Enter your full name</a>
+                    <a href="">Social insurance number should be 16 digit long</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+<br>
+    <!-- Govcy Alert-Notification English -->
+    <h2>Govcy Alert-Notification</h2>
+    <div class="govcy-container-fluid">
+        <div class="row govcy-px-2">
+            <div class="govcy-alert-notification govcy-br-5 govcy-br-info govcy-px-0">
+                <div class="govcy-alert-notification-header govcy-bg-info">Important</div>
+                <div class="govcy-alert-notification-body">
+                    <p class="govcy-pl-4 govcy-pt-3 govcy-fw-bold">You have 7 days left to send your application
+                        <a href="" class="govcy-d-block">View application</a>
+                    </p>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="govcy-container-fluid">
+        <div class="row govcy-px-2">
+            <div class="govcy-alert-notification govcy-br-5 govcy-br-success govcy-px-0">
+                <div class="govcy-alert-notification-header govcy-bg-success">Success</div>
+                <div class="govcy-alert-notification-body">
+                    <p class="govcy-pl-4 govcy-pt-3 govcy-fw-bold">Marriage certificate updated
+                        <span class="govcy-d-block govcy-fw-normal govcy-pt-1">Contact <a href="" class="govcy-d-inline">example@department.gov.cy</a> if you think there's a problem</span>
+                    </p>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Govcy Alert-Completed-Banner English -->
+    <h2>Govcy Alert-Completed-Banner</h2>
+    <div class="govcy-container-fluid">
+        <div class="row govcy-px-2">
+            <div class="govcy-alert-completed-notification govcy-px-0">
+                <div class="govcy-alert-completed-notification-body govcy-bg-success">
+                    <h2>Application complete</h2>
+                    <p class="govcy-mb-0">You'll receieve an email confirmation</p>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Govcy Alert-Completed-Banner English -->
+    <h2>Govcy Alert-Warning</h2>
+
+    <div class="govcy-container-fluid">
+        <div class="row govcy-px-2">
+            <div class="govcy-alert-warning">
+                <span class="material-icons govcy-alert-warning-icon">error</span>
+                <span class="govcy-alert-warning-text" >You can be fined up to 5000 if you do not register</span>
+             </div>
+        </div>
+    </div>
+
 
     <script src="js/app.js"></script>
 

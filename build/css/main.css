@@ -14152,7 +14152,7 @@ textarea.form-control-lg {
   top: -1px;
 }
 
-.alert, .govcy-alert-important, .govcy-alert-success, .govcy-alert-error {
+.alert {
   position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
@@ -27607,7 +27607,7 @@ textarea.form-control-lg {
   border-radius: 0.2rem;
 }
 
-.alert, .govcy-alert-important, .govcy-alert-success, .govcy-alert-error {
+.alert {
   position: relative;
   padding: 1rem 1rem;
   margin-bottom: 1rem;
@@ -27706,171 +27706,38 @@ textarea.form-control-lg {
   color: #101214;
 }
 
-.govcy-alert-error {
+.govcy-alert-error p a {
+  display: block;
+  margin-bottom: 5px;
+  color: #D4351C;
   font-weight: bold;
-  border: solid 5px;
-  background-color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-color: red;
-}
-.govcy-alert-error h2, .govcy-alert-error .h2 {
-  height: 50px;
-}
-.govcy-alert-error p {
-  padding-left: 10px;
-  font-size: x-large;
-}
-.govcy-alert-error a {
-  font-size: x-large;
-}
-.govcy-alert-error h2, .govcy-alert-error .h2 {
-  color: black;
-}
-.govcy-alert-error p {
-  color: red;
-  margin-bottom: 0px;
-}
-.govcy-alert-error a {
-  color: red;
 }
 
-.govcy-alert-success {
-  font-weight: bold;
-  border: solid 5px;
-  background-color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-  border: solid 5px;
-  background-color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  border-color: olivedrab;
-}
-.govcy-alert-success h2, .govcy-alert-success .h2 {
-  height: 50px;
-}
-.govcy-alert-success p {
-  padding-left: 10px;
-  font-size: x-large;
-}
-.govcy-alert-success a {
-  font-size: x-large;
-}
-.govcy-alert-success h2, .govcy-alert-success .h2 {
-  height: 50px;
-}
-.govcy-alert-success p {
-  padding-left: 10px;
-  font-size: x-large;
-}
-.govcy-alert-success a {
-  font-size: x-large;
-}
-.govcy-alert-success h2, .govcy-alert-success .h2, .govcy-alert-success p, .govcy-alert-success a {
+.govcy-alert-notification .govcy-alert-notification-header {
+  color: #ffffff;
   padding-left: 20px;
 }
-.govcy-alert-success h2, .govcy-alert-success .h2 {
-  color: white;
-}
-.govcy-alert-success p {
-  color: black;
-}
-.govcy-alert-success h2, .govcy-alert-success .h2 {
-  background-color: olivedrab;
-}
-.govcy-alert-success a {
-  padding-left: 0px;
+.govcy-alert-notification .govcy-alert-notification-body p a {
+  color: #31576F;
+  padding-top: 5px;
 }
 
-.govcy-alert-important {
-  font-weight: bold;
-  border: solid 5px;
-  background-color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-  border: solid 5px;
-  background-color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-left: 0px;
-  border-color: steelblue;
+.govcy-alert-completed-notification {
+  color: #ffffff;
 }
-.govcy-alert-important h2, .govcy-alert-important .h2 {
-  height: 50px;
-}
-.govcy-alert-important p {
-  padding-left: 10px;
-  font-size: x-large;
-}
-.govcy-alert-important a {
-  font-size: x-large;
-}
-.govcy-alert-important h2, .govcy-alert-important .h2 {
-  height: 50px;
-}
-.govcy-alert-important p {
-  padding-left: 10px;
-  font-size: x-large;
-}
-.govcy-alert-important a {
-  font-size: x-large;
-}
-.govcy-alert-important h2, .govcy-alert-important .h2, .govcy-alert-important p, .govcy-alert-important a {
-  padding-left: 20px;
-}
-.govcy-alert-important h2, .govcy-alert-important .h2 {
-  color: white;
-}
-.govcy-alert-important p {
-  color: black;
-}
-.govcy-alert-important h2, .govcy-alert-important .h2 {
-  background-color: steelblue;
+.govcy-alert-completed-notification .govcy-alert-completed-notification-body {
+  padding: 24px;
+  text-align: center;
 }
 
-.govcy-panel {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  height: 150px;
-  background-color: olivedrab;
-  margin-left: 10px;
-  margin-right: 10px;
+.govcy-alert-warning .govcy-alert-warning-icon {
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  top: 7px;
 }
-.govcy-panel h1, .govcy-panel .h1 {
-  color: white;
-}
-.govcy-panel p {
-  color: white;
-  font-size: large;
-}
-
-.govcy-warning p, .govcy-warning i {
-  font-weight: bold;
-  align-items: center;
-  vertical-align: middle;
-  display: flex;
-}
-.govcy-warning p {
-  font-size: x-large;
-}
-.govcy-warning i {
-  font-size: xx-large;
-}
-
-.govcy-link-text {
-  font-weight: normal;
-}
-.govcy-link-text p {
-  margin-bottom: 0px;
+.govcy-alert-warning .govcy-alert-warning-text {
+  font-size: 24px;
 }
 
 .govcy-btn:not(.disabled):not(:disabled):hover {
