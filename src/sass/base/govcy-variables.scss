@@ -76,6 +76,8 @@ $govcy-btn-success-hover: map-get($govcy-brand-colors, "button-success-hover");
 
 $govcy-btn-focus :map-get($govcy-brand-colors, "focus");
 
+// Govcy text input
+$govcy-focus :map-get($govcy-brand-colors, "focus");
 
 // Govcy border width
 $govcy-border-widths: (
