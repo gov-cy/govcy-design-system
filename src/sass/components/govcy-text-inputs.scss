@@ -45,8 +45,22 @@ input[type="color"]:focus,
         border: 2px solid $govcy-body;
         width: 100%;
         &-error {
-            //outline: 1px solid $govcy-danger;
             border-color: $govcy-danger; 
+        }
+        &-char_10 {
+            width: 13%;
+        }
+        &-char_5 {
+            width: 7%;
+        }
+        &-char_4 {
+            width: 6%;
+        }
+        &-char_3 {
+            width: 5%;
+        }
+        &-char_2 {
+            width: 4%;
         }
     }
 }

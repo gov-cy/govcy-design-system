@@ -16113,3 +16113,18 @@ input[type=color]:focus,
 .govcy-form .govcy-text-input-error, .govcy-form .govcy-text-area-error {
   border-color: #D4351C;
 }
+.govcy-form .govcy-text-input-char_10, .govcy-form .govcy-text-area-char_10 {
+  width: 13%;
+}
+.govcy-form .govcy-text-input-char_5, .govcy-form .govcy-text-area-char_5 {
+  width: 7%;
+}
+.govcy-form .govcy-text-input-char_4, .govcy-form .govcy-text-area-char_4 {
+  width: 6%;
+}
+.govcy-form .govcy-text-input-char_3, .govcy-form .govcy-text-area-char_3 {
+  width: 5%;
+}
+.govcy-form .govcy-text-input-char_2, .govcy-form .govcy-text-area-char_2 {
+  width: 4%;
+}
