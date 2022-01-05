@@ -14,6 +14,10 @@
             margin-bottom: 5px;
             color: $govcy-danger;
             font-weight: bold;
+
+            &:hover {
+                color: $govcy-danger-hover;
+            }
         }
     }
     
