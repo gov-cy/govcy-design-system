@@ -9744,6 +9744,42 @@ textarea.form-control-lg {
   font-weight: bolder !important;
 }
 
+.govcy-fw-100 {
+  font-weight: 100 !important;
+}
+
+.govcy-fw-200 {
+  font-weight: 200 !important;
+}
+
+.govcy-fw-300 {
+  font-weight: 300 !important;
+}
+
+.govcy-fw-400 {
+  font-weight: 400 !important;
+}
+
+.govcy-fw-500 {
+  font-weight: 500 !important;
+}
+
+.govcy-fw-600 {
+  font-weight: 600 !important;
+}
+
+.govcy-fw-700 {
+  font-weight: 700 !important;
+}
+
+.govcy-fw-800 {
+  font-weight: 800 !important;
+}
+
+.govcy-fw-900 {
+  font-weight: 900 !important;
+}
+
 .govcy-lh-1 {
   line-height: 1 !important;
 }
@@ -16070,27 +16106,19 @@ textarea.form-control-lg {
   color: #000000;
 }
 
-textarea:focus,
-input[type=text]:focus,
-input[type=password].focus,
-input[type=datetime]:focus,
-input[type=datetime-local]:focus,
-input[type=date]:focus,
-input[type=month]:focus,
-input[type=time]:focus,
-input[type=week]:focus,
-input[type=number]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=search]:focus,
-input[type=tel]:focus,
-input[type=color]:focus,
-.uneditable-input:focus {
-  outline: 3px solid #ffdd00;
+.govcy-form {
+  padding: 0 14px;
+  margin: 14px 0;
 }
-
 .govcy-form-error {
   border-left: 4px solid #D4351C;
+}
+.govcy-form .govcy-fieldset {
+  border: 1px solid #BBBCBF;
+  padding: 1rem;
+}
+.govcy-form .govcy-fieldset .govcy-legend {
+  font-weight: 500;
 }
 .govcy-form .govcy-label {
   display: block;
@@ -16109,22 +16137,46 @@ input[type=color]:focus,
 .govcy-form .govcy-text-input, .govcy-form .govcy-text-area {
   border: 2px solid #272525;
   width: 100%;
+  padding: 0 5px;
+  margin-bottom: 0.5rem;
+  /* Defalult */
+  /* Firefox 19+ */
+  /* Firefox 18- */
+  /* IE */
+}
+.govcy-form .govcy-text-input::placeholder, .govcy-form .govcy-text-area::placeholder {
+  font-size: 13px;
+}
+.govcy-form .govcy-text-input::-moz-placeholder, .govcy-form .govcy-text-area::-moz-placeholder {
+  font-size: 13px;
+}
+.govcy-form .govcy-text-input:-moz-placeholder, .govcy-form .govcy-text-area:-moz-placeholder {
+  font-size: 13px;
+}
+.govcy-form .govcy-text-input:-ms-input-placeholder, .govcy-form .govcy-text-area:-ms-input-placeholder {
+  font-size: 13px;
+}
+.govcy-form .govcy-text-input:focus, .govcy-form .govcy-text-area:focus {
+  outline: 3px solid #ffdd00;
 }
 .govcy-form .govcy-text-input-error, .govcy-form .govcy-text-area-error {
   border-color: #D4351C;
 }
+.govcy-form .govcy-text-input-char_20, .govcy-form .govcy-text-area-char_20 {
+  width: 14.16rem;
+}
 .govcy-form .govcy-text-input-char_10, .govcy-form .govcy-text-area-char_10 {
-  width: 13%;
+  width: 7.8rem;
 }
 .govcy-form .govcy-text-input-char_5, .govcy-form .govcy-text-area-char_5 {
-  width: 7%;
+  width: 4.2rem;
 }
 .govcy-form .govcy-text-input-char_4, .govcy-form .govcy-text-area-char_4 {
-  width: 6%;
+  width: 3.8rem;
 }
 .govcy-form .govcy-text-input-char_3, .govcy-form .govcy-text-area-char_3 {
-  width: 5%;
+  width: 3.1rem;
 }
 .govcy-form .govcy-text-input-char_2, .govcy-form .govcy-text-area-char_2 {
-  width: 4%;
+  width: 2.2rem;
 }
