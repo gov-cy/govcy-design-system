@@ -1,12 +1,16 @@
 
 // Govcy Form styles
 .govcy-form {
-    padding: 0 14px;
-    margin: 14px 0;
-
-    &-error {
-        border-left: 4px solid $govcy-danger;
+    
+    .govcy-form-control {
+        padding: 0 14px;
+        margin: 14px 0;
+        &-error {
+            border-left: 4px solid $govcy-danger;
+        }
     }
+
+   
     .govcy-fieldset{
         border: 1px solid $govcy-border-standard;
         padding: 1rem;
@@ -34,7 +38,7 @@
         border: 2px solid $govcy-body;
         width: 100%;
         padding: 0 5px;
-        margin-bottom: 0.5rem;
+        // margin-bottom: 0.5rem;
 
         &::placeholder{font-size: 13px;} /* Defalult */
         &::-moz-placeholder { font-size: 13px;} /* Firefox 19+ */

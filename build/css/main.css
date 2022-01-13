@@ -16106,11 +16106,11 @@ textarea.form-control-lg {
   color: #000000;
 }
 
-.govcy-form {
+.govcy-form .govcy-form-control {
   padding: 0 14px;
   margin: 14px 0;
 }
-.govcy-form-error {
+.govcy-form .govcy-form-control-error {
   border-left: 4px solid #D4351C;
 }
 .govcy-form .govcy-fieldset {
@@ -16138,7 +16138,6 @@ textarea.form-control-lg {
   border: 2px solid #272525;
   width: 100%;
   padding: 0 5px;
-  margin-bottom: 0.5rem;
   /* Defalult */
   /* Firefox 19+ */
   /* Firefox 18- */
