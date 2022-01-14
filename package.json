@@ -11,7 +11,7 @@
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
         "watch-css": "npm run css-watch",
-        "test-percy": "percy exec -- node tests/percy/config.js",
+        "test-percy": "percy exec -- node tests/scripts/percy.js",
         "start": "http-server -c-1 -p 3000 -o build/"
     },
     "dependencies": {
