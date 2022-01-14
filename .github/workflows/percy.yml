@@ -4,10 +4,10 @@ on:
   # but only for the main branch
   push:
    branches:
-     - master
+     - main
   pull_request:
     branches:
-      - master
+     - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,6 +19,6 @@ jobs:
       - name: Percy Test
         uses: percy/exec-action@master
         with:
-          command: "node tests/percy/config.js"
+          command: "node tests/scripts/percy.js"
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
