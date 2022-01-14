@@ -4337,7 +4337,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: red;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -16112,10 +16112,6 @@ textarea.form-control-lg {
 }
 .govcy-form .govcy-form-control-error {
   border-left: 4px solid #D4351C;
-}
-.govcy-form .govcy-fieldset {
-  border: 1px solid #BBBCBF;
-  padding: 1rem;
 }
 .govcy-form .govcy-fieldset .govcy-legend {
   font-weight: 500;
