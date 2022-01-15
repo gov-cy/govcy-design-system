@@ -18,8 +18,8 @@
   //Govcy service name
   .govcy-service-name {
     float: left;
-    margin: 16px 24px ; 
-    width: 100%;   
+    margin:10px 24px;
+    width: 100%;
   }
 
   //Label for Govcy menu button (Mobile)
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    color: white;
+    color: $govcy-white;
   }
 
   //Mimic button click effect with css
@@ -71,7 +71,8 @@
         padding: 10px 0;
         color: $govcy-white;
         font-weight: 400;
-        border-bottom: 0.125rem solid #31576f;
+        // border-bottom: 0.125rem solid #31576f;
+        border-bottom: 0.125rem solid $govcy-primary;
         text-decoration: none;
         margin: 0 24px;
         &:hover {
@@ -127,6 +128,7 @@
     .govcy-service-name {
       float: left;
       width: auto;
+      margin: 16px 24px;
       
     }
   }

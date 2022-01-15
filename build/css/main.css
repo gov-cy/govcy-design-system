@@ -27835,7 +27835,7 @@ textarea.form-control-lg {
 }
 .govcy-header .govcy-service-name {
   float: left;
-  margin: 16px 24px;
+  margin: 10px 24px;
   width: 100%;
 }
 .govcy-header .govcy-menu-icon {
@@ -27847,7 +27847,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   flex-direction: row;
-  color: white;
+  color: #ffffff;
 }
 .govcy-header .govcy-menu-btn:checked ~ .govcy-menu {
   max-height: 15rem;
@@ -27871,7 +27871,7 @@ textarea.form-control-lg {
   padding: 10px 0;
   color: #ffffff;
   font-weight: 400;
-  border-bottom: 0.125rem solid #31576f;
+  border-bottom: 0.125rem solid #31576F;
   text-decoration: none;
   margin: 0 24px;
 }
@@ -27911,6 +27911,7 @@ textarea.form-control-lg {
   .govcy-header .govcy-service-name {
     float: left;
     width: auto;
+    margin: 16px 24px;
   }
 }
 .govcy-footer img {
