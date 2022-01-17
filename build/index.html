@@ -119,28 +119,6 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
 
-    <hr>
-    <h2>Border Width</h2>
-<div class="goccy-container-fluid">
-    <div class="row govcy-p-4">
-        <div class="govcy-w-100 govcy-br-0 govcy-mb-1 govcy-bg-light">Border-0</div>
-        <div class="govcy-w-100 govcy-br-1 govcy-mb-1 govcy-bg-light">Border-1</div>
-        <div class="govcy-w-100 govcy-br-2 govcy-mb-1 govcy-bg-light">Border-2</div>
-        <div class="govcy-w-100 govcy-br-3 govcy-mb-1 govcy-bg-light">Border-3</div>
-        <div class="govcy-w-100 govcy-br-4 govcy-mb-1 govcy-bg-light">Border-4</div>
-        <div class="govcy-w-100 govcy-br-5 govcy-bg-light">Border-5</div>
-        
-        <div class="govcy-py-3">
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-0"</span><span>&gt;Border-0&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-1"</span><span>&gt;Border-1&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-2"</span><span>&gt;Border-2&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-3"</span><span>&gt;Border-3&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-4"</span><span>&gt;Border-4&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-5"</span><span>&gt;Border-5&lt;/div&gt;</span></span>
-        </div>
-    </div>
-</div>
-
 <hr>
 <!-- Govcy Border -->
 <h2>Border width - Border responsive - Border radius</h2>
@@ -470,105 +448,159 @@
     <br>
     <hr>
     <!-- Text Inputs -->
+    <h2>Govcy Inputs</h2>
     <div class="govcy-container">
         <div class="row">
+
             <form class="govcy-form">
-                <input type="text" class="govcy-text-input" placeholder="input" />
+                <div class="govcy-form-control">
+                    <input type="text" class="govcy-text-input" placeholder="input" />
+                </div>
             </form>
-        </div>
-        <br>
-        <div class="row">
+        
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input" placeholder="input" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input" placeholder="input" />
+                </div>
             </form>
-        </div>
-        <br>
-        <div class="row">
+         
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <span class="govcy-hint">Hint</span>
-                <input type="text" class="govcy-text-input" placeholder="input" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <span class="govcy-hint">Hint</span>
+                    <input type="text" class="govcy-text-input" placeholder="input" />
+                </div>
             </form>
-        </div>
-        <br>
-        <div class="row">
-            <form action="" class="govcy-form govcy-form-error">
-                <label class="govcy-label" for="input">Label</label>
-                <span class="govcy-input-error-msg">There is an error</span>
-                <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input" />
-            </form>
-        </div>
-
-        <br>
-        <div class="row">
+        
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input govcy-w-25" placeholder="input" maxlength="20" />
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="input">Label</label>
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input" />
+                </div>
             </form>
-        </div>
-
-        <br>
-        <div class="row">
+    
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input govcy-text-input-char_10" placeholder="input" maxlength="10" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_20" placeholder="20 Characters" maxlength="20" />
+                </div>
             </form>
-        </div>
-
-        <br>
-        <div class="row">
+    
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input govcy-text-input-char_5" placeholder="input" maxlength="5" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_10" placeholder="10 Characters" maxlength="10" />
+                </div>
             </form>
-        </div>
-
-        <br>
-        <div class="row">
+    
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input govcy-text-input-char_4" placeholder="input" maxlength="4" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_5" placeholder="5 Chars" maxlength="5" />
+                </div>
             </form>
-        </div>
-
-        <br>
-        <div class="row">
+        
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input govcy-text-input-char_3" placeholder="input" maxlength="3" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_4" placeholder="4 Chars" maxlength="4" />
+                </div>
             </form>
-        </div>
-
-        <br>
-        <div class="row">
+    
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <input type="text" class="govcy-text-input govcy-text-input-char_2" placeholder="input" maxlength="2" />
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_3" placeholder="3" maxlength="3" />
+                </div>
             </form>
-        </div>
-
-        <br>
-        <div class="row">
+        
             <form action="" class="govcy-form">
-                <label class="govcy-label" for="input">Label</label>
-                <span class="govcy-hint">Hint</span>
-                <textarea class="govcy-text-input" placeholder="input"></textarea>
-                <span class="govcy-hint">You have 150 characters remaining</span>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_2" placeholder="2" maxlength="2" />
+                </div>
             </form>
-        </div>
-        <br>
-        <div class="row">
-            <form action="" class="govcy-form govcy-form-error">
-                <label class="govcy-label" for="input">Label</label>
-                <span class="govcy-input-error-msg">There is an error</span>
-                <textarea  class="govcy-text-area govcy-text-area-error" placeholder="input"></textarea>
-                <span class="govcy-hint">You have 150 characters remaining</span>
+        
+            <form action="" class="govcy-form">
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Label</label>
+                    <span class="govcy-hint">Hint</span>
+                    <textarea class="govcy-text-input" placeholder="input"></textarea>
+                    <span class="govcy-hint">You have 150 characters remaining</span>
+                </div>
+            </form>
+        
+            <form action="" class="govcy-form">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="input">Label</label>
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <textarea  class="govcy-text-area govcy-text-area-error" placeholder="input"></textarea>
+                    <span class="govcy-hint govcy-mb-0">You have 150 characters remaining</span>
+                </div>
             </form>
         </div>
     </div>
+
+<hr>
+    <!-- Fieldset -->
+    <h2>Fieldset</h2>
+    <div class="govcy-container">
+        <!-- This is sample paragraph to check the alignment of the fieldset -->
+        <p>Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrpSample paragrp Sample paragrp Sample paragrph </p>
+        
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Contact Address</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">Address / Number</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">District / Village</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="District or village" />
+                </div>
+                <div class="govcy-form-control">    
+                    <label class="govcy-label" for="">District</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="District" />
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">Postal code</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
     <br>
-   
+    <br>
+    <h2>Fieldset with error</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Contact Address</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">Address / Number</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
+                </div>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="">District / Village</label>
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <input id="" type="text" class="govcy-text-input govcy-text-area-error" placeholder="District or village" />
+                </div>
+                <div class="govcy-form-control">    
+                    <label class="govcy-label" for="">District</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="District" />
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">Postal code</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+<br>
+<br>
 
 
     <script src="js/app.js"></script>
