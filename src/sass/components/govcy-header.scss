@@ -119,7 +119,7 @@
         float: left;
         a {
           padding: 0;
-          margin: 16px 16px 0 0
+          margin: 20px 16px 0 0
         }
       }
     }
@@ -128,8 +128,11 @@
     .govcy-service-name {
       float: left;
       width: auto;
-      margin: 16px 24px;
-      
+      margin: 20px 24px 0 24px;  
+    }
+
+    .govcy-lang-menu {
+      margin-top: 22px;
     }
   }
 }
