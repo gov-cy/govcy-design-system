@@ -3,16 +3,19 @@
 .govcy-form {
     
     .govcy-form-control {
-        padding: 0 14px;
         margin: 14px 0;
         &-error {
             border-left: 4px solid $govcy-danger;
+            padding-left: 13px;;
         }
     }
 
    
     .govcy-fieldset{
         .govcy-legend {
+            font-weight: 500;
+        }
+        .govcy-label{
             font-weight: 500;
         }
     }
@@ -29,8 +32,6 @@
 
     .govcy-input-error-msg {
         color: $govcy-danger;
-        font-weight: 500;;
-
     }
     .govcy-text-input, .govcy-text-area {
         border: 2px solid $govcy-body;

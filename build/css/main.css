@@ -16107,13 +16107,16 @@ textarea.form-control-lg {
 }
 
 .govcy-form .govcy-form-control {
-  padding: 0 14px;
   margin: 14px 0;
 }
 .govcy-form .govcy-form-control-error {
   border-left: 4px solid #D4351C;
+  padding-left: 13px;
 }
 .govcy-form .govcy-fieldset .govcy-legend {
+  font-weight: 500;
+}
+.govcy-form .govcy-fieldset .govcy-label {
   font-weight: 500;
 }
 .govcy-form .govcy-label {
@@ -16128,7 +16131,6 @@ textarea.form-control-lg {
 }
 .govcy-form .govcy-input-error-msg {
   color: #D4351C;
-  font-weight: 500;
 }
 .govcy-form .govcy-text-input, .govcy-form .govcy-text-area {
   border: 2px solid #272525;
