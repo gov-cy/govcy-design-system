@@ -14,13 +14,11 @@
         .govcy-legend {
             font-weight: 500;
         }
-        .govcy-label{
-            font-weight: 500;
-        }
     }
     .govcy-label{
         display: block;
         color: $govcy-black;
+        font-weight: 500;
     }
     .govcy-hint, .govcy-input-error-msg {
         display: block;
