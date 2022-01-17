@@ -10,7 +10,6 @@
         }
     }
 
-   
     .govcy-fieldset{
         .govcy-legend {
             font-weight: 500;
@@ -37,7 +36,6 @@
         border: 2px solid $govcy-body;
         width: 100%;
         padding: 0 5px;
-        // margin-bottom: 0.5rem;
 
         &::placeholder{font-size: 13px;} /* Defalult */
         &::-moz-placeholder { font-size: 13px;} /* Firefox 19+ */
@@ -68,7 +66,7 @@
         &-char_2 {
             width: 2.2rem;
         }
-    }
+    } 
 }
 
 
