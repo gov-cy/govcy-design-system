@@ -627,20 +627,85 @@
     <h2>Checkbox</h2>
     <div class="govcy-container">
         <form action="" class="govcy-form">
-            <div class="govcy-form-control">
-                <label class="govcy-checkbox">Option 1
-                    <input class="govcy-checkbox-input" type="checkbox">
-                    <span class="govcy-tickbox"></span>
-                </label>
-                <label class="govcy-checkbox">Option 2
-                    <input class="govcy-checkbox-input" type="checkbox">
-                    <span class="govcy-tickbox"></span>
-                </label>
-                <label class="govcy-checkbox">Option 3
-                    <input class="govcy-checkbox-input" type="checkbox">
-                    <span class="govcy-tickbox"></span>
-                </label>
-            </div>
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-checkbox">Option 1
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                    <label class="govcy-checkbox">Option 2
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                    <label class="govcy-checkbox">Option 3
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Checkbox with errors</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <label class="govcy-checkbox">Option 1
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                    <label class="govcy-checkbox">Option 2
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <br><br>
+
+    <h2>Checkbox with hint</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+                <div class="govcy-form-control">
+                    <label class="govcy-checkbox">Option 2
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                        <span class="govcy-hint govcy-mt-2">This is hint text</span>
+                    </label>
+                   
+                </div>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 1 Option
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 2 Option
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 3 Option
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox"></span>
+                    </label>
+                </div>
+            </fieldset>
         </form>
     </div>
 
