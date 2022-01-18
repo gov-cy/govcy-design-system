@@ -1,70 +1,131 @@
 
 // Govcy Form styles
 .govcy-form {
-    
-    .govcy-form-control {
-        margin: 14px 0;
-        &-error {
-            border-left: 4px solid $govcy-danger;
-            padding-left: 13px;;
-        }
-    }
-
     .govcy-fieldset{
         .govcy-legend {
             font-weight: 500;
         }
     }
-    .govcy-label{
-        display: block;
-        color: $govcy-black;
-        font-weight: 500;
-    }
-    .govcy-hint, .govcy-input-error-msg {
-        display: block;
-        line-height: 1;
-        margin-bottom: 8px;
-        color: $govcy-hint;
-    }
-
-    .govcy-input-error-msg {
-        color: $govcy-danger;
-    }
-    .govcy-text-input, .govcy-text-area {
-        border: 2px solid $govcy-body;
-        width: 100%;
-        padding: 0 5px;
-
-        &::placeholder{font-size: 13px;} /* Defalult */
-        &::-moz-placeholder { font-size: 13px;} /* Firefox 19+ */
-        &:-moz-placeholder {font-size: 13px;}  /* Firefox 18- */
-        &:-ms-input-placeholder {font-size: 13px;} /* IE */
-
-        &:focus {
-            outline: 3px solid $govcy-focus;
-        }
+    
+    // Govcy form control
+    .govcy-form-control {
+        margin: 14px 0;
         &-error {
-            border-color: $govcy-danger; 
+            border-left: 4px solid $govcy-danger;
+            padding-left: 13px;
         }
-        &-char_20 {
-            width: 14.16rem;
+
+        // Govcy label
+        .govcy-label{
+            display: block;
+            color: $govcy-black;
+            font-weight: 500;
         }
-        &-char_10 {
-            width: 7.8rem;
+
+        // Govcy hint and Govcy input error message
+        .govcy-hint, .govcy-input-error-msg {
+            display: block;
+            line-height: 1;
+            margin-bottom: 8px;
+            color: $govcy-hint;
         }
-        &-char_5 {
-            width: 4.2rem;
+
+        // Govcy input error message
+        .govcy-input-error-msg {
+            color: $govcy-danger;
         }
-        &-char_4 {
-            width: 3.8rem;
+
+        // Govcy input styles for text and text area
+        .govcy-text-input, .govcy-text-area {
+            border: 2px solid $govcy-body;
+            width: 100%;
+            padding: 0 5px;
+
+            &::placeholder{font-size: 13px;} /* Defalult */
+            &::-moz-placeholder { font-size: 13px;} /* Firefox 19+ */
+            &:-moz-placeholder {font-size: 13px;}  /* Firefox 18- */
+            &:-ms-input-placeholder {font-size: 13px;} /* IE */
+
+            &:focus {
+                outline: 3px solid $govcy-focus;
+            }
+            &-error {
+                border-color: $govcy-danger; 
+            }
+            &-char_20 {
+                width: 14.16rem;
+            }
+            &-char_10 {
+                width: 7.8rem;
+            }
+            &-char_5 {
+                width: 4.2rem;
+            }
+            &-char_4 {
+                width: 3.8rem;
+            }
+            &-char_3 {
+                width: 3.1rem;
+            }
+            &-char_2 {
+                width: 2.2rem;
+            }
         }
-        &-char_3 {
-            width: 3.1rem;
+        
+        .govcy-checkbox {           
+            display: block;
+            position: relative;
+            padding: 6px 16px 8px 60px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            // Hide the default checkbox styles
+            .govcy-checkbox-input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+                &:checked ~ .govcy-tickbox {
+                    outline: 4px solid $govcy-focus;
+                    border: 4px solid $govcy-black;
+                }
+                &:checked ~ .govcy-tickbox:after {
+                    display: block;
+                  }
+            }
+            // Create custom checkbox styles
+            .govcy-tickbox{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 44px;
+                width: 44px;
+                border: 2px solid $govcy-black;
+
+                // Tickbox/indicator (hidden when not checked) */
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 12px;
+                    top: 4px;
+                    width: 13px;
+                    height: 24px;
+                    border: solid black;
+                    border-width: 0 5px 5px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                  }
+            }
         }
-        &-char_2 {
-            width: 2.2rem;
-        }
-    } 
+    }
 }
 
 
