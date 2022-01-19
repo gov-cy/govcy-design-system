@@ -94,7 +94,10 @@
                 width: 0;
                 &:checked ~ .govcy-tickbox,
                 &:checked ~ .govcy-radio{
+                   //NR:code
+                    outline-style: auto;
                     outline: 4px solid $govcy-focus;
+                    outline-offset: 2px;
                     border: 4px solid $govcy-black; 
                 }
                 &:checked ~ .govcy-tickbox:after,
