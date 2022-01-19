@@ -119,28 +119,6 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
 
-    <hr>
-    <h2>Border Width</h2>
-<div class="goccy-container-fluid">
-    <div class="row govcy-p-4">
-        <div class="govcy-w-100 govcy-br-0 govcy-mb-1 govcy-bg-light">Border-0</div>
-        <div class="govcy-w-100 govcy-br-1 govcy-mb-1 govcy-bg-light">Border-1</div>
-        <div class="govcy-w-100 govcy-br-2 govcy-mb-1 govcy-bg-light">Border-2</div>
-        <div class="govcy-w-100 govcy-br-3 govcy-mb-1 govcy-bg-light">Border-3</div>
-        <div class="govcy-w-100 govcy-br-4 govcy-mb-1 govcy-bg-light">Border-4</div>
-        <div class="govcy-w-100 govcy-br-5 govcy-bg-light">Border-5</div>
-        
-        <div class="govcy-py-3">
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-0"</span><span>&gt;Border-0&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-1"</span><span>&gt;Border-1&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-2"</span><span>&gt;Border-2&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-3"</span><span>&gt;Border-3&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-4"</span><span>&gt;Border-4&lt;/div&gt;</span></span>
-            <span class="govcy-d-block">&lt;div<span> class=</span><span>"govcy-br-5"</span><span>&gt;Border-5&lt;/div&gt;</span></span>
-        </div>
-    </div>
-</div>
-
 <hr>
 <!-- Govcy Border -->
 <h2>Border width - Border responsive - Border radius</h2>
@@ -646,8 +624,8 @@
             </fieldset>
         </form>
     </div>
-    <br><br>
-
+    <br>
+    <br>
     <h2>Checkbox with errors</h2>
     <div class="govcy-container">
         <form action="" class="govcy-form">
@@ -667,9 +645,8 @@
             </fieldset>
         </form>
     </div>
-
-    <br><br>
-
+    <br>
+    <br>
     <h2>Checkbox with hint</h2>
     <div class="govcy-container">
         <form action="" class="govcy-form">
@@ -683,9 +660,9 @@
                 </div>
         </form>
     </div>
-
     <br><br>
 
+    <h2>Checkbox inline</h2>
     <div class="govcy-container">
         <form action="" class="govcy-form">
             <fieldset class="govcy-fieldset">
@@ -708,6 +685,98 @@
             </fieldset>
         </form>
     </div>
+
+    <hr>
+    <h2>Radio button</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-radio-btn">Option 1
+                        <input class="govcy-radio-input" type="radio" checked="checked" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 2
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 3
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Radio button with error</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">Mandatory field</span>
+                    <label class="govcy-radio-btn">Option 1
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 2
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 3
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Radio button with hint</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-radio-btn">Option 1
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                        <span class="govcy-hint govcy-mt-2">This is hint text</span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Radio button inline</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">Mandatory field</span>
+                    <label class="govcy-radio-btn govcy-d-sm-inline-block">Option 1
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                    <label class="govcy-radio-btn govcy-d-sm-inline-block">Option 2
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                    <label class="govcy-radio-btn govcy-d-sm-inline-block">Option 3
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
 
 
 
