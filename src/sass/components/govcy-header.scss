@@ -18,7 +18,7 @@
   //Govcy service name
   .govcy-service-name {
     float: left;
-    margin:10px 24px;
+    padding:10px 24px;
     width: 100%;
   }
 
@@ -41,7 +41,7 @@
     &:checked {
       ~ {
         .govcy-menu {
-          max-height: 15rem;
+          max-height: 100%;
         }
         .govcy-menu-icon {
           //styles for Google dropdown icon
@@ -94,7 +94,7 @@
   //Govcy language selector dropdown (Desktop/Mobile)
   .govcy-lang-menu {
     float: right;
-    margin: 18px 16px 0 0;
+    margin: 17px 16px 0 0;
     outline: none;
     border: none;
     background-color: inherit;
@@ -128,11 +128,24 @@
     .govcy-service-name {
       float: left;
       width: auto;
-      margin: 20px 24px 0 24px;  
+      padding: 20px 24px 0 24px;  
     }
 
     .govcy-lang-menu {
-      margin-top: 22px;
+      margin-top: 21px;
     }
   }
+}
+
+// Adds primart colour background on the right of the header. The parent element must have `govcy-position-relative`
+.govcy-header.govcy-bg-primary-right:after {
+  height: 62px;
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: $govcy-primary;
+  z-index: -1;
 }
