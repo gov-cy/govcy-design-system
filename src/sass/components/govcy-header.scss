@@ -66,6 +66,9 @@
     transition: max-height 0.2s ease-out;
     
     li {
+      .active{
+        font-weight: 700;
+      }
       a {
         display: block;
         padding: 10px 0;

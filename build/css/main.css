@@ -27905,6 +27905,9 @@ textarea.form-control-lg {
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
+.govcy-header ul.govcy-menu li .active {
+  font-weight: 700;
+}
 .govcy-header ul.govcy-menu li a {
   display: block;
   padding: 10px 0;
