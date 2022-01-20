@@ -40,14 +40,15 @@
             border: 2px solid $govcy-body;
             width: 100%;
             padding: 0 5px;
-
+            height:44px;
             &::placeholder{font-size: 13px;} /* Defalult */
             &::-moz-placeholder { font-size: 13px;} /* Firefox 19+ */
             &:-moz-placeholder {font-size: 13px;}  /* Firefox 18- */
             &:-ms-input-placeholder {font-size: 13px;} /* IE */
 
             &:focus {
-                outline: 3px solid $govcy-focus;
+                outline: none;
+                box-shadow: 0 0 0 4pt $govcy-focus;
             }
             &-error {
                 border-color: $govcy-danger; 
@@ -92,16 +93,16 @@
                 cursor: pointer;
                 height: 0;
                 width: 0;
-                &:checked ~ .govcy-tickbox,
-                &:checked ~ .govcy-radio{
-                    outline: 4px solid $govcy-focus;
-                    border: 4px solid $govcy-black; 
-                }
-                //outline fixes of Safari
-                &:checked ~ .govcy-radio{
+                &:focus + .govcy-tickbox,
+                &:focus + .govcy-radio{
                     outline: none;
                     box-shadow: 0 0 0 4pt $govcy-focus;
                 }
+                //outline fixes of Safari
+                // &:checked ~ .govcy-radio{
+                //     outline: none;
+                //     box-shadow: 0 0 0 4pt $govcy-focus;
+                // }
                 &:checked ~ .govcy-tickbox:after,
                 &:checked ~ .govcy-radio:after {
                     display: block;
@@ -147,8 +148,8 @@
                     content: "";
                     position: absolute;
                     display: none;
-                    left: 8px;
-                    top: 8px;
+                    left: 10px;
+                    top: 10px;
                     width: 20px;
                     height: 20px;
                     border: solid $govcy-black;
