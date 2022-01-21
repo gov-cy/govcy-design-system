@@ -16177,6 +16177,9 @@ textarea.form-control-lg {
 .govcy-form .govcy-form-control .govcy-text-input-char_10, .govcy-form .govcy-form-control .govcy-text-area-char_10 {
   width: 7.8rem;
 }
+.govcy-form .govcy-form-control .govcy-text-input-char_6, .govcy-form .govcy-form-control .govcy-text-area-char_6 {
+  width: 5.5rem;
+}
 .govcy-form .govcy-form-control .govcy-text-input-char_5, .govcy-form .govcy-form-control .govcy-text-area-char_5 {
   width: 4.2rem;
 }
