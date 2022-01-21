@@ -39,12 +39,14 @@
         .govcy-text-input, .govcy-text-area {
             border: 2px solid $govcy-body;
             width: 100%;
-            padding: 0 5px;
+            padding: 5px;
             height:44px;
-            &::placeholder{font-size: 13px;} /* Defalult */
-            &::-moz-placeholder { font-size: 13px;} /* Firefox 19+ */
-            &:-moz-placeholder {font-size: 13px;}  /* Firefox 18- */
-            &:-ms-input-placeholder {font-size: 13px;} /* IE */
+            &::placeholder{ font-size: 14px; top: 12px; } /* Defalult */
+            &::-moz-placeholder { font-size: 14px; top: 12px; } /* Firefox 19+ */
+            &:-moz-placeholder { font-size: 14px; top: 12px; }  /* Firefox 18- */
+            &:-ms-input-placeholder { font-size: 14px; top: 12px; } /* IE */
+            &::-webkit-input-placeholder { font-size: 14px; top: 12px; } /* Safari */
+        
 
             &:focus {
                 outline: none;
@@ -94,15 +96,10 @@
                 height: 0;
                 width: 0;
                 &:focus + .govcy-tickbox,
-                &:focus + .govcy-radio{
+                &:focus + .govcy-radio {
                     outline: none;
-                    box-shadow: 0 0 0 4pt $govcy-focus;
+                    box-shadow: 0 0 0 4px $govcy-focus;
                 }
-                //outline fixes of Safari
-                // &:checked ~ .govcy-radio{
-                //     outline: none;
-                //     box-shadow: 0 0 0 4pt $govcy-focus;
-                // }
                 &:checked ~ .govcy-tickbox:after,
                 &:checked ~ .govcy-radio:after {
                     display: block;
@@ -116,8 +113,11 @@
                 left: 0;
                 height: 44px;
                 width: 44px;
-                border: 2px solid $govcy-black;
-
+                border: 3px solid $govcy-black;
+                &:focus {
+                    box-shadow: 0 0 0 4px $govcy-focus; 
+                    outline:none;
+                }
                 // Tickbox/indicator (hidden when not checked) */
                 &::after {
                     content: "";
@@ -127,7 +127,7 @@
                     top: 4px;
                     width: 13px;
                     height: 24px;
-                    border: solid black;
+                    border: solid $govcy-black;
                     border-width: 0 5px 5px 0;
                     -webkit-transform: rotate(45deg);
                     -ms-transform: rotate(45deg);
@@ -142,14 +142,18 @@
                 left: 0;
                 height: 44px;
                 width: 44px;
-                border: 2px solid $govcy-black;
+                border: 3px solid $govcy-black;
                 border-radius: 50%;
+                &:focus {
+                    box-shadow: 0 0 0 4px $govcy-focus;
+                    outline:none;
+                }
                 &:after{
                     content: "";
                     position: absolute;
                     display: none;
-                    left: 10px;
-                    top: 10px;
+                    left: 9px;
+                    top: 9px;
                     width: 20px;
                     height: 20px;
                     border: solid $govcy-black;
