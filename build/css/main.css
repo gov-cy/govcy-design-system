@@ -16233,7 +16233,7 @@ textarea.form-control-lg {
   left: 0;
   height: 44px;
   width: 44px;
-  border: 3px solid #000000;
+  border: 2px solid #272525;
 }
 .govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox:focus,
 .govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox:focus {
@@ -16245,11 +16245,11 @@ textarea.form-control-lg {
   content: "";
   position: absolute;
   display: none;
-  left: 12px;
-  top: 4px;
+  left: 14px;
+  top: 5px;
   width: 13px;
   height: 24px;
-  border: solid #000000;
+  border: solid #272525;
   border-width: 0 5px 5px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -16262,7 +16262,7 @@ textarea.form-control-lg {
   left: 0;
   height: 44px;
   width: 44px;
-  border: 3px solid #000000;
+  border: 2px solid #272525;
   border-radius: 50%;
 }
 .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio:focus,
@@ -16275,11 +16275,11 @@ textarea.form-control-lg {
   content: "";
   position: absolute;
   display: none;
-  left: 9px;
-  top: 9px;
+  left: 10px;
+  top: 10px;
   width: 20px;
   height: 20px;
-  border: solid #000000;
+  border: solid #272525;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #272525;
 }

@@ -113,7 +113,7 @@
                 left: 0;
                 height: 44px;
                 width: 44px;
-                border: 3px solid $govcy-black;
+                border: 2px solid $govcy-body;
                 &:focus {
                     box-shadow: 0 0 0 4px $govcy-focus; 
                     outline:none;
@@ -123,11 +123,11 @@
                     content: "";
                     position: absolute;
                     display: none;
-                    left: 12px;
-                    top: 4px;
+                    left: 14px;
+                    top: 5px;
                     width: 13px;
                     height: 24px;
-                    border: solid $govcy-black;
+                    border: solid $govcy-body;
                     border-width: 0 5px 5px 0;
                     -webkit-transform: rotate(45deg);
                     -ms-transform: rotate(45deg);
@@ -142,7 +142,7 @@
                 left: 0;
                 height: 44px;
                 width: 44px;
-                border: 3px solid $govcy-black;
+                border: 2px solid $govcy-body;
                 border-radius: 50%;
                 &:focus {
                     box-shadow: 0 0 0 4px $govcy-focus;
@@ -152,13 +152,13 @@
                     content: "";
                     position: absolute;
                     display: none;
-                    left: 9px;
-                    top: 9px;
+                    left: 10px;
+                    top: 10px;
                     width: 20px;
                     height: 20px;
-                    border: solid $govcy-black;
+                    border: solid $govcy-body;
                     border-radius: 50%;
-                    background-color: $govcy-black;
+                    background-color: $govcy-body;
                 }
              }            
         }
