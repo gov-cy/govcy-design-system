@@ -29,6 +29,7 @@ $govcy-brand-colors: (
   "white":                 #ffffff,
   "cyan-100":              #ebf1f3,
   "gray-100":              #e6e6e7,
+  "blue-800":              #577589,
 );
 
 
@@ -132,6 +133,7 @@ $govcy-bg-colors: (
   "dark":       hexToRGB($govcy-black),
   "white":      hexToRGB($govcy-white),
   "gray":       hexToRGB($govcy-gray),
+  "sub-menu":   hexToRGB(map-get($govcy-brand-colors, "blue-800")),
 );
 
 //Govcy text color
