@@ -482,7 +482,7 @@
             </form>
     
             <form action="" class="govcy-form">
-                <div class="govcy-form-control">
+                <div class="govcy-form-control govcy-form-control-error">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_20" placeholder="20 Characters" maxlength="20" />
                 </div>
@@ -527,7 +527,7 @@
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <span class="govcy-hint">Hint</span>
-                    <textarea class="govcy-text-input" placeholder="input"></textarea>
+                    <textarea class="govcy-text-area" placeholder="input"></textarea>
                     <span class="govcy-hint">You have 150 characters remaining</span>
                 </div>
             </form>
@@ -544,63 +544,240 @@
     </div>
 
 <hr>
-    <!-- Fieldset -->
-    <h2>Fieldset</h2>
+     <!-- Fieldset -->
+     <h2>Fieldset</h2>
+     <div class="govcy-container">
+         <!-- This is sample paragraph to check the alignment of the fieldset -->
+         <p>Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrpSample paragrp Sample paragrp Sample paragrph </p>
+         
+         <form action="" class="govcy-form">
+             <fieldset class="govcy-fieldset">
+                 <legend class="govcy-legend">Contact Address</legend>
+                 <div class="govcy-form-control">
+                     <label class="govcy-label" for="">Address / Number</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
+                 </div>
+                 <div class="govcy-form-control">
+                     <label class="govcy-label" for="">District / Village</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="District or village" />
+                 </div>
+                 <div class="govcy-form-control">    
+                     <label class="govcy-label" for="">District</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="District" />
+                 </div>
+                 <div class="govcy-form-control">
+                     <label class="govcy-label" for="">Postal code</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                 </div>
+             </fieldset>
+         </form>
+     </div>
+     <br>
+     <br>
+     <h2>Fieldset with error</h2>
+     <div class="govcy-container">
+         <form action="" class="govcy-form">
+             <fieldset class="govcy-fieldset">
+                 <legend class="govcy-legend">Contact Address</legend>
+                 <div class="govcy-form-control">
+                     <label class="govcy-label" for="">Address / Number</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
+                 </div>
+                 <div class="govcy-form-control govcy-form-control-error">
+                     <label class="govcy-label" for="">District / Village</label>
+                     <span class="govcy-input-error-msg">There is an error</span>
+                     <input id="" type="text" class="govcy-text-input govcy-text-area-error" placeholder="District or village" />
+                 </div>
+                 <div class="govcy-form-control">    
+                     <label class="govcy-label" for="">District</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="District" />
+                 </div>
+                 <div class="govcy-form-control">
+                     <label class="govcy-label" for="">Postal code</label>
+                     <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                 </div>
+             </fieldset>
+         </form>
+     </div>
+    <br>
+    <br>
+    <hr>
+    <h2>Checkbox</h2>
     <div class="govcy-container">
-        <!-- This is sample paragraph to check the alignment of the fieldset -->
-        <p>Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrph Sample paragrpSample paragrp Sample paragrp Sample paragrph </p>
-        
         <form action="" class="govcy-form">
             <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Contact Address</legend>
+                <legend class="govcy-legend">Legend</legend>
                 <div class="govcy-form-control">
-                    <label class="govcy-label" for="">Address / Number</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
-                </div>
-                <div class="govcy-form-control">
-                    <label class="govcy-label" for="">District / Village</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="District or village" />
-                </div>
-                <div class="govcy-form-control">    
-                    <label class="govcy-label" for="">District</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="District" />
-                </div>
-                <div class="govcy-form-control">
-                    <label class="govcy-label" for="">Postal code</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                    <label class="govcy-checkbox">Option 1
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-checkbox">Option 2
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="1"></span>
+                    </label>
+                    <label class="govcy-checkbox">Option 3
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="2"></span>
+                    </label>
                 </div>
             </fieldset>
         </form>
     </div>
     <br>
     <br>
-    <h2>Fieldset with error</h2>
+    <h2>Checkbox with errors</h2>
     <div class="govcy-container">
         <form action="" class="govcy-form">
             <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Contact Address</legend>
-                <div class="govcy-form-control">
-                    <label class="govcy-label" for="">Address / Number</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
-                </div>
+                <legend class="govcy-legend">Legend</legend>
                 <div class="govcy-form-control govcy-form-control-error">
-                    <label class="govcy-label" for="">District / Village</label>
                     <span class="govcy-input-error-msg">There is an error</span>
-                    <input id="" type="text" class="govcy-text-input govcy-text-area-error" placeholder="District or village" />
-                </div>
-                <div class="govcy-form-control">    
-                    <label class="govcy-label" for="">District</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="District" />
-                </div>
-                <div class="govcy-form-control">
-                    <label class="govcy-label" for="">Postal code</label>
-                    <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                    <label class="govcy-checkbox">Option 1
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-checkbox">Option 2
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="1"></span>
+                    </label>
                 </div>
             </fieldset>
         </form>
     </div>
-<br>
-<br>
+    <br>
+    <br>
+    <h2>Checkbox with hint</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+                <div class="govcy-form-control">
+                    <label class="govcy-checkbox">Option 2
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="0"></span>
+                        <span class="govcy-hint govcy-mt-2">This is hint text</span>
+                    </label>
+                   
+                </div>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Checkbox inline</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 1 Option
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 2 Option
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="1"></span>
+                    </label>
+                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 3 Option
+                        <input class="govcy-checkbox-input" type="checkbox">
+                        <span class="govcy-tickbox" tabindex="2"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <hr>
+    <h2>Radio button</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-radio-btn">Option 1
+                        <input class="govcy-radio-input" type="radio" checked="checked" name="radio">
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 2
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="1"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 3
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="2"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Radio button with error</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">Mandatory field</span>
+                    <label class="govcy-radio-btn">Option 1
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 2
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="1"></span>
+                    </label>
+                    <label class="govcy-radio-btn">Option 3
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="2"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Radio button with hint</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-radio-btn">Option 1
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="0"></span>
+                        <span class="govcy-hint govcy-mt-2">This is hint text</span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
+    <h2>Radio button inline</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <legend class="govcy-legend">Legend</legend>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-input-error-msg">Mandatory field</span>
+                    <label class="govcy-radio-btn govcy-d-sm-inline-block">Option 1
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-radio-btn govcy-d-sm-inline-block">Option 2
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="1"></span>
+                    </label>
+                    <label class="govcy-radio-btn govcy-d-sm-inline-block">Option 3
+                        <input class="govcy-radio-input" type="radio" name="radio">
+                        <span class="govcy-radio" tabindex="2"></span>
+                    </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+
 
 
     <script src="js/app.js"></script>

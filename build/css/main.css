@@ -16109,6 +16109,9 @@ textarea.form-control-lg {
   color: #000000;
 }
 
+.govcy-form .govcy-fieldset .govcy-legend {
+  font-weight: 500;
+}
 .govcy-form .govcy-form-control {
   margin: 14px 0;
 }
@@ -16116,65 +16119,167 @@ textarea.form-control-lg {
   border-left: 4px solid #D4351C;
   padding-left: 13px;
 }
-.govcy-form .govcy-fieldset .govcy-legend {
-  font-weight: 500;
-}
-.govcy-form .govcy-label {
+.govcy-form .govcy-form-control .govcy-label {
   display: block;
   color: #000000;
   font-weight: 500;
 }
-.govcy-form .govcy-hint, .govcy-form .govcy-input-error-msg {
+.govcy-form .govcy-form-control .govcy-hint, .govcy-form .govcy-form-control .govcy-input-error-msg {
   display: block;
   line-height: 1;
   margin-bottom: 8px;
   color: #6D6E70;
 }
-.govcy-form .govcy-input-error-msg {
+.govcy-form .govcy-form-control .govcy-input-error-msg {
   color: #D4351C;
 }
-.govcy-form .govcy-text-input, .govcy-form .govcy-text-area {
+.govcy-form .govcy-form-control .govcy-text-input, .govcy-form .govcy-form-control .govcy-text-area {
   border: 2px solid #272525;
   width: 100%;
-  padding: 0 5px;
+  padding: 5px;
+  height: 44px;
   /* Defalult */
   /* Firefox 19+ */
   /* Firefox 18- */
   /* IE */
+  /* Safari */
 }
-.govcy-form .govcy-text-input::placeholder, .govcy-form .govcy-text-area::placeholder {
-  font-size: 13px;
+.govcy-form .govcy-form-control .govcy-text-input::placeholder, .govcy-form .govcy-form-control .govcy-text-area::placeholder {
+  font-size: 14px;
+  top: 12px;
 }
-.govcy-form .govcy-text-input::-moz-placeholder, .govcy-form .govcy-text-area::-moz-placeholder {
-  font-size: 13px;
+.govcy-form .govcy-form-control .govcy-text-input::-moz-placeholder, .govcy-form .govcy-form-control .govcy-text-area::-moz-placeholder {
+  font-size: 14px;
+  top: 12px;
 }
-.govcy-form .govcy-text-input:-moz-placeholder, .govcy-form .govcy-text-area:-moz-placeholder {
-  font-size: 13px;
+.govcy-form .govcy-form-control .govcy-text-input:-moz-placeholder, .govcy-form .govcy-form-control .govcy-text-area:-moz-placeholder {
+  font-size: 14px;
+  top: 12px;
 }
-.govcy-form .govcy-text-input:-ms-input-placeholder, .govcy-form .govcy-text-area:-ms-input-placeholder {
-  font-size: 13px;
+.govcy-form .govcy-form-control .govcy-text-input:-ms-input-placeholder, .govcy-form .govcy-form-control .govcy-text-area:-ms-input-placeholder {
+  font-size: 14px;
+  top: 12px;
 }
-.govcy-form .govcy-text-input:focus, .govcy-form .govcy-text-area:focus {
-  outline: 3px solid #ffdd00;
+.govcy-form .govcy-form-control .govcy-text-input::-webkit-input-placeholder, .govcy-form .govcy-form-control .govcy-text-area::-webkit-input-placeholder {
+  font-size: 14px;
+  top: 12px;
 }
-.govcy-form .govcy-text-input-error, .govcy-form .govcy-text-area-error {
+.govcy-form .govcy-form-control .govcy-text-input:focus, .govcy-form .govcy-form-control .govcy-text-area:focus {
+  outline: none;
+  box-shadow: 0 0 0 4pt #ffdd00;
+}
+.govcy-form .govcy-form-control .govcy-text-input-error, .govcy-form .govcy-form-control .govcy-text-area-error {
   border-color: #D4351C;
 }
-.govcy-form .govcy-text-input-char_20, .govcy-form .govcy-text-area-char_20 {
+.govcy-form .govcy-form-control .govcy-text-input-char_20, .govcy-form .govcy-form-control .govcy-text-area-char_20 {
   width: 14.16rem;
 }
-.govcy-form .govcy-text-input-char_10, .govcy-form .govcy-text-area-char_10 {
+.govcy-form .govcy-form-control .govcy-text-input-char_10, .govcy-form .govcy-form-control .govcy-text-area-char_10 {
   width: 7.8rem;
 }
-.govcy-form .govcy-text-input-char_5, .govcy-form .govcy-text-area-char_5 {
+.govcy-form .govcy-form-control .govcy-text-input-char_5, .govcy-form .govcy-form-control .govcy-text-area-char_5 {
   width: 4.2rem;
 }
-.govcy-form .govcy-text-input-char_4, .govcy-form .govcy-text-area-char_4 {
+.govcy-form .govcy-form-control .govcy-text-input-char_4, .govcy-form .govcy-form-control .govcy-text-area-char_4 {
   width: 3.8rem;
 }
-.govcy-form .govcy-text-input-char_3, .govcy-form .govcy-text-area-char_3 {
+.govcy-form .govcy-form-control .govcy-text-input-char_3, .govcy-form .govcy-form-control .govcy-text-area-char_3 {
   width: 3.1rem;
 }
-.govcy-form .govcy-text-input-char_2, .govcy-form .govcy-text-area-char_2 {
+.govcy-form .govcy-form-control .govcy-text-input-char_2, .govcy-form .govcy-form-control .govcy-text-area-char_2 {
   width: 2.2rem;
+}
+.govcy-form .govcy-form-control .govcy-checkbox,
+.govcy-form .govcy-form-control .govcy-radio-btn {
+  display: block;
+  position: relative;
+  padding: 6px 16px 8px 60px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:focus + .govcy-tickbox, .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:focus + .govcy-radio, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:focus + .govcy-tickbox, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:focus + .govcy-radio,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:focus + .govcy-tickbox,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:focus + .govcy-radio,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:focus + .govcy-tickbox,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:focus + .govcy-radio {
+  outline: none;
+  box-shadow: 0 0 0 4px #ffdd00;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:checked ~ .govcy-tickbox:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:checked ~ .govcy-radio:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:checked ~ .govcy-tickbox:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:checked ~ .govcy-radio:after,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:checked ~ .govcy-tickbox:after,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:checked ~ .govcy-radio:after,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:checked ~ .govcy-tickbox:after,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:checked ~ .govcy-radio:after {
+  display: block;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 44px;
+  border: 2px solid #272525;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox:focus,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox:focus {
+  box-shadow: 0 0 0 4px #ffdd00;
+  outline: none;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox::after,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 14px;
+  top: 5px;
+  width: 13px;
+  height: 24px;
+  border: solid #272525;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  width: 44px;
+  border: 2px solid #272525;
+  border-radius: 50%;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio:focus,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio:focus {
+  box-shadow: 0 0 0 4px #ffdd00;
+  outline: none;
+}
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio:after,
+.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border: solid #272525;
+  border-radius: 50%;
+  background-color: #272525;
 }
