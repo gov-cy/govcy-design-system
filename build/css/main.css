@@ -14,6 +14,16 @@ a:active {
   border-color: #272525;
 }
 
+a.govcy-back-link {
+  color: #272525 !important;
+}
+a.govcy-back-link:hover, a.govcy-back-link:visited, a.govcy-back-link:active {
+  text-decoration: underline;
+}
+a.govcy-back-link:hover {
+  text-decoration-thickness: 3px !important;
+}
+
 /*!
  * Bootstrap Reboot v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

@@ -44,14 +44,17 @@ a{
   &:active{
       color: $govcy-link-active;
       border-color: $govcy-link-active;
-    }
+  }
 }
-
-
-
-
-
-
-
-
-
+//defining govcy - back link styles for :hover :active and :visited state
+a.govcy-back-link {
+  color: $govcy-body !important;
+  &:hover,
+  &:visited,
+  &:active {
+    text-decoration: underline;
+  }
+  &:hover{
+    text-decoration-thickness: 3px !important;
+  }
+}
