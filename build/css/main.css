@@ -16192,6 +16192,12 @@ textarea.form-control-lg {
 .govcy-form .govcy-form-control .govcy-text-input-char_2, .govcy-form .govcy-form-control .govcy-text-area-char_2 {
   width: 2.2rem;
 }
+.govcy-form .govcy-form-control .govcy-file-upload:focus {
+  border: 2px solid #272525;
+  outline: none;
+  box-shadow: 0 0 0 4pt #ffdd00;
+  border-radius: 0px;
+}
 .govcy-form .govcy-form-control .govcy-checkbox,
 .govcy-form .govcy-form-control .govcy-radio-btn {
   display: block;

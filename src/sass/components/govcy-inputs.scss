@@ -78,6 +78,17 @@
             }
         }
         
+        // Govcy file upload styles (input type="file")
+        .govcy-file-upload {
+            &:focus {
+                border: 2px solid $govcy-body;
+                outline: none;
+                box-shadow: 0 0 0 4pt $govcy-focus;
+                border-radius: 0px;
+            }
+        }
+
+        // Govcy checkbox and radio buttons styles
         .govcy-checkbox,
         .govcy-radio-btn {    
             display: block;
