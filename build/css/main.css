@@ -3933,15 +3933,15 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #cfe2ff;
-  --bs-table-striped-bg: #c5d7f2;
+  --bs-table-bg: #ffffcc;
+  --bs-table-striped-bg: #f2f2c2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bacbe6;
+  --bs-table-active-bg: #e6e6b8;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bfd1ec;
+  --bs-table-hover-bg: #ececbd;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bacbe6;
+  border-color: #e6e6b8;
 }
 
 .table-secondary {
@@ -16206,6 +16206,12 @@ textarea.form-control-lg {
 }
 .govcy-form .govcy-form-control .govcy-text-input-char_2, .govcy-form .govcy-form-control .govcy-text-area-char_2 {
   width: 2.2rem;
+}
+.govcy-form .govcy-form-control .govcy-file-upload:focus {
+  border: 2px solid #272525;
+  outline: none;
+  box-shadow: 0 0 0 4pt #ffdd00;
+  border-radius: 0px;
 }
 .govcy-form .govcy-form-control .govcy-checkbox,
 .govcy-form .govcy-form-control .govcy-radio-btn {
