@@ -11,16 +11,19 @@
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
         "watch-css": "npm run css-watch",
-        "test-percy": "percy exec -- node tests/scripts/percy.js",
+        "test-percy": "percy exec -- mocha tests/scripts/percy --exit",
         "start": "http-server -c-1 -p 3000 -o build/"
     },
     "dependencies": {
         "bootstrap": "^5.1.3"
     },
     "devDependencies": {
-        "@percy/script": "^1.1.0",
+        "@percy/cli": "^1.0.0-beta.73",
+        "@percy/puppeteer": "^2.0.0",
         "copyfiles": "^2.4.1",
         "http-server": "^13.0.2",
+        "mocha": "^9.2.0",
+        "puppeteer": "^13.1.1",
         "sass": "^1.43.4"
     }
 }
