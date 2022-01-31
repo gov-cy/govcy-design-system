@@ -114,27 +114,21 @@ $govcy-border-colors: (
   "input":     $govcy-body,
 );
 
-// Function converts HEX to RGB
-@function hexToRGB($hex) {
-  $r: red($hex);
-  $g: green($hex);
-  $b: blue($hex);
-  @return rgb+"("+$r+","+$g+","+$b+")";
-}
 
 // Govcy background colors (rgb)
 $govcy-bg-colors: (
-  "primary":    hexToRGB($govcy-primary),
-  "secondary":  hexToRGB($govcy-secondary),
-  "success":    hexToRGB($govcy-success),
-  "info":       hexToRGB($govcy-info),
-  "danger":     hexToRGB($govcy-danger),
-  "light":      hexToRGB($govcy-light),
-  "dark":       hexToRGB($govcy-black),
-  "white":      hexToRGB($govcy-white),
-  "gray":       hexToRGB($govcy-gray),
-  "sub-menu":   hexToRGB(map-get($govcy-brand-colors, "blue-800")),
+  "primary":    rgb+"("+to-rgb($govcy-primary)+")",
+  "secondary":  rgb+"("+to-rgb($govcy-secondary)+")",
+  "success":    rgb+"("+to-rgb($govcy-success)+")",
+  "info":       rgb+"("+to-rgb($govcy-info)+")",
+  "danger":     rgb+"("+to-rgb($govcy-danger)+")",
+  "light":      rgb+"("+to-rgb($govcy-light)+")",
+  "dark":       rgb+"("+to-rgb($govcy-black)+")",
+  "white":      rgb+"("+to-rgb($govcy-white)+")",
+  "gray":       rgb+"("+to-rgb($govcy-gray)+")",
+  "sub-menu":   rgb+"("+to-rgb(map-get($govcy-brand-colors, "blue-800"))+")",
 );
+
 
 //Govcy text color
 $govcy-text-colors: (
@@ -162,6 +156,20 @@ $govcy-font-sizes: (
   "xx-small":     xx-small,
   "xxx-large":    xxx-large,
   "webkit-large": -webkit-xxx-large,
+);
+
+// Govcy table variables
+
+$govcy-table-bg-scale: -80%;
+
+$govcy-table-variants: (
+  "primary":    shift-color($govcy-primary, $govcy-table-bg-scale),
+  "secondary":  shift-color($govcy-secondary, $govcy-table-bg-scale),
+  "success":    shift-color($govcy-success, $govcy-table-bg-scale),
+  "info":       shift-color($govcy-info, $govcy-table-bg-scale),
+  "danger":     shift-color($govcy-danger, $govcy-table-bg-scale),
+  "light":      $govcy-light,
+  "dark":       $govcy-body,
 );
 
 
