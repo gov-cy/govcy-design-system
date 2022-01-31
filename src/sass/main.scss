@@ -1,21 +1,26 @@
-// 1.
+// 1. 
+// Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+
+// 2.
 // Include any default variable overrides here (though functions won't be available)
 // Overriding bootstrap variables must be done before we import bootstrap
 @import "base/govcy-variables";
 @import "base/govcy-typography";
 @import "base/govcy-grid";
 
-// 2.
+// 3.
 // Include the relevant parts of Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../../node_modules/bootstrap/scss/functions";
+
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 
-// 3.
+// 4.
 // Include Bootstrap components here that we extend in our govcy- components file
 @import "components/govcy-utilities.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -23,7 +28,7 @@
 @import "../../node_modules/bootstrap/scss/alert";
 
 
-// 4.
+// 5.
 // Our govcy- components files. In here we create components that inherit from Bootstrap components
 
 @import "components/govcy-alerts";
@@ -31,9 +36,8 @@
 @import "components/govcy-header";
 @import "components/govcy-footer";
 @import "components/govcy-inputs.scss";
+@import "components/govcy-table.scss";
 
-
-
-
-//5. bi-icons
+//5. 
+// Google-icons CDN link for Govcy 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
