@@ -14,7 +14,10 @@
             border-left: 4px solid $govcy-danger;
             padding-left: 13px;
         }
-
+        &-hint {
+            border-left: 4px solid $govcy-hint;
+            padding-left: 13px;
+        }
         // Govcy label
         .govcy-label{
             display: block;
