@@ -3864,7 +3864,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-.table {
+.table, .govcy-table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: #272525;
@@ -3879,41 +3879,41 @@ progress {
   vertical-align: top;
   border-color: #dee2e6;
 }
-.table > :not(caption) > * > * {
+.table > :not(caption) > * > *, .govcy-table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
   border-bottom-width: 1px;
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
-.table > tbody {
+.table > tbody, .govcy-table > tbody {
   vertical-align: inherit;
 }
-.table > thead {
+.table > thead, .govcy-table > thead {
   vertical-align: bottom;
 }
-.table > :not(:first-child) {
+.table > :not(:first-child), .govcy-table > :not(:first-child) {
   border-top: 2px solid currentColor;
 }
 
-.caption-top {
+.caption-top, .govcy-caption-top {
   caption-side: top;
 }
 
-.table-sm > :not(caption) > * > * {
+.table-sm > :not(caption) > * > *, .govcy-table-sm > :not(caption) > * > * {
   padding: 0.25rem 0.25rem;
 }
 
-.table-bordered > :not(caption) > * {
+.table-bordered > :not(caption) > *, .govcy-table-bordered > :not(caption) > * {
   border-width: 1px 0;
 }
-.table-bordered > :not(caption) > * > * {
+.table-bordered > :not(caption) > * > *, .govcy-table-bordered > :not(caption) > * > * {
   border-width: 0 1px;
 }
 
-.table-borderless > :not(caption) > * > * {
+.table-borderless > :not(caption) > * > *, .govcy-table-borderless > :not(caption) > * > * {
   border-bottom-width: 0;
 }
-.table-borderless > :not(:first-child) {
+.table-borderless > :not(:first-child), .govcy-table-borderless > :not(:first-child) {
   border-top-width: 0;
 }
 
@@ -3922,12 +3922,12 @@ progress {
   color: var(--bs-table-striped-color);
 }
 
-.table-active {
+.table-active, .govcy-table-active {
   --bs-table-accent-bg: var(--bs-table-active-bg);
   color: var(--bs-table-active-color);
 }
 
-.table-hover > tbody > tr:hover > * {
+.table-hover > tbody > tr:hover > *, .govcy-table-hover > tbody > tr:hover > * {
   --bs-table-accent-bg: var(--bs-table-hover-bg);
   color: var(--bs-table-hover-color);
 }
@@ -9531,43 +9531,71 @@ textarea.form-control-lg {
 }
 
 .govcy-bg-primary {
-  background-color: rgb(49,87,111) !important;
+  background-color: rgb(49, 87, 111) !important;
 }
 
 .govcy-bg-secondary {
-  background-color: rgb(176,144,56) !important;
+  background-color: rgb(176, 144, 56) !important;
 }
 
 .govcy-bg-success {
-  background-color: rgb(80,94,49) !important;
+  background-color: rgb(80, 94, 49) !important;
 }
 
 .govcy-bg-info {
-  background-color: rgb(82,135,157) !important;
+  background-color: rgb(82, 135, 157) !important;
 }
 
 .govcy-bg-danger {
-  background-color: rgb(212,53,28) !important;
+  background-color: rgb(212, 53, 28) !important;
 }
 
 .govcy-bg-light {
-  background-color: rgb(235,241,243) !important;
+  background-color: rgb(235, 241, 243) !important;
 }
 
 .govcy-bg-dark {
-  background-color: rgb(0,0,0) !important;
+  background-color: rgb(0, 0, 0) !important;
 }
 
 .govcy-bg-white {
-  background-color: rgb(255,255,255) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .govcy-bg-gray {
-  background-color: rgb(230,230,231) !important;
+  background-color: rgb(230, 230, 231) !important;
 }
 
 .govcy-bg-sub-menu {
-  background-color: rgb(87,117,137) !important;
+  background-color: rgb(87, 117, 137) !important;
+}
+
+.govcy-table-primary {
+  background-color: #d6dde2 !important;
+}
+
+.govcy-table-secondary {
+  background-color: #efe9d7 !important;
+}
+
+.govcy-table-success {
+  background-color: #dcdfd6 !important;
+}
+
+.govcy-table-info {
+  background-color: #dce7eb !important;
+}
+
+.govcy-table-danger {
+  background-color: #f6d7d2 !important;
+}
+
+.govcy-table-light {
+  background-color: #ebf1f3 !important;
+}
+
+.govcy-table-dark {
+  background-color: #272525 !important;
 }
 
 .govcy-opacity-10 {
@@ -10898,43 +10926,71 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-sm-primary {
-    background-color: rgb(49,87,111) !important;
+    background-color: rgb(49, 87, 111) !important;
   }
 
   .govcy-bg-sm-secondary {
-    background-color: rgb(176,144,56) !important;
+    background-color: rgb(176, 144, 56) !important;
   }
 
   .govcy-bg-sm-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(80, 94, 49) !important;
   }
 
   .govcy-bg-sm-info {
-    background-color: rgb(82,135,157) !important;
+    background-color: rgb(82, 135, 157) !important;
   }
 
   .govcy-bg-sm-danger {
-    background-color: rgb(212,53,28) !important;
+    background-color: rgb(212, 53, 28) !important;
   }
 
   .govcy-bg-sm-light {
-    background-color: rgb(235,241,243) !important;
+    background-color: rgb(235, 241, 243) !important;
   }
 
   .govcy-bg-sm-dark {
-    background-color: rgb(0,0,0) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
 
   .govcy-bg-sm-white {
-    background-color: rgb(255,255,255) !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 
   .govcy-bg-sm-gray {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(230, 230, 231) !important;
   }
 
   .govcy-bg-sm-sub-menu {
-    background-color: rgb(87,117,137) !important;
+    background-color: rgb(87, 117, 137) !important;
+  }
+
+  .govcy-table-sm-primary {
+    background-color: #d6dde2 !important;
+  }
+
+  .govcy-table-sm-secondary {
+    background-color: #efe9d7 !important;
+  }
+
+  .govcy-table-sm-success {
+    background-color: #dcdfd6 !important;
+  }
+
+  .govcy-table-sm-info {
+    background-color: #dce7eb !important;
+  }
+
+  .govcy-table-sm-danger {
+    background-color: #f6d7d2 !important;
+  }
+
+  .govcy-table-sm-light {
+    background-color: #ebf1f3 !important;
+  }
+
+  .govcy-table-sm-dark {
+    background-color: #272525 !important;
   }
 
   .govcy-text-sm-start {
@@ -11909,43 +11965,71 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-md-primary {
-    background-color: rgb(49,87,111) !important;
+    background-color: rgb(49, 87, 111) !important;
   }
 
   .govcy-bg-md-secondary {
-    background-color: rgb(176,144,56) !important;
+    background-color: rgb(176, 144, 56) !important;
   }
 
   .govcy-bg-md-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(80, 94, 49) !important;
   }
 
   .govcy-bg-md-info {
-    background-color: rgb(82,135,157) !important;
+    background-color: rgb(82, 135, 157) !important;
   }
 
   .govcy-bg-md-danger {
-    background-color: rgb(212,53,28) !important;
+    background-color: rgb(212, 53, 28) !important;
   }
 
   .govcy-bg-md-light {
-    background-color: rgb(235,241,243) !important;
+    background-color: rgb(235, 241, 243) !important;
   }
 
   .govcy-bg-md-dark {
-    background-color: rgb(0,0,0) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
 
   .govcy-bg-md-white {
-    background-color: rgb(255,255,255) !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 
   .govcy-bg-md-gray {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(230, 230, 231) !important;
   }
 
   .govcy-bg-md-sub-menu {
-    background-color: rgb(87,117,137) !important;
+    background-color: rgb(87, 117, 137) !important;
+  }
+
+  .govcy-table-md-primary {
+    background-color: #d6dde2 !important;
+  }
+
+  .govcy-table-md-secondary {
+    background-color: #efe9d7 !important;
+  }
+
+  .govcy-table-md-success {
+    background-color: #dcdfd6 !important;
+  }
+
+  .govcy-table-md-info {
+    background-color: #dce7eb !important;
+  }
+
+  .govcy-table-md-danger {
+    background-color: #f6d7d2 !important;
+  }
+
+  .govcy-table-md-light {
+    background-color: #ebf1f3 !important;
+  }
+
+  .govcy-table-md-dark {
+    background-color: #272525 !important;
   }
 
   .govcy-text-md-start {
@@ -12920,43 +13004,71 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-lg-primary {
-    background-color: rgb(49,87,111) !important;
+    background-color: rgb(49, 87, 111) !important;
   }
 
   .govcy-bg-lg-secondary {
-    background-color: rgb(176,144,56) !important;
+    background-color: rgb(176, 144, 56) !important;
   }
 
   .govcy-bg-lg-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(80, 94, 49) !important;
   }
 
   .govcy-bg-lg-info {
-    background-color: rgb(82,135,157) !important;
+    background-color: rgb(82, 135, 157) !important;
   }
 
   .govcy-bg-lg-danger {
-    background-color: rgb(212,53,28) !important;
+    background-color: rgb(212, 53, 28) !important;
   }
 
   .govcy-bg-lg-light {
-    background-color: rgb(235,241,243) !important;
+    background-color: rgb(235, 241, 243) !important;
   }
 
   .govcy-bg-lg-dark {
-    background-color: rgb(0,0,0) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
 
   .govcy-bg-lg-white {
-    background-color: rgb(255,255,255) !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 
   .govcy-bg-lg-gray {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(230, 230, 231) !important;
   }
 
   .govcy-bg-lg-sub-menu {
-    background-color: rgb(87,117,137) !important;
+    background-color: rgb(87, 117, 137) !important;
+  }
+
+  .govcy-table-lg-primary {
+    background-color: #d6dde2 !important;
+  }
+
+  .govcy-table-lg-secondary {
+    background-color: #efe9d7 !important;
+  }
+
+  .govcy-table-lg-success {
+    background-color: #dcdfd6 !important;
+  }
+
+  .govcy-table-lg-info {
+    background-color: #dce7eb !important;
+  }
+
+  .govcy-table-lg-danger {
+    background-color: #f6d7d2 !important;
+  }
+
+  .govcy-table-lg-light {
+    background-color: #ebf1f3 !important;
+  }
+
+  .govcy-table-lg-dark {
+    background-color: #272525 !important;
   }
 
   .govcy-text-lg-start {
@@ -13931,43 +14043,71 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-xl-primary {
-    background-color: rgb(49,87,111) !important;
+    background-color: rgb(49, 87, 111) !important;
   }
 
   .govcy-bg-xl-secondary {
-    background-color: rgb(176,144,56) !important;
+    background-color: rgb(176, 144, 56) !important;
   }
 
   .govcy-bg-xl-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(80, 94, 49) !important;
   }
 
   .govcy-bg-xl-info {
-    background-color: rgb(82,135,157) !important;
+    background-color: rgb(82, 135, 157) !important;
   }
 
   .govcy-bg-xl-danger {
-    background-color: rgb(212,53,28) !important;
+    background-color: rgb(212, 53, 28) !important;
   }
 
   .govcy-bg-xl-light {
-    background-color: rgb(235,241,243) !important;
+    background-color: rgb(235, 241, 243) !important;
   }
 
   .govcy-bg-xl-dark {
-    background-color: rgb(0,0,0) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
 
   .govcy-bg-xl-white {
-    background-color: rgb(255,255,255) !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 
   .govcy-bg-xl-gray {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(230, 230, 231) !important;
   }
 
   .govcy-bg-xl-sub-menu {
-    background-color: rgb(87,117,137) !important;
+    background-color: rgb(87, 117, 137) !important;
+  }
+
+  .govcy-table-xl-primary {
+    background-color: #d6dde2 !important;
+  }
+
+  .govcy-table-xl-secondary {
+    background-color: #efe9d7 !important;
+  }
+
+  .govcy-table-xl-success {
+    background-color: #dcdfd6 !important;
+  }
+
+  .govcy-table-xl-info {
+    background-color: #dce7eb !important;
+  }
+
+  .govcy-table-xl-danger {
+    background-color: #f6d7d2 !important;
+  }
+
+  .govcy-table-xl-light {
+    background-color: #ebf1f3 !important;
+  }
+
+  .govcy-table-xl-dark {
+    background-color: #272525 !important;
   }
 
   .govcy-text-xl-start {
@@ -14942,43 +15082,71 @@ textarea.form-control-lg {
   }
 
   .govcy-bg-xxl-primary {
-    background-color: rgb(49,87,111) !important;
+    background-color: rgb(49, 87, 111) !important;
   }
 
   .govcy-bg-xxl-secondary {
-    background-color: rgb(176,144,56) !important;
+    background-color: rgb(176, 144, 56) !important;
   }
 
   .govcy-bg-xxl-success {
-    background-color: rgb(80,94,49) !important;
+    background-color: rgb(80, 94, 49) !important;
   }
 
   .govcy-bg-xxl-info {
-    background-color: rgb(82,135,157) !important;
+    background-color: rgb(82, 135, 157) !important;
   }
 
   .govcy-bg-xxl-danger {
-    background-color: rgb(212,53,28) !important;
+    background-color: rgb(212, 53, 28) !important;
   }
 
   .govcy-bg-xxl-light {
-    background-color: rgb(235,241,243) !important;
+    background-color: rgb(235, 241, 243) !important;
   }
 
   .govcy-bg-xxl-dark {
-    background-color: rgb(0,0,0) !important;
+    background-color: rgb(0, 0, 0) !important;
   }
 
   .govcy-bg-xxl-white {
-    background-color: rgb(255,255,255) !important;
+    background-color: rgb(255, 255, 255) !important;
   }
 
   .govcy-bg-xxl-gray {
-    background-color: rgb(230,230,231) !important;
+    background-color: rgb(230, 230, 231) !important;
   }
 
   .govcy-bg-xxl-sub-menu {
-    background-color: rgb(87,117,137) !important;
+    background-color: rgb(87, 117, 137) !important;
+  }
+
+  .govcy-table-xxl-primary {
+    background-color: #d6dde2 !important;
+  }
+
+  .govcy-table-xxl-secondary {
+    background-color: #efe9d7 !important;
+  }
+
+  .govcy-table-xxl-success {
+    background-color: #dcdfd6 !important;
+  }
+
+  .govcy-table-xxl-info {
+    background-color: #dce7eb !important;
+  }
+
+  .govcy-table-xxl-danger {
+    background-color: #f6d7d2 !important;
+  }
+
+  .govcy-table-xxl-light {
+    background-color: #ebf1f3 !important;
+  }
+
+  .govcy-table-xxl-dark {
+    background-color: #272525 !important;
   }
 
   .govcy-text-xxl-start {
@@ -16310,4 +16478,48 @@ textarea.form-control-lg {
   border: solid #272525;
   border-radius: 50%;
   background-color: #272525;
+}
+
+.govcy-table > thead,
+.govcy-table > tbody > tr {
+  border-color: #BBBCBF;
+}
+.govcy-table > tbody > tr > th {
+  font-weight: 500;
+}
+
+.govcy-table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 575.98px) {
+  .govcy-table-responsive-sm {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 767.98px) {
+  .govcy-table-responsive-md {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 991.98px) {
+  .govcy-table-responsive-lg {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 1199.98px) {
+  .govcy-table-responsive-xl {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 1399.98px) {
+  .govcy-table-responsive-xxl {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }

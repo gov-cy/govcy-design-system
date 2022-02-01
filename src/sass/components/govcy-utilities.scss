@@ -304,6 +304,15 @@ $utilities: map-merge((
     values: $govcy-bg-colors,
   ),
 
+  // utility: govcy-table-background-color
+  // usage:   govcy-table-*, govcy-bg-*-*
+  "govcy-table-variants": (
+    responsive: true,
+    property: background-color,
+    class: govcy-table,
+    values: $govcy-table-variants,
+  ),
+
   // utility: govcy-opacity
   // usage:   govcy-opacity-*
   "govcy-opacity": (
