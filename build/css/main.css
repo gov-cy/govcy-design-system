@@ -16302,6 +16302,10 @@ textarea.form-control-lg {
   border-left: 4px solid #D4351C;
   padding-left: 13px;
 }
+.govcy-form .govcy-form-control-hint {
+  border-left: 4px solid #6D6E70;
+  padding-left: 13px;
+}
 .govcy-form .govcy-form-control .govcy-label {
   display: block;
   color: #000000;

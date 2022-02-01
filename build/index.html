@@ -966,6 +966,7 @@
    </div>
    <br>
    <br>
+  
    <hr>
    <h2 >Govcy Table</h2>
    <div class="govcy-container">
@@ -999,7 +1000,61 @@
     <br>
     <br>
 
+   <br>
+   <br>
+   <h2>Conditional Radio</h2>
+   <div class="govcy-container">
+   <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <div class="govcy-form-control">
+                    <label class="govcy-radio-btn">Use existing email address
+                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".email.show" checked />
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-radio-btn">No, use different email address
+                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".email:not(.show)"/>
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <div class="collapse email govcy-pl-3 govcy-ml-1">
+                        <div class="govcy-form-control govcy-form-control-hint">
+                            <label class="govcy-label" for="">Email Address</label>
+                            <span class="govcy-hint">We'll only use this for applicatin</span>
+                            <input type="text" class="govcy-text-input" placeholder="email address" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
+    <h2>Conditional Radio with error</h2>
+    <div class="govcy-container">
+        <form action="" class="govcy-form">
+            <fieldset class="govcy-fieldset">
+                <div class="govcy-form-control">
+                    <label class="govcy-radio-btn">Use existing home address
+                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".address.show" checked/>
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <label class="govcy-radio-btn">No, use different home address
+                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".address:not(.show)"/>
+                        <span class="govcy-radio" tabindex="0"></span>
+                    </label>
+                    <div class="collapse address govcy-pl-3 govcy-ml-1">
+                        <div class="govcy-form-control govcy-form-control-error">
+                            <label class="govcy-label" for="">Home address</label>
+                            <span class="govcy-input-error-msg">Please type valid home address</span>
+                            <textarea type="textarea" class="govcy-text-area" placeholder="home address"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+  
     <script src="js/app.js"></script>
 
 </body>
