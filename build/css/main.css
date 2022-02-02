@@ -14,13 +14,13 @@ a:active {
   border-color: #272525;
 }
 
-a.govcy-back-link {
+a.govcy-back-link, a.govcy-sign-out {
   color: #272525 !important;
 }
-a.govcy-back-link:hover, a.govcy-back-link:visited, a.govcy-back-link:active {
+a.govcy-back-link:hover, a.govcy-back-link:visited, a.govcy-back-link:active, a.govcy-sign-out:hover, a.govcy-sign-out:visited, a.govcy-sign-out:active {
   text-decoration: underline;
 }
-a.govcy-back-link:hover {
+a.govcy-back-link:hover, a.govcy-sign-out:hover {
   text-decoration-thickness: 3px !important;
 }
 
