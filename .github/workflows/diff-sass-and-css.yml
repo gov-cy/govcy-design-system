@@ -1,0 +1,17 @@
+name: Diff SASS and CSS
+
+on: [pull_request]
+
+jobs:
+  diff-sass-and-css:
+    name:  Diff SASS and CSS 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - run: |
+          npm install ci
+          npm exec -c "sass --version"
+      - run: npm exec -c "sass --no-source-map --load-path=node_modules src/sass/main.scss" | diff build/css/main.css -
