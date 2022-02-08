@@ -48,8 +48,8 @@ a{
 }
 
 
-//defining govcy - back link styles for :hover :active and :visited state
-a.govcy-back-link {
+//defining govcy - back link, user's name and signout styles on :hover :active and :visited state
+a.govcy-back-link, a.govcy-sign-out {
   color: $govcy-body !important;
   &:hover,
   &:visited,
