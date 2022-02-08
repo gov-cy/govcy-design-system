@@ -1,0 +1,17 @@
+name: Sass Lint
+
+on: [pull_request]
+
+jobs:
+  sass-lint:
+    name:  Sass Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - run: |
+          npm install ci
+          npm exec -c "sass-lint --version"
+      - run: npm run sass-lint

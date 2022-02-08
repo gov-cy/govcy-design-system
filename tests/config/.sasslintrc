@@ -1,0 +1,9 @@
+{
+  "options": {
+    "merge-default-rules": true,
+    "max-warnings": 1355
+  },
+  "files": {
+    "include": "src/sass/**/*.s+(a|c)ss"
+  }
+}
