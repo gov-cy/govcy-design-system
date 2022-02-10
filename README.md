@@ -1,7 +1,7 @@
-[![Docker](https://github.com/gov-cy/dsf-design-system/actions/workflows/main.yml/badge.svg)](https://github.com/gov-cy/dsf-design-system/actions/workflows/main.yml)
+[![Docker](https://github.com/gov-cy/govcy-design-system/actions/workflows/main.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/main.yml)
 
 # govcy-design-system
-Gov.cy DSF design system code and documentation.
+GOV.CY design system code and documentation.
 
 This is the readme for the govcy-design-system repository.
 
@@ -26,8 +26,8 @@ You can find information about installing NPM [here](https://docs.npmjs.com/down
 We use `npm>=8.x` to make use of the `package.json::overrides` functionality.
 
 ```
-git clone https://github.com/gov-cy/dsf-design-system.git
-cd dsf-design-system
+git clone https://github.com/gov-cy/govcy-design-system.git
+cd govcy-design-system
 npm install
 ```
 
@@ -51,7 +51,7 @@ Compiles the sass files in `/src/sass` into a _minified_ css stylesheet and puts
 
 The `start` command:
 
-Runs a [simple command line development server](https://github.com/http-party/http-server) that serves the static files in the `/build` directory on port 3000. This means that when you have run this command you should be able to see your version of the DSF Design System at [http://localhost:3000](http://localhost:3000)
+Runs a [simple command line development server](https://github.com/http-party/http-server) that serves the static files in the `/build` directory on port 3000. This means that when you have run this command you should be able to see your version of the Design System at [http://localhost:3000](http://localhost:3000)
 
 The `/build/index.html` file is a [magic file](https://github.com/http-party/http-server#magic-files) which forms the entry point for the documentation/ design system.
 
