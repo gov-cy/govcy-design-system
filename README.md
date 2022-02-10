@@ -62,18 +62,6 @@ The watch css commands:
 * All do the same thing
 * Watch the sass files in `/src/sass` and check for any changes. When it detects changes it re compiles the sass into a css stylesheet into the `/build/css` directory automatically. This means that if you are also running the development server you can just refresh the page to see your changes.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bb6d841 (Use overrides to protect against security vulnerabilities in sub-dependencies)
-## Dependency Management
-
-Dependencies are managed in the `package.json` file.
-
-We use [overrides](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) to control sub dependencies in the case of a security vunerability found in a sub/ transitive dependency.
-<<<<<<< HEAD
-
-
 ## Tests
 
 We have visual regression tests that are required to pass before pull requests are merged. There are a number of components used to make this happen, they are explained below.
@@ -101,5 +89,9 @@ Is a testing framework and command that will find all our tests and run them one
 ### [percy/cli](https://github.com/percy/cli)
 
 `percy/cli` is a group of shortcut commands that upload the resulting screenshots to the service/ website.
-=======
->>>>>>> bb6d841 (Use overrides to protect against security vulnerabilities in sub-dependencies)
+
+## Dependency Management
+
+Dependencies are managed in the `package.json` file.
+
+We use [overrides](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) to control sub dependencies in the case of a security vunerability found in a sub/ transitive dependency.
