@@ -13,7 +13,7 @@
         "css-start": "npm run css-watch",
         "sass-lint": "sass-lint -v",
         "watch-css": "npm run css-watch",
-        "npx mocha --recursive --exit": "percy exec -- mocha --recursive --exit",
+        "test-percy": "percy exec -- mocha --recursive --exit",
         "start": "http-server -c-1 -p 3000 -o build/"
     },
     "dependencies": {
