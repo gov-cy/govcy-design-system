@@ -1,6 +1,6 @@
-const puppeteer = require('puppeteer');
 const httpServer = require('http-server');
 const percySnapshot = require('@percy/puppeteer');
+const puppeteer = require('puppeteer');
 
 describe('DesignSystem', function () {
   this.timeout(10000);
