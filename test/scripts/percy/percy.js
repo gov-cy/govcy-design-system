@@ -1,4 +1,5 @@
 const httpServer = require('http-server');
+const puppeteer = require('puppeteer');
 const percySnapshot = require('@percy/puppeteer');
 
 describe('DesignSystem', function () {
