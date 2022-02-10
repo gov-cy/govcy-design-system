@@ -1,4 +1,3 @@
-const puppeteer = require('puppeteer');
 const httpServer = require('http-server');
 const percySnapshot = require('@percy/puppeteer');
 
