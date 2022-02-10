@@ -25,8 +25,25 @@
         "@percy/puppeteer": "^2.0.0",
         "copyfiles": "^2.4.1",
         "http-server": "^13.0.2",
+<<<<<<< HEAD
         "mocha": "^9.2.0",
         "puppeteer": "13.2.0",
+=======
+        "sass": "^1.43.4",
+>>>>>>> bb6d841 (Use overrides to protect against security vulnerabilities in sub-dependencies)
         "sass-lint": "1.13.1"
+    },
+    "overrides": {
+        "@percy/puppeteer": {
+            "node-fetch": ">=2.6.7"
+        },
+        "sass-lint": {
+            ".":"1.13.1",
+            "merge":"^2.1.1",
+            "eslint": {
+                ".":"2.13.1",
+                "shelljs": "0.8.5"
+            }
+        }
     }
 }
