@@ -70,23 +70,23 @@ We have visual regression tests that are required to pass before pull requests a
 
 'Percy' is a service/ website that allows you to upload and check visual regression images. It shows a nice diff on the interface that one can apporve or reject. If you send it 2 screenshots it will tell you the difference between them.
 
-### [http-server](https://www.npmjs.com/package/http-server)
+### [http-server](https://www.npmjs.com/package/http-server/)
 
 `http-server` is a lightweight javascript development web server. In our tests it is used to 'serve' our web pages that are screenshotted.
 
-### [puppeteer](https://github.com/puppeteer/puppeteer)
+### [puppeteer](https://github.com/puppeteer/puppeteer)
 
 `puppeteer` is a library that provides a browser to visit the served pages and take the screenshots.
 
-### [percy/puppeteer](https://docs.percy.io/docs/puppeteer)
+### [percy/puppeteer](https://docs.percy.io/docs/puppeteer)
 
 `percy/puppeteer` is just a customised distribution of the above with some small tweaks to make it work better with Percy.
 
-### [Mocha](https://mochajs.org/#the-test-directory)
+### [Mocha](https://mochajs.org/#the-test-directory)
 
 Is a testing framework and command that will find all our tests and run them one by one.
 
-### [percy/cli](https://github.com/percy/cli)
+### [percy/cli](https://github.com/percy/cli)
 
 `percy/cli` is a group of shortcut commands that upload the resulting screenshots to the service/ website.
 
