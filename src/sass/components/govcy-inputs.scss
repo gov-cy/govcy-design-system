@@ -4,6 +4,7 @@
     .govcy-fieldset{
         .govcy-legend {
             font-weight: 500;
+            font-size: inherit;
         }
     }
     
@@ -28,7 +29,7 @@
         // Govcy hint and Govcy input error message
         .govcy-hint, .govcy-input-error-msg {
             display: block;
-            line-height: 1;
+            line-height: 28px;
             margin-bottom: 8px;
             color: $govcy-hint;
         }
@@ -92,13 +93,12 @@
         }
         
         .govcy-checkbox,
-        .govcy-radio-btn {    
+        .govcy-radio {    
             display: block;
             position: relative;
             padding: 6px 16px 8px 60px;
             margin-top: 12px;
             cursor: pointer;
-            font-size: 22px;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
@@ -112,12 +112,12 @@
                 height: 0;
                 width: 0;
                 &:focus + .govcy-tickbox,
-                &:focus + .govcy-radio {
+                &:focus + .govcy-radio-checked {
                     outline: none;
                     box-shadow: 0 0 0 4px $govcy-focus;
                 }
                 &:checked ~ .govcy-tickbox:after,
-                &:checked ~ .govcy-radio:after {
+                &:checked ~ .govcy-radio-checked:after {
                     display: block;
                 }
             }
@@ -152,7 +152,7 @@
             }
 
              // Create custom radio button style
-             .govcy-radio {
+             .govcy-radio-checked {
                 position: absolute;
                 top: 0;
                 left: 0;
