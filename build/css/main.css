@@ -28165,6 +28165,7 @@ textarea.form-control-lg {
 
 .govcy-form .govcy-fieldset .govcy-legend {
   font-weight: 500;
+  font-size: inherit;
 }
 .govcy-form .govcy-form-control {
   margin: 14px 0;
@@ -28184,7 +28185,7 @@ textarea.form-control-lg {
 }
 .govcy-form .govcy-form-control .govcy-hint, .govcy-form .govcy-form-control .govcy-input-error-msg {
   display: block;
-  line-height: 1;
+  line-height: 28px;
   margin-bottom: 8px;
   color: #6D6E70;
 }
@@ -28257,44 +28258,43 @@ textarea.form-control-lg {
   border-radius: 0px;
 }
 .govcy-form .govcy-form-control .govcy-checkbox,
-.govcy-form .govcy-form-control .govcy-radio-btn {
+.govcy-form .govcy-form-control .govcy-radio {
   display: block;
   position: relative;
   padding: 6px 16px 8px 60px;
   margin-top: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input {
+.govcy-form .govcy-form-control .govcy-radio .govcy-checkbox-input,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:focus + .govcy-tickbox, .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:focus + .govcy-radio, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:focus + .govcy-tickbox, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:focus + .govcy-radio,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:focus + .govcy-tickbox,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:focus + .govcy-radio,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:focus + .govcy-tickbox,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:focus + .govcy-radio {
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:focus + .govcy-tickbox, .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:focus + .govcy-radio-checked, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:focus + .govcy-tickbox, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:focus + .govcy-radio-checked,
+.govcy-form .govcy-form-control .govcy-radio .govcy-checkbox-input:focus + .govcy-tickbox,
+.govcy-form .govcy-form-control .govcy-radio .govcy-checkbox-input:focus + .govcy-radio-checked,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-input:focus + .govcy-tickbox,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-input:focus + .govcy-radio-checked {
   outline: none;
   box-shadow: 0 0 0 4px #ffdd00;
 }
-.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:checked ~ .govcy-tickbox:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:checked ~ .govcy-radio:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:checked ~ .govcy-tickbox:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:checked ~ .govcy-radio:after,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:checked ~ .govcy-tickbox:after,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-checkbox-input:checked ~ .govcy-radio:after,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:checked ~ .govcy-tickbox:after,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio-input:checked ~ .govcy-radio:after {
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:checked ~ .govcy-tickbox:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-checkbox-input:checked ~ .govcy-radio-checked:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:checked ~ .govcy-tickbox:after, .govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-input:checked ~ .govcy-radio-checked:after,
+.govcy-form .govcy-form-control .govcy-radio .govcy-checkbox-input:checked ~ .govcy-tickbox:after,
+.govcy-form .govcy-form-control .govcy-radio .govcy-checkbox-input:checked ~ .govcy-radio-checked:after,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-input:checked ~ .govcy-tickbox:after,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-input:checked ~ .govcy-radio-checked:after {
   display: block;
 }
 .govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox {
+.govcy-form .govcy-form-control .govcy-radio .govcy-tickbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -28303,12 +28303,12 @@ textarea.form-control-lg {
   border: 2px solid #272525;
 }
 .govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox:focus,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox:focus {
+.govcy-form .govcy-form-control .govcy-radio .govcy-tickbox:focus {
   box-shadow: 0 0 0 4px #ffdd00;
   outline: none;
 }
 .govcy-form .govcy-form-control .govcy-checkbox .govcy-tickbox::after,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-tickbox::after {
+.govcy-form .govcy-form-control .govcy-radio .govcy-tickbox::after {
   content: "";
   position: absolute;
   display: none;
@@ -28322,8 +28322,8 @@ textarea.form-control-lg {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio {
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-checked,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-checked {
   position: absolute;
   top: 0;
   left: 0;
@@ -28332,13 +28332,13 @@ textarea.form-control-lg {
   border: 2px solid #272525;
   border-radius: 50%;
 }
-.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio:focus,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio:focus {
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-checked:focus,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-checked:focus {
   box-shadow: 0 0 0 4px #ffdd00;
   outline: none;
 }
-.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio:after,
-.govcy-form .govcy-form-control .govcy-radio-btn .govcy-radio:after {
+.govcy-form .govcy-form-control .govcy-checkbox .govcy-radio-checked:after,
+.govcy-form .govcy-form-control .govcy-radio .govcy-radio-checked:after {
   content: "";
   position: absolute;
   display: none;

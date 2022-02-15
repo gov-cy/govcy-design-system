@@ -456,7 +456,8 @@ $utilities: map-merge((
   ),
 
   // utility: govcy-display
-  // usage:   govcy-d-*, govcy-d-*-*
+  // usage:   govcy-d-*, govcy-d-*-*, govcy-d-print-*, govcy-d-print-*-*
+
   "govcy-display": (
     responsive: true,
     print: true,
