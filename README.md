@@ -64,29 +64,41 @@ The watch css commands:
 
 ## Tests
 
+### Linting
+
+We have automated code quality/ linting tests that are run using [sass-lint](https://github.com/sasstools/sass-lint).This library is currently maintained but we haven't found a suitable alternative. Occasionally it causes problems with sub-dependencies/ transitive dependencies that need to be overriden. See the [Dependency Management section of this guidance](#dependency-management) for more information or the `package.json::overrides` section.
+
+The linting is controlled by the configuration file ar [test/config/.sasslintrc](test/config/.sasslintrc). You can read more about how to configure [sass-lint here](https://github.com/sasstools/sass-lint#configuration-documentation).
+
+The configuration file ([test/config/.sasslintrc](test/config/.sasslintrc)) is provided to the [sass-lint](https://github.com/sasstools/sass-lint) command line tool by the [package.json::sasslintConfig](package.json) entry.
+
+These are currently run by a simple [Github Actions](https://github.com/features/actions) action found at [.github/workflows/sass-lint.yml](.github/workflows/sass-lint.yml)
+
+### Visual Regression
+
 We have visual regression tests that are required to pass before pull requests are merged. There are a number of components used to make this happen, they are explained below.
 
-### [Percy](https://percy.io/)
+#### [Percy](https://percy.io/)
 
 'Percy' is a service/ website that allows you to upload and check visual regression images. It shows a nice diff on the interface that one can apporve or reject. If you send it 2 screenshots it will tell you the difference between them.
 
-### [http-server](https://www.npmjs.com/package/http-server/)
+#### [http-server](https://www.npmjs.com/package/http-server/)
 
 `http-server` is a lightweight javascript development web server. In our tests it is used to 'serve' our web pages that are screenshotted.
 
-### [puppeteer](https://github.com/puppeteer/puppeteer)
+#### [puppeteer](https://github.com/puppeteer/puppeteer)
 
 `puppeteer` is a library that provides a browser to visit the served pages and take the screenshots.
 
-### [percy/puppeteer](https://docs.percy.io/docs/puppeteer)
+#### [percy/puppeteer](https://docs.percy.io/docs/puppeteer)
 
 `percy/puppeteer` is just a customised distribution of the above with some small tweaks to make it work better with Percy.
 
-### [Mocha](https://mochajs.org/#the-test-directory)
+#### [Mocha](https://mochajs.org/#the-test-directory)
 
 Is a testing framework and command that will find all our tests and run them one by one.
 
-### [percy/cli](https://github.com/percy/cli)
+#### [percy/cli](https://github.com/percy/cli)
 
 `percy/cli` is a group of shortcut commands that upload the resulting screenshots to the service/ website.
 
