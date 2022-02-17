@@ -18,7 +18,7 @@ jobs:
           diff-search: true
           assume-same-version: old
           static-checking: localIsNew
-          
+          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
         id: version-check
         
 
