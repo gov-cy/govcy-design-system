@@ -1,8 +1,9 @@
 name: Sass
 
-on: [pull_request]
-  branches-ignore:
-    - '**'
+on: 
+  pull_request:
+    branches-ignore:
+      - '**'
 jobs:
   dart-sass:
     name: Dart Sass

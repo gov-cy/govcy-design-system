@@ -1,8 +1,9 @@
 name: Diff SASS and CSS
 
-on: [pull_request]
-  branches-ignore:
-    - '**'
+on: 
+  pull_request:
+    branches-ignore:
+      - '**'
 jobs:
   diff-sass-and-css:
     name:  Diff SASS and CSS 

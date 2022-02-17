@@ -1,8 +1,9 @@
 name: Sass Lint
 
-on: [pull_request]
-  branches-ignore:
-    - '**'
+on: 
+  pull_request:
+    branches-ignore:
+      - '**'
 jobs:
   sass-lint:
     name:  Sass Lint
