@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: lts/*
       - uses: kriasoft/check-version@v1
-        with:
-          path: "api"
-          format: "{name}_v{version}+build.{pr_number}.zip"
+        # with:
+          # path: "api"
+          # format: "{name}_v{version}+build.{pr_number}.zip"
         id: version-check
 
       - run: |
