@@ -16,7 +16,9 @@ jobs:
       - uses: EndBug/version-check@v2.1.0
         with:
           diff-search: true
-          # format: "{name}_v{version}+build.{pr_number}.zip"
+          assume-same-version: old
+          static-checking: localIsNew
+          
         id: version-check
         
 
