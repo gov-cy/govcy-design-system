@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - dist
+      - package.json
 jobs:
   tag-and-publish-on-version-change:
     name: Tag and Publish to CDN on Version Change
@@ -15,14 +18,12 @@ jobs:
           node-version: lts/*
       - uses: EndBug/version-check@v2.1.0
         with:
-          diff-search: true
-          assume-same-version: old
           static-checking: localIsNew
           file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
         id: version-check
-        
 
       - run: |
+        
           echo "name: ${{ steps.version-check.outputs.changed }}"
           echo "name: ${{ steps.version-check.outputs.type }}"
           echo "name: ${{ steps.version-check.outputs.version }}"
