@@ -1,0 +1,24 @@
+name: Tag and Publish on Version Change
+
+on: [pull_request]
+branches: [ main ]
+
+jobs:
+  tag-and-publish-on-version-change:
+    name: Tag and Publish to CDN on Version Change
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - uses: kriasoft/check-version@v1
+        with:
+          path: "api"
+          format: "{name}_v{version}+build.{pr_number}.zip"
+        id: version-check
+
+      - run: |
+          echo "name: ${{ steps.version-check.outputs.name }}"
+          echo "version: ${{ steps.version-check.outputs.version }}"
+          echo "release: ${{ steps.version-check.outputs.release }}"
