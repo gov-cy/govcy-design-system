@@ -1,7 +1,9 @@
 name: Diff SASS and CSS
 
-on: [pull_request]
-
+on: 
+  pull_request:
+    branches-ignore:
+      - '**'
 jobs:
   diff-sass-and-css:
     name:  Diff SASS and CSS 
@@ -15,3 +17,11 @@ jobs:
           npm install ci
           npm exec -c "sass --version"
       - run: npm exec -c "sass --no-source-map --load-path=node_modules src/sass/main.scss" | diff build/css/main.css -
+        id: build-sass-diff
+      - if: always() && (steps.build-sass-diff.outcome == 'failure')
+        run: echo "You have made changes to the SASS files without compiling them to the /build directory. The compiled SASS and does not match what is in the build/ directory. You need to run `npm run css-build`"
+      - if: always()
+        run: sass --no-source-map --load-path=node_modules src/sass/main.scss --style compressed | diff dist/css/main.min.css -
+        id: dist-sass-diff
+      - if: always() && (steps.dist-sass-diff.outcome == 'failure')
+        run: echo "You have made changes to the SASS files without compiling them to the /dist directory. The compiled SASS and does not match what is in the dist/ directory. You need to run `npm run css-build-distribution`"
