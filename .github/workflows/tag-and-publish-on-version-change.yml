@@ -75,7 +75,7 @@ jobs:
             az storage blob upload \
               --account-name govcydesignsystem1 \
               --container-name bvtest \
-              --name style.min.css?v${{ steps.version-check.outputs.version }} \
+              --name version/${{ steps.version-check.outputs.version }}/style.min.css \
               --file dist/css/main.min.css \
               --auth-mode key
 
@@ -86,7 +86,7 @@ jobs:
             az storage blob upload \
               --account-name govcydesignsystem1 \
               --container-name bvtest \
-              --name style.min.css?latest \
+              --name version/latest/style.min.css \
               --file dist/css/main.min.css \
               --auth-mode key
             
