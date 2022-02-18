@@ -40,7 +40,7 @@ jobs:
             github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: 'refs/tags/v'${{ steps.version-check.outputs.changed }},
+              ref: 'refs/tags/v'${{ steps.version-check.outputs.version }},
               sha: context.sha
             })
       - name: Tag latest
@@ -75,7 +75,7 @@ jobs:
             az storage blob upload \
               --account-name govcydesignsystem1 \
               --container-name bvtest \
-              --name style.min.css?v${{ steps.version-check.outputs.changed }} \
+              --name style.min.css?v${{ steps.version-check.outputs.version }} \
               --file dist/css/main.min.css \
               --auth-mode key
 
