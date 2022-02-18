@@ -6,25 +6,91 @@ on:
       - main
     paths:
       - dist
-      - package.json
 jobs:
-  tag-and-publish-on-version-change:
-    name: Tag and Publish to CDN on Version Change
+  # Duplicated from `.github/workflows/version-sanity-checks.yml` could use https://github.blog/2022-02-10-using-reusable-workflows-github-actions ?
+  version-sanity-checks:
+    name: Sanity Check Version Number/ File Changes
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: lts/*
       - uses: EndBug/version-check@v2.1.0
         with:
           static-checking: localIsNew
           file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
         id: version-check
+      - if: steps.check.outputs.changed == 'true' && steps.check.outputs.changed == 'undefined'
+        run: echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1
+      - if: steps.check.outputs.changed == 'false'
+        run: echo "You have updated the distribution without incrementing the version number. You must update package.json::version to publish a new version"; exit 1
 
-      - run: |
+  tag-on-version-change:
+    name: Create Github Tags
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: EndBug/version-check@v2.1.0
+        with:
+          static-checking: localIsNew
+          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
+        id: version-check
+      - name: Tag version
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/v' + steps.check.outputs.changed,
+              sha: context.sha
+            })
+      - name: Tag latest
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/latest',
+              sha: context.sha
+            })
+
+  publish-to-azure-cdn-on-version-change:
+    name: Publish to Azure CDN
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: EndBug/version-check@v2.1.0
+        with:
+          static-checking: localIsNew
+          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
+        id: version-check
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_GOVCY_CDN_CREDENTIALS }}
+
+      - name: CDN 'version' Upload
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload \
+              --account-name govcydesignsystem1 \
+              --container-name bvtest \
+              --name style.min.css?v${{ steps.check.outputs.changed }} \
+              --file dist/css/main.min.css \
+              --auth-mode key
+
+      - name: CDN 'latest' Upload
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload \
+              --account-name govcydesignsystem1 \
+              --container-name bvtest \
+              --name style.min.css?latest \
+              --file dist/css/main.min.css \
+              --auth-mode key
+            
+
+      - if: always()
+        run: az logout
         
-          echo "name: ${{ steps.version-check.outputs.changed }}"
-          echo "name: ${{ steps.version-check.outputs.type }}"
-          echo "name: ${{ steps.version-check.outputs.version }}"
-          echo "name: ${{ steps.version-check.outputs.commit }}"
