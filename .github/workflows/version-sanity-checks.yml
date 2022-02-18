@@ -4,8 +4,8 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - dist
+    # paths:
+    #   - dist
 jobs:
   version-sanity-checks:
     name: Sanity Check Version Number/ File Changes

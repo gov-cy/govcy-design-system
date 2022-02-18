@@ -4,8 +4,8 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - dist
+    # paths:
+    #   - dist
 jobs:
   # Duplicated from `.github/workflows/version-sanity-checks.yml` could use https://github.blog/2022-02-10-using-reusable-workflows-github-actions ?
   version-sanity-checks:
