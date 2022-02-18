@@ -23,16 +23,6 @@ jobs:
       - if: steps.version-check.outputs.changed == 'false'
         run: echo "You have updated the distribution without incrementing the version number. You must update package.json::version to publish a new version"; exit 1
 
-  tag-on-version-change:
-    name: Create Github Tags
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: EndBug/version-check@v2.1.0
-        with:
-          static-checking: localIsNew
-          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
-        id: version-check
       - name: Tag version
         uses: actions/github-script@v5
         with:
@@ -54,16 +44,6 @@ jobs:
               sha: context.sha
             })
 
-  publish-to-azure-cdn-on-version-change:
-    name: Publish to Azure CDN
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: EndBug/version-check@v2.1.0
-        with:
-          static-checking: localIsNew
-          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
-        id: version-check
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_GOVCY_CDN_CREDENTIALS }}
