@@ -14,4 +14,7 @@ jobs:
       - run: |
           npm install ci
           npm exec -c "sass --version"
-      - run: npm run css-build 
+      - run: npm run css-build
+        id: build-step
+      - if: always() && (steps.build-stem.outcome == 'failure')
+        run: echo "The files in src/sass do not compile. You have made changes which are not valid."
