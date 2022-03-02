@@ -7,78 +7,78 @@
  
 
 $govcy-brand-colors: (
-  "primary":               #31576F,
-  "secondary":             #B09038,
-  "success":               #505E31,
-  "danger":                #D4351C,
-  "info":                  #52879D,
-  "focus":                 #ffdd00,
-  "body":                  #272525,
-  "hint":                  #6D6E70,
-  "link-standard":         #1d70b8,
-  "link-hover":            #003078,
-  "link-visited":          #4c2c92,
-  "danger-hover":          #942514,
-  "border-standard":       #BBBCBF,
-  "button-primary-hover":  #254355,
-  "button-secondary":      #D0D1D3,
-  "button-secondary-hover":#A6A8AA,
-  "button-tirtiary-hover": #AA1D13,
-  "button-success-hover" : #274e13,
-  "black":                 #000000,
-  "white":                 #ffffff,
-  "cyan-100":              #ebf1f3,
-  "gray-100":              #e6e6e7,
-  "blue-800":              #577589,
+  'primary':                #31576f,
+  'secondary':              #b09038,
+  'success':                #505e31,
+  'danger':                 #d4351c,
+  'info':                   #52879d,
+  'focus':                  #ffdd00,
+  'body':                   #272525,
+  'hint':                   #6d6e70,
+  'link-standard':          #1d70b8,
+  'link-hover':             #003078,
+  'link-visited':           #4c2c92,
+  'danger-hover':           #942514,
+  'border-standard':        #bbbcbf,
+  'button-primary-hover':   #254355,
+  'button-secondary':       #d0d1d3,
+  'button-secondary-hover': #a6a8aa,
+  'button-tirtiary-hover':  #aa1d13,
+  'button-success-hover':   #274e13,
+  'black':                  #000000,
+  'white':                  #ffffff,
+  'cyan-100':               #ebf1f3,
+  'gray-100':               #e6e6e7,
+  'blue-800':               #577589,
 );
 
 
-$govcy-primary: map-get($govcy-brand-colors, "primary");
-$govcy-secondary: map-get($govcy-brand-colors, "secondary");
+$govcy-primary: map-get($govcy-brand-colors, 'primary');
+$govcy-secondary: map-get($govcy-brand-colors, 'secondary');
 
 // Govcy status colors
-$govcy-success: map-get($govcy-brand-colors, "success");
-$govcy-danger: map-get($govcy-brand-colors, "danger");
-$govcy-info: map-get($govcy-brand-colors, "info");
+$govcy-success: map-get($govcy-brand-colors, 'success');
+$govcy-danger: map-get($govcy-brand-colors, 'danger');
+$govcy-info: map-get($govcy-brand-colors, 'info');
 
 // Govcy typography colors
-$govcy-body: map-get($govcy-brand-colors, "body");
+$govcy-body: map-get($govcy-brand-colors, 'body');
 $govcy-heading: $govcy-body;
-$govcy-hint: map-get($govcy-brand-colors, "hint");
-$govcy-white: map-get($govcy-brand-colors, "white");
-$govcy-black: map-get($govcy-brand-colors, "black");
-$govcy-gray: map-get($govcy-brand-colors, "gray-100");
-$govcy-light: map-get($govcy-brand-colors, "cyan-100");
+$govcy-hint: map-get($govcy-brand-colors, 'hint');
+$govcy-white: map-get($govcy-brand-colors, 'white');
+$govcy-black: map-get($govcy-brand-colors, 'black');
+$govcy-gray: map-get($govcy-brand-colors, 'gray-100');
+$govcy-light: map-get($govcy-brand-colors, 'cyan-100');
 
 
 // Govcy link colors
-$govcy-link: map-get($govcy-brand-colors, "link-standard");
-$govcy-link-hover: map-get($govcy-brand-colors, "link-hover");
-$govcy-link-visited: map-get($govcy-brand-colors, "link-visited");
+$govcy-link: map-get($govcy-brand-colors, 'link-standard');
+$govcy-link-hover: map-get($govcy-brand-colors, 'link-hover');
+$govcy-link-visited: map-get($govcy-brand-colors, 'link-visited');
 $govcy-link-active: $govcy-body;
-$govcy-danger-hover: map-get($govcy-brand-colors, "danger-hover");
+$govcy-danger-hover: map-get($govcy-brand-colors, 'danger-hover');
 
 // Govcy border colors
-$govcy-border-standard: map-get($govcy-brand-colors, "border-standard");
+$govcy-border-standard: map-get($govcy-brand-colors, 'border-standard');
 $govcy-border-input: $govcy-body;
 
 // Govcy button colors
 $govcy-btn-primary: $govcy-primary;
-$govcy-btn-primary-hover: map-get($govcy-brand-colors, "button-primary-hover");
+$govcy-btn-primary-hover: map-get($govcy-brand-colors, 'button-primary-hover');
 
-$govcy-btn-secondary: map-get($govcy-brand-colors, "button-secondary");
-$govcy-btn-secondary-hover: map-get($govcy-brand-colors, "button-secondary-hover");
+$govcy-btn-secondary: map-get($govcy-brand-colors, 'button-secondary');
+$govcy-btn-secondary-hover: map-get($govcy-brand-colors, 'button-secondary-hover');
 
 $govcy-btn-tirtiary: $govcy-danger;
-$govcy-btn-tirtiary-hover: map-get($govcy-brand-colors, "button-tirtiary-hover");
+$govcy-btn-tirtiary-hover: map-get($govcy-brand-colors, 'button-tirtiary-hover');
 
 $govcy-btn-success: $govcy-success;
-$govcy-btn-success-hover: map-get($govcy-brand-colors, "button-success-hover");
+$govcy-btn-success-hover: map-get($govcy-brand-colors, 'button-success-hover');
 
-$govcy-btn-focus :map-get($govcy-brand-colors, "focus");
+$govcy-btn-focus :map-get($govcy-brand-colors, 'focus');
 
 // Govcy text input
-$govcy-focus :map-get($govcy-brand-colors, "focus");
+$govcy-focus :map-get($govcy-brand-colors, 'focus');
 
 // Govcy border width
 $govcy-border-widths: (
@@ -105,57 +105,57 @@ $govcy-border-rounded: (
 
 //Govcy border colors
 $govcy-border-colors: (
-  "primary":   $govcy-primary,
-  "secondary": $govcy-secondary,
-  "success":   $govcy-success,
-  "standard":  $govcy-border-standard,
-  "danger":    $govcy-danger,
-  "info":      $govcy-info,
-  "input":     $govcy-body,
+  'primary':   $govcy-primary,
+  'secondary': $govcy-secondary,
+  'success':   $govcy-success,
+  'standard':  $govcy-border-standard,
+  'danger':    $govcy-danger,
+  'info':      $govcy-info,
+  'input':     $govcy-body,
 );
 
 
 // Govcy background colors (rgb)
 $govcy-bg-colors: (
-  "primary":    rgb+"("+to-rgb($govcy-primary)+")",
-  "secondary":  rgb+"("+to-rgb($govcy-secondary)+")",
-  "success":    rgb+"("+to-rgb($govcy-success)+")",
-  "info":       rgb+"("+to-rgb($govcy-info)+")",
-  "danger":     rgb+"("+to-rgb($govcy-danger)+")",
-  "light":      rgb+"("+to-rgb($govcy-light)+")",
-  "dark":       rgb+"("+to-rgb($govcy-black)+")",
-  "white":      rgb+"("+to-rgb($govcy-white)+")",
-  "gray":       rgb+"("+to-rgb($govcy-gray)+")",
-  "sub-menu":   rgb+"("+to-rgb(map-get($govcy-brand-colors, "blue-800"))+")",
+  'primary':    rgb + '(' + to-rgb($govcy-primary) + ')',
+  'secondary':  rgb + '(' + to-rgb($govcy-secondary) + ')',
+  'success':    rgb + '(' + to-rgb($govcy-success) + ')',
+  'info':       rgb + '(' + to-rgb($govcy-info) + ')',
+  'danger':     rgb + '(' + to-rgb($govcy-danger) + ')',
+  'light':      rgb + '(' + to-rgb($govcy-light) + ')',
+  'dark':       rgb + '(' + to-rgb($govcy-black) + ')',
+  'white':      rgb + '(' + to-rgb($govcy-white) + ')',
+  'gray':       rgb + '(' + to-rgb($govcy-gray) + ')',
+  'sub-menu':   rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'blue-800')) + ')',
 );
 
 
 //Govcy text color
 $govcy-text-colors: (
-  "primary":   $govcy-primary,
-  "secondary": $govcy-secondary,
-  "success":   $govcy-success,
-  "danger":    $govcy-danger,
-  "info":      $govcy-info,
-  "body":      $govcy-body,   
-  "dark":      $govcy-black,
-  "white":     $govcy-white,
+  'primary':   $govcy-primary,
+  'secondary': $govcy-secondary,
+  'success':   $govcy-success,
+  'danger':    $govcy-danger,
+  'info':      $govcy-info,
+  'body':      $govcy-body,
+  'dark':      $govcy-black,
+  'white':     $govcy-white,
 );
 
 
 $govcy-font-sizes: (
-  "large":        large,
-  "larger":       larger,
-  "initial":      initial,
-  "medium":       medium,
-  "small":        small,
-  "smaller":      smaller,
-  "x-large":      x-large,
-  "x-small":      x-small,
-  "xx-large":     xx-large,
-  "xx-small":     xx-small,
-  "xxx-large":    xxx-large,
-  "webkit-large": -webkit-xxx-large,
+  'large':        large,
+  'larger':       larger,
+  'initial':      initial,
+  'medium':       medium,
+  'small':        small,
+  'smaller':      smaller,
+  'x-large':      x-large,
+  'x-small':      x-small,
+  'xx-large':     xx-large,
+  'xx-small':     xx-small,
+  'xxx-large':    xxx-large,
+  'webkit-large': -webkit-xxx-large,
 );
 
 // Govcy table variables
@@ -163,13 +163,13 @@ $govcy-font-sizes: (
 $govcy-table-bg-scale: -80%;
 
 $govcy-table-variants: (
-  "primary":    shift-color($govcy-primary, $govcy-table-bg-scale),
-  "secondary":  shift-color($govcy-secondary, $govcy-table-bg-scale),
-  "success":    shift-color($govcy-success, $govcy-table-bg-scale),
-  "info":       shift-color($govcy-info, $govcy-table-bg-scale),
-  "danger":     shift-color($govcy-danger, $govcy-table-bg-scale),
-  "light":      $govcy-light,
-  "dark":       $govcy-body,
+  'primary':    shift-color($govcy-primary, $govcy-table-bg-scale),
+  'secondary':  shift-color($govcy-secondary, $govcy-table-bg-scale),
+  'success':    shift-color($govcy-success, $govcy-table-bg-scale),
+  'info':       shift-color($govcy-info, $govcy-table-bg-scale),
+  'danger':     shift-color($govcy-danger, $govcy-table-bg-scale),
+  'light':      $govcy-light,
+  'dark':       $govcy-body,
 );
 
 
