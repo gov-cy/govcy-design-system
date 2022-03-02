@@ -1,10 +1,12 @@
 // Create  govcy-table and custom styles by extending .table class
 .govcy-table {
   @extend .table;
+
   > thead,
   > tbody > tr {
     border-color: $govcy-border-standard;
   }
+
   > tbody > tr > th {
     font-weight: 500;
   }
@@ -24,6 +26,7 @@
 .govcy-table-bordered {
   @extend .table-bordered;
 }
+
 .govcy-table-borderless {
   @extend .table-borderless;
 }
@@ -36,7 +39,7 @@
 
 // Govcy table hover
 .govcy-table-hover {
- @extend .table-hover;
+  @extend .table-hover;
 }
 
 
@@ -47,8 +50,8 @@
 
   @include media-breakpoint-down($breakpoint) {
     .govcy-table-responsive#{$infix} {
-      overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      overflow-x: auto;
     }
   }
 }

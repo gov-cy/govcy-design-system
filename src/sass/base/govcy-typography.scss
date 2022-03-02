@@ -31,32 +31,37 @@ $link-color: $govcy-link;
 $link-hover-color: $govcy-link-hover;
 
 //defining govcy - danger:hover :visited and :active link state
-a{
+a {
   &.danger:hover {
     color: $govcy-danger-hover;
   }
-  
-  &:visited{
+
+  &:visited {
     color: $govcy-link-visited;
     border-color: $govcy-link-visited;
   }
 
-  &:active{
-      color: $govcy-link-active;
-      border-color: $govcy-link-active;
-    }
+  &:active {
+    color: $govcy-link-active;
+    border-color: $govcy-link-active;
+  }
 }
 
 
 //defining govcy - back link, user's name and signout styles on :hover :active and :visited state
-a.govcy-back-link, a.govcy-sign-out {
+
+a.govcy-back-link,
+a.govcy-sign-out {
   color: $govcy-body !important;
+
   &:hover,
   &:visited,
+
   &:active {
     text-decoration: underline;
   }
-  &:hover{
+
+  &:hover {
     text-decoration-thickness: 3px !important;
   }
 }

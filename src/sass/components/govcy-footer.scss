@@ -2,19 +2,21 @@
 // Govcy footer starts
 
 .govcy-footer {
-     img {
-        width: 2.875rem;
-        height: 2.8125rem;
-        content: $govcy-footer-logo;
-    }
-    ul {
-      li {
-        display: inline-block;
-        margin-right: 8px;
-        padding-bottom: 8px;
-         a{
-            color: $govcy-black;
-         }
+  img {
+    content: $govcy-footer-logo;
+    height: 2.8125rem;
+    width: 2.875rem;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      margin-right: 8px;
+      padding-bottom: 8px;
+
+      a {
+        color: $govcy-black;
       }
     }
   }
+}
