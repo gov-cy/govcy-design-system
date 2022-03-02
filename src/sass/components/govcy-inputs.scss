@@ -46,7 +46,7 @@
     // Govcy input styles for text and text area
     .govcy-text-input,
     .govcy-text-area {
-      border: 2px solid $govcy-body;
+      border: 3px solid $govcy-body;
       height: 44px;
       padding: 5px;
       width: 100%;
@@ -122,7 +122,7 @@
     // Govcy file upload styles (input type="file")
     .govcy-file-upload {
       &:focus {
-        border: 2px solid $govcy-body;
+        border: 3px solid $govcy-body;
         border-radius: 0;
         box-shadow: 0 0 0 4pt $govcy-focus;
         outline: none;
@@ -164,7 +164,7 @@
 
       // Create custom checkbox styles
       .govcy-tickbox {
-        border: 2px solid $govcy-body;
+        border: 3px solid $govcy-body;
         height: 44px;
         left: 0;
         position: absolute;
@@ -185,9 +185,9 @@
           content: '';
           display: none;
           height: 24px;
-          left: 14px;
+          left: 13px;
           position: absolute;
-          top: 5px;
+          top: 4px;
           transform: rotate(45deg);
           width: 13px;
         }
@@ -195,7 +195,7 @@
 
       // Create custom radio button style
       .govcy-radio-checked {
-        border: 2px solid $govcy-body;
+        border: 3px solid $govcy-body;
         border-radius: 50%;
         height: 44px;
         left: 0;
@@ -215,9 +215,9 @@
           content: '';
           display: none;
           height: 20px;
-          left: 10px;
+          left: 9px;
           position: absolute;
-          top: 10px;
+          top: 9px;
           width: 20px;
         }
       }

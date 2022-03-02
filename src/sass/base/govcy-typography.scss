@@ -11,7 +11,8 @@
 
 //Govcy base font-family and font styles
 $govcy-font-family: 'Roboto', sans-serif;
-$govcy-font-size-base: 1.188rem; // 19px
+$govcy-font-size-base: 1.125rem; // 18px
+$govcy-heading-font-weight: 700;
 
 
 //Govcy body color
@@ -20,6 +21,7 @@ $govcy-body-color: $govcy-body;
 //Overiding bootstrap font-family and font styles
 $font-family-sans-serif: $govcy-font-family;
 $font-size-base: $govcy-font-size-base;
+$headings-font-weight: $govcy-heading-font-weight;
 
 
 //Overiding bootstrap defalult body color
