@@ -22,15 +22,17 @@
   }
 }
 
-.govcy-btn{
+.govcy-btn {
   @include govcy-btn-variants;
-
+  border: 2px solid transparent;
   &-sm {
     @extend .btn-sm;
+    border: 2px solid transparent;
   }
 
   &-lg {
     @extend .btn-lg;
+    border: 2px solid transparent;
   }
 }
 
