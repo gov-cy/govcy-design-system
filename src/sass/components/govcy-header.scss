@@ -103,7 +103,7 @@
   //Govcy language selector dropdown (Desktop/Mobile)
   .govcy-lang-menu {
     background-color: inherit;
-    border: none;
+    border: 0;
     float: right;
     margin: 17px 16px 0 0;
     outline: none;
@@ -145,7 +145,8 @@
 }
 
 // CE: Adds primart colour background on the right of the header. The parent element must have `govcy-position-relative`
-.govcy-header.govcy-bg-primary-right::after {
+.govcy-header
+.govcy-bg-primary-right::after {
   background-color: $govcy-primary;
   bottom: 0;
   content: ' ';
