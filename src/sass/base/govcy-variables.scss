@@ -75,10 +75,10 @@ $govcy-btn-tirtiary-hover: map-get($govcy-brand-colors, 'button-tirtiary-hover')
 $govcy-btn-success: $govcy-success;
 $govcy-btn-success-hover: map-get($govcy-brand-colors, 'button-success-hover');
 
-$govcy-btn-focus :map-get($govcy-brand-colors, 'focus');
+$govcy-btn-focus: map-get($govcy-brand-colors, 'focus');
 
 // Govcy text input
-$govcy-focus :map-get($govcy-brand-colors, 'focus');
+$govcy-focus: map-get($govcy-brand-colors, 'focus');
 
 // Govcy border width
 $govcy-border-widths: (

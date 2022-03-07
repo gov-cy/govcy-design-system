@@ -25,6 +25,7 @@
 .govcy-btn {
   @include govcy-btn-variants;
   border: 2px solid transparent;
+
   &-sm {
     @extend .btn-sm;
     border: 2px solid transparent;

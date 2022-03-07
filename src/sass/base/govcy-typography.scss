@@ -39,13 +39,13 @@ a {
   }
 
   &:visited {
-    color: $govcy-link-visited;
     border-color: $govcy-link-visited;
+    color: $govcy-link-visited;
   }
 
   &:active {
-    color: $govcy-link-active;
     border-color: $govcy-link-active;
+    color: $govcy-link-active;
   }
 }
 
