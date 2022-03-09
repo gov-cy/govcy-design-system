@@ -1,11 +1,11 @@
 {
     "name": "govcy-design-system",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "main": "index.html",
     "author": "DMRID - DSF Team",
     "license": "MIT",
-    "sasslintConfig": "tests/config/.sasslintrc",
+    "sasslintConfig": "test/config/.sasslintrc",
     "scripts": {
         "css-build": "copyfiles -u 2 src/js/app.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
         "css-build-distribution": "sass --no-source-map src/sass/main.scss dist/css/main.min.css --style compressed",
