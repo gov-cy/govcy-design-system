@@ -1,9 +1,24 @@
 {
   "options": {
-    "merge-default-rules": true,
+    "merge-default-rules": false,
     "max-warnings": 1355
   },
   "files": {
     "include": "src/sass/**/*.s+(a|c)ss"
+  },
+  "rules": {
+    "class-name-format": "0",
+    "force-element-nesting": "0",
+    "force-pseudo-nesting": "0",
+    "placeholder-in-extend": "0",
+    "no-qualifying-elements": "0",
+    "no-url-domains": "0",
+    "no-url-protocols": "0",
+    "no-vendor-prefixes": "0",
+    "no-misspelled-properties": "0",
+    "leading-zero": "0",
+    "hex-length": "0",
+    "nesting-depth": "0",
+    "property-sort-order": "0"
   }
 }
