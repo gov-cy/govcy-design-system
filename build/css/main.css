@@ -6,12 +6,12 @@ a.danger:hover {
   color: #942514;
 }
 a:visited {
-  color: #4c2c92;
   border-color: #4c2c92;
+  color: #4c2c92;
 }
 a:active {
-  color: #272525;
   border-color: #272525;
+  color: #272525;
 }
 
 a.govcy-back-link,
@@ -28245,7 +28245,7 @@ textarea.form-control-lg {
 }
 .govcy-header .govcy-lang-menu {
   background-color: inherit;
-  border: none;
+  border: 0;
   float: right;
   margin: 17px 16px 0 0;
   outline: none;
@@ -28273,7 +28273,7 @@ textarea.form-control-lg {
     margin-top: 21px;
   }
 }
-.govcy-header.govcy-bg-primary-right::after {
+.govcy-header .govcy-bg-primary-right::after {
   background-color: #31576f;
   bottom: 0;
   content: " ";
