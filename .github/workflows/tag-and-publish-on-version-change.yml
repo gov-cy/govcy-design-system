@@ -1,0 +1,78 @@
+name: Tag and Publish on Version Change
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - dist
+jobs:
+  # Duplicated from `.github/workflows/version-sanity-checks.yml` could use https://github.blog/2022-02-10-using-reusable-workflows-github-actions ?
+  tag-and-publish-on-version-change:
+    name: Tag and publish on version change
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: EndBug/version-check@v2.1.0
+        with:
+          static-checking: localIsNew
+          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
+        id: version-check
+      - name: Check version not decreased
+        if: steps.version-check.outputs.changed == 'true' && steps.version-check.outputs.type == 'undefined'
+        run: echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1
+      - name: Check package.lock::version updated if ./dist changed
+        if: steps.version-check.outputs.changed == 'false'
+        run: echo "You have updated the distribution without incrementing the version number. You must update package.json::version to publish a new version"; exit 1
+      - name: Create 'vX.X.X' version git tag
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/v' + '${{ steps.version-check.outputs.version }}',
+              sha: context.sha
+            })
+      - name: Create 'latest' git tag
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/latest',
+              sha: context.sha
+            })
+      
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_GOVCY_CDN_CREDENTIALS }}
+
+      - name: Azure CDN 'version/X.X.X' Upload
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload \
+              --account-name govcydesignsystem1 \
+              --container-name bvtest \
+              --name version/${{ steps.version-check.outputs.version }}/style.min.css \
+              --file dist/css/main.min.css \
+              --auth-mode key
+
+      - name: Azure CDN 'version/latest' Upload
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload \
+              --account-name govcydesignsystem1 \
+              --container-name bvtest \
+              --name version/latest/style.min.css \
+              --file dist/css/main.min.css \
+              --auth-mode key
+
+      - name: Azure Logout
+        if: always()
+        run: az logout
+        
