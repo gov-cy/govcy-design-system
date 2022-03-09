@@ -146,7 +146,7 @@
                 <div class="row">   
                     <footer class="govcy-footer">
                         <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo" /></span>
-                                <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
+                                <ul class="govcy-d-inline-block  govcy-m-0 govcy-pt-1 govcy-pl-1 govcy-pl-sm-3 govcy-efs-medium">
                                 <li><a href="#">Privacy statement</a></li>
                                 <li><a href="#">Cookie policy</a></li>
                                 <li><a href="#">Accessibility statement</a></li>
@@ -162,7 +162,7 @@
             <div class="row">   
                 <footer class="govcy-footer">
                     <span class="govcy-d-inline-block govcy-valign-top govcy-pb-2"><img alt="govcy-logo" /></span>
-                        <ul class="govcy-d-inline-block  govcy-m-0 govcy-pl-3 govcy-efs-medium">
+                    <ul class="govcy-d-inline-block  govcy-m-0 govcy-pt-1 govcy-pl-1 govcy-pl-sm-3 govcy-efs-medium">
                             <li><a href="#">Όροι Χρήσης</a></li>
                             <li><a href="#">Προστασία Προσωπικών Δεδομένων</a></li>
                             <li><a href="#">Προσβασιμότητα</a></li>
@@ -182,12 +182,12 @@
     <div class="govcy-container">
         <h4>Primary Button</h4>
             <button type="button" class="govcy-btn-lg govcy-btn-primary">Primary</button>
-            <button type="button" class="govcy-btn-primary">Primary</button>
+            <button type="button" class="govcy-btn govcy-btn-primary">Primary</button>
             <button type="button" class="govcy-btn-sm govcy-btn-primary">Primary</button>
             <pre>
                 <code>
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-lg govcy-btn-primary"</span><span>&gt;Primary&lt;/button&gt;
-    &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-primary"</span><span>&gt;Primary&lt;/button&gt;
+    &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn govcy-btn-primary"</span><span>&gt;Primary&lt;/button&gt;
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-sm govcy-btn-primary"</span><span>&gt;Primary&lt;/button&gt;
                 
                 </code>
@@ -195,26 +195,26 @@
 
             <h4>Secondary Button</h4>
             <button type="button" class="govcy-btn-lg govcy-btn-secondary">Secondary</button>
-            <button type="button" class="govcy-btn-secondary">Secondary</button>
+            <button type="button" class="govcy-btn govcy-btn-secondary">Secondary</button>
             <button type="button" class="govcy-btn-sm govcy-btn-secondary">Secondary</button>
    
             <pre>
                 <code>                
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-lg govcy-btn-secondary"</span><span>&gt;Secondary&lt;/button&gt;
-    &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-secondary"</span><span>&gt;Secondary&lt;/button&gt;
+    &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn govcy-btn-secondary"</span><span>&gt;Secondary&lt;/button&gt;
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-sm govcy-btn-secondary"</span><span>&gt;Secondary&lt;/button&gt;
                 </code>
             </pre>
     
             <h4>Success Button</h4>
             <button type="button" class="govcy-btn-lg govcy-btn-success">Success</button>
-            <button type="button" class="govcy-btn-success">Success</button>
+            <button type="button" class="govcy-btn govcy-btn-success">Success</button>
             <button type="button" class="govcy-btn-sm govcy-btn-success">Success</button>
 
             <pre>
                 <code>
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-lg govcy-btn-success"</span><span>&gt;Success&lt;/button&gt;
-    &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-success"</span><span>&gt;Success&lt;/button&gt;
+    &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn govcy-btn-success"</span><span>&gt;Success&lt;/button&gt;
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-sm govcy-btn-success"</span><span>&gt;Success&lt;/button&gt;
                 </code>
             </pre>
@@ -1090,71 +1090,183 @@
 
 
    <h2>Tables:</h2>
-   <h4>Table</h4>
+   <h4>Summary Table</h4>
    <div class="govcy-container">
         <table class="govcy-table">
-            <thead>
-                <tr class="govcy-br-input">
-                    <th class="govcy-col-6">Property</th>
-                    <th class="govcy-col-6">Value</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <th>Name</th>
                     <td>Jane Smith</td>
+                    <td class="col-2 govcy-text-end">
+                      <a href="/step02">Change</a>
+                    </td>
                 </tr>
                 <tr>
                     <th>Child's date of birth</th>
                     <td>5 Jan 2021</td>
+                    <td class="col-2 govcy-text-end">
+                      <a href="/step02">Change</a>
+                    </td>
                 </tr>
                 <tr>
                     <th>Address</th>
                     <td>Thornton</td>
+                    <td class="col-2 govcy-text-end">
+                      <a href="/step02">Change</a>
+                    </td>
                 </tr>
                 <tr>
                     <th>Social insurance number</th>
                     <td>7361063</td>
+                    <td class="col-2 govcy-text-end">
+                      <a href="/step02">Change</a>
+                    </td>
                 </tr>
             </tbody>
       </table>
 
-    <pre><code>
-    &lt;table class="govcy-table"&gt;
-        &lt;thead&gt;
-            &lt;tr class="govcy-br-input"&gt;
-                &lt;th class="govcy-col-6"&gt;Property&lt;/th&gt;
-                &lt;th class="govcy-col-6"&gt;Value&lt;/th&gt;
-            &lt;/tr&gt;
-        &lt;/thead&gt;
+      <pre><code>
+        &lt;table class=&quot;govcy-table&quot;&gt;
         &lt;tbody&gt;
             &lt;tr&gt;
                 &lt;th&gt;Name&lt;/th&gt;
                 &lt;td&gt;Jane Smith&lt;/td&gt;
+                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+                &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;th&gt;Child's date of birth&lt;/th&gt;
                 &lt;td&gt;5 Jan 2021&lt;/td&gt;
+                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+                &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;th&gt;Address&lt;/th&gt;
                 &lt;td&gt;Thornton&lt;/td&gt;
+                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+                &lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
                 &lt;th&gt;Social insurance number&lt;/th&gt;
                 &lt;td&gt;7361063&lt;/td&gt;
+                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+                &lt;/td&gt;
             &lt;/tr&gt;
         &lt;/tbody&gt;
-    &lt;/table&gt;
-    </code></pre>
-
+        &lt;/table&gt;
+      </code></pre>
     </div>
+    <h4>Summary Table Responsive</h4>
+    <br>
+    <div class="govcy-container">
+      <div class="govcy-table-responsive">
+        <table class="govcy-table govcy-table-responsive govcy-mb-4">
+          <tbody>
+            <tr>
+              <th class="col-3">Bank Details</th>
+              <td class="col-7">
+                <p>
+                  <span class="govcy-fw-bold">Account Name</span>
+                  <span class="govcy-d-block">Andreas Andreou</span>
+                </p>
+                <p>
+                  <span class="govcy-fw-bold">Bank</span>
+                  <span class="govcy-d-block">Bank of Cyprus</span>
+                </p>
+                <p>
+                  <span class="govcy-fw-bold">International Bank Account Number (IBAN)</span>
+                  <span class="govcy-d-block">CY**********************7654</span>
+                </p>
+              </td>
+              <td class="col-2 govcy-text-end">
+                <a href="">Change</a>
+              </td>
+            </tr>
+    
+            <tr>
+              <th class="col-3">Personal Details</th>
+              <td class="col-7">
+                <p>
+                  <span class="govcy-fw-bold">Email address</span>
+                  <span class="govcy-d-block">nikanos@windowslive.com</span>
+                </p>
+                <p>
+                  <span class="govcy-fw-bold">Mobile Number</span>
+                  <span class="govcy-d-block">99412126</span>
+                </p>
+              </td>
+              <td class="col-2 govcy-text-end">
+                <a href="">Change</a>
+              </td>
+            </tr>
 
+                <tr>
+                  <th class="col-3">Claim Children</th>
+                  <td class="col-7">
+                    George of no one
+                    </td>
+                    <td class="col-2"></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <pre><code>
+        &lt;table class=&quot;govcy-table govcy-table-responsive govcy-mb-4&quot;&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;col-3&quot;&gt;Bank Details&lt;/th&gt;
+                  &lt;td class=&quot;col-7&quot;&gt;
+                    &lt;p&gt;
+                      &lt;span class=&quot;govcy-fw-bold&quot;&gt;Account Name&lt;/span&gt;
+                      &lt;span class=&quot;govcy-d-block&quot;&gt;Andreas Andreou&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;span class=&quot;govcy-fw-bold&quot;&gt;Bank&lt;/span&gt;
+                      &lt;span class=&quot;govcy-d-block&quot;&gt;Bank of Cyprus&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;span class=&quot;govcy-fw-bold&quot;&gt;International Bank Account Number (IBAN)&lt;/span&gt;
+                      &lt;span class=&quot;govcy-d-block&quot;&gt;CY**********************7654&lt;/span&gt;
+                    &lt;/p&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
+                    &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;col-3&quot;&gt;Personal Details&lt;/th&gt;
+                  &lt;td class=&quot;col-7&quot;&gt;
+                    &lt;p&gt;
+                      &lt;span class=&quot;govcy-fw-bold&quot;&gt;Email address&lt;/span&gt;
+                      &lt;span class=&quot;govcy-d-block&quot;&gt;nikanos@windowslive.com&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;span class=&quot;govcy-fw-bold&quot;&gt;Mobile Number&lt;/span&gt;
+                      &lt;span class=&quot;govcy-d-block&quot;&gt;99412126&lt;/span&gt;
+                    &lt;/p&gt;
+                  &lt;/td&gt;
+                  &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
+                    &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                  &lt;th class=&quot;col-3&quot;&gt;Claim Children&lt;/th&gt;
+                  &lt;td class=&quot;col-7&quot;&gt;
+                    George of no one
+                  &lt;/td&gt;
+                  &lt;td class=&quot;col-2&quot;&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/tbody&gt;
+            &lt;/table&gt;
+        </code></pre>
+    </div>
     <hr>
     <br>
     <br>
-
-
 
     <h2>Conditional Radio Button Forms:</h2>
     <h4>Conditional Radio</h4>
@@ -1249,6 +1361,10 @@
 
     <br>
     <br>
+
+    
+
+  
     <script src="js/app.js"></script>
 
 </body>

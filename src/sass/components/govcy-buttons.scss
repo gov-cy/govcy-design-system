@@ -3,63 +3,73 @@
 // --------------------------------------------------------------------------
 
 
-    // Create govcy-btn mixin by extending bootstrap .btn class
+// Create govcy-btn mixin by extending bootstrap .btn class
 
-    @mixin govcy-btn-variants{
-        @extend .btn;
-        &:not(.disabled):not(:disabled) {
-            &:hover {
-                color: $govcy-white;
-            }
+@mixin govcy-btn-variants {
+  @extend .btn;
 
-            &:focus {
-                color: $govcy-body;
-                background-color: $govcy-btn-focus;
-                border: 2px solid;
-                box-shadow: none;
-            }
-        }
+  &:not(.disabled):not(:disabled) {
+    &:hover {
+      color: $govcy-white;
     }
 
-    .govcy-btn{
-        @include govcy-btn-variants; 
-        &-sm{
-            @extend .btn-sm;
-        }
-        &-lg{
-            @extend .btn-lg;
-        }
+    &:focus {
+      background-color: $govcy-btn-focus;
+      border: 2px solid;
+      box-shadow: none;
+      color: $govcy-body;
     }
-    // create DSF Primary button by using govcy-btn mixin
+  }
+}
 
-    .govcy-btn-primary {
-        @include govcy-btn-variants;
-        background-color: $govcy-primary; 
-        color: $govcy-white;
-        &:hover {
-            background-color: $govcy-btn-primary-hover;
-        }    
-    }
+.govcy-btn {
+  @include govcy-btn-variants;
+  border: 2px solid transparent;
+
+  &-sm {
+    @extend .btn-sm;
+    border: 2px solid transparent;
+  }
+
+  &-lg {
+    @extend .btn-lg;
+    border: 2px solid transparent;
+  }
+}
+
+// create DSF Primary button by using govcy-btn mixin
+
+.govcy-btn-primary {
+  @include govcy-btn-variants;
+  background-color: $govcy-primary;
+  color: $govcy-white;
+
+  &:hover {
+    background-color: $govcy-btn-primary-hover;
+  }
+}
 
 
-    // create DSF secondary button by using govcy-btn mixin
+// create DSF secondary button by using govcy-btn mixin
 
-    .govcy-btn-secondary {
-        @include govcy-btn-variants;
-        background-color: $govcy-btn-secondary; 
-        color: $govcy-body !important;
-        &:hover {
-            background-color: $govcy-btn-secondary-hover;
-        }    
-    }
+.govcy-btn-secondary {
+  @include govcy-btn-variants;
+  background-color: $govcy-btn-secondary;
+  color: $govcy-body !important;
 
-    // create DSF Success button by using govcy-btn mixin
+  &:hover {
+    background-color: $govcy-btn-secondary-hover;
+  }
+}
 
-    .govcy-btn-success {
-        @include govcy-btn-variants;
-        background-color: $govcy-btn-success; 
-        color: $govcy-white;
-        &:hover {
-            background-color: $govcy-btn-success-hover;
-        } 
-    }
+// create DSF Success button by using govcy-btn mixin
+
+.govcy-btn-success {
+  @include govcy-btn-variants;
+  background-color: $govcy-btn-success;
+  color: $govcy-white;
+
+  &:hover {
+    background-color: $govcy-btn-success-hover;
+  }
+}

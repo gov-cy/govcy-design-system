@@ -8,57 +8,57 @@
 
 //Govcy Alerts-Error
 .govcy-alert-error {
-    p{
-        a {
-            display: block;
-            margin-bottom: 5px;
-            color: $govcy-danger;
-            font-weight: bold;
+  p {
+    a {
+      color: $govcy-danger;
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
 
-            &:hover {
-                color:$govcy-danger-hover;
-            }
-        }
+      &:hover {
+        color: $govcy-danger-hover;
+      }
     }
-    
+  }
 }
 
 //Govcy Alerts-Notification
 .govcy-alert-notification {
-    .govcy-alert-notification-header {
-        color: $govcy-white;
-        padding-left: 20px;
+  .govcy-alert-notification-header {
+    color: $govcy-white;
+    padding-left: 20px;
+  }
+
+  .govcy-alert-notification-body {
+    p {
+      a {
+        color: $govcy-primary;
+        padding-top: 5px;
+      }
     }
-    .govcy-alert-notification-body{
-        p {
-            a {
-                color: $govcy-primary;
-                padding-top: 5px;
-            }
-        }
-    }
+  }
 }
 
 //Govcy Alerts-Completed-Notification
-.govcy-alert-completed-notification{
-    color: $govcy-white;
-    .govcy-alert-completed-notification-body {
-        padding: 24px;
-        text-align: center;
-    }
+.govcy-alert-completed-notification {
+  color: $govcy-white;
+
+  .govcy-alert-completed-notification-body {
+    padding: 24px;
+    text-align: center;
+  }
 }
 
 //Govcy Alerts-Warning
-.govcy-alert-warning{
-    .govcy-alert-warning-icon{
+.govcy-alert-warning {
+  .govcy-alert-warning-icon {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 7px;
+  }
 
-        font-size: 30px;
-        display: inline-block;
-        position: relative;
-        top: 7px;
-    }
-
-    .govcy-alert-warning-text{
-        font-size: 24px;
-    }
+  .govcy-alert-warning-text {
+    font-size: 24px;
+  }
 }

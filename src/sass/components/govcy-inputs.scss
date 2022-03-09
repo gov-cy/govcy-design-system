@@ -1,184 +1,228 @@
 
 // Govcy Form styles
 .govcy-form {
-    .govcy-fieldset{
-        .govcy-legend {
-            font-weight: 500;
-            font-size: inherit;
-        }
+  .govcy-fieldset {
+    .govcy-legend {
+      font-size: inherit;
+      font-weight: 500;
     }
-    
-    // Govcy form control
-    .govcy-form-control {
-        margin: 14px 0;
-        &-error {
-            border-left: 4px solid $govcy-danger;
-            padding-left: 13px;
-        }
-        &-hint {
-            border-left: 4px solid $govcy-hint;
-            padding-left: 13px;
-        }
-        // Govcy label
-        .govcy-label{
-            display: block;
-            color: $govcy-black;
-            font-weight: 500;
-        }
+  }
 
-        // Govcy hint and Govcy input error message
-        .govcy-hint, .govcy-input-error-msg {
-            display: block;
-            line-height: 28px;
-            margin-bottom: 8px;
-            color: $govcy-hint;
-        }
+  // Govcy form control
+  .govcy-form-control {
+    margin: 14px 0;
 
-        // Govcy input error message
-        .govcy-input-error-msg {
-            color: $govcy-danger;
-        }
-
-        // Govcy input styles for text and text area
-        .govcy-text-input, .govcy-text-area {
-            border: 2px solid $govcy-body;
-            width: 100%;
-            padding: 5px;
-            height:44px;
-            &::placeholder{ font-size: 14px; top: 12px; } /* Defalult */
-            &::-moz-placeholder { font-size: 14px; top: 12px; } /* Firefox 19+ */
-            &:-moz-placeholder { font-size: 14px; top: 12px; }  /* Firefox 18- */
-            &:-ms-input-placeholder { font-size: 14px; top: 12px; } /* IE */
-            &::-webkit-input-placeholder { font-size: 14px; top: 12px; } /* Safari */
-        
-
-            &:focus {
-                outline: none;
-                box-shadow: 0 0 0 4pt $govcy-focus;
-            }
-            &-error {
-                border-color: $govcy-danger; 
-            }
-            &-char_20 {
-                width: 14.16rem;
-            }
-            &-char_10 {
-                width: 7.8rem;
-            }
-            &-char_6 {
-                width: 5.5rem;
-            }
-            &-char_5 {
-                width: 4.5rem;
-            }
-            &-char_4 {
-                width: 3.8rem;
-            }
-            &-char_3 {
-                width: 3.1rem;
-            }
-            &-char_2 {
-                width: 2.2rem;
-            }
-        }
-        
-        // Govcy file upload styles (input type="file")
-        .govcy-file-upload {
-            &:focus {
-                border: 2px solid $govcy-body;
-                outline: none;
-                box-shadow: 0 0 0 4pt $govcy-focus;
-                border-radius: 0px;
-            }
-        }
-        
-        .govcy-checkbox,
-        .govcy-radio {    
-            display: block;
-            position: relative;
-            padding: 6px 16px 8px 60px;
-            margin-top: 12px;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
-            // Hide the default checkbox styles
-            .govcy-checkbox-input, .govcy-radio-input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-                &:focus + .govcy-tickbox,
-                &:focus + .govcy-radio-checked {
-                    outline: none;
-                    box-shadow: 0 0 0 4px $govcy-focus;
-                }
-                &:checked ~ .govcy-tickbox:after,
-                &:checked ~ .govcy-radio-checked:after {
-                    display: block;
-                }
-            }
-
-            // Create custom checkbox styles
-            .govcy-tickbox{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 44px;
-                width: 44px;
-                border: 2px solid $govcy-body;
-                &:focus {
-                    box-shadow: 0 0 0 4px $govcy-focus; 
-                    outline:none;
-                }
-                // Tickbox/indicator (hidden when not checked) */
-                &::after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                    left: 14px;
-                    top: 5px;
-                    width: 13px;
-                    height: 24px;
-                    border: solid $govcy-body;
-                    border-width: 0 5px 5px 0;
-                    -webkit-transform: rotate(45deg);
-                    -ms-transform: rotate(45deg);
-                    transform: rotate(45deg);
-                }
-            }
-
-             // Create custom radio button style
-             .govcy-radio-checked {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 44px;
-                width: 44px;
-                border: 2px solid $govcy-body;
-                border-radius: 50%;
-                &:focus {
-                    box-shadow: 0 0 0 4px $govcy-focus;
-                    outline:none;
-                }
-                &:after{
-                    content: "";
-                    position: absolute;
-                    display: none;
-                    left: 10px;
-                    top: 10px;
-                    width: 20px;
-                    height: 20px;
-                    border: solid $govcy-body;
-                    border-radius: 50%;
-                    background-color: $govcy-body;
-                }
-             }            
-        }
+    &-error {
+      border-left: 4px solid $govcy-danger;
+      padding-left: 13px;
     }
+
+    &-hint {
+      border-left: 4px solid $govcy-hint;
+      padding-left: 13px;
+    }
+
+    // Govcy label
+    .govcy-label {
+      color: $govcy-black;
+      display: block;
+      font-weight: 500;
+    }
+
+    // Govcy hint and Govcy input error message
+    .govcy-hint,
+    .govcy-input-error-msg {
+      color: $govcy-hint;
+      display: block;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+
+    // Govcy input error message
+    .govcy-input-error-msg {
+      color: $govcy-danger;
+    }
+
+    // Govcy input styles for text and text area
+    .govcy-text-input,
+    .govcy-text-area {
+      border: 3px solid $govcy-body;
+      height: 44px;
+      padding: 5px;
+      width: 100%;
+
+      // Defalult
+      &::placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // Firefox 19+
+      &::-moz-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // Firefox 18-
+      &:-moz-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // IE
+      &:-ms-input-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // Safari
+      &::-webkit-input-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 4pt $govcy-focus;
+        outline: none;
+      }
+
+      &-error {
+        border-color: $govcy-danger;
+      }
+
+      &-char_20 {
+        width: 14.16rem;
+      }
+
+      &-char_10 {
+        width: 7.8rem;
+      }
+
+      &-char_6 {
+        width: 5.5rem;
+      }
+
+      &-char_5 {
+        width: 4.5rem;
+      }
+
+      &-char_4 {
+        width: 3.8rem;
+      }
+
+      &-char_3 {
+        width: 3.1rem;
+      }
+
+      &-char_2 {
+        width: 2.2rem;
+      }
+    }
+
+    // Govcy file upload styles (input type="file")
+    .govcy-file-upload {
+      &:focus {
+        border: 3px solid $govcy-body;
+        border-radius: 0;
+        box-shadow: 0 0 0 4pt $govcy-focus;
+        outline: none;
+      }
+    }
+
+    .govcy-checkbox,
+    .govcy-radio {
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      cursor: pointer;
+      display: block;
+      margin-top: 12px;
+      padding: 6px 16px 8px 60px;
+      position: relative;
+      user-select: none;
+
+      // Hide the default checkbox styles
+      .govcy-checkbox-input,
+      .govcy-radio-input {
+        cursor: pointer;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        width: 0;
+
+        &:focus + .govcy-tickbox,
+        &:focus + .govcy-radio-checked {
+          box-shadow: 0 0 0 4px $govcy-focus;
+          outline: none;
+        }
+
+        &:checked ~ .govcy-tickbox::after,
+        &:checked ~ .govcy-radio-checked::after {
+          display: block;
+        }
+      }
+
+      // Create custom checkbox styles
+      .govcy-tickbox {
+        border: 3px solid $govcy-body;
+        height: 44px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 44px;
+
+        &:focus {
+          box-shadow: 0 0 0 4px $govcy-focus;
+          outline: none;
+        }
+
+        // Tickbox/indicator (hidden when not checked) */
+        &::after {
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          border: solid $govcy-body;
+          border-width: 0 5px 5px 0;
+          content: '';
+          display: none;
+          height: 24px;
+          left: 13px;
+          position: absolute;
+          top: 4px;
+          transform: rotate(45deg);
+          width: 13px;
+        }
+      }
+
+      // Create custom radio button style
+      .govcy-radio-checked {
+        border: 3px solid $govcy-body;
+        border-radius: 50%;
+        height: 44px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 44px;
+
+        &:focus {
+          box-shadow: 0 0 0 4px $govcy-focus;
+          outline: none;
+        }
+
+        &::after {
+          background-color: $govcy-body;
+          border: solid $govcy-body;
+          border-radius: 50%;
+          content: '';
+          display: none;
+          height: 20px;
+          left: 9px;
+          position: absolute;
+          top: 9px;
+          width: 20px;
+        }
+      }
+    }
+  }
 }
 
 

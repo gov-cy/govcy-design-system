@@ -5,34 +5,35 @@
 // Mobile first styles for header section starts here
 
 .govcy-header {
-  padding: 0;
   min-width: 350px;
+  padding: 0;
 
   //Govcy logo
   .govcy-logo {
-    float: left;
-    height: 62px;
     content: $govcy-logo;
+    float: left;
+    height: 64px;
+    margin: -1px;
   }
 
   //Govcy service name
   .govcy-service-name {
     float: left;
-    padding:10px 24px;
+    padding: 10px 24px;
     width: 100%;
   }
 
   //Label for Govcy menu button (Mobile)
   .govcy-menu-icon {
+    align-items: center;
+    color: $govcy-white;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
     float: right;
+    padding: 0.1rem;
     position: relative;
     user-select: none;
-    padding: 0.1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    color: $govcy-white;
   }
 
   //Mimic button click effect with css
@@ -43,12 +44,13 @@
         .govcy-menu {
           max-height: 100%;
         }
+
         .govcy-menu-icon {
           //styles for Google dropdown icon
           .material-icons {
             display: block;
-            transform: rotate(180deg);
             top: 0;
+            transform: rotate(180deg);
           }
         }
       }
@@ -57,59 +59,59 @@
 
   //Govcy menu list items (Mobile)
   ul.govcy-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
     clear: both;
+    list-style: none;
+    margin: 0;
     max-height: 0;
+    overflow: hidden;
+    padding: 0;
     transition: max-height 0.2s ease-out;
-    
+
     li {
-      .active{
+      .active {
         font-weight: 700;
       }
+
       a {
-        display: block;
-        padding: 10px 0;
-        color: $govcy-white;
-        font-weight: 400;
-        // border-bottom: 0.125rem solid #31576f;
         border-bottom: 0.125rem solid $govcy-primary;
-        text-decoration: none;
+        color: $govcy-white;
+        display: block;
+        font-weight: 400;
         margin: 0 24px;
+        padding: 10px 0;
+        text-decoration: none;
+
         &:hover {
           text-decoration: underline;
         }
+
         &:active {
           font-weight: 700;
         }
+
         &:focus {
           outline: none;
         }
       }
+
       &:last-child a {
-        border-bottom: none;
+        border-bottom: 0;
       }
     }
   }
 
   //Govcy language selector dropdown (Desktop/Mobile)
   .govcy-lang-menu {
+    background-color: inherit;
+    border: 0;
     float: right;
     margin: 17px 16px 0 0;
     outline: none;
-    border: none;
-    background-color: inherit;
-  } 
+  }
 }
-
 // Mobile first styles ends
 
-
-
 // Desktop styles for header section starts here
-
 @media (min-width: 768px) {
 
   //Govcy menu list items (Desktop)
@@ -118,11 +120,13 @@
       clear: none;
       float: right;
       max-height: none;
+
       li {
         float: left;
+
         a {
+          margin: 20px 16px 0 0;
           padding: 0;
-          margin: 20px 16px 0 0
         }
       }
     }
@@ -130,8 +134,8 @@
     //Govcy service name (Desktop)
     .govcy-service-name {
       float: left;
+      padding: 20px 24px 0;
       width: auto;
-      padding: 20px 24px 0 24px;  
     }
 
     .govcy-lang-menu {
@@ -141,14 +145,15 @@
 }
 
 // CE: Adds primart colour background on the right of the header. The parent element must have `govcy-position-relative`
-.govcy-header.govcy-bg-primary-right:after {
-  height: 62px;
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 50%;
+.govcy-header
+.govcy-bg-primary-right::after {
   background-color: $govcy-primary;
+  bottom: 0;
+  content: ' ';
+  height: 62px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
   z-index: -1;
 }

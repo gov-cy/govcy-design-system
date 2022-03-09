@@ -11,7 +11,8 @@
 
 //Govcy base font-family and font styles
 $govcy-font-family: 'Roboto', sans-serif;
-$govcy-font-size-base: 1.188rem; // 19px
+$govcy-font-size-base: 1.125rem; // 18px
+$govcy-heading-font-weight: 700;
 
 
 //Govcy body color
@@ -20,6 +21,7 @@ $govcy-body-color: $govcy-body;
 //Overiding bootstrap font-family and font styles
 $font-family-sans-serif: $govcy-font-family;
 $font-size-base: $govcy-font-size-base;
+$headings-font-weight: $govcy-heading-font-weight;
 
 
 //Overiding bootstrap defalult body color
@@ -31,32 +33,37 @@ $link-color: $govcy-link;
 $link-hover-color: $govcy-link-hover;
 
 //defining govcy - danger:hover :visited and :active link state
-a{
+a {
   &.danger:hover {
     color: $govcy-danger-hover;
   }
-  
-  &:visited{
-    color: $govcy-link-visited;
+
+  &:visited {
     border-color: $govcy-link-visited;
+    color: $govcy-link-visited;
   }
 
-  &:active{
-      color: $govcy-link-active;
-      border-color: $govcy-link-active;
-    }
+  &:active {
+    border-color: $govcy-link-active;
+    color: $govcy-link-active;
+  }
 }
 
 
 //defining govcy - back link, user's name and signout styles on :hover :active and :visited state
-a.govcy-back-link, a.govcy-sign-out {
+
+a.govcy-back-link,
+a.govcy-sign-out {
   color: $govcy-body !important;
+
   &:hover,
   &:visited,
+
   &:active {
     text-decoration: underline;
   }
-  &:hover{
+
+  &:hover {
     text-decoration-thickness: 3px !important;
   }
 }
