@@ -17,4 +17,4 @@ jobs:
       - run: npm run css-build
         id: build-step
       - if: always() && (steps.build-stem.outcome == 'failure')
-        run: echo "The files in src/sass do not compile. You have made changes which are not valid."
+        run: echo "The files in src/sass do not compile. You have made changes which are not valid."; exit 1
