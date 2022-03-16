@@ -12,20 +12,24 @@
 //Govcy base font-family and font styles
 $govcy-font-family: 'Roboto', sans-serif;
 $govcy-font-size-base: 1.125rem; // 18px
-$govcy-heading-font-weight: 700;
-
-
-//Govcy body color
-$govcy-body-color: $govcy-body;
 
 //Overiding bootstrap font-family and font styles
 $font-family-sans-serif: $govcy-font-family;
 $font-size-base: $govcy-font-size-base;
-$headings-font-weight: $govcy-heading-font-weight;
 
+//Govcy body color
+$govcy-body-color: $govcy-body;
 
-//Overiding bootstrap defalult body color
+//Overiding bootstrap default body color
 $body-color: $govcy-body-color;
+
+//Govcy headings
+$govcy-heading-font-weight: 700;
+$govcy-headings-margin-bottom: map-get($govcy-spacers, 4);
+
+//Overiding bootstrap heading styles and spacing
+$headings-font-weight: $govcy-heading-font-weight;
+$headings-margin-bottom: $govcy-headings-margin-bottom;
 
 // Links
 //Overiding bootstrap link colors
@@ -34,6 +38,8 @@ $link-hover-color: $govcy-link-hover;
 
 //defining govcy - danger:hover :visited and :active link state
 a {
+  margin-bottom: 0.5rem;
+
   &.danger:hover {
     color: $govcy-danger-hover;
   }
@@ -68,9 +74,15 @@ a.govcy-sign-out {
   }
 }
 
+// //defining govcy - list group for ul and ol
+// $list-group-margin-bottom: 3rem !important;
 
+// .govcy-list-group {
+//   margin-bottom: $list-group-margin-bottom;
+// }
 
-
-
-
+// // Paragraph
+// //Overiding bootstrap paragraph margin
+// $govcy-paragraph-margin-bottom: $govcy-link;
+// $paragraph-margin-bottom:   1rem !default;
 

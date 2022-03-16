@@ -1,6 +1,7 @@
 // Create  govcy-table and custom styles by extending .table class
 .govcy-table {
   @extend .table;
+  margin-bottom: 1.5rem;
 
   > thead,
   > tbody > tr {

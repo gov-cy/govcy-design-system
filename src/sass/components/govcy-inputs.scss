@@ -1,16 +1,23 @@
+// ---------------------------------------------------------------------------------------------
+// This file contains the custom styles for the form, fieldset, legend, label, 
+// textarea, checkbox and radio
+// ---------------------------------------------------------------------------------------------  
 
 // Govcy Form styles
 .govcy-form {
   .govcy-fieldset {
+    margin-bottom: 1.5rem;
+
     .govcy-legend {
       font-size: inherit;
       font-weight: 500;
+      margin-bottom: 1.5rem;
     }
   }
 
   // Govcy form control
   .govcy-form-control {
-    margin: 14px 0;
+    margin-bottom: 1.5rem;
 
     &-error {
       border-left: 4px solid $govcy-danger;
@@ -27,15 +34,16 @@
       color: $govcy-black;
       display: block;
       font-weight: 500;
+      margin-bottom: 0.5rem;
     }
 
-    // Govcy hint and Govcy input error message
+    // Govcy hint and input error message
     .govcy-hint,
     .govcy-input-error-msg {
       color: $govcy-hint;
       display: block;
       line-height: 28px;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
 
     // Govcy input error message
@@ -44,6 +52,7 @@
     }
 
     // Govcy input styles for text and text area
+
     .govcy-text-input,
     .govcy-text-area {
       border: 3px solid $govcy-body;
@@ -119,6 +128,10 @@
       }
     }
 
+    .govcy-text-area {
+      height: auto;
+    }
+
     // Govcy file upload styles (input type="file")
     .govcy-file-upload {
       &:focus {
@@ -136,7 +149,7 @@
       -webkit-user-select: none;
       cursor: pointer;
       display: block;
-      margin-top: 12px;
+      margin-bottom: 1.5rem;
       padding: 6px 16px 8px 60px;
       position: relative;
       user-select: none;
