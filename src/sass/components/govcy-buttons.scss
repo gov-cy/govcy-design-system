@@ -7,6 +7,7 @@
 
 @mixin govcy-btn-variants {
   @extend .btn;
+  margin-bottom: 1.5rem;
 
   &:not(.disabled):not(:disabled) {
     &:hover {

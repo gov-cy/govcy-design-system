@@ -21,7 +21,7 @@
             <div class="row">
                 <header class="govcy-header govcy-bg-primary govcy-text-white">
                     <a href="#" class="govcy-logo"> <img/></a>
-                    <form class="govcy-text-white govcy-bg-primary">     
+                    <form novalidate class="govcy-text-white govcy-bg-primary">     
                         <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                             <option value="English">En</option>
                             <option value="Greek">El</option>
@@ -75,7 +75,7 @@
             <div class="row">
                 <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
                     <a href="#" class="govcy-logo"> <img/></a>
-                    <form class="govcy-text-white govcy-bg-primary">     
+                    <form novalidate class="govcy-text-white govcy-bg-primary">     
                         <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                             <option value="English">En</option>
                             <option value="Greek">El</option>
@@ -93,7 +93,7 @@
             <div class="row">
                 <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
                     <a href="#" class="govcy-logo"> <img/></a>
-                    <form class="govcy-text-white govcy-bg-primary">     
+                    <form novalidate class="govcy-text-white govcy-bg-primary">     
                         <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                             <option value="English">En</option>
                             <option value="Greek">El</option>
@@ -110,7 +110,7 @@
             <div class="row">
                 <header class="govcy-header govcy-bg-primary govcy-text-white govcy-bg-primary-right">
                     <a href="#" class="govcy-logo"> <img/></a>
-                    <form class="govcy-text-white govcy-bg-primary">     
+                    <form novalidate class="govcy-text-white govcy-bg-primary">     
                         <select name="govcy-lang-menu" class="govcy-lang-menu govcy-text-white">
                             <option value="English">En</option>
                             <option value="Greek">El</option>
@@ -181,9 +181,9 @@
     <h2>Buttons:</h2>
     <div class="govcy-container">
         <h4>Primary Button</h4>
-            <button type="button" class="govcy-btn-lg govcy-btn-primary">Primary</button>
-            <button type="button" class="govcy-btn govcy-btn-primary">Primary</button>
-            <button type="button" class="govcy-btn-sm govcy-btn-primary">Primary</button>
+            <button type="button" class="govcy-btn-lg govcy-btn-primary" tabindex="1">Primary</button>
+            <button type="button" class="govcy-btn govcy-btn-primary" tabindex="2">Primary</button>
+            <button type="button" class="govcy-btn-sm govcy-btn-primary" tabindex="3">Primary</button>
             <pre>
                 <code>
     &lt;button <span>type=</span><span>"button"</span> <span>class=</span><span>"govcy-btn-lg govcy-btn-primary"</span><span>&gt;Primary&lt;/button&gt;
@@ -552,6 +552,21 @@
                 </p>
             </div>
         </div>
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container-fluid&quot;&gt;
+              &lt;div class=&quot;row govcy-px-2&quot;&gt;
+                &lt;div class=&quot;govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3&quot;&gt;
+                &lt;h2&gt;There is a problem&lt;/h2&gt;
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
+                  &lt;a href=&quot;&quot;&gt;Enter your full name&lt;/a&gt;
+                  &lt;a href=&quot;&quot;&gt;Social insurance number should be 16 digit long&lt;/a&gt;
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
     </div>
 
 <br>
@@ -567,6 +582,23 @@
                 </div>   
             </div>
         </div>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container-fluid&quot;&gt;
+            &lt;div class=&quot;row govcy-px-2&quot;&gt;
+                &lt;div class=&quot;govcy-alert-notification govcy-br-5 govcy-br-info govcy-px-0&quot;&gt;
+                    &lt;div class=&quot;govcy-alert-notification-header govcy-bg-info&quot;&gt;Important&lt;/div&gt;
+                    &lt;div class=&quot;govcy-alert-notification-body&quot;&gt;
+                        &lt;p class=&quot;govcy-pl-4 govcy-pt-3 govcy-fw-bold&quot;&gt;You have 7 days left to send your application
+                            &lt;a href=&quot;&quot; class=&quot;govcy-d-block&quot;&gt;View application&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;   
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
     </div>
 
     <br>
@@ -583,6 +615,23 @@
                 </div>   
             </div>
         </div>
+        
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container-fluid&quot;&gt;
+              &lt;div class=&quot;row govcy-px-2&quot;&gt;
+                &lt;div class=&quot;govcy-alert-notification govcy-br-5 govcy-br-success govcy-px-0&quot;&gt;
+                  &lt;div class=&quot;govcy-alert-notification-header govcy-bg-success&quot;&gt;Success&lt;/div&gt;
+                    &lt;div class=&quot;govcy-alert-notification-body&quot;&gt;
+                      &lt;p class=&quot;govcy-pl-4 govcy-pt-3 govcy-fw-bold&quot;&gt;Marriage certificate updated
+                          &lt;span class=&quot;govcy-d-block govcy-fw-normal govcy-pt-1&quot;&gt;Contact &lt;a href=&quot;&quot; class=&quot;govcy-d-inline&quot;&gt;example@department.gov.cy&lt;/a&gt; if you think there&apos;s a problem&lt;/span&gt;
+                      &lt;/p&gt;
+                    &lt;/div&gt;   
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          </code>
+        </pre>
     </div>
 
     <br>
@@ -598,6 +647,21 @@
                 </div>   
             </div>
         </div>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container-fluid&quot;&gt;
+              &lt;div class=&quot;row govcy-px-2&quot;&gt;
+                &lt;div class=&quot;govcy-alert-completed-notification govcy-px-0&quot;&gt;
+                  &lt;div class=&quot;govcy-alert-completed-notification-body govcy-bg-success&quot;&gt;
+                    &lt;h1&gt;Application complete&lt;/h1&gt;
+                      &lt;p class=&quot;govcy-mb-0&quot;&gt;You&apos;ll receieve an email confirmation&lt;/p&gt;
+                  &lt;/div&gt;   
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
     </div>
 
     <br>
@@ -611,6 +675,19 @@
                 <span class="govcy-alert-warning-text" >You can be fined up to 5000 if you do not register</span>
              </div>
         </div>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container-fluid&quot;&gt;
+              &lt;div class=&quot;row govcy-px-2&quot;&gt;
+                &lt;div class=&quot;govcy-alert-warning&quot;&gt;
+                  &lt;span class=&quot;material-icons govcy-alert-warning-icon&quot;&gt;error&lt;/span&gt;
+                  &lt;span class=&quot;govcy-alert-warning-text&quot; &gt;You can be fined up to 5000 if you do not register&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
     </div>
 
     <hr>
@@ -622,94 +699,292 @@
     <div class="govcy-container">
         <div class="row">
 
-            <form class="govcy-form">
+            <form novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <input type="text" class="govcy-text-input" placeholder="input" />
                 </div>
             </form>
         
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input" placeholder="input" />
                 </div>
             </form>
          
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <span class="govcy-hint">Hint</span>
                     <input type="text" class="govcy-text-input" placeholder="input" />
                 </div>
             </form>
-        
-            <form action="" class="govcy-form">
+            
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;span class=&quot;govcy-hint&quot;&gt;Hint&lt;/span&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;input&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control govcy-form-control-error">
                     <label class="govcy-label" for="input">Label</label>
+                    <span class="govcy-visually-hidden-error">Error</span>
                     <span class="govcy-input-error-msg">There is an error</span>
                     <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input" />
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                      &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error&quot; placeholder=&quot;input&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
     
-            <form action="" class="govcy-form">
-                <div class="govcy-form-control govcy-form-control-error">
+            <form action="" novalidate class="govcy-form">
+                <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_20" placeholder="20 Characters" maxlength="20" />
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_20&quot; placeholder=&quot;20 Characters&quot; maxlength=&quot;20&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
     
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_10" placeholder="10 Characters" maxlength="10" />
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_10&quot; placeholder=&quot;10 Characters&quot; maxlength=&quot;10&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
     
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_5" placeholder="5 Chars" maxlength="5" />
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot; placeholder=&quot;5 Chars&quot; maxlength=&quot;5&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
         
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_4" placeholder="4 Chars" maxlength="4" />
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_4&quot; placeholder=&quot;4 Chars&quot; maxlength=&quot;4&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
     
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_3" placeholder="3" maxlength="3" />
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_3&quot; placeholder=&quot;3&quot; maxlength=&quot;3&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
         
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-label" for="input">Label</label>
                     <input type="text" class="govcy-text-input govcy-text-input-char_2" placeholder="2" maxlength="2" />
                 </div>
             </form>
-        
-            <form action="" class="govcy-form">
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_2&quot; placeholder=&quot;2&quot; maxlength=&quot;2&quot; /&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+
+            <form action="" novalidate="" class="govcy-form">
+              <div class="govcy-form-control govcy-form-control-error">
+                  <label class="govcy-label" for="input">Label</label>
+                  <span class="govcy-visually-hidden-error">Error</span>
+                  <span class="govcy-input-error-msg">There is an error</span>
+                  <input type="text" class="govcy-text-input govcy-text-input-error" placeholder="input">
+              </div>
+            </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate=&quot;&quot; class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                      &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                      &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                      &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error&quot; placeholder=&quot;input&quot;&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+            
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
-                    <label class="govcy-label" for="input">Label</label>
+                    <label class="govcy-label" for="input">Textarea Input</label>
                     <span class="govcy-hint">Hint</span>
                     <textarea class="govcy-text-area" placeholder="input"></textarea>
                     <span class="govcy-hint">You have 150 characters remaining</span>
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Textarea Input&lt;/label&gt;
+                      &lt;span class=&quot;govcy-hint&quot;&gt;Hint&lt;/span&gt;
+                      &lt;textarea class=&quot;govcy-text-area&quot; placeholder=&quot;input&quot;&gt;&lt;/textarea&gt;
+                      &lt;span class=&quot;govcy-hint&quot;&gt;You have 150 characters remaining&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
         
-            <form action="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control govcy-form-control-error">
-                    <label class="govcy-label" for="input">Label</label>
+                    <label class="govcy-label" for="input">Textarea Input with error</label>
+                    <span class="govcy-visually-hidden-error">Error</span>
                     <span class="govcy-input-error-msg">There is an error</span>
                     <textarea  class="govcy-text-area govcy-text-area-error" placeholder="input"></textarea>
-                    <span class="govcy-hint govcy-mb-0">You have 150 characters remaining</span>
+                    <span class="govcy-hint">You have 150 characters remaining</span>
                 </div>
             </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Textarea Input with error&lt;/label&gt;
+                      &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                      &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                      &lt;textarea  class=&quot;govcy-text-area govcy-text-area-error&quot; placeholder=&quot;input&quot;&gt;&lt;/textarea&gt;
+                      &lt;span class=&quot;govcy-hint&quot;&gt;You have 150 characters remaining&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+
+            <h2>Stand alone hint</h2>
+            <span class="govcy-hint">This is a stand alone hint</span>
+
+            <pre>
+              <code>
+                &lt;span class=&quot;govcy-hint&quot;&gt;This is a stand alone hint&lt;/span&gt;
+              </code>
+            </pre>
+
+            <h2>Input type Telephone</h2>
+            <form action="" novalidate="" class="govcy-form">
+              <div class="govcy-form-control">
+                  <label class="govcy-label" for="input">Telephone/Mobile</label>
+                  <span class="govcy-hint">Will be used for the purposes of this application only</span>
+                  <input class="govcy-text-input govcy-text-input-char_20" placeholder="Telephone" maxlength="20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-number" autocomplete="tel">
+              </div>
+            </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate=&quot;&quot; class=&quot;govcy-form&quot;&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Telephone/Mobile&lt;/label&gt;
+                      &lt;span class=&quot;govcy-hint&quot;&gt;Will be used for the purposes of this application only&lt;/span&gt;
+                      &lt;input class=&quot;govcy-text-input govcy-text-input-char_20&quot; placeholder=&quot;Telephone&quot; maxlength=&quot;20&quot; id=&quot;tel&quot; name=&quot;tel&quot; type=&quot;tel&quot; spellcheck=&quot;false&quot; aria-describedby=&quot;tel-number&quot; autocomplete=&quot;tel&quot;&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+
+          <h2>Input type Telephone with Error</h2>
+            <form action="" novalidate class="govcy-form">
+              <div class="govcy-form-control govcy-form-control-error">
+                  <label class="govcy-label" for="input">Telephone/Mobile</label>
+                  <span class="govcy-visually-hidden-error">Error</span>
+                  <span class="govcy-input-error-msg">Mobile is required</span>
+                  <span class="govcy-hint">Will be used for the purposes of this application only</span>
+                  <input class="govcy-text-input govcy-text-input-error govcy-text-input-char_20" placeholder="Telephone" maxlength="20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-number" autocomplete="tel">
+              </div>
+          </form>
+
+          <pre>
+            <code>
+              &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                    &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Telephone/Mobile&lt;/label&gt;
+                    &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                    &lt;span class=&quot;govcy-input-error-msg&quot;&gt;Mobile is required&lt;/span&gt;
+                    &lt;span class=&quot;govcy-hint&quot;&gt;Will be used for the purposes of this application only&lt;/span&gt;
+                    &lt;input class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_20&quot; placeholder=&quot;Telephone&quot; maxlength=&quot;20&quot; id=&quot;tel&quot; name=&quot;tel&quot; type=&quot;tel&quot; spellcheck=&quot;false&quot; aria-describedby=&quot;tel-number&quot; autocomplete=&quot;tel&quot;&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            </code>
+          </pre>
+
         </div>
     </div>
 
@@ -725,56 +1000,111 @@
      <h4>Fieldset without error</h4>
 
      <div class="govcy-container">
+        <form action="" novalidate class="govcy-form">
+          <fieldset class="govcy-fieldset">
+              <legend class="govcy-legend">Contact Address</legend>
+              <div class="govcy-form-control">
+                  <label class="govcy-label" for="">Address / Number</label>
+                  <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
+              </div>
+              <div class="govcy-form-control">
+                  <label class="govcy-label" for="">District / Village</label>
+                  <input id="" type="text" class="govcy-text-input" placeholder="District or village" />
+              </div>
+              <div class="govcy-form-control">    
+                  <label class="govcy-label" for="">District</label>
+                  <input id="" type="text" class="govcy-text-input" placeholder="District" />
+              </div>
+              <div class="govcy-form-control">
+                  <label class="govcy-label" for="">Postal code</label>
+                  <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+              </div>
+          </fieldset>
+        </form>
 
-         <form action="" class="govcy-form">
-             <fieldset class="govcy-fieldset">
-                 <legend class="govcy-legend">Contact Address</legend>
-                 <div class="govcy-form-control">
-                     <label class="govcy-label" for="">Address / Number</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
-                 </div>
-                 <div class="govcy-form-control">
-                     <label class="govcy-label" for="">District / Village</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="District or village" />
-                 </div>
-                 <div class="govcy-form-control">    
-                     <label class="govcy-label" for="">District</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="District" />
-                 </div>
-                 <div class="govcy-form-control">
-                     <label class="govcy-label" for="">Postal code</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
-                 </div>
-             </fieldset>
-         </form>
+        <pre>
+          <code>
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                  &lt;legend class=&quot;govcy-legend&quot;&gt;Contact Address&lt;/legend&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;Address / Number&lt;/label&gt;
+                      &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Addresss and number&quot; /&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;District / Village&lt;/label&gt;
+                      &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;District or village&quot; /&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;    
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;District&lt;/label&gt;
+                      &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;District&quot; /&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;Postal code&lt;/label&gt;
+                      &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Postal code&quot; /&gt;
+                  &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+
      </div>
      <br>
      <br>
      <h4>Fieldset with error</h4>
         <div class="govcy-container">
-         <form action="" class="govcy-form">
-             <fieldset class="govcy-fieldset">
-                 <legend class="govcy-legend">Contact Address</legend>
-                 <div class="govcy-form-control">
-                     <label class="govcy-label" for="">Address / Number</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
-                 </div>
-                 <div class="govcy-form-control govcy-form-control-error">
-                     <label class="govcy-label" for="">District / Village</label>
-                     <span class="govcy-input-error-msg">There is an error</span>
-                     <input id="" type="text" class="govcy-text-input govcy-text-area-error" placeholder="District or village" />
-                 </div>
-                 <div class="govcy-form-control">    
-                     <label class="govcy-label" for="">District</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="District" />
-                 </div>
-                 <div class="govcy-form-control">
-                     <label class="govcy-label" for="">Postal code</label>
-                     <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
-                 </div>
-             </fieldset>
-         </form>
-     </div>
+          <form action="" novalidate class="govcy-form">
+            <fieldset class="govcy-fieldset">
+              <legend class="govcy-legend">Contact Address</legend>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">Address / Number</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="Addresss and number" />
+                </div>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="">District / Village</label>
+                    <span class="govcy-visually-hidden-error">Error</span>
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <input id="" type="text" class="govcy-text-input govcy-text-area-error" placeholder="District or village" />
+                </div>
+                <div class="govcy-form-control">    
+                    <label class="govcy-label" for="">District</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="District" />
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="">Postal code</label>
+                    <input id="" type="text" class="govcy-text-input" placeholder="Postal code" />
+                </div>
+              </fieldset>
+            </form>
+
+            <pre>
+              <code>
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                  &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                  &lt;legend class=&quot;govcy-legend&quot;&gt;Contact Address&lt;/legend&gt;
+                    &lt;div class=&quot;govcy-form-control&quot;&gt;
+                        &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;Address / Number&lt;/label&gt;
+                        &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Addresss and number&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                        &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;District / Village&lt;/label&gt;
+                        &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                        &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                        &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-area-error&quot; placeholder=&quot;District or village&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;govcy-form-control&quot;&gt;    
+                        &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;District&lt;/label&gt;
+                        &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;District&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;Postal code&lt;/label&gt;
+                      &lt;input id=&quot;&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Postal code&quot; /&gt;
+                    &lt;/div&gt;
+                  &lt;/fieldset&gt;
+                &lt;/form&gt;
+              </code>
+            </pre>
+          </div>
 
      <hr>
      <br>
@@ -785,7 +1115,7 @@
     <h4>Checkbox</h4>
 
     <div class="govcy-container">
-        <form action="" class="govcy-form">
+        <form action="" novalidate class="govcy-form">
             <fieldset class="govcy-fieldset">
                 <legend class="govcy-legend">Legend</legend>
                 <div class="govcy-form-control">
@@ -804,16 +1134,43 @@
                 </div>
             </fieldset>
         </form>
-    </div>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container&quot;&gt;
+              &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                    &lt;label class=&quot;govcy-checkbox&quot;&gt;Option 1
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;1&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-checkbox&quot;&gt;Option 2
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;2&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-checkbox&quot;&gt;Option 3
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;3&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;/fieldset&gt;
+             &lt;/form&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+      </div>
     <br>
     <br>
     <h4>Checkbox with Error</h4>
 
     <div class="govcy-container">
-        <form action="" class="govcy-form">
+        <form action="" novalidate class="govcy-form">
             <fieldset class="govcy-fieldset">
                 <legend class="govcy-legend">Legend</legend>
                 <div class="govcy-form-control govcy-form-control-error">
+                    <span class="govcy-visually-hidden-error">Error</span>
                     <span class="govcy-input-error-msg">There is an error</span>
                     <label class="govcy-checkbox">Option 1
                         <input class="govcy-checkbox-input" type="checkbox">
@@ -826,12 +1183,36 @@
                 </div>
             </fieldset>
         </form>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container&quot;&gt;
+              &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                    &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                    &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                    &lt;label class=&quot;govcy-checkbox&quot;&gt;Option 1
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;4&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-checkbox&quot;&gt;Option 2
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;5&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/fieldset&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
     </div>
     <br>
     <br>
     <h4>Checkbox with Hint</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
+        <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control">
                     <label class="govcy-checkbox">Option 2
                         <input class="govcy-checkbox-input" type="checkbox">
@@ -841,32 +1222,78 @@
                    
                 </div>
         </form>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container&quot;&gt;
+              &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-checkbox&quot;&gt;Option 2
+                    &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                    &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;6&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;govcy-hint govcy-mt-2&quot;&gt;This is hint text&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
     </div>
+
     <br><br>
 
     <h4>Checkbox Inline</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Legend</legend>
-                <div class="govcy-form-control govcy-form-control-error">
-                    <span class="govcy-input-error-msg">There is an error</span>
-                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 1 Option
-                        <input class="govcy-checkbox-input" type="checkbox">
-                        <span class="govcy-tickbox" tabindex="7"></span>
-                    </label>
-                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 2 Option
-                        <input class="govcy-checkbox-input" type="checkbox">
-                        <span class="govcy-tickbox" tabindex="8"></span>
-                    </label>
-                    <label class="govcy-checkbox govcy-d-sm-inline-block">Option 3 Option
-                        <input class="govcy-checkbox-input" type="checkbox">
-                        <span class="govcy-tickbox" tabindex="9"></span>
-                    </label>
-                </div>
-            </fieldset>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <legend class="govcy-legend">Legend</legend>
+            <div class="govcy-form-control govcy-form-control-error">
+                <span class="govcy-visually-hidden-error">Error</span>
+                <span class="govcy-input-error-msg">There is an error</span>
+                <label class="govcy-checkbox govcy-d-sm-inline-block">Option 1
+                    <input class="govcy-checkbox-input" type="checkbox">
+                    <span class="govcy-tickbox" tabindex="7"></span>
+                </label>
+                <label class="govcy-checkbox govcy-d-sm-inline-block">Option 2
+                    <input class="govcy-checkbox-input" type="checkbox">
+                    <span class="govcy-tickbox" tabindex="8"></span>
+                </label>
+                <label class="govcy-checkbox govcy-d-sm-inline-block">Option 3
+                    <input class="govcy-checkbox-input" type="checkbox">
+                    <span class="govcy-tickbox" tabindex="9"></span>
+                </label>
+            </div>
+        </fieldset>
+      </form>
     </div>
+
+    <pre>
+      <code>
+        &lt;div class=&quot;govcy-container&quot;&gt;
+          &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+            &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+              &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                    &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                    &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                    &lt;label class=&quot;govcy-checkbox govcy-d-sm-inline-block&quot;&gt;Option 1
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;7&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-checkbox govcy-d-sm-inline-block&quot;&gt;Option 2
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;8&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-checkbox govcy-d-sm-inline-block&quot;&gt;Option 3
+                        &lt;input class=&quot;govcy-checkbox-input&quot; type=&quot;checkbox&quot;&gt;
+                        &lt;span class=&quot;govcy-tickbox&quot; tabindex=&quot;9&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
 
 
     <hr>
@@ -877,93 +1304,200 @@
     <h4>Radio Button</h4>
 
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Legend</legend>
-                <div class="govcy-form-control">
-                    <label class="govcy-radio">Option 1
-                        <input class="govcy-radio-input" type="radio" checked="checked" name="radio">
-                        <span class="govcy-radio-checked" tabindex="10"></span>
-                    </label>
-                    <label class="govcy-radio">Option 2
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="11"></span>
-                    </label>
-                    <label class="govcy-radio">Option 3
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="12"></span>
-                    </label>
-                </div>
-            </fieldset>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <legend class="govcy-legend">Legend</legend>
+          <div class="govcy-form-control">
+            <label class="govcy-radio">Option 1
+                <input class="govcy-radio-input" type="radio" checked="checked" name="radio">
+                <span class="govcy-radio-checked" tabindex="10"></span>
+            </label>
+            <label class="govcy-radio">Option 2
+                <input class="govcy-radio-input" type="radio" name="radio">
+                <span class="govcy-radio-checked" tabindex="11"></span>
+            </label>
+            <label class="govcy-radio">Option 3
+                <input class="govcy-radio-input" type="radio" name="radio">
+                <span class="govcy-radio-checked" tabindex="12"></span>
+            </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;Option 1
+                      &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; checked=&quot;checked&quot; name=&quot;radio&quot;&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;10&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;Option 2
+                      &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;11&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;Option 3
+                      &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;12&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
     </div>
     <br><br>
 
     <h4>Radio Button with Error</h4>
 
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Legend</legend>
-                <div class="govcy-form-control govcy-form-control-error">
-                    <span class="govcy-input-error-msg">Mandatory field</span>
-                    <label class="govcy-radio">Option 1
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="13"></span>
-                    </label>
-                    <label class="govcy-radio">Option 2
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="14"></span>
-                    </label>
-                    <label class="govcy-radio">Option 3
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="15"></span>
-                    </label>
-                </div>
-            </fieldset>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <legend class="govcy-legend">Legend</legend>
+          <div class="govcy-form-control govcy-form-control-error">
+              <span class="govcy-visually-hidden-error">Error</span>
+              <span class="govcy-input-error-msg">Mandatory field</span>
+              <label class="govcy-radio">Option 1
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="13"></span>
+              </label>
+              <label class="govcy-radio">Option 2
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="14"></span>
+              </label>
+              <label class="govcy-radio">Option 3
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="15"></span>
+              </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                    &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                    &lt;span class=&quot;govcy-input-error-msg&quot;&gt;Mandatory field&lt;/span&gt;
+                    &lt;label class=&quot;govcy-radio&quot;&gt;Option 1
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;13&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-radio&quot;&gt;Option 2
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;14&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-radio&quot;&gt;Option 3
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;15&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
     </div>
     <br><br>
 
     <h4>Radio Button with Hint</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Legend</legend>
-                <div class="govcy-form-control">
-                    <label class="govcy-radio">Option 1
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="16"></span>
-                        <span class="govcy-hint govcy-mt-2">This is hint text</span>
-                    </label>
-                </div>
-            </fieldset>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <legend class="govcy-legend">Legend</legend>
+          <div class="govcy-form-control">
+              <label class="govcy-radio">Option 1
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="16"></span>
+                  <span class="govcy-hint govcy-mt-2">This is hint text</span>
+              </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                    &lt;label class=&quot;govcy-radio&quot;&gt;Option 1
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;16&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;govcy-hint govcy-mt-2&quot;&gt;This is hint text&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
     </div>
     <br><br>
 
     <h4>Radio Button Inline</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <legend class="govcy-legend">Legend</legend>
-                <div class="govcy-form-control govcy-form-control-error">
-                    <span class="govcy-input-error-msg">Mandatory field</span>
-                    <label class="govcy-radio govcy-d-sm-inline-block">Option 1
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="17"></span>
-                    </label>
-                    <label class="govcy-radio govcy-d-sm-inline-block">Option 2
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="18"></span>
-                    </label>
-                    <label class="govcy-radio govcy-d-sm-inline-block">Option 3
-                        <input class="govcy-radio-input" type="radio" name="radio">
-                        <span class="govcy-radio-checked" tabindex="19"></span>
-                    </label>
-                </div>
-            </fieldset>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <legend class="govcy-legend">Legend</legend>
+          <div class="govcy-form-control govcy-form-control-error">
+              <span class="govcy-visually-hidden-error">Error</span>
+              <span class="govcy-input-error-msg">Mandatory field</span>
+              <label class="govcy-radio govcy-d-sm-inline-block">Option 1
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="17"></span>
+              </label>
+              <label class="govcy-radio govcy-d-sm-inline-block">Option 2
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="18"></span>
+              </label>
+              <label class="govcy-radio govcy-d-sm-inline-block">Option 3
+                  <input class="govcy-radio-input" type="radio" name="radio">
+                  <span class="govcy-radio-checked" tabindex="19"></span>
+              </label>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;legend class=&quot;govcy-legend&quot;&gt;Legend&lt;/legend&gt;
+                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                    &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                    &lt;span class=&quot;govcy-input-error-msg&quot;&gt;Mandatory field&lt;/span&gt;
+                    &lt;label class=&quot;govcy-radio govcy-d-sm-inline-block&quot;&gt;Option 1
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;17&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-radio govcy-d-sm-inline-block&quot;&gt;Option 2
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;18&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;label class=&quot;govcy-radio govcy-d-sm-inline-block&quot;&gt;Option 3
+                        &lt;input class=&quot;govcy-radio-input&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
+                        &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;19&quot;&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
     </div>
     
     <hr>
@@ -975,54 +1509,115 @@
     <h2>Date of Birth Inputs:</h2>
     <h4>Date of Birth</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <div class="govcy-form-control">
-                    <label class="govcy-label govcy-mb-1" for="">Date of birth</label>
-                    <span class="govcy-hint govcy-mb-3">For emample&#44; 12 11 2007</span>
-                    <div class="govcy-d-flex">
-                        <div class="govcy-d-block">
-                            <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Day</label>
-                            <input type="text" class="govcy-text-input govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" />
-                        </div>
-                        <div class="govcy-d-block govcy-ml-2">
-                            <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Month</label>
-                            <input type="text" class="govcy-text-input govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" />
-                        </div>
-                        <div class="govcy-d-block govcy-ml-2">
-                            <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Year</label>
-                            <input type="text" class="govcy-text-input govcy-text-input-char_6 govcy-p-3" placeholder="" maxlength="4" />
-                        </div>
-                    </div>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <div class="govcy-form-control">
+            <label class="govcy-label govcy-mb-1" for="">Date of birth</label>
+            <span class="govcy-hint govcy-mb-3">For emample&#44; 12 11 2007</span>
+            <div class="govcy-d-flex">
+                <div class="govcy-d-block">
+                    <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Day</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" pattern="[0-9]*" inputmode="numeric" />
                 </div>
-            </fieldset>
-        </form>
-        </div>
-        <div class="govcy-container">
+                <div class="govcy-d-block govcy-ml-2">
+                    <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Month</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" pattern="[0-9]*" inputmode="numeric" />
+                </div>
+                <div class="govcy-d-block govcy-ml-2">
+                    <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Year</label>
+                    <input type="text" class="govcy-text-input govcy-text-input-char_6 govcy-p-3" placeholder="" maxlength="4" pattern="[0-9]*" inputmode="numeric" />
+                </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
 
-        <h4>Date of Birth with Error</h4>
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <div class="govcy-form-control govcy-form-control-error">
-                    <label class="govcy-label govcy-mb-1" for="">Date of birth</label>
-                    <span class="govcy-input-error-msg govcy-mb-3">There is an error</span>
-                    <div class="govcy-d-flex">
-                        <div class="govcy-d-block">
-                            <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Day</label>
-                            <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" />
-                        </div>
-                        <div class="govcy-d-block govcy-ml-2">
-                            <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Month</label>
-                            <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" />
-                        </div>
-                        <div class="govcy-d-block govcy-ml-2">
-                            <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Year</label>
-                            <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_6 govcy-p-3" placeholder="" maxlength="4" />
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-label govcy-mb-1&quot; for=&quot;&quot;&gt;Date of birth&lt;/label&gt;
+                  &lt;span class=&quot;govcy-hint govcy-mb-3&quot;&gt;For emample&amp;#44; 12 11 2007&lt;/span&gt;
+                  &lt;div class=&quot;govcy-d-flex&quot;&gt;
+                      &lt;div class=&quot;govcy-d-block&quot;&gt;
+                          &lt;label class=&quot;govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2&quot; for=&quot;&quot;&gt;Day&lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_3 govcy-p-2&quot; placeholder=&quot;&quot; maxlength=&quot;2&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; /&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;govcy-d-block govcy-ml-2&quot;&gt;
+                          &lt;label class=&quot;govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2&quot; for=&quot;&quot;&gt;Month&lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_3 govcy-p-2&quot; placeholder=&quot;&quot; maxlength=&quot;2&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; /&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;govcy-d-block govcy-ml-2&quot;&gt;
+                          &lt;label class=&quot;govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2&quot; for=&quot;&quot;&gt;Year&lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_6 govcy-p-3&quot; placeholder=&quot;&quot; maxlength=&quot;4&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot; /&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+        
+    <h4>Date of Birth with Error</h4>
+    <div class="govcy-container">
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label govcy-mb-1" for="">Date of birth</label>
+            <span class="govcy-visually-hidden-error">Error</span>
+            <span class="govcy-input-error-msg">There is an error</span>
+            <div class="govcy-d-flex">
+              <div class="govcy-d-block">
+                  <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Day</label>
+                  <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" />
+              </div>
+              <div class="govcy-d-block govcy-ml-2">
+                  <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Month</label>
+                  <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2" placeholder="" maxlength="2" />
+              </div>
+              <div class="govcy-d-block govcy-ml-2">
+                  <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Year</label>
+                  <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_6 govcy-p-3" placeholder="" maxlength="4" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                  &lt;label class=&quot;govcy-label govcy-mb-1&quot; for=&quot;&quot;&gt;Date of birth&lt;/label&gt;
+                  &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                  &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                  &lt;div class=&quot;govcy-d-flex&quot;&gt;
+                    &lt;div class=&quot;govcy-d-block&quot;&gt;
+                        &lt;label class=&quot;govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2&quot; for=&quot;&quot;&gt;Day&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2&quot; placeholder=&quot;&quot; maxlength=&quot;2&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;govcy-d-block govcy-ml-2&quot;&gt;
+                        &lt;label class=&quot;govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2&quot; for=&quot;&quot;&gt;Month&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_3 govcy-p-2&quot; placeholder=&quot;&quot; maxlength=&quot;2&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;govcy-d-block govcy-ml-2&quot;&gt;
+                        &lt;label class=&quot;govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2&quot; for=&quot;&quot;&gt;Year&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_6 govcy-p-3&quot; placeholder=&quot;&quot; maxlength=&quot;4&quot; /&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+
     </div>
 
     <hr>
@@ -1037,18 +1632,17 @@
     <div class="govcy-container">
         <span class="bi bi-chevron-left"></span>
         <a href="#" class="govcy-back-link">Back</a>
+
+        <pre>
+          <code>
+            &lt;div class=&quot;govcy-container&quot;&gt;
+              &lt;span class=&quot;bi bi-chevron-left&quot;&gt;&lt;/span&gt;
+              &lt;a href=&quot;#&quot; class=&quot;govcy-back-link&quot;&gt;Back&lt;/a&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
     </div>
     
-    <br>
-
-    <h4>Back Link (Greek)</h4>
-
-    <div class="govcy-container">
-        <span class="bi bi-chevron-left"></span>
-        <a href="#" class="govcy-back-link">Πίσω</a>
-    </div>
-
- 
     <hr>
     <br>
     <br>
@@ -1062,24 +1656,53 @@
 
 
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <div class="govcy-form-control">
-                <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
-                <input class="govcy-file-upload" type="file" id="" name="" />
-            </div>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <div class="govcy-form-control">
+            <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
+            <input class="govcy-file-upload" type="file" id="" name="" />
+        </div>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-label govcy-mb-1&quot; for=&quot;&quot;&gt;Upload a file&lt;/label&gt;
+                  &lt;input class=&quot;govcy-file-upload&quot; type=&quot;file&quot; id=&quot;&quot; name=&quot;&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
     </div>
 
     <h4>File Upload with Error</h4>
 
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <div class="govcy-form-control govcy-form-control-error govcy-pb-1">
-                <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
-                <span class="govcy-input-error-msg govcy-mb-3">There is an error</span>
-                <input class="govcy-file-upload" type="file" id="" name="" />
-            </div>
-        </form>
+      <form action="" novalidate class="govcy-form">
+        <div class="govcy-form-control govcy-form-control-error govcy-pb-1">
+            <label class="govcy-label govcy-mb-1" for="">Upload a file</label>
+            <span class="govcy-visually-hidden-error">Error</span>
+            <span class="govcy-input-error-msg">There is an error</span>
+            <input class="govcy-file-upload" type="file" id="" name="" />
+        </div>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;div class=&quot;govcy-form-control govcy-form-control-error govcy-pb-1&quot;&gt;
+                  &lt;label class=&quot;govcy-label govcy-mb-1&quot; for=&quot;&quot;&gt;Upload a file&lt;/label&gt;
+                  &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
+                  &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
+                  &lt;input class=&quot;govcy-file-upload&quot; type=&quot;file&quot; id=&quot;&quot; name=&quot;&quot; /&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
     </div>
 
 
@@ -1271,52 +1894,108 @@
     <h2>Conditional Radio Button Forms:</h2>
     <h4>Conditional Radio</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <div class="govcy-form-control">
-                    <label class="govcy-radio">Use existing email address
-                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".email.show" checked />
-                        <span class="govcy-radio-checked" tabindex="0"></span>
-                    </label>
-                    <label class="govcy-radio">No, use different email address
-                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".email:not(.show)"/>
-                        <span class="govcy-radio-checked" tabindex="0"></span>
-                    </label>
-                    <div class="collapse email govcy-pl-3 govcy-ml-1">
-                        <div class="govcy-form-control govcy-form-control-hint">
-                            <label class="govcy-label" for="">Email Address</label>
-                            <span class="govcy-hint">We'll only use this for applicatin</span>
-                            <input type="text" class="govcy-text-input" placeholder="email address" />
-                        </div>
-                    </div>
+      <form action="" novalidate class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <div class="govcy-form-control">
+            <label class="govcy-radio">Use existing email address
+                <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".email.show" checked />
+                <span class="govcy-radio-checked" tabindex="0"></span>
+            </label>
+            <label class="govcy-radio">No, use different email address
+                <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".email:not(.show)"/>
+                <span class="govcy-radio-checked" tabindex="0"></span>
+            </label>
+            <div class="collapse email govcy-pl-3 govcy-ml-1">
+                <div class="govcy-form-control govcy-form-control-hint">
+                    <label class="govcy-label" for="">Email Address</label>
+                    <span class="govcy-hint">We'll only use this for applicatin</span>
+                    <input class="govcy-text-input" placeholder="email address" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-address" autocomplete="email" />
                 </div>
-            </fieldset>
-        </form>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;Use existing email address
+                      &lt;input class=&quot;govcy-radio-input&quot; name=&quot;collapseGroup&quot; type=&quot;radio&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.email.show&quot; checked /&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;0&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;No, use different email address
+                      &lt;input class=&quot;govcy-radio-input&quot; name=&quot;collapseGroup&quot; type=&quot;radio&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.email:not(.show)&quot;/&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;0&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                  &lt;div class=&quot;collapse email govcy-pl-3 govcy-ml-1&quot;&gt;
+                      &lt;div class=&quot;govcy-form-control govcy-form-control-hint&quot;&gt;
+                          &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;Email Address&lt;/label&gt;
+                          &lt;span class=&quot;govcy-hint&quot;&gt;We&apos;ll only use this for applicatin&lt;/span&gt;
+                          &lt;input class=&quot;govcy-text-input&quot; placeholder=&quot;email address&quot; id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; spellcheck=&quot;false&quot; aria-describedby=&quot;email-address&quot; autocomplete=&quot;email&quot; /&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
     </div>
 
     <h4>Conditional Radio with Error</h4>
     <div class="govcy-container">
-        <form action="" class="govcy-form">
-            <fieldset class="govcy-fieldset">
-                <div class="govcy-form-control">
-                    <label class="govcy-radio">Use existing home address
-                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".address.show" checked/>
-                        <span class="govcy-radio-checked" tabindex="0"></span>
-                    </label>
-                    <label class="govcy-radio">No, use different home address
-                        <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".address:not(.show)"/>
-                        <span class="govcy-radio-checked" tabindex="0"></span>
-                    </label>
-                    <div class="collapse address govcy-pl-3 govcy-ml-1">
-                        <div class="govcy-form-control govcy-form-control-error">
-                            <label class="govcy-label" for="">Home address</label>
-                            <span class="govcy-input-error-msg">Please type valid home address</span>
-                            <textarea type="textarea" class="govcy-text-area" placeholder="home address"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
+      <form action="" class="govcy-form">
+        <fieldset class="govcy-fieldset">
+          <div class="govcy-form-control">
+            <label class="govcy-radio">Use existing home address
+                <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".address.show" checked/>
+                <span class="govcy-radio-checked" tabindex="0"></span>
+            </label>
+            <label class="govcy-radio">No, use different home address
+                <input class="govcy-radio-input" name="collapseGroup" type="radio" data-bs-toggle="collapse" data-bs-target=".address:not(.show)"/>
+                <span class="govcy-radio-checked" tabindex="0"></span>
+            </label>
+            <div class="collapse address govcy-pl-3 govcy-ml-1">
+              <div class="govcy-form-control govcy-form-control-error">
+                  <label class="govcy-label" for="">Home address</label>
+                  <span class="govcy-input-error-msg">Please type valid home address</span>
+                  <textarea type="textarea" class="govcy-text-area" placeholder="home address" id="email" name="email" type="address" spellcheck="false" aria-describedby="home-address" autocomplete="address"></textarea>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container&quot;&gt;
+            &lt;form action=&quot;&quot; class=&quot;govcy-form&quot;&gt;
+              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+                &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;Use existing home address
+                      &lt;input class=&quot;govcy-radio-input&quot; name=&quot;collapseGroup&quot; type=&quot;radio&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.address.show&quot; checked/&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;0&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                  &lt;label class=&quot;govcy-radio&quot;&gt;No, use different home address
+                      &lt;input class=&quot;govcy-radio-input&quot; name=&quot;collapseGroup&quot; type=&quot;radio&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.address:not(.show)&quot;/&gt;
+                      &lt;span class=&quot;govcy-radio-checked&quot; tabindex=&quot;0&quot;&gt;&lt;/span&gt;
+                  &lt;/label&gt;
+                  &lt;div class=&quot;collapse address govcy-pl-3 govcy-ml-1&quot;&gt;
+                    &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                        &lt;label class=&quot;govcy-label&quot; for=&quot;&quot;&gt;Home address&lt;/label&gt;
+                        &lt;span class=&quot;govcy-input-error-msg&quot;&gt;Please type valid home address&lt;/span&gt;
+                        &lt;textarea type=&quot;textarea&quot; class=&quot;govcy-text-area&quot; placeholder=&quot;home address&quot; id=&quot;email&quot; name=&quot;email&quot; type=&quot;address&quot; spellcheck=&quot;false&quot; aria-describedby=&quot;home-address&quot; autocomplete=&quot;address&quot;&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
     </div>
 
   
@@ -1362,9 +2041,39 @@
     <br>
     <br>
 
-    
+    <h4>Back Link and Username / Signout</h4>
+    <div class="govcy-container">
+      <div class="govcy-float-start govcy-mb-4">
+        <span class="bi bi-chevron-left"></span>
+        <a class="govcy-back-link" href="/">Back</a>
+      </div>
+      <div class="govcy-text-end govcy-mb-4">
+        Nikanos Polykarpou | <a href="/Account/LogOut" class="govcy-back-link">Log Out</a>
+      </div>
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-mb-4 govcy-float-start&quot;&gt;
+            &lt;span class=&quot;bi bi-chevron-left&quot;&gt;&lt;/span&gt;
+            &lt;a class=&quot;govcy-back-link&quot; href=&quot;/&quot;&gt;Back&lt;/a&gt;
+          &lt;/div&gt;
 
-  
+          &lt;div class=&quot;govcy-text-end govcy-mb-4&quot;&gt;
+            Nikanos Polykarpou | &lt;a href=&quot;/Account/LogOut&quot; class=&quot;govcy-back-link&quot;&gt;Log Out&lt;/a&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <br>
+    <br>
+    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
+    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
+    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
+
+    
+      
+
+
     <script src="js/app.js"></script>
 
 </body>

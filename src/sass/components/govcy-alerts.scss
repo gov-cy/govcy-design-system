@@ -8,6 +8,8 @@
 
 //Govcy Alerts-Error
 .govcy-alert-error {
+  margin-bottom: 1.5rem;
+
   p {
     a {
       color: $govcy-danger;
@@ -24,6 +26,8 @@
 
 //Govcy Alerts-Notification
 .govcy-alert-notification {
+  margin-bottom: 1.5rem;
+
   .govcy-alert-notification-header {
     color: $govcy-white;
     padding-left: 20px;
@@ -42,6 +46,7 @@
 //Govcy Alerts-Completed-Notification
 .govcy-alert-completed-notification {
   color: $govcy-white;
+  margin-bottom: 1.5rem;
 
   .govcy-alert-completed-notification-body {
     padding: 24px;
@@ -51,6 +56,8 @@
 
 //Govcy Alerts-Warning
 .govcy-alert-warning {
+  margin-bottom: 1.5rem;
+
   .govcy-alert-warning-icon {
     display: inline-block;
     font-size: 30px;
