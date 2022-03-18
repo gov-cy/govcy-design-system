@@ -42,13 +42,13 @@ jobs:
             github.rest.git.deleteRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: 'refs/tags/latest',
+              ref: 'refs/tags/latest'
             })
             github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
               ref: 'refs/tags/latest',
-              sha: context.sha,
+              sha: context.sha
             })
       
       - name: Azure Login
