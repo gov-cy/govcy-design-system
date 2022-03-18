@@ -38,11 +38,12 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            github.rest.git.createRef({
+            github.rest.git.updateRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
               ref: 'refs/tags/latest',
-              sha: context.sha
+              sha: context.sha,
+              force: true
             })
       
       - name: Azure Login
