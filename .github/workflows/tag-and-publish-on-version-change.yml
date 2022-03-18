@@ -38,7 +38,6 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            # Recreate latest
             github.rest.git.deleteRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
