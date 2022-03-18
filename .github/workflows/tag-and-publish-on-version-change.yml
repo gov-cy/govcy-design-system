@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - dist
+      - dist/**
 jobs:
   # Duplicated from `.github/workflows/version-sanity-checks.yml` could use https://github.blog/2022-02-10-using-reusable-workflows-github-actions ?
   tag-and-publish-on-version-change:
