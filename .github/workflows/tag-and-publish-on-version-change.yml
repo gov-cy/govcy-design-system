@@ -38,12 +38,17 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            github.rest.git.updateRef({
+            # Recreate latest
+            github.rest.git.deleteRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/latest',
+            })
+            github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
               ref: 'refs/tags/latest',
               sha: context.sha,
-              force: true
             })
       
       - name: Azure Login
