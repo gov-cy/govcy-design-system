@@ -28072,6 +28072,30 @@ textarea.form-control-lg {
   color: #101214;
 }
 
+h1, .h1 {
+  outline: 0;
+}
+
+h2, .h2 {
+  outline: 0;
+}
+
+h3, .h3 {
+  outline: 0;
+}
+
+h4, .h4 {
+  outline: 0;
+}
+
+h5, .h5 {
+  outline: 0;
+}
+
+h6, .h6 {
+  outline: 0;
+}
+
 .govcy-alert-error {
   margin-bottom: 1.5rem;
 }
@@ -28194,6 +28218,7 @@ textarea.form-control-lg {
 }
 
 .govcy-header {
+  margin-bottom: 0.5rem;
   min-width: 350px;
   padding: 0;
 }
@@ -28290,7 +28315,7 @@ textarea.form-control-lg {
     margin-top: 21px;
   }
 }
-.govcy-header .govcy-bg-primary-right::after {
+.govcy-bg-primary-right::after {
   background-color: #31576f;
   bottom: 0;
   content: " ";

@@ -5,6 +5,7 @@
 // Mobile first styles for header section starts here
 
 .govcy-header {
+  margin-bottom: 0.5rem;
   min-width: 350px;
   padding: 0;
 
@@ -145,7 +146,7 @@
 }
 
 // CE: Adds primart colour background on the right of the header. The parent element must have `govcy-position-relative`
-.govcy-header
+
 .govcy-bg-primary-right::after {
   background-color: $govcy-primary;
   bottom: 0;
