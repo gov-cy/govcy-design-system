@@ -1,0 +1,34 @@
+// Typography
+//
+// 1. Remove top outline from headings
+
+h1 {
+  @extend %heading;
+  outline: 0;
+}
+
+h2 {
+  @extend %heading;
+  outline: 0;
+}
+
+h3 {
+  @extend %heading;
+  outline: 0;
+}
+
+h4 {
+  @extend %heading;
+  outline: 0;
+}
+
+h5 {
+  @extend %heading;
+  outline: 0;
+}
+
+h6 {
+  @extend %heading;
+  outline: 0;
+}
+
