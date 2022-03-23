@@ -4,7 +4,24 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
- 
+
+## [v1.0.1] - 2022-03-23
+
+### Added
+
+- Create govcy-reboot.scss file to reset the outline for heading to zero
+- Add margin-bottom: 0.5rem to govcy-header
+
+### Changed
+
+- Fixed the Pseudo element ::after on govcy-bg-primary-right::after
+- Seprate govcy-table-responsive class from govcy-table and used as wrapper for
+
+### Removed
+
+- Removed tabindex attribute from html
+
+
 ## [v1.0.0] - 2022-03-18
 
 
@@ -31,3 +48,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Text area height: 44px has been removed.
+
+
