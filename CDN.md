@@ -73,3 +73,11 @@ name@Azure:~$ az ad sp create-for-rbac
 }
 
 ```
+
+#### Caching control
+
+For our CDN we should be caching versioned files but not unversioned (ie 'latest'). This is because a cached version of latest would become out of date whenever latest is updated and we have no way of invalidating that cache.
+
+You can read how to manage caching on the Azure Docs here:
+
+[Control Azure CDN caching behavior with caching rules](https://docs.microsoft.com/en-us/azure/cdn/cdn-caching-rules)
