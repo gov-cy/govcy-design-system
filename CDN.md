@@ -73,6 +73,3 @@ name@Azure:~$ az ad sp create-for-rbac
 }
 
 ```
-
-## 
-

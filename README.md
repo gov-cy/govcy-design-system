@@ -1,25 +1,43 @@
-[![Docker](https://github.com/gov-cy/govcy-design-system/actions/workflows/main.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/main.yml)
+[![Percy CI](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml)
+[![Sass Lint](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml)
+[![Semantic Versioning Compliant](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml)
+[![Sass Compliant](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml)
+[![Compiled CSS matches Sass](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml)
+
+
 
 # govcy-design-system
-GOV.CY design system code.
 
-This is the readme for the govcy-design-system repository.
+This is the readme for the `govcy-design-system` code repository. If you are looking for information on using the Design System in a service you should first check the [gov.cy Design System Documentation](https://gov-cy.github.io/govcy-design-system-docs)
 
-The GovCy Design System is a package containing:
-* [SASS](https://sass-lang.com/) files (in `/src`) which compile into a [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) you can use in your services html files to get the look and feel of a GOV.CY service
+The gov.cy Design System is a package containing:
+* [SASS](https://sass-lang.com/) files (in `/src`)
+  * **The files in `/src` are the only files a developer should manually need to change to update the design system code**
+  * SASS files compile into [CSS Stylesheets](https://www.w3schools.com/css/css_howto.asp)
+  * You can reference CSS in html files to get the look and feel of a gov.cy service
+
 * An already compiled and minified [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) so you don't have to compile it yourself, located in `/dist`
-* A set of development dependencies to make developing easier, these are installed by [npm](https://www.npmjs.com/) and listed in `package.json`
-* A set of commands to compile the [SASS files](https://sass-lang.com/) into a [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp)
-* A command to run a [simple command line development server](https://github.com/http-party/http-server)
-* A development site where you can see the components and styles that are a result of the css located at `build/index.html`
+
+* Some tools to make adding or changing the CSS easier
+  * Development dependencies installed by [npm](https://www.npmjs.com/) and listed in `package.json::devDependencies`
+  * A set of commands to compile the [SASS files](https://sass-lang.com/) into a [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) in `package.json::scripts`
+  * A [simple command line development server](https://github.com/http-party/http-server)
+  * A development site where you can see the components and styles that are a result of the css located at `build/index.html` which runs at `http://localhost:3000`
 
 ## Updating Documentation
 
-The documentation site resides in the `build` folder.
+The documentation site lives in a different repository
+
+[govcy-design-system-docs](https://github.com/gov-cy/govcy-design-system-docs
+)
+
+It is published on github pages here:
+
+[gov.cy Design System Documentation](https://gov-cy.github.io/govcy-design-system-docs)
 
 ## Installation
 
-`govcy-design-system` uses [NPM](https://www.npmjs.com) to manage it's dependencies. Therefore it is a requirement of installing the design system.
+`govcy-design-system` uses [NPM](https://www.npmjs.com) to manage it's dependencies. Therefore [NPM](https://www.npmjs.com) is a requirement of installing the design system.
 
 You can find information about installing NPM [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
@@ -53,7 +71,7 @@ The `start` command:
 
 Runs a [simple command line development server](https://github.com/http-party/http-server) that serves the static files in the `/build` directory on port 3000. This means that when you have run this command you should be able to see your version of the Design System at [http://localhost:3000](http://localhost:3000)
 
-The `/build/index.html` file is a [magic file](https://github.com/http-party/http-server#magic-files) which forms the entry point for the documentation/ design system.
+The `/build/index.html` file forms the entry point for the design system and shows all the components on a single page so you can see what effect your changes have.
 
 #### npm run css-start / npm run css-watch / npm run watch-css
 
@@ -107,3 +125,32 @@ Is a testing framework and command that will find all our tests and run them one
 Dependencies are managed in the `package.json` file.
 
 We use [overrides](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) to control sub dependencies in the case of a security vunerability found in a sub/ transitive dependency.
+
+## Contributing/ Updating/ Using
+
+Developers should only need to make code changes to the files in the `src/` directory. Updating these files then running the build commands to update the files in `dist/` or `build/` will give you `.css` files that you can use in a web page.
+
+Everything you can do in `CSS` you can do in `SASS` and more. If you are directly editing `.css` files in this repository you have done something wrong.
+
+
+
+## Automatic Versioning
+
+This repository automatically tags new versions and publishes them to the [CDN](CDN.md).
+
+For this to happen 3 criteria _must_ be met:
+
+1. The developer must have incremented the `version` string in the [package.json](package.json) upwards
+2. The developer must have run the `npm run build-all` command to make sure the changes to `src/` are reflected in the `dist/` files
+3. There must be some change in the `dist/` files
+
+
+
+
+When a pull request that meets these criteria is merged a [Github Action](https://github.com/features/actions):
+1. Creates a new tag with the new version number
+2. Tags the new code as `latest`
+3. Uploads the code to the [CDN](CDN.md) under the new version number
+4. Uploads the code to the [CDN](CDN.md) as `latest`
+
+
