@@ -1,4 +1,4 @@
-name: Sanity Check Version Number/ File Changes
+name: Semantic Versioning Comnpliant
 
 on:
   pull_request:

@@ -1,8 +1,8 @@
-[![Percy CI](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml)
-[![Sass Lint](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml)
-[![Semantic Versioning Compliant](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml)
-[![Sass Compliant](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml)
-[![Compiled CSS matches Sass](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml)
+[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml)
+[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml)
+[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml)
+[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml)
+[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml)
 
 
 
