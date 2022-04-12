@@ -1,7 +1,7 @@
 [![Docker](https://github.com/gov-cy/govcy-design-system/actions/workflows/main.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/main.yml)
 
 # govcy-design-system
-GOV.CY design system code and documentation.
+GOV.CY design system code.
 
 This is the readme for the govcy-design-system repository.
 
