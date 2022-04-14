@@ -1,4 +1,4 @@
-name: Sass
+name: Sass Compliant
 
 on: [pull_request]
 

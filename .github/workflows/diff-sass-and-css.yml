@@ -1,4 +1,4 @@
-name: Diff SASS and CSS
+name: Compiled CSS matches Sass
 
 on: [pull_request]
 
