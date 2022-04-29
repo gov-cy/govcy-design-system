@@ -49,35 +49,3 @@ jobs:
               ref: 'refs/tags/latest',
               sha: context.sha
             })
-      
-      - name: Azure Login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_GOVCY_CDN_CREDENTIALS }}
-
-      - name: Azure CDN 'version/X.X.X' Upload
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az storage blob upload \
-              --account-name govcydesignsystem1 \
-              --container-name bvtest \
-              --name version/${{ steps.version-check.outputs.version }}/style.min.css \
-              --file dist/css/main.min.css \
-              --auth-mode key
-
-      - name: Azure CDN 'version/latest' Upload
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az storage blob upload \
-              --account-name govcydesignsystem1 \
-              --container-name bvtest \
-              --name version/latest/style.min.css \
-              --file dist/css/main.min.css \
-              --auth-mode key
-
-      - name: Azure Logout
-        if: always()
-        run: az logout
-        
