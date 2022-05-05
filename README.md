@@ -136,7 +136,7 @@ Everything you can do in `CSS` you can do in `SASS` and more. If you are directl
 
 ## Automatic Versioning
 
-This repository automatically tags new versions and publishes them to the [CDN](CDN.md).
+This repository automatically tags new versions.
 
 For this to happen 3 criteria _must_ be met:
 
@@ -150,7 +150,5 @@ For this to happen 3 criteria _must_ be met:
 When a pull request that meets these criteria is merged a [Github Action](https://github.com/features/actions):
 1. Creates a new tag with the new version number
 2. Tags the new code as `latest`
-3. Uploads the code to the [CDN](CDN.md) under the new version number
-4. Uploads the code to the [CDN](CDN.md) as `latest`
 
 
