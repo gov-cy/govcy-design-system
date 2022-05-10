@@ -28567,39 +28567,24 @@ h6, .h6 {
   font-weight: 500;
 }
 
-.govcy-table-responsive {
-  -webkit-overflow-scrolling: touch;
-  overflow-x: auto;
-}
-
-@media (max-width: 575.98px) {
-  .govcy-table-responsive-sm {
+@media screen and (max-width: 768px) {
+  .govcy-table-responsive {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
   }
-}
-@media (max-width: 767.98px) {
-  .govcy-table-responsive-md {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
+  .govcy-table-responsive-vertical {
+    width: 100%;
   }
-}
-@media (max-width: 991.98px) {
-  .govcy-table-responsive-lg {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
+  .govcy-table-responsive-vertical tr {
+    border-bottom-width: 1px;
   }
-}
-@media (max-width: 1199.98px) {
-  .govcy-table-responsive-xl {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
+  .govcy-table-responsive-vertical tr:nth-of-type(2n) {
+    background-color: inherit;
   }
-}
-@media (max-width: 1399.98px) {
-  .govcy-table-responsive-xxl {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
+  .govcy-table-responsive-vertical tbody td {
+    border-bottom-width: 0 !important;
+    display: block;
+    text-align: left;
   }
 }
 .govcy-visually-hidden-error {

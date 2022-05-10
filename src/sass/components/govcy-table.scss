@@ -46,13 +46,29 @@
 
 
 // Responsive tables
-@each $breakpoint in map-keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+@media screen and (max-width: 768px) {
+  .govcy-table-responsive {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
 
-  @include media-breakpoint-down($breakpoint) {
-    .govcy-table-responsive#{$infix} {
-      -webkit-overflow-scrolling: touch;
-      overflow-x: auto;
+    &-vertical {
+      width: 100%;
+
+      tr {
+        border-bottom-width: 1px;
+
+        &:nth-of-type(2n) {
+          background-color: inherit;
+        }
+      }
+
+      tbody {
+        td {
+          border-bottom-width: 0 !important;
+          display: block;
+          text-align: left;
+        }
+      }
     }
   }
 }
