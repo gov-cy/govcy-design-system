@@ -28567,7 +28567,7 @@ h6, .h6 {
   font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767.98px) {
   .govcy-table-responsive {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
@@ -28585,6 +28585,7 @@ h6, .h6 {
     border-bottom-width: 0 !important;
     display: block;
     text-align: left;
+    width: 100%;
   }
 }
 .govcy-visually-hidden-error {

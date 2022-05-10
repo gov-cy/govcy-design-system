@@ -45,8 +45,8 @@
 
 
 
-// Responsive tables
-@media screen and (max-width: 768px) {
+//Responsive tables
+@include media-breakpoint-down(md) {
   .govcy-table-responsive {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
@@ -67,8 +67,15 @@
           border-bottom-width: 0 !important;
           display: block;
           text-align: left;
+          width: 100%;
         }
       }
     }
   }
 }
+
+
+
+
+
+  
