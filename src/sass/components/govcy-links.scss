@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the Links.
+// -----------------------------------------------------------------------------
+
+
+// Govcy Links
+
+// Links
+//Overiding bootstrap link colors
+$link-color: $govcy-link;
+$link-hover-color: $govcy-link-hover;
+
+//defining govcy - danger:hover :visited and :active link state
+a {
+  margin-bottom: 0.5rem;
+
+  &.danger:hover {
+    color: $govcy-danger-hover;
+  }
+
+  &:visited {
+    border-color: $govcy-link-visited;
+    color: $govcy-link-visited;
+  }
+
+  &:active {
+    border-color: $govcy-link-active;
+    color: $govcy-link-active;
+  }
+
+  &:focus {
+    background-color: $govcy-link-focus;
+    color: $govcy-body !important;
+    text-decoration: none;
+    box-shadow: 0;
+    outline: none;
+    border-bottom: 3px solid black;
+    
+  }
+}
+
+
+//defining govcy - back link, user's name and signout styles on :hover :active and :visited state
+
+a.govcy-back-link,
+a.govcy-sign-out {
+  color: $govcy-body !important;
+
+  &:hover,
+  &:visited,
+
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration-thickness: 3px !important;
+  }
+}
+

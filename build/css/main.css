@@ -28227,6 +28227,11 @@ h6, .h6 {
   float: left;
   height: 64px;
   margin: -1px;
+  background-color: transparent;
+  border: 0;
+}
+.govcy-header .govcy-logo:focus {
+  border: 3px solid #ffdd00;
 }
 .govcy-header .govcy-service-name {
   float: left;
@@ -28265,7 +28270,6 @@ h6, .h6 {
   font-weight: 700;
 }
 .govcy-header ul.govcy-menu li a {
-  border-bottom: 0.125rem solid #31576f;
   color: #ffffff;
   display: block;
   font-weight: 400;
@@ -28282,15 +28286,15 @@ h6, .h6 {
 .govcy-header ul.govcy-menu li a:focus {
   outline: none;
 }
-.govcy-header ul.govcy-menu li:last-child a {
-  border-bottom: 0;
-}
 .govcy-header .govcy-lang-menu {
   background-color: inherit;
   border: 0;
   float: right;
   margin: 17px 16px 0 0;
   outline: none;
+}
+.govcy-header .govcy-lang-menu:focus {
+  border: 3px solid #ffdd00;
 }
 
 @media (min-width: 768px) {
@@ -28588,6 +28592,44 @@ h6, .h6 {
     width: 100%;
   }
 }
+a {
+  margin-bottom: 0.5rem;
+}
+a.danger:hover {
+  color: #942514;
+}
+a:visited {
+  border-color: #4c2c92;
+  color: #4c2c92;
+}
+a:active {
+  border-color: #272525;
+  color: #272525;
+}
+a:focus {
+  background-color: #ffdd00;
+  color: #272525 !important;
+  text-decoration: none;
+  box-shadow: 0;
+  outline: none;
+  border-bottom: 3px solid black;
+}
+
+a.govcy-back-link,
+a.govcy-sign-out {
+  color: #272525 !important;
+}
+a.govcy-back-link:hover, a.govcy-back-link:visited, a.govcy-back-link:active,
+a.govcy-sign-out:hover,
+a.govcy-sign-out:visited,
+a.govcy-sign-out:active {
+  text-decoration: underline;
+}
+a.govcy-back-link:hover,
+a.govcy-sign-out:hover {
+  text-decoration-thickness: 3px !important;
+}
+
 .govcy-visually-hidden-error {
   border: 0 !important;
   clip: rect(0, 0, 0, 0) !important;
