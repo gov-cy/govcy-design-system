@@ -30,12 +30,10 @@ a {
 
   &:focus {
     background-color: $govcy-link-focus;
+    border-bottom: 3px solid $govcy-body;
     color: $govcy-body !important;
-    text-decoration: none;
-    box-shadow: 0;
     outline: none;
-    border-bottom: 3px solid black;
-    
+    text-decoration: none;
   }
 }
 
@@ -58,3 +56,23 @@ a.govcy-sign-out {
   }
 }
 
+//defining govcy - skip to content link
+
+.govcy-skip-link {
+  border-bottom: 0 !important;
+  display: block;
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  text-decoration: underline !important;
+  top: auto;
+  width: 1px;
+
+  &:focus {
+    height: auto;
+    position: static;
+    width: auto;
+  }
+}

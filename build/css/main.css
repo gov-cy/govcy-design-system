@@ -28608,11 +28608,10 @@ a:active {
 }
 a:focus {
   background-color: #ffdd00;
+  border-bottom: 3px solid #272525;
   color: #272525 !important;
-  text-decoration: none;
-  box-shadow: 0;
   outline: none;
-  border-bottom: 3px solid black;
+  text-decoration: none;
 }
 
 a.govcy-back-link,
@@ -28628,6 +28627,24 @@ a.govcy-sign-out:active {
 a.govcy-back-link:hover,
 a.govcy-sign-out:hover {
   text-decoration-thickness: 3px !important;
+}
+
+.govcy-skip-link {
+  border-bottom: 0 !important;
+  display: block;
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  text-decoration: underline !important;
+  top: auto;
+  width: 1px;
+}
+.govcy-skip-link:focus {
+  height: auto;
+  position: static;
+  width: auto;
 }
 
 .govcy-visually-hidden-error {
