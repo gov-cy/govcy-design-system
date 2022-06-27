@@ -11,12 +11,13 @@
 
   //Govcy logo
   .govcy-logo {
+    background-color: transparent;
+    border: 0;
     content: $govcy-logo;
     float: left;
     height: 64px;
     margin: -1px;
-    background-color: transparent;
-    border: 0;
+
     &:focus {
       border: 3px solid $govcy-link-focus;
     }
@@ -99,10 +100,6 @@
           outline: none;
         }
       }
-
-      &:last-child a {
-        //border-bottom: 0;
-      }
     }
   }
 
@@ -113,6 +110,7 @@
     float: right;
     margin: 17px 16px 0 0;
     outline: none;
+
     &:focus {
       border: 3px solid $govcy-link-focus;
     }

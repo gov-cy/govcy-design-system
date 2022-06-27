@@ -5,7 +5,6 @@
 
 // Govcy Links
 
-// Links
 //Overiding bootstrap link colors
 $link-color: $govcy-link;
 $link-hover-color: $govcy-link-hover;
@@ -39,7 +38,6 @@ a {
 
 
 //defining govcy - back link, user's name and signout styles on :hover :active and :visited state
-
 a.govcy-back-link,
 a.govcy-sign-out {
   color: $govcy-body !important;
@@ -57,7 +55,6 @@ a.govcy-sign-out {
 }
 
 //defining govcy - skip to content link
-
 .govcy-skip-link {
   border-bottom: 0 !important;
   display: block;
