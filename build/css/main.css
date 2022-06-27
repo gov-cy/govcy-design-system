@@ -28614,7 +28614,7 @@ a.govcy-sign-out:hover {
 .govcy-skip-link:focus {
   height: auto;
   position: static;
-  width: auto;
+  width: 100%;
 }
 
 .govcy-visually-hidden-error {
