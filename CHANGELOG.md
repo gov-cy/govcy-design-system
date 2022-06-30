@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.4] - 2022-06-30
+
+### Added
+
+- new scss file added for links `.govcy-links` to style the link focus.
+- added the skip to content functionality for the screen readers.
+
+### Changed
+
+- we moved all the link styles from `.govcy-typhography` to `.govcy-links`
+
 ## [v1.0.3] - 2022-05-11
 
 ### Added
