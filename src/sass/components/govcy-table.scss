@@ -9,7 +9,7 @@
   }
 
   > tbody > tr > th {
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -43,8 +43,6 @@
   @extend .table-hover;
 }
 
-
-
 //Responsive tables
 @include media-breakpoint-down(md) {
   .govcy-table-responsive {
@@ -63,7 +61,8 @@
       }
 
       tbody {
-        td {
+        td,
+        th {
           border-bottom-width: 0 !important;
           display: block;
           text-align: left;

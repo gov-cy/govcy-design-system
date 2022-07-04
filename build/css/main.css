@@ -194,7 +194,7 @@ ul ol {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 dd {
@@ -291,7 +291,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 figure {
@@ -9385,7 +9385,7 @@ ul ol {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 dd {
@@ -9482,7 +9482,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 figure {
@@ -14123,7 +14123,7 @@ textarea.form-control-lg {
   display: inline-block;
   padding: 0.35em 0.65em;
   font-size: 0.75em;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -14153,7 +14153,7 @@ textarea.form-control-lg {
 }
 
 .alert-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .alert-dismissible {
@@ -16818,7 +16818,7 @@ textarea.form-control-lg {
 }
 
 .fw-bold {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 .fw-bolder {
@@ -18338,7 +18338,7 @@ textarea.form-control-lg {
 }
 
 .govcy-fw-bold {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 .govcy-fw-bolder {
@@ -27956,7 +27956,7 @@ textarea.form-control-lg {
 }
 
 .alert-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .alert-dismissible {
@@ -28538,7 +28538,7 @@ h6, .h6 {
   border-color: #bbbcbf;
 }
 .govcy-table > tbody > tr > th {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 @media (max-width: 767.98px) {
@@ -28555,7 +28555,8 @@ h6, .h6 {
   .govcy-table-responsive-vertical tr:nth-of-type(2n) {
     background-color: inherit;
   }
-  .govcy-table-responsive-vertical tbody td {
+  .govcy-table-responsive-vertical tbody td,
+.govcy-table-responsive-vertical tbody th {
     border-bottom-width: 0 !important;
     display: block;
     text-align: left;
