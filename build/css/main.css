@@ -28628,6 +28628,9 @@ a.govcy-sign-out:hover {
   padding-left: 25px;
   position: relative;
 }
+.govcy-details__summary::-webkit-details-marker {
+  display: none;
+}
 .govcy-details__summary::before {
   -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
   border-color: #272525;

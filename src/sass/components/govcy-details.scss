@@ -2,75 +2,6 @@
 // This file contains the custom styles for the Details.
 // -----------------------------------------------------------------------------
 
-
-// Govcy Details
-// .govcy-details {
-//   margin-bottom: 30px;
-// }
-
-// .govcy-details__summary {
-//   display: inline-block;
-//   position: relative;
-//   margin-bottom: 5px;
-//   padding-left: 25px;
-//   color: $govcy-link;
-//   cursor: pointer;
-// }
-
-// .govcy-details__summary-text {
-//   text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
-//   -webkit-text-decoration-skip-ink: none;
-//   text-decoration-skip-ink: none;
-//   -webkit-text-decoration-skip: none;
-//   text-decoration-skip: none;
-// }
-
-// .govcy-details__text {
-//   padding-top: 15px;
-//   padding-bottom: 15px;
-//   padding-left: 20px;
-//   border-left: 5px solid #b1b4b6;
-// }
-
-// .govcy-details__summary:before {
-//   content: "";
-//   position: absolute;
-//   top: -1px;
-//   bottom: 0;
-//   left: 0;
-//   margin: auto;
-//   display: block;
-//   width: 0;
-//   height: 0;
-//   border-style: solid;
-//   border-color: rgba(0,0,0,0);
-//   -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-//   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-//   border-width: 7px 0 7px 12.124px;
-//   border-left-color: inherit;
-// }
-
-// .govcy-details[open]>.govcy-details__summary:before {
-//   display: block;
-//   width: 0;
-//   height: 0;
-//   border-style: solid;
-//   border-color: rgba(0,0,0,0);
-//   -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-//   clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-//   border-width: 12.124px 7px 0 7px;
-//   border-top-color: inherit;
-// }
-
-// .govcy-details__summary:focus {
-//   outline: 3px solid rgba(0,0,0,0);
-//   color: #0b0c0c;
-//   background-color: #fd0;
-//   -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-//   box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
-//   text-decoration: none;
-// }
-
 .govcy-details {
   margin-bottom: 30px;
 
@@ -81,6 +12,10 @@
     margin-bottom: 5px;
     padding-left: 25px;
     position: relative;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
 
     &::before {
       -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
