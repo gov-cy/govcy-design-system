@@ -28687,6 +28687,16 @@ a.govcy-sign-out:hover {
   width: 0;
 }
 
+.govcy-select {
+  border: 3px solid #272525;
+  padding: 5px;
+  width: 100%;
+}
+.govcy-select:focus {
+  outline: 4pt solid #ffdd00;
+  outline-offset: 0;
+}
+
 .govcy-visually-hidden-error {
   border: 0 !important;
   clip: rect(0, 0, 0, 0) !important;

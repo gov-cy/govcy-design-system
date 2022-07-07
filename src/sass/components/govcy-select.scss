@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the govcy-select element.
+// -----------------------------------------------------------------------------
+
+.govcy-select {
+  border: 3px solid $govcy-body;
+  padding: 5px;
+  width: 100%;
+
+  &:focus {
+    outline: 4pt solid $govcy-focus;
+    outline-offset: 0;
+  }
+}
+
+
+
