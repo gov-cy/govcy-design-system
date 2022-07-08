@@ -20,5 +20,34 @@
     </div>
   </div>
   <hr>
+  
+  <div class="govcy-container-fluid">
+    <div class="row govcy-px-2">
+      <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3" aria-labelledby="error-summary-title" role="alert" data-module="govcy-error-summary">
+      <h2 id="error-summary-title">There is a problem</h2>
+      <div class="govcy-mb-0">
+        <ul>
+          <li>
+            <a href="#enter-your-full-name">Enter your full name</a>
+          </li>
+          <li>
+            <a href="#social-insurance-input">Social insurance number should be 16 digit long</a>
+          </li>
+      </ul>
+      </div>
+    </div>
+
+    <h1>Your Details</h1>
+    <form action="" novalidate class="govcy-form">
+      <div class="govcy-form-control govcy-form-control-error">
+          <label class="govcy-label" for="full-name-input">Full name</label>
+          <p id="full-name-input-error" class="govcy-input-error-msg">
+            <span class="govcy-visually-hidden-error">Error:</span>Enter your full name
+          </p>
+          <input class="govcy-text-input govcy-text-input-error" id="enter-your-full-name" name="name" type="text" aria-describedby="full-name-input-error" autocomplete="name">
+      </div>
+    </form>
+  </div>
+</div>
 </body>
 </html>
