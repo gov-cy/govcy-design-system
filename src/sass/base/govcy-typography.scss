@@ -17,10 +17,8 @@ $govcy-font-size-base: 1.125rem; // 18px
 $font-family-sans-serif: $govcy-font-family;
 $font-size-base: $govcy-font-size-base;
 
-//Govcy body color
-$govcy-body-color: $govcy-body;
-
 //Overiding bootstrap default body color
+$govcy-body-color: $govcy-body;
 $body-color: $govcy-body-color;
 
 //Govcy headings
@@ -31,6 +29,11 @@ $govcy-headings-margin-bottom: map-get($govcy-spacers, 4);
 $headings-font-weight: $govcy-heading-font-weight;
 $headings-margin-bottom: $govcy-headings-margin-bottom;
 
-//Govcy font weight
+//Overiding bootstrap font weight
 $govcy-font-weight-bold: 500;
 $font-weight-bold: $govcy-font-weight-bold;
+
+
+//Overiding bootstrap link colors
+$link-color: $govcy-link;
+$link-hover-color: $govcy-link-hover;

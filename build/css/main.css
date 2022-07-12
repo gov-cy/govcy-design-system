@@ -237,11 +237,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -9428,11 +9428,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -12616,11 +12616,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -13161,7 +13161,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -13171,7 +13171,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #003078;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -14034,7 +14034,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -14047,13 +14047,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
+  color: #003078;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0a58ca;
+  color: #003078;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -27916,11 +27916,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #1d70b8;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #003078;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
