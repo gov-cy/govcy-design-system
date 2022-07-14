@@ -28540,6 +28540,14 @@ h6, .h6 {
 .govcy-table > tbody > tr > th {
   font-weight: 700;
 }
+@media (max-width: 767.98px) {
+  .govcy-table thead {
+    display: none;
+  }
+  .govcy-table > :not(:first-child) {
+    border-top: 0;
+  }
+}
 
 @media (max-width: 767.98px) {
   .govcy-table-responsive {
@@ -28555,8 +28563,7 @@ h6, .h6 {
   .govcy-table-responsive-vertical tr:nth-of-type(2n) {
     background-color: inherit;
   }
-  .govcy-table-responsive-vertical tbody thead,
-.govcy-table-responsive-vertical tbody td,
+  .govcy-table-responsive-vertical tbody td,
 .govcy-table-responsive-vertical tbody th {
     border-bottom-width: 0 !important;
     display: block;

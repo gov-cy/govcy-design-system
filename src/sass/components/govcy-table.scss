@@ -11,6 +11,15 @@
   > tbody > tr > th {
     font-weight: 700;
   }
+  @include media-breakpoint-down(md) {
+    thead {
+      display: none;
+    }
+
+    > :not(:first-child) {
+      border-top: 0;
+    }
+  }
 }
 
 // Change placement of captions with a class
@@ -61,7 +70,6 @@
       }
 
       tbody {
-        thead,
         td,
         th {
           border-bottom-width: 0 !important;

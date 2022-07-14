@@ -1721,35 +1721,58 @@
    <h2>Tables:</h2>
    <h4>govcy - Table</h4>
    <div class="govcy-container">
-    <div class="govcy-table-responsive">
-      <table class="govcy-table govcy-mb-4">
-        <tbody>
-          <tr>
-            <th scope="row">Name</th>
-            <th scope="row">Date of application</th>
-            <th scope="row">Reference number</th>
-          </tr>
-          <tr>
-            <td scope="row">Jane Smith</td>
-            <td>05/01/2021</td>
-            <td>7361063</td>
-          </tr>
-        </tbody>
+      <table class="govcy-table">
+          <thead>
+            <tr>
+              <th scope="row">Name</th>
+              <th scope="row">Date of application</th>
+              <th scope="row">Reference number</th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr>
+              <td scope="row">Jane Smith</td>
+              <td>05/01/2021</td>
+              <td>7361063</td>
+            </tr>
+            <tr>
+              <td scope="row">Mark Otto</td>
+              <td>07/06/2021</td>
+              <td>8474653</td>
+            </tr>
+            <tr>
+              <td scope="row">Mike Watson</td>
+              <td>024/09/2021</td>
+              <td>9837635</td>
+            </tr>
+          </tbody>
       </table>
-    </div>
+    
 
       <pre><code>
-        &lt;table class=&quot;govcy-table govcy-mb-4&quot;&gt;
-          &lt;tbody&gt;
+        &lt;table class=&quot;govcy-table&quot;&gt;
+          &lt;thead&gt;
             &lt;tr&gt;
               &lt;th scope=&quot;row&quot;&gt;Name&lt;/th&gt;
               &lt;th scope=&quot;row&quot;&gt;Date of application&lt;/th&gt;
               &lt;th scope=&quot;row&quot;&gt;Reference number&lt;/th&gt;
             &lt;/tr&gt;
+          &lt;/thead&gt; 
+          &lt;tbody&gt;
             &lt;tr&gt;
               &lt;td scope=&quot;row&quot;&gt;Jane Smith&lt;/td&gt;
               &lt;td&gt;05/01/2021&lt;/td&gt;
               &lt;td&gt;7361063&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td scope=&quot;row&quot;&gt;Mark Otto&lt;/td&gt;
+              &lt;td&gt;07/06/2021&lt;/td&gt;
+              &lt;td&gt;8474653&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td scope=&quot;row&quot;&gt;Mike Watson&lt;/td&gt;
+              &lt;td&gt;024/09/2021&lt;/td&gt;
+              &lt;td&gt;9837635&lt;/td&gt;
             &lt;/tr&gt;
           &lt;/tbody&gt;
         &lt;/table&gt;
@@ -1772,7 +1795,7 @@
                 <span class="govcy-fw-bold">Bank</span>
                 <span class="govcy-d-block">Bank of Cyprus</span>
               </p>
-              <p class="govcy-mb-0 govcy-mb-md-3">
+              <p class="govcy-mb-0">
                 <span class="govcy-fw-bold">International Bank Account Number (IBAN)</span>
                 <span class="govcy-d-block">CY**********************7654</span>
               </p>
@@ -1789,7 +1812,7 @@
                 <span class="govcy-fw-bold">Email address</span>
                 <span class="govcy-d-block">abc@windowslive.com</span>
               </p>
-              <p class="govcy-mb-0 govcy-mb-md-3">
+              <p class="govcy-mb-0">
                 <span class="govcy-fw-bold">Mobile Number</span>
                 <span class="govcy-d-block">99123456</span>
               </p>
@@ -1802,14 +1825,16 @@
           <tr>
             <th scope="row" class="col-3">Claim Children</th>
             <td class="col-7">
-              <p class="govcy-mb-0 govcy-mb-md-3">
-                George of no one
+              <p class="govcy-mb-0">
+                <span class="govcy-d-block">George of no one</span>
               </p>
             </td>
             <td class="col-2 govcy-text-sm-start govcy-text-md-end"></td>
           </tr>
+          
         </tbody>
       </table>
+      
       <pre><code>
         &lt;table class=&quot;govcy-table govcy-table-responsive-vertical govcy-mb-4&quot;&gt;
           &lt;tbody&gt;
@@ -1824,7 +1849,7 @@
                   &lt;span class=&quot;govcy-fw-bold&quot;&gt;Bank&lt;/span&gt;
                   &lt;span class=&quot;govcy-d-block&quot;&gt;Bank of Cyprus&lt;/span&gt;
                 &lt;/p&gt;
-                &lt;p class=&quot;govcy-mb-0 govcy-mb-md-3&quot;&gt;
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
                   &lt;span class=&quot;govcy-fw-bold&quot;&gt;International Bank Account Number (IBAN)&lt;/span&gt;
                   &lt;span class=&quot;govcy-d-block&quot;&gt;CY**********************7654&lt;/span&gt;
                 &lt;/p&gt;
@@ -1839,11 +1864,11 @@
               &lt;td class=&quot;col-7&quot;&gt;
                 &lt;p&gt;
                   &lt;span class=&quot;govcy-fw-bold&quot;&gt;Email address&lt;/span&gt;
-                  &lt;span class=&quot;govcy-d-block&quot;&gt;nikanos@windowslive.com&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;abc@windowslive.com&lt;/span&gt;
                 &lt;/p&gt;
-                &lt;p class=&quot;govcy-mb-0 govcy-mb-md-3&quot;&gt;
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
                   &lt;span class=&quot;govcy-fw-bold&quot;&gt;Mobile Number&lt;/span&gt;
-                  &lt;span class=&quot;govcy-d-block&quot;&gt;99412126&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;99123456&lt;/span&gt;
                 &lt;/p&gt;
               &lt;/td&gt;
               &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;
@@ -1854,8 +1879,8 @@
             &lt;tr&gt;
               &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Claim Children&lt;/th&gt;
               &lt;td class=&quot;col-7&quot;&gt;
-                &lt;p class=&quot;govcy-mb-0 govcy-mb-md-3&quot;&gt;
-                  George of no one
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;George of no one&lt;/span&gt;
                 &lt;/p&gt;
               &lt;/td&gt;
               &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;&lt;/td&gt;
