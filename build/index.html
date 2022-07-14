@@ -2085,7 +2085,22 @@
         <div class="govcy-form-control">
             <label class="govcy-label" for="input">Security code</label>
             <input type="text" class="govcy-text-input govcy-text-input-char_5" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code" />
-            <button type="button" class="govcy-btn-sm govcy-btn-success govcy-d-block govcy-mt-4">Continue</button>
+            <button type="button" class="govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4">Continue</button>
+            <a href="">Not received a text message?</a>
+        </div>
+      </form>
+
+      <h1>Check your phone Error</h1>
+      <!-- <p>We’ve sent you a text message with a security code.</p> -->
+      <form action="" novalidate class="govcy-form">
+        <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label" for="security-code-input">Security code</label>
+              <span id="security-code-error" class="govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Error</span>Invalid security code
+              </span>
+            
+            <input id="security-code-input" type="text" class="govcy-text-input govcy-text-area-error govcy-text-input-char_5" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code" aria-describedby="full-name-input-error" />
+            <button type="button" class="govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4">Continue</button>
             <a href="">Not received a text message?</a>
         </div>
       </form>
@@ -2098,7 +2113,7 @@
           &lt;div class=&quot;govcy-form-control&quot;&gt;
               &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Security code&lt;/label&gt;
               &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot; maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot; /&gt;
-              &lt;button type=&quot;button&quot; class=&quot;govcy-btn-sm govcy-btn-success govcy-d-block govcy-mt-4&quot;&gt;Continue&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4&quot;&gt;Continue&lt;/button&gt;
               &lt;a href=&quot;&quot;&gt;Not received a text message?&lt;/a&gt;
           &lt;/div&gt;
         &lt;/form&gt;
