@@ -28697,9 +28697,18 @@ a.govcy-sign-out:hover {
 }
 
 .govcy-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDBWMHoiLz48cGF0aCBkPSJNNyAxMGw1IDUgNS01SDd6Ii8+PC9zdmc+);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border: 3px solid #272525;
-  padding: 5px;
-  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  padding-right: 2rem;
 }
 .govcy-select:focus {
   outline: 4pt solid #ffdd00;

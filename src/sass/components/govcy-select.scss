@@ -3,9 +3,18 @@
 // -----------------------------------------------------------------------------
 
 .govcy-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $govcy-white;
+  background-image: $govcy-drop-down;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border: 3px solid $govcy-body;
-  padding: 5px;
-  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  padding-right: 2rem;
 
   &:focus {
     outline: 4pt solid $govcy-focus;
