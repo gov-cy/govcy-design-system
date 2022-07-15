@@ -549,31 +549,31 @@
     <h4>Error</h4>
 
     <div class="govcy-container-fluid">
-        <div class="row govcy-px-2">
-            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
-                <h2>There is a problem</h2>
-                <p class="govcy-mb-0">
-                    <a href="">Enter your full name</a>
-                    <a href="">Social insurance number should be 16 digit long</a>
-                </p>
-            </div>
-        </div>
-        <pre>
-          <code>
-            &lt;div class=&quot;govcy-container-fluid&quot;&gt;
-              &lt;div class=&quot;row govcy-px-2&quot;&gt;
-                &lt;div class=&quot;govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3&quot;&gt;
-                &lt;h2&gt;There is a problem&lt;/h2&gt;
-                &lt;p class=&quot;govcy-mb-0&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Enter your full name&lt;/a&gt;
-                  &lt;a href=&quot;&quot;&gt;Social insurance number should be 16 digit long&lt;/a&gt;
-                &lt;/p&gt;
-              &lt;/div&gt;
+      <div class="row govcy-px-2">
+          <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+              <h2>There is a problem</h2>
+              <p class="govcy-mb-0">
+                  <a href="">Enter your full name</a>
+                  <a href="">Social insurance number should be 16 digit long</a>
+              </p>
+          </div>
+      </div>
+      <pre>
+        <code>
+          &lt;div class=&quot;govcy-container-fluid&quot;&gt;
+            &lt;div class=&quot;row govcy-px-2&quot;&gt;
+              &lt;div class=&quot;govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3&quot;&gt;
+              &lt;h2&gt;There is a problem&lt;/h2&gt;
+              &lt;p class=&quot;govcy-mb-0&quot;&gt;
+                &lt;a href=&quot;&quot;&gt;Enter your full name&lt;/a&gt;
+                &lt;a href=&quot;&quot;&gt;Social insurance number should be 16 digit long&lt;/a&gt;
+              &lt;/p&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-        </code>
-      </pre>
-    </div>
+        &lt;/div&gt;
+      </code>
+    </pre>
+  </div>
 
 <br>
     <h4>Alert</h4>
@@ -1719,182 +1719,174 @@
 
 
    <h2>Tables:</h2>
-   <h4>Summary Table</h4>
+   <h4>govcy - Table</h4>
    <div class="govcy-container">
-        <table class="govcy-table">
-            <tbody>
-                <tr>
-                    <th>Name</th>
-                    <td>Jane Smith</td>
-                    <td class="col-2 govcy-text-end">
-                      <a href="/step02">Change</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Child's date of birth</th>
-                    <td>5 Jan 2021</td>
-                    <td class="col-2 govcy-text-end">
-                      <a href="/step02">Change</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Address</th>
-                    <td>Thornton</td>
-                    <td class="col-2 govcy-text-end">
-                      <a href="/step02">Change</a>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Social insurance number</th>
-                    <td>7361063</td>
-                    <td class="col-2 govcy-text-end">
-                      <a href="/step02">Change</a>
-                    </td>
-                </tr>
-            </tbody>
+      <table class="govcy-table">
+          <thead>
+            <tr>
+              <th scope="row">Name</th>
+              <th scope="row">Date of application</th>
+              <th scope="row">Reference number</th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr>
+              <td scope="row">Jane Smith</td>
+              <td>05/01/2021</td>
+              <td>7361063</td>
+            </tr>
+            <tr>
+              <td scope="row">Mark Otto</td>
+              <td>07/06/2021</td>
+              <td>8474653</td>
+            </tr>
+            <tr>
+              <td scope="row">Mike Watson</td>
+              <td>024/09/2021</td>
+              <td>9837635</td>
+            </tr>
+          </tbody>
       </table>
+    
 
       <pre><code>
         &lt;table class=&quot;govcy-table&quot;&gt;
-        &lt;tbody&gt;
+          &lt;thead&gt;
             &lt;tr&gt;
-                &lt;th&gt;Name&lt;/th&gt;
-                &lt;td&gt;Jane Smith&lt;/td&gt;
-                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
-                &lt;/td&gt;
+              &lt;th scope=&quot;row&quot;&gt;Name&lt;/th&gt;
+              &lt;th scope=&quot;row&quot;&gt;Date of application&lt;/th&gt;
+              &lt;th scope=&quot;row&quot;&gt;Reference number&lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt; 
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td scope=&quot;row&quot;&gt;Jane Smith&lt;/td&gt;
+              &lt;td&gt;05/01/2021&lt;/td&gt;
+              &lt;td&gt;7361063&lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
-                &lt;th&gt;Child's date of birth&lt;/th&gt;
-                &lt;td&gt;5 Jan 2021&lt;/td&gt;
-                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
-                &lt;/td&gt;
+              &lt;td scope=&quot;row&quot;&gt;Mark Otto&lt;/td&gt;
+              &lt;td&gt;07/06/2021&lt;/td&gt;
+              &lt;td&gt;8474653&lt;/td&gt;
             &lt;/tr&gt;
             &lt;tr&gt;
-                &lt;th&gt;Address&lt;/th&gt;
-                &lt;td&gt;Thornton&lt;/td&gt;
-                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
-                &lt;/td&gt;
+              &lt;td scope=&quot;row&quot;&gt;Mike Watson&lt;/td&gt;
+              &lt;td&gt;024/09/2021&lt;/td&gt;
+              &lt;td&gt;9837635&lt;/td&gt;
             &lt;/tr&gt;
-            &lt;tr&gt;
-                &lt;th&gt;Social insurance number&lt;/th&gt;
-                &lt;td&gt;7361063&lt;/td&gt;
-                &lt;td class=&quot;col-2 govcy-text-end&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
-                &lt;/td&gt;
-            &lt;/tr&gt;
-        &lt;/tbody&gt;
+          &lt;/tbody&gt;
         &lt;/table&gt;
       </code></pre>
     </div>
-    <h4>Summary Table Responsive</h4>
+
+    <h4>govcy review - Table</h4>
     <br>
     <div class="govcy-container">
-        <table class="govcy-table govcy-table-responsive-vertical govcy-mb-4">
-          <tbody>
-            <tr>
-              <td class="col-3 govcy-fw-bold">Bank Details</td>
-              <td class="col-7">
-                <p>
-                  <span class="govcy-fw-bold">Account Name</span>
-                  <span class="govcy-d-block">Andreas Andreou</span>
-                </p>
-                <p>
-                  <span class="govcy-fw-bold">Bank</span>
-                  <span class="govcy-d-block">Bank of Cyprus</span>
-                </p>
-                <p class="govcy-mb-0 govcy-mb-md-3">
-                  <span class="govcy-fw-bold">International Bank Account Number (IBAN)</span>
-                  <span class="govcy-d-block">CY**********************7654</span>
-                </p>
-              </td>
-              <td class="col-2 govcy-text-sm-start govcy-text-md-end">
-                <a href="">Change</a>
-              </td>
-            </tr>
-    
-            <tr>
-              <td class="col-3 govcy-fw-bold">Personal Details</td>
-              <td class="col-7">
-                <p>
-                  <span class="govcy-fw-bold">Email address</span>
-                  <span class="govcy-d-block">nikanos@windowslive.com</span>
-                </p>
-                <p class="govcy-mb-0 govcy-mb-md-3">
-                  <span class="govcy-fw-bold">Mobile Number</span>
-                  <span class="govcy-d-block">99412126</span>
-                </p>
-              </td>
-              <td class="col-2 govcy-text-sm-start govcy-text-md-end">
-                <a href="">Change</a>
-              </td>
-            </tr>
+      <table class="govcy-table govcy-table-responsive-vertical govcy-mb-4">
+        <tbody>
+          <tr>
+            <th scope="row" class="col-3">Bank Details</th>
+            <td class="col-7">
+              <p>
+                <span class="govcy-fw-bold">Account Name</span>
+                <span class="govcy-d-block">Andreas Andreou</span>
+              </p>
+              <p>
+                <span class="govcy-fw-bold">Bank</span>
+                <span class="govcy-d-block">Bank of Cyprus</span>
+              </p>
+              <p class="govcy-mb-0">
+                <span class="govcy-fw-bold">International Bank Account Number (IBAN)</span>
+                <span class="govcy-d-block">CY**********************7654</span>
+              </p>
+            </td>
+            <td class="col-2 govcy-text-sm-start govcy-text-md-end">
+              <a href="">Change</a>
+            </td>
+          </tr>
+  
+          <tr>
+            <th scope="row" class="col-3">Personal Details</th>
+            <td class="col-7">
+              <p>
+                <span class="govcy-fw-bold">Email address</span>
+                <span class="govcy-d-block">abc@windowslive.com</span>
+              </p>
+              <p class="govcy-mb-0">
+                <span class="govcy-fw-bold">Mobile Number</span>
+                <span class="govcy-d-block">99123456</span>
+              </p>
+            </td>
+            <td class="col-2 govcy-text-sm-start govcy-text-md-end">
+              <a href="">Change</a>
+            </td>
+          </tr>
 
-            <tr>
-              <td class="col-3 govcy-fw-bold">Claim Children</td>
-              <td class="col-7">
-                <p class="govcy-mb-0 govcy-mb-md-3">
-                  George of no one
-                </p>
-              </td>
-              <td class="col-2 govcy-text-sm-start govcy-text-md-end"></td>
-            </tr>
-          </tbody>
-        </table>
+          <tr>
+            <th scope="row" class="col-3">Claim Children</th>
+            <td class="col-7">
+              <p class="govcy-mb-0">
+                <span class="govcy-d-block">George of no one</span>
+              </p>
+            </td>
+            <td class="col-2 govcy-text-sm-start govcy-text-md-end"></td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
       <pre><code>
-          &lt;table class=&quot;govcy-table govcy-table-responsive-vertical govcy-mb-4&quot;&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td class=&quot;col-3 govcy-fw-bold&quot;&gt;Bank Details&lt;/td&gt;
-                &lt;td class=&quot;col-7&quot;&gt;
-                  &lt;p&gt;
-                    &lt;span class=&quot;govcy-fw-bold&quot;&gt;Account Name&lt;/span&gt;
-                    &lt;span class=&quot;govcy-d-block&quot;&gt;Andreas Andreou&lt;/span&gt;
-                  &lt;/p&gt;
-                  &lt;p&gt;
-                    &lt;span class=&quot;govcy-fw-bold&quot;&gt;Bank&lt;/span&gt;
-                    &lt;span class=&quot;govcy-d-block&quot;&gt;Bank of Cyprus&lt;/span&gt;
-                  &lt;/p&gt;
-                  &lt;p class=&quot;govcy-mb-0 govcy-mb-md-3&quot;&gt;
-                    &lt;span class=&quot;govcy-fw-bold&quot;&gt;International Bank Account Number (IBAN)&lt;/span&gt;
-                    &lt;span class=&quot;govcy-d-block&quot;&gt;CY**********************7654&lt;/span&gt;
-                  &lt;/p&gt;
-                &lt;/td&gt;
-                &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
+        &lt;table class=&quot;govcy-table govcy-table-responsive-vertical govcy-mb-4&quot;&gt;
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Bank Details&lt;/th&gt;
+              &lt;td class=&quot;col-7&quot;&gt;
+                &lt;p&gt;
+                  &lt;span class=&quot;govcy-fw-bold&quot;&gt;Account Name&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;Andreas Andreou&lt;/span&gt;
+                &lt;/p&gt;
+                &lt;p&gt;
+                  &lt;span class=&quot;govcy-fw-bold&quot;&gt;Bank&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;Bank of Cyprus&lt;/span&gt;
+                &lt;/p&gt;
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
+                  &lt;span class=&quot;govcy-fw-bold&quot;&gt;International Bank Account Number (IBAN)&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;CY**********************7654&lt;/span&gt;
+                &lt;/p&gt;
+              &lt;/td&gt;
+              &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;
+                &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
+    
+            &lt;tr&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Personal Details&lt;/th&gt;
+              &lt;td class=&quot;col-7&quot;&gt;
+                &lt;p&gt;
+                  &lt;span class=&quot;govcy-fw-bold&quot;&gt;Email address&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;abc@windowslive.com&lt;/span&gt;
+                &lt;/p&gt;
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
+                  &lt;span class=&quot;govcy-fw-bold&quot;&gt;Mobile Number&lt;/span&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;99123456&lt;/span&gt;
+                &lt;/p&gt;
+              &lt;/td&gt;
+              &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;
+                &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
+              &lt;/td&gt;
+            &lt;/tr&gt;
 
-              &lt;tr&gt;
-                &lt;td class=&quot;col-3 govcy-fw-bold&quot;&gt;Personal Details&lt;/td&gt;
-                &lt;td class=&quot;col-7&quot;&gt;
-                  &lt;p&gt;
-                    &lt;span class=&quot;govcy-fw-bold&quot;&gt;Email address&lt;/span&gt;
-                    &lt;span class=&quot;govcy-d-block&quot;&gt;nikanos@windowslive.com&lt;/span&gt;
-                  &lt;/p&gt;
-                  &lt;p class=&quot;govcy-mb-0 govcy-mb-md-3&quot;&gt;
-                    &lt;span class=&quot;govcy-fw-bold&quot;&gt;Mobile Number&lt;/span&gt;
-                    &lt;span class=&quot;govcy-d-block&quot;&gt;99412126&lt;/span&gt;
-                  &lt;/p&gt;
-                &lt;/td&gt;
-                &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;
-                  &lt;a href=&quot;&quot;&gt;Change&lt;/a&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-
-              &lt;tr&gt;
-                &lt;td class=&quot;col-3 govcy-fw-bold&quot;&gt;Claim Children&lt;/td&gt;
-                &lt;td class=&quot;col-7&quot;&gt;
-                  &lt;p class=&quot;govcy-mb-0 govcy-mb-md-3&quot;&gt;
-                    George of no one
-                  &lt;/p&gt;
-                &lt;/td&gt;
-                &lt;td class=&quot;col-2 col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
+            &lt;tr&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Claim Children&lt;/th&gt;
+              &lt;td class=&quot;col-7&quot;&gt;
+                &lt;p class=&quot;govcy-mb-0&quot;&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;George of no one&lt;/span&gt;
+                &lt;/p&gt;
+              &lt;/td&gt;
+              &lt;td class=&quot;col-2 govcy-text-sm-start govcy-text-md-end&quot;&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
       </code></pre>
     </div>
     <hr>
@@ -2058,7 +2050,7 @@
         <a class="govcy-back-link" href="/">Back</a>
       </div>
       <div class="govcy-text-end govcy-mb-4">
-        Nikanos Polykarpou | <a href="/Account/LogOut" class="govcy-back-link">Log Out</a>
+        Andreas Andrew | <a href="/Account/LogOut" class="govcy-back-link">Log Out</a>
       </div>
       <pre>
         <code>
@@ -2068,18 +2060,175 @@
           &lt;/div&gt;
 
           &lt;div class=&quot;govcy-text-end govcy-mb-4&quot;&gt;
-            Nikanos Polykarpou | &lt;a href=&quot;/Account/LogOut&quot; class=&quot;govcy-back-link&quot;&gt;Log Out&lt;/a&gt;
+            Andreas Andrew | &lt;a href=&quot;/Account/LogOut&quot; class=&quot;govcy-back-link&quot;&gt;Log Out&lt;/a&gt;
           &lt;/div&gt;
         </code>
       </pre>
     </div>
+    <hr>
 
+    <h2>Details Component</h2>
+    <div class="govcy-container">
+      <details class="govcy-details">
+        <summary class="govcy-details__summary">
+          <span class="govcy-details__summary-text">How to control cookies</span>
+        </summary>
+        <p class="govcy-details__text">
+          You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.
+        </p>
+      </details>
+    </div>
+
+    <hr>
+
+    <h2>Select Component</h2>
+    <div class="govcy-container">
+      <form action="" novalidate class="govcy-form">
+        <div class="govcy-col-6">
+          <div class="govcy-form-control">
+              <label class="govcy-label" for="input">Label</label>
+              <span class="govcy-hint">Hint</span>
+              <select class="govcy-select" id="sort" name="sort">
+                <option value="published" class="govcy-mb-4">Recently published</option>
+                <option value="updated" selected>Recently updated</option>
+                <option value="views">Most views</option>
+                <option value="comments">Most comments</option>
+              </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <h4>Display Adress Greek Pattern</h4>
+    <div class="container">
+      <div class="row">
+        <div class="govcy-col-2 govcy-text-md-center govcy-text-sm-start">
+          <span class="govcy-fw-bold">Διεύθυνση:</span>
+        </div>
+        <div class="govcy-col-4">
+          <label class="govcy-label" for="Street">Αγιας Παρασκευής</label>
+          <label class="govcy-label" for="Street_Num">13A</label>
+          <!-- <label class="govcy-label" for="Flat_Num">101</label> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="govcy-col-4 offset-md-2">
+          <label class="govcy-label" for="postal_code">2361</label> 
+          <label class="govcy-label" for="Town">Στρόβολος</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="govcy-col-4 offset-md-2">
+          <label class="govcy-label" for="District">Λευκωσία</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="govcy-col-4 offset-md-2">
+          <label class="govcy-label" for="Country">Κύπρος</label> 
+        </div>
+      </div>
+    </div>
+
+    <pre>
+      <code>
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;govcy-col-2 govcy-text-md-center govcy-text-sm-start&quot;&gt;
+              &lt;span class=&quot;govcy-fw-bold&quot;&gt;&Delta;&iota;&epsilon;ύ&theta;&upsilon;&nu;&sigma;&eta;:&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;govcy-col-4&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;Street&quot;&gt;&Alpha;&gamma;&iota;&alpha;&sigmaf; &Pi;&alpha;&rho;&alpha;&sigma;&kappa;&epsilon;&upsilon;ή&sigmaf;&lt;/label&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;Street_Num&quot;&gt;13A&lt;/label&gt;
+              &lt;!-- &lt;label class=&quot;govcy-label&quot; for=&quot;Flat_Num&quot;&gt;101&lt;/label&gt; --&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;govcy-col-4 offset-md-2&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;postal_code&quot;&gt;2361&lt;/label&gt; 
+              &lt;label class=&quot;govcy-label&quot; for=&quot;Town&quot;&gt;&Sigma;&tau;&rho;ό&beta;&omicron;&lambda;&omicron;&sigmaf;&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;govcy-col-4 offset-md-2&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;District&quot;&gt;&Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;govcy-col-4 offset-md-2&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;Country&quot;&gt;&Kappa;ύ&pi;&rho;&omicron;&sigmaf;&lt;/label&gt; 
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+    </pre>
     <br>
     <br>
-    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
-    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
-    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
+    <br>
+    <hr>
+    <h4>Confirm a phone number</h4>
+    <div class="govcy-container">
+      <h1>Check your phone</h1>
+      <p>We’ve sent you a text message with a security code.</p>
+      <form action="" novalidate class="govcy-form">
+        <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Security code</label>
+            <input type="text" class="govcy-text-input govcy-text-input-char_5" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code" />
+            <button type="button" class="govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4">Continue</button>
+            <a href="">Not received a text message?</a>
+        </div>
+      </form>
 
+      <pre>
+        <code>
+          &lt;h1&gt;Check your phone&lt;/h1&gt;
+          &lt;p&gt;We&rsquo;ve sent you a text message with a security code.&lt;/p&gt;
+          &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+            &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Security code&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot; maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot; /&gt;
+                &lt;button type=&quot;button&quot; class=&quot;govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4&quot;&gt;Continue&lt;/button&gt;
+                &lt;a href=&quot;&quot;&gt;Not received a text message?&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>
+    </div>
+    <hr>
+    <h4>Confirm a phone number with error</h4>
+    <div class="govcy-container">
+      <h1>Check your phone</h1>
+      <form action="" novalidate class="govcy-form">
+        <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label" for="security-code-input">Security code</label>
+            <p id="security-code-input-error" class="govcy-input-error-msg">
+              <span class="govcy-visually-hidden-error">Error:</span>Please enter valid security code
+            </p>
+            <input class="govcy-text-input govcy-text-input-error govcy-text-input-char_5" id="enter-your-full-name" aria-describedby="security-code-input-error" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code">
+            <button type="button" class="govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4">Continue</button>
+            <a href="">Not received a text message?</a>
+        </div>
+      </form>
+
+      <pre>
+        <code>
+          &lt;h1&gt;Check your phone&lt;/h1&gt;
+          &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+            &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;security-code-input&quot;&gt;Security code&lt;/label&gt;
+                &lt;p id=&quot;security-code-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                  &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Please enter valid security code
+                &lt;/p&gt;
+                &lt;input class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_5&quot; id=&quot;enter-your-full-name&quot; aria-describedby=&quot;security-code-input-error&quot; maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4&quot;&gt;Continue&lt;/button&gt;
+                &lt;a href=&quot;&quot;&gt;Not received a text message?&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>
+    </div>
+    <hr>
+    <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
+    
     
       
 

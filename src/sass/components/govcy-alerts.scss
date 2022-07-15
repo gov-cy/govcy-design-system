@@ -10,16 +10,24 @@
 .govcy-alert-error {
   margin-bottom: 1.5rem;
 
-  p {
-    a {
-      color: $govcy-danger;
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
+  p > a,
+  ul li a {
+    color: $govcy-danger;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 
-      &:hover {
-        color: $govcy-danger-hover;
-      }
+    &:hover {
+      color: $govcy-danger-hover;
+    }
+    }
+
+  ul {
+    list-style: none;
+    padding-left: 5px;
+
+    li a {
+      display: inline-block;
     }
   }
 }
