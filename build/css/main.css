@@ -28717,11 +28717,14 @@ a.govcy-sign-out:hover {
   border: 3px solid #272525;
   max-width: 100%;
   padding: 8px;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
 }
 .govcy-select:focus {
   outline: 4pt solid #ffdd00;
   outline-offset: 0;
+}
+.govcy-select-error {
+  border-color: #d4351c;
 }
 
 .govcy-visually-hidden-error {
