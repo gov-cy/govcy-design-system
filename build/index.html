@@ -2083,36 +2083,32 @@
     <h2>Select Component</h2>
     <div class="govcy-container">
       <form action="" novalidate class="govcy-form">
-        <div class="govcy-col-6">
           <div class="govcy-form-control">
               <label class="govcy-label" for="input">Label</label>
               <span class="govcy-hint">Hint</span>
               <select class="govcy-select" id="sort" name="sort" required>
                 <option value="" selected>None</option>
-                <option value="published" class="govcy-mb-4">Recently published</option>
+                <option value="published">Recently published</option>
                 <option value="updated">Recently updated</option>
                 <option value="views">Most views</option>
                 <option value="comments">Most comments</option>
               </select>
           </div>
-        </div>
       </form>
 
       <pre>
         <code>
           &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
-            &lt;div class=&quot;govcy-col-6&quot;&gt;
-              &lt;div class=&quot;govcy-form-control&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
-                  &lt;span class=&quot;govcy-hint&quot;&gt;Hint&lt;/span&gt;
-                  &lt;select class=&quot;govcy-select&quot; id=&quot;sort&quot; name=&quot;sort&quot; required&gt;
-                    &lt;option value=&quot;&quot; selected&gt;None&lt;/option&gt;
-                    &lt;option value=&quot;published&quot; class=&quot;govcy-mb-4&quot;&gt;Recently published&lt;/option&gt;
-                    &lt;option value=&quot;updated&quot;&gt;Recently updated&lt;/option&gt;
-                    &lt;option value=&quot;views&quot;&gt;Most views&lt;/option&gt;
-                    &lt;option value=&quot;comments&quot;&gt;Most comments&lt;/option&gt;
-                  &lt;/select&gt;
-              &lt;/div&gt;
+            &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Label&lt;/label&gt;
+                &lt;span class=&quot;govcy-hint&quot;&gt;Hint&lt;/span&gt;
+                &lt;select class=&quot;govcy-select&quot; id=&quot;sort&quot; name=&quot;sort&quot; required&gt;
+                  &lt;option value=&quot;&quot; selected&gt;None&lt;/option&gt;
+                  &lt;option value=&quot;published&quot;&gt;Recently published&lt;/option&gt;
+                  &lt;option value=&quot;updated&quot;&gt;Recently updated&lt;/option&gt;
+                  &lt;option value=&quot;views&quot;&gt;Most views&lt;/option&gt;
+                  &lt;option value=&quot;comments&quot;&gt;Most comments&lt;/option&gt;
+                &lt;/select&gt;
             &lt;/div&gt;
           &lt;/form&gt;
         </code>
@@ -2123,40 +2119,36 @@
     <h2>Select Component with error</h2>
     <div class="govcy-container">
       <form action="" novalidate class="govcy-form">
-        <div class="govcy-col-6">
-          <div class="govcy-form-control govcy-form-control govcy-form-control-error">
+          <div class="govcy-form-control govcy-form-control-error">
               <label class="govcy-label" for="select-option-input">Label</label>
               <p id="select-option-input-error" class="govcy-input-error-msg">
                 <span class="govcy-visually-hidden-error">Error:</span>Please select valid options
               </p>
               <select class="govcy-select govcy-select-error" id="sort" name="sort" required>
                 <option value="" selected>None</option>
-                <option value="published" class="govcy-mb-4">Recently published</option>
+                <option value="published">Recently published</option>
                 <option value="updated">Recently updated</option>
                 <option value="views">Most views</option>
                 <option value="comments">Most comments</option>
               </select>
           </div>
-        </div>
       </form>
       <pre>
         <code>
           &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
-            &lt;div class=&quot;govcy-col-6&quot;&gt;
-              &lt;div class=&quot;govcy-form-control govcy-form-control govcy-form-control-error&quot;&gt;
+              &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
                   &lt;label class=&quot;govcy-label&quot; for=&quot;select-option-input&quot;&gt;Label&lt;/label&gt;
                   &lt;p id=&quot;select-option-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
                     &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Please select valid options
                   &lt;/p&gt;
                   &lt;select class=&quot;govcy-select govcy-select-error&quot; id=&quot;sort&quot; name=&quot;sort&quot; required&gt;
                     &lt;option value=&quot;&quot; selected&gt;None&lt;/option&gt;
-                    &lt;option value=&quot;published&quot; class=&quot;govcy-mb-4&quot;&gt;Recently published&lt;/option&gt;
+                    &lt;option value=&quot;published&quot;&gt;Recently published&lt;/option&gt;
                     &lt;option value=&quot;updated&quot;&gt;Recently updated&lt;/option&gt;
                     &lt;option value=&quot;views&quot;&gt;Most views&lt;/option&gt;
                     &lt;option value=&quot;comments&quot;&gt;Most comments&lt;/option&gt;
                   &lt;/select&gt;
               &lt;/div&gt;
-            &lt;/div&gt;
           &lt;/form&gt;
         </code>
       </pre>
