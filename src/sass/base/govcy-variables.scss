@@ -127,6 +127,7 @@ $govcy-bg-colors: (
   'dark':       rgb + '(' + to-rgb($govcy-black) + ')',
   'white':      rgb + '(' + to-rgb($govcy-white) + ')',
   'gray':       rgb + '(' + to-rgb($govcy-gray) + ')',
+  'blue':       rgb + '(' + to-rgb($govcy-link) + ')',
   'sub-menu':   rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'blue-800')) + ')',
 );
 
