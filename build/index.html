@@ -2227,6 +2227,128 @@
       </pre>
     </div>
     <hr>
+    <h4>Address Pattern</h4>
+    <div class="govcy-container">                 
+      <form class="govcy-form" novalidate method="post">
+        <div class="govcy-form-control align-middle align-content-center">
+            <label class="govcy-label" for="input">Ταχ. Κώδικας</label>
+            <input type="text" class="govcy-text-input govcy-text-input-char_4" placeholder="" maxlength="4" asp-for="@Model.PostalCode">
+        </div>
+        <button class="govcy-btn-secondary">Αναζητήση</button>
+      </form>
+          
+      <form class="govcy-form" novalidate method="post">
+        <div class="govcy-col-6">
+          <div class="govcy-form-control govcy-mb-4">
+            <label class="govcy-label" for="input">Επιλογή Διεύθυνσης</label>
+            <select class="govcy-select" name="addressCode">
+              <option value="0"></option>
+              <option value="optionA" class="govcy-mb-4">Αθηνάς, Κάτω Λακατάμια, Λευκωσία</option>
+              <option value="optionB" class="govcy-mb-4">Κυκλαμίνων, Στρόβολος, Λευκωσία</option>
+              <option value="optionC" class="govcy-mb-4" selected>Ακροπόλεως, Αγλαντζιά, Λευκωσία</option>
+            </select>
+          </div>
+        </div>
+      </form>
+          
+      <form class="govcy-form" novalidate method="post">
+        <fieldset class="govcy-fieldset">
+          <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Δρόμος</label>
+            <input type="text" class="govcy-text-input govcy-w-50" disabled value="Ακροπόλεως">
+          </div>
+        
+          <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Ενορία</label>
+            <input type="text" class="govcy-text-input govcy-w-50" disabled value="Αγλαντζιά">
+          </div>
+          <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Πόλη</label>
+            <input type="text" class="govcy-text-input govcy-w-50" disabled value="Λευκωσία">
+          </div>
+          <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Αριθμός Οδού</label>
+            <input type="text" class="govcy-text-input govcy-text-input-char_5">
+          </div>
+          <div class="govcy-form-control">
+              <label class="govcy-label" for="input">Αριθμός Διαμερίσματος (Προαιρετικό)</label>
+              <input type="text" class="govcy-text-input govcy-text-input-char_5">
+          </div>
+        
+          <div class="govcy-form-control">
+            <a href="#">Έχετε Ταχυδρομική Θυρίδα Τ.Χ ή μένετε εκτός Κύπρου</a>
+            </div>
+                <div class="govcy-form-control">
+                  <button type="button" class="govcy-btn-primary govcy-mb-0">Συνέχεια</button>
+                </div>
+            </div>
+          </div>
+        </fieldset>                                     
+      </form>
+
+      <pre>
+        <code>
+          &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+            &lt;div class=&quot;govcy-form-control align-middle align-content-center&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Tau;&alpha;&chi;. &Kappa;ώ&delta;&iota;&kappa;&alpha;&sigmaf;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_4&quot; placeholder=&quot;&quot; maxlength=&quot;4&quot; asp-for=&quot;@Model.PostalCode&quot;&gt;
+            &lt;/div&gt;
+            &lt;button class=&quot;govcy-btn-secondary&quot;&gt;&Alpha;&nu;&alpha;&zeta;&eta;&tau;ή&sigma;&eta;&lt;/button&gt;
+          &lt;/form&gt;
+          
+          &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+            &lt;div class=&quot;govcy-col-6&quot;&gt;
+              &lt;div class=&quot;govcy-form-control govcy-mb-4&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Epsilon;&pi;&iota;&lambda;&omicron;&gamma;ή &Delta;&iota;&epsilon;ύ&theta;&upsilon;&nu;&sigma;&eta;&sigmaf;&lt;/label&gt;
+                &lt;select class=&quot;govcy-select&quot; name=&quot;addressCode&quot;&gt;
+                  &lt;option value=&quot;0&quot;&gt;&lt;/option&gt;
+                  &lt;option value=&quot;optionA&quot; class=&quot;govcy-mb-4&quot;&gt;&Alpha;&theta;&eta;&nu;ά&sigmaf;, &Kappa;ά&tau;&omega; &Lambda;&alpha;&kappa;&alpha;&tau;ά&mu;&iota;&alpha;, &Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/option&gt;
+                  &lt;option value=&quot;optionB&quot; class=&quot;govcy-mb-4&quot;&gt;&Kappa;&upsilon;&kappa;&lambda;&alpha;&mu;ί&nu;&omega;&nu;, &Sigma;&tau;&rho;ό&beta;&omicron;&lambda;&omicron;&sigmaf;, &Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/option&gt;
+                  &lt;option value=&quot;optionC&quot; class=&quot;govcy-mb-4&quot; selected&gt;&Alpha;&kappa;&rho;&omicron;&pi;ό&lambda;&epsilon;&omega;&sigmaf;, &Alpha;&gamma;&lambda;&alpha;&nu;&tau;&zeta;&iota;ά, &Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/option&gt;
+                &lt;/select&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          
+          &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+            &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Delta;&rho;ό&mu;&omicron;&sigmaf;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-w-50&quot; disabled value=&quot;&Alpha;&kappa;&rho;&omicron;&pi;ό&lambda;&epsilon;&omega;&sigmaf;&quot;&gt;
+              &lt;/div&gt;
+            
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Epsilon;&nu;&omicron;&rho;ί&alpha;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-w-50&quot; disabled value=&quot;&Alpha;&gamma;&lambda;&alpha;&nu;&tau;&zeta;&iota;ά&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Pi;ό&lambda;&eta;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-w-50&quot; disabled value=&quot;&Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Alpha;&rho;&iota;&theta;&mu;ό&sigmaf; &Omicron;&delta;&omicron;ύ&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Alpha;&rho;&iota;&theta;&mu;ό&sigmaf; &Delta;&iota;&alpha;&mu;&epsilon;&rho;ί&sigma;&mu;&alpha;&tau;&omicron;&sigmaf; (&Pi;&rho;&omicron;&alpha;&iota;&rho;&epsilon;&tau;&iota;&kappa;ό)&lt;/label&gt;
+                  &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot;&gt;
+              &lt;/div&gt;
+            
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Έ&chi;&epsilon;&tau;&epsilon; &Tau;&alpha;&chi;&upsilon;&delta;&rho;&omicron;&mu;&iota;&kappa;ή &Theta;&upsilon;&rho;ί&delta;&alpha; &Tau;.&Chi; ή &mu;έ&nu;&epsilon;&tau;&epsilon; &epsilon;&kappa;&tau;ό&sigmaf; &Kappa;ύ&pi;&rho;&omicron;&upsilon;&lt;/a&gt;
+                &lt;/div&gt;
+                    &lt;div class=&quot;govcy-form-control&quot;&gt;
+                      &lt;button type=&quot;button&quot; class=&quot;govcy-btn-primary govcy-mb-0&quot;&gt;&Sigma;&upsilon;&nu;έ&chi;&epsilon;&iota;&alpha;&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/fieldset&gt;                                     
+          &lt;/form&gt;
+        </code>
+      </pre>
+    </div>
+
+    <hr>
     <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
     
     
