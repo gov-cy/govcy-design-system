@@ -14,11 +14,15 @@
   border: 3px solid $govcy-body;
   max-width: 100%;
   padding: 8px;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
 
   &:focus {
     outline: 4pt solid $govcy-focus;
     outline-offset: 0;
+  }
+
+  &-error {
+    border-color: $govcy-danger;
   }
 }
 
