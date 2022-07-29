@@ -2350,6 +2350,35 @@
     </div>
 
     <hr>
+    
+    <h4>Address Pattern Error</h4>
+    <div class="govcy-container">                 
+      <form class="govcy-form" novalidate method="post">
+        <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label" for="postal-code-input">Ταχ. Κώδικας</label>
+            <p id="postal-code-input-error" class="govcy-input-error-msg">
+              <span class="govcy-visually-hidden-error">Error:</span>Please enter valid postal code
+            </p>
+            <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input-char_4" id="enter-postal-code" aria-describedby="postal-code-input-error" maxlength="4" autocomplete="postal-code" spellcheck="false" pattern="[0-9]*" inputmode="numeric">
+        </div>
+        <button class="govcy-btn-secondary">Αναζητήση</button>
+      </form>
+      <pre>
+        <code>
+          &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+            &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;postal-code-input&quot;&gt;&Tau;&alpha;&chi;. &Kappa;ώ&delta;&iota;&kappa;&alpha;&sigmaf;&lt;/label&gt;
+                &lt;p id=&quot;postal-code-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                  &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Please enter valid postal code
+                &lt;/p&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_4&quot; id=&quot;enter-postal-code&quot; aria-describedby=&quot;postal-code-input-error&quot; maxlength=&quot;4&quot; autocomplete=&quot;postal-code&quot; spellcheck=&quot;false&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot;&gt;
+            &lt;/div&gt;
+            &lt;button class=&quot;govcy-btn-secondary&quot;&gt;&Alpha;&nu;&alpha;&zeta;&eta;&tau;ή&sigma;&eta;&lt;/button&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>
+    </div>
+    <hr>
     <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
     
     
