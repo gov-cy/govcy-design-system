@@ -2415,9 +2415,102 @@
         </code>
       </pre>
     </div>
-
     <hr>
-    
+
+    <h4>Local Address Pattern</h4>
+    <div class="govcy-container">                 
+      <form class="govcy-form" novalidate method="post">
+        <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Postcode</label>
+            <input type="text" class="govcy-text-input govcy-text-input-char_4" maxlength="4" autocomplete="postal-code" spellcheck="false" pattern="[0-9]*" inputmode="numeric">
+        </div>
+        <button class="govcy-btn-secondary">Find address</button>
+        <div class="govcy-form-control">
+          <label class="govcy-label" for="input">Address Selection</label>
+          <select class="govcy-select" name="addressCode">
+            <option value="0"></option>
+            <option value="optionA">Athenas, Kato Lakatamia, Nicosia</option>
+            <option value="optionB">Cyklamina, Strovolos, Nicosia</option>
+            <option value="optionC" selected>Acropoleos, Aglantzia, Nicosia</option>
+          </select>
+        </div>
+        <div class="govcy-form-control">
+          <label class="govcy-label" for="input">Street Number</label>
+          <input type="text" class="govcy-text-input govcy-text-input-char_5">
+        </div>
+        <div class="govcy-form-control">
+          <label class="govcy-label" for="input">Apartment Number (Optional)</label>
+          <input type="text" class="govcy-text-input govcy-text-input-char_5">
+        </div>
+      </form>
+      <table class="govcy-table govcy-table-responsive-vertical govcy-mb-4">
+        <tbody>
+          <tr>
+            <th scope="row" class="col-3">Postcode</th>
+            <td class="col-7">
+              <span class="govcy-d-block">1234</span>
+            </td>
+          </tr>
+  
+          <tr>
+            <th scope="row" class="col-3">Street</th>
+            <td class="col-7">
+							<span class="govcy-d-block">Acropolis</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="col-3">Parish</th>
+            <td class="col-7">
+   						<span class="govcy-d-block">Goosebumps</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="col-3">City</th>
+            <td class="col-7">
+							<span class="govcy-d-block">Nicosia</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+			<div class="govcy-form-control">
+				<ul>
+					<li>
+						<a href="">I have a Cypriot P.O. Box</a>
+					</li>
+					<li>
+						<a href="">I want to give an address outside Cyprus</a>
+					</li>
+				</ul>
+			</div>
+			<div class="govcy-form-control">
+				<button type="button" class="govcy-btn-primary">Continue</button>
+			</div>
+    </div>
+
+		<hr>
+
+    <h4>International Address Pattern</h4>
+    <div class="govcy-container">
+			<fieldset class="govcy-fieldset"></fieldset>                
+				<form class="govcy-form" novalidate method="post">
+					<div class="govcy-form-control">
+						<label class="govcy-label" for="input">Address line 1 (name)</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control">
+						<label class="govcy-label" for="input">Address line (street number / P.O. Box)</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control govcy-col-8">
+						<label class="govcy-label" for="input">Town or City</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+				</form>
+			</div>	
+    <hr>
+
     <h4>Address Pattern Error</h4>
     <div class="govcy-container">                 
       <form class="govcy-form" novalidate method="post">

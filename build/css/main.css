@@ -28105,7 +28105,6 @@ h6, .h6 {
   color: #942514;
 }
 .govcy-alert-error ul {
-  list-style: none;
   padding-left: 5px;
 }
 .govcy-alert-error ul li a {
@@ -28619,8 +28618,9 @@ a:active {
   color: #272525;
 }
 a:focus {
+  -webkit-box-shadow: 0 -2px #ffdd00, 0 3px #272525;
   background-color: #ffdd00;
-  border-bottom: 3px solid #272525;
+  box-shadow: 0 -2px #ffdd00, 0 3px #272525;
   color: #272525 !important;
   outline: none;
   text-decoration: none;
@@ -28749,6 +28749,14 @@ a.govcy-sign-out:hover {
 }
 .govcy-select-error {
   border-color: #d4351c;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li a {
+  display: inline-block;
 }
 
 .govcy-visually-hidden-error {
