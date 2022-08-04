@@ -2493,7 +2493,7 @@
 
     <h4>International Address Pattern</h4>
     <div class="govcy-container">
-			<fieldset class="govcy-fieldset"></fieldset>                
+			<fieldset class="govcy-fieldset">     
 				<form class="govcy-form" novalidate method="post">
 					<div class="govcy-form-control">
 						<label class="govcy-label" for="input">Address line 1 (name)</label>
@@ -2507,8 +2507,31 @@
 						<label class="govcy-label" for="input">Town or City</label>
 						<input type="text" class="govcy-text-input">
 					</div>
+					<div class="govcy-form-control govcy-col-4">
+						<label class="govcy-label" for="countries">Countries</label>
+						<input class="govcy-text-input govcy-lh-1" list="countrylist" id="countries" name="countries" size="" autocomplete="off" />
+						<datalist id="countrylist">
+							<option>Afghanistan</option>
+							<option>Aland Islands</option>
+							<option>Albania</option>
+							<option>Algeria</option>
+							<option>American Samoa</option>
+							<option>Andorra</option>
+							<option>Angola</option>
+							<option>Anguilla</option>
+							<option>Antarctica</option>
+						</datalist>
+					</div>
+					<div class="govcy-form-control govcy-col-8">
+						<label class="govcy-label" for="input">Postcode</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control">
+						<button type="button" class="govcy-btn-primary">Next</button>
+					</div>
 				</form>
-			</div>	
+			</fieldset>
+		</div>	
     <hr>
 
     <h4>Address Pattern Error</h4>
@@ -2540,13 +2563,7 @@
     </div>
     <hr>
     <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
-    
-    
-      
-
-
     <script src="js/app.js"></script>
-
 </body>
 
 </html>
