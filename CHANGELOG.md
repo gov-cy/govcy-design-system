@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.4.0] - 2022-08-04
+### Added
+- new file `govcy-list.scss` file added to style the list item.
+- component `dropdown autocomplete` added.
+- component `local and manual address pattern` added.
+
+### Updated
+- `border-bottom` replaced with `box-shadow` in `govcy-link.scss`
+- `list-style` removed from `govcy-alert.scss`  
+
 ## [v1.3.2] - 2022-07-26
 ### Added
 
