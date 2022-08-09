@@ -24,8 +24,10 @@ a {
   }
 
   &:focus {
+    -webkit-box-shadow: 0 -2px $govcy-link-focus, 0 3px $govcy-body;
     background-color: $govcy-link-focus;
-    border-bottom: 3px solid $govcy-body;
+    // border-bottom: 3px solid $govcy-body;
+    box-shadow: 0 -2px $govcy-link-focus, 0 3px $govcy-body;
     color: $govcy-body !important;
     outline: none;
     text-decoration: none;

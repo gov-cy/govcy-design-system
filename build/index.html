@@ -2294,130 +2294,272 @@
       </pre>
     </div>
     <hr>
-    
-    <h4>Address Pattern</h4>
-    <div class="govcy-container">                 
+    <h4>Dropdown Autocomplete/Typeahead</h4>
+    <div class="govcy-container">
       <form class="govcy-form" novalidate method="post">
-        <div class="govcy-form-control">
-            <label class="govcy-label" for="input">Ταχ. Κώδικας</label>
-            <input type="text" class="govcy-text-input govcy-text-input-char_4" maxlength="4" autocomplete="postal-code" spellcheck="false" pattern="[0-9]*" inputmode="numeric">
+        <div class="govcy-form-control govcy-col-4">
+          <label class="govcy-label" for="countries">Countries</label>
+          <input class="govcy-text-input govcy-lh-1" list="countrylist" id="countries" name="countries" size="" autocomplete="off" />
+          <datalist id="countrylist">
+            <option>Afghanistan</option>
+            <option>Aland Islands</option>
+            <option>Albania</option>
+            <option>Algeria</option>
+            <option>American Samoa</option>
+            <option>Andorra</option>
+            <option>Angola</option>
+            <option>Anguilla</option>
+            <option>Antarctica</option>
+          </datalist>
         </div>
-        <button class="govcy-btn-secondary">Αναζητήση</button>
-      </form>
-          
-      <form class="govcy-form" novalidate method="post">
-        <div>
-          <div class="govcy-form-control">
-            <label class="govcy-label" for="input">Επιλογή Διεύθυνσης</label>
-            <select class="govcy-select" name="addressCode">
-              <option value="0"></option>
-              <option value="optionA">Αθηνάς, Κάτω Λακατάμια, Λευκωσία</option>
-              <option value="optionB">Κυκλαμίνων, Στρόβολος, Λευκωσία</option>
-              <option value="optionC" selected>Ακροπόλεως, Αγλαντζιά, Λευκωσία</option>
-            </select>
-          </div>
-        </div>
-      </form>
-          
-      <form class="govcy-form" novalidate method="post">
-        <fieldset class="govcy-fieldset">
-          <div class="govcy-form-control govcy-col-8">
-            <label class="govcy-label" for="input">Δρόμος</label>
-            <input type="text" class="govcy-text-input" disabled value="Ακροπόλεως">
-          </div>
-        
-          <div class="govcy-form-control govcy-col-8">
-            <label class="govcy-label" for="input">Ενορία</label>
-            <input type="text" class="govcy-text-input" disabled value="Αγλαντζιά">
-          </div>
-          <div class="govcy-form-control govcy-col-8">
-            <label class="govcy-label" for="input">Πόλη</label>
-            <input type="text" class="govcy-text-input" disabled value="Λευκωσία">
-          </div>
-          <div class="govcy-form-control">
-            <label class="govcy-label" for="input">Αριθμός Οδού</label>
-            <input type="text" class="govcy-text-input govcy-text-input-char_5">
-          </div>
-          <div class="govcy-form-control">
-              <label class="govcy-label" for="input">Αριθμός Διαμερίσματος (Προαιρετικό)</label>
-              <input type="text" class="govcy-text-input govcy-text-input-char_5">
-          </div>
-        
-          <div class="govcy-form-control">
-            <a href="#">Έχετε Ταχυδρομική Θυρίδα Τ.Χ ή μένετε εκτός Κύπρου</a>
-          </div>
-          <div class="govcy-form-control">
-            <button type="button" class="govcy-btn-primary">Συνέχεια</button>
-          </div>
-          
-        </fieldset>                                     
       </form>
 
       <pre>
         <code>
-          &lt;h4&gt;Address Pattern&lt;/h4&gt;
-          &lt;div class=&quot;govcy-container&quot;&gt;                 
-            &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
-              &lt;div class=&quot;govcy-form-control&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Tau;&alpha;&chi;. &Kappa;ώ&delta;&iota;&kappa;&alpha;&sigmaf;&lt;/label&gt;
-                  &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_4&quot; maxlength=&quot;4&quot; autocomplete=&quot;postal-code&quot; spellcheck=&quot;false&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot;&gt;
-              &lt;/div&gt;
-              &lt;button class=&quot;govcy-btn-secondary&quot;&gt;&Alpha;&nu;&alpha;&zeta;&eta;&tau;ή&sigma;&eta;&lt;/button&gt;
-            &lt;/form&gt;
-                
-            &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
-              &lt;div&gt;
-                &lt;div class=&quot;govcy-form-control&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Epsilon;&pi;&iota;&lambda;&omicron;&gamma;ή &Delta;&iota;&epsilon;ύ&theta;&upsilon;&nu;&sigma;&eta;&sigmaf;&lt;/label&gt;
-                  &lt;select class=&quot;govcy-select&quot; name=&quot;addressCode&quot;&gt;
-                    &lt;option value=&quot;0&quot;&gt;&lt;/option&gt;
-                    &lt;option value=&quot;optionA&quot;&gt;&Alpha;&theta;&eta;&nu;ά&sigmaf;, &Kappa;ά&tau;&omega; &Lambda;&alpha;&kappa;&alpha;&tau;ά&mu;&iota;&alpha;, &Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/option&gt;
-                    &lt;option value=&quot;optionB&quot;&gt;&Kappa;&upsilon;&kappa;&lambda;&alpha;&mu;ί&nu;&omega;&nu;, &Sigma;&tau;&rho;ό&beta;&omicron;&lambda;&omicron;&sigmaf;, &Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/option&gt;
-                    &lt;option value=&quot;optionC&quot; selected&gt;&Alpha;&kappa;&rho;&omicron;&pi;ό&lambda;&epsilon;&omega;&sigmaf;, &Alpha;&gamma;&lambda;&alpha;&nu;&tau;&zeta;&iota;ά, &Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&lt;/option&gt;
-                  &lt;/select&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/form&gt;
-                
-            &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
-              &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
-                &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Delta;&rho;ό&mu;&omicron;&sigmaf;&lt;/label&gt;
-                  &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot; disabled value=&quot;&Alpha;&kappa;&rho;&omicron;&pi;ό&lambda;&epsilon;&omega;&sigmaf;&quot;&gt;
-                &lt;/div&gt;
-              
-                &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Epsilon;&nu;&omicron;&rho;ί&alpha;&lt;/label&gt;
-                  &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot; disabled value=&quot;&Alpha;&gamma;&lambda;&alpha;&nu;&tau;&zeta;&iota;ά&quot;&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Pi;ό&lambda;&eta;&lt;/label&gt;
-                  &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot; disabled value=&quot;&Lambda;&epsilon;&upsilon;&kappa;&omega;&sigma;ί&alpha;&quot;&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;govcy-form-control&quot;&gt;
-                  &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Alpha;&rho;&iota;&theta;&mu;ό&sigmaf; &Omicron;&delta;&omicron;ύ&lt;/label&gt;
-                  &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot;&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;govcy-form-control&quot;&gt;
-                    &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;&Alpha;&rho;&iota;&theta;&mu;ό&sigmaf; &Delta;&iota;&alpha;&mu;&epsilon;&rho;ί&sigma;&mu;&alpha;&tau;&omicron;&sigmaf; (&Pi;&rho;&omicron;&alpha;&iota;&rho;&epsilon;&tau;&iota;&kappa;ό)&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot;&gt;
-                &lt;/div&gt;
-              
-                &lt;div class=&quot;govcy-form-control&quot;&gt;
-                  &lt;a href=&quot;#&quot;&gt;Έ&chi;&epsilon;&tau;&epsilon; &Tau;&alpha;&chi;&upsilon;&delta;&rho;&omicron;&mu;&iota;&kappa;ή &Theta;&upsilon;&rho;ί&delta;&alpha; &Tau;.&Chi; ή &mu;έ&nu;&epsilon;&tau;&epsilon; &epsilon;&kappa;&tau;ό&sigmaf; &Kappa;ύ&pi;&rho;&omicron;&upsilon;&lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;govcy-form-control&quot;&gt;
-                  &lt;button type=&quot;button&quot; class=&quot;govcy-btn-primary&quot;&gt;&Sigma;&upsilon;&nu;έ&chi;&epsilon;&iota;&alpha;&lt;/button&gt;
-                &lt;/div&gt;
-                
-              &lt;/fieldset&gt;                                     
-            &lt;/form&gt;
+          &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+            &lt;div class=&quot;govcy-form-control govcy-col-4&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;countries&quot;&gt;Countries&lt;/label&gt;
+              &lt;input class=&quot;govcy-text-input govcy-lh-1&quot; list=&quot;countrylist&quot; id=&quot;countries&quot; name=&quot;countries&quot; size=&quot;&quot; autocomplete=&quot;off&quot; /&gt;
+              &lt;datalist id=&quot;countrylist&quot;&gt;
+                &lt;option&gt;Afghanistan&lt;/option&gt;
+                &lt;option&gt;Aland Islands&lt;/option&gt;
+                &lt;option&gt;Albania&lt;/option&gt;
+                &lt;option&gt;Algeria&lt;/option&gt;
+                &lt;option&gt;American Samoa&lt;/option&gt;
+                &lt;option&gt;Andorra&lt;/option&gt;
+                &lt;option&gt;Angola&lt;/option&gt;
+                &lt;option&gt;Anguilla&lt;/option&gt;
+                &lt;option&gt;Antarctica&lt;/option&gt;
+              &lt;/datalist&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        </code>
+      </pre>
+    </div>
+    <hr>
+    <h4>Local Address Pattern</h4>
+    <div class="govcy-container">                 
+      <form class="govcy-form" novalidate method="post">
+        <div class="govcy-form-control">
+            <label class="govcy-label" for="input">Postcode</label>
+            <input type="text" class="govcy-text-input govcy-text-input-char_4" maxlength="4" autocomplete="postal-code" spellcheck="false" pattern="[0-9]*" inputmode="numeric">
+        </div>
+        <button class="govcy-btn-secondary">Find address</button>
+        <div class="govcy-form-control">
+          <label class="govcy-label" for="input">Address Selection</label>
+          <select class="govcy-select" name="addressCode">
+            <option value="0"></option>
+            <option value="optionA">Athenas, Kato Lakatamia, Nicosia</option>
+            <option value="optionB">Cyklamina, Strovolos, Nicosia</option>
+            <option value="optionC" selected>Acropoleos, Aglantzia, Nicosia</option>
+          </select>
+        </div>
+        <div class="govcy-form-control">
+          <label class="govcy-label" for="input">Street Number</label>
+          <input type="text" class="govcy-text-input govcy-text-input-char_5">
+        </div>
+        <div class="govcy-form-control">
+          <label class="govcy-label" for="input">Apartment Number (Optional)</label>
+          <input type="text" class="govcy-text-input govcy-text-input-char_5">
+        </div>
+      </form>
+      <table class="govcy-table govcy-table-responsive-vertical govcy-mb-4">
+        <tbody>
+          <tr>
+            <th scope="row" class="col-3">Postcode</th>
+            <td class="col-7">
+              <span class="govcy-d-block">1234</span>
+            </td>
+          </tr>
+  
+          <tr>
+            <th scope="row" class="col-3">Street</th>
+            <td class="col-7">
+							<span class="govcy-d-block">Acropolis</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="col-3">Parish</th>
+            <td class="col-7">
+   						<span class="govcy-d-block">Goosebumps</span>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="col-3">City</th>
+            <td class="col-7">
+							<span class="govcy-d-block">Nicosia</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+			<div class="govcy-form-control">
+        <p>
+          <a href="">Enter the the address manually</a>
+        </p>
+			</div>
+			<div class="govcy-form-control">
+				<button type="button" class="govcy-btn-primary">Continue</button>
+			</div>
+
+      <pre>
+        <code>
+          &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+            &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Postcode&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_4&quot; maxlength=&quot;4&quot; autocomplete=&quot;postal-code&quot; spellcheck=&quot;false&quot; pattern=&quot;[0-9]*&quot; inputmode=&quot;numeric&quot;&gt;
+            &lt;/div&gt;
+            &lt;button class=&quot;govcy-btn-secondary&quot;&gt;Find address&lt;/button&gt;
+            &lt;div class=&quot;govcy-form-control&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Address Selection&lt;/label&gt;
+              &lt;select class=&quot;govcy-select&quot; name=&quot;addressCode&quot;&gt;
+                &lt;option value=&quot;0&quot;&gt;&lt;/option&gt;
+                &lt;option value=&quot;optionA&quot;&gt;Athenas, Kato Lakatamia, Nicosia&lt;/option&gt;
+                &lt;option value=&quot;optionB&quot;&gt;Cyklamina, Strovolos, Nicosia&lt;/option&gt;
+                &lt;option value=&quot;optionC&quot; selected&gt;Acropoleos, Aglantzia, Nicosia&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;govcy-form-control&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Street Number&lt;/label&gt;
+              &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;govcy-form-control&quot;&gt;
+              &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Apartment Number (Optional)&lt;/label&gt;
+              &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot;&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+          &lt;table class=&quot;govcy-table govcy-table-responsive-vertical govcy-mb-4&quot;&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Postcode&lt;/th&gt;
+                &lt;td class=&quot;col-7&quot;&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;1234&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+      
+              &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Street&lt;/th&gt;
+                &lt;td class=&quot;col-7&quot;&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;Acropolis&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;Parish&lt;/th&gt;
+                &lt;td class=&quot;col-7&quot;&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;Goosebumps&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+
+              &lt;tr&gt;
+                &lt;th scope=&quot;row&quot; class=&quot;col-3&quot;&gt;City&lt;/th&gt;
+                &lt;td class=&quot;col-7&quot;&gt;
+                  &lt;span class=&quot;govcy-d-block&quot;&gt;Nicosia&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;div class=&quot;govcy-form-control&quot;&gt;
+            &lt;p&gt;
+                &lt;a href=&quot;&quot;&gt;Enter the the address manually&lt;/a&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;govcy-form-control&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;govcy-btn-primary&quot;&gt;Continue&lt;/button&gt;
+          &lt;/div&gt;
         </code>
       </pre>
     </div>
 
+		<hr>
+
+    <h4>Manual Address Pattern</h4>
+    <div class="govcy-container">
+			<fieldset class="govcy-fieldset">     
+				<form class="govcy-form" novalidate method="post">
+					<div class="govcy-form-control">
+						<label class="govcy-label" for="input">Address line 1 (name)</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control">
+						<label class="govcy-label" for="input">Address line (street number / P.O. Box)</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control govcy-col-8">
+						<label class="govcy-label" for="input">Town or City</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control govcy-col-4">
+						<label class="govcy-label" for="countries">Countries</label>
+						<input class="govcy-text-input govcy-lh-1" list="countrylist" id="countries" name="countries" size="" autocomplete="off" />
+						<datalist id="countrylist">
+							<option>Afghanistan</option>
+							<option>Aland Islands</option>
+							<option>Albania</option>
+							<option>Algeria</option>
+							<option>American Samoa</option>
+							<option>Andorra</option>
+							<option>Angola</option>
+							<option>Anguilla</option>
+							<option>Antarctica</option>
+						</datalist>
+					</div>
+					<div class="govcy-form-control govcy-col-8">
+						<label class="govcy-label" for="input">Postcode</label>
+						<input type="text" class="govcy-text-input">
+					</div>
+					<div class="govcy-form-control">
+						<button type="button" class="govcy-btn-primary">Next</button>
+					</div>
+				</form>
+			</fieldset>
+
+      <pre>
+        <code>
+          &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;     
+            &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Address line 1 (name)&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Address line (street number / P.O. Box)&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Town or City&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control govcy-col-4&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;countries&quot;&gt;Countries&lt;/label&gt;
+                &lt;input class=&quot;govcy-text-input govcy-lh-1&quot; list=&quot;countrylist&quot; id=&quot;countries&quot; name=&quot;countries&quot; size=&quot;&quot; autocomplete=&quot;off&quot; /&gt;
+                &lt;datalist id=&quot;countrylist&quot;&gt;
+                  &lt;option&gt;Afghanistan&lt;/option&gt;
+                  &lt;option&gt;Aland Islands&lt;/option&gt;
+                  &lt;option&gt;Albania&lt;/option&gt;
+                  &lt;option&gt;Algeria&lt;/option&gt;
+                  &lt;option&gt;American Samoa&lt;/option&gt;
+                  &lt;option&gt;Andorra&lt;/option&gt;
+                  &lt;option&gt;Angola&lt;/option&gt;
+                  &lt;option&gt;Anguilla&lt;/option&gt;
+                  &lt;option&gt;Antarctica&lt;/option&gt;
+                &lt;/datalist&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Postcode&lt;/label&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input&quot;&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;govcy-form-control&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;govcy-btn-primary&quot;&gt;Next&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          &lt;/fieldset&gt;
+        </code>
+      </pre>
+		</div>	
     <hr>
-    
+
     <h4>Address Pattern Error</h4>
     <div class="govcy-container">                 
       <form class="govcy-form" novalidate method="post">
@@ -2447,13 +2589,7 @@
     </div>
     <hr>
     <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
-    
-    
-      
-
-
     <script src="js/app.js"></script>
-
 </body>
 
 </html>
