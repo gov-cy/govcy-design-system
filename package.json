@@ -6,16 +6,19 @@
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "sasslintConfig": "test/config/.sasslintrc",
+    "type": "module",
     "scripts": {
-        "build-all": "npm run css-build && npm run css-build-distribution",
-        "css-build": "copyfiles -u 2 src/js/app.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
+        "build-all": "npm run css-build && npm run css-build-distribution && npm run js-build",
+        "css-build": "copyfiles -u 2 src/js/*.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
         "css-build-distribution": "sass --no-source-map src/sass/main.scss dist/css/main.min.css --style compressed",
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
         "sass-lint": "sass-lint -v",
+        "es-lint": "eslint src/js/*.js",
+        "js-build": "node scripts/uglify.js",
         "watch-css": "npm run css-watch",
         "test-percy": "percy exec -- mocha --recursive --exit",
-        "start": "http-server -c-1 -p 3000 -o build/"
+        "start": "http-server -c-1 -p 3000 -o build/" 
     },
     "dependencies": {
         "bootstrap": "^5.1.3",
@@ -30,7 +33,8 @@
         "http-server": "^13.0.2",
         "mocha": "^9.2.0",
         "puppeteer": "13.2.0",
-        "sass-lint": "^1.13.0"
+        "sass-lint": "^1.13.0",
+        "uglify-js": "^3.17.0"
     },
     "overrides": {
         "@percy/puppeteer": {
