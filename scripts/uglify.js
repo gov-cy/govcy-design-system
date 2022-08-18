@@ -14,9 +14,9 @@ var result = UglifyJS.minify([
 console.log(result.code);
 
 fs.writeFile('./dist/js/app.min.js', result.code, function(err) {
-if (err) {
-  console.log(err);
-} else {
-  console.log('File was successfully saved..');
-}
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('File was successfully saved..');
+  }
 }); 
