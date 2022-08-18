@@ -1,6 +1,6 @@
-const httpServer = require('http-server');
-const percySnapshot = require('@percy/puppeteer');
-const puppeteer = require('puppeteer');
+import { createServer } from 'http-server';
+import percySnapshot from '@percy/puppeteer';
+import { launch } from 'puppeteer';
 
 describe('DesignSystem', function () {
   this.timeout(10000);
@@ -16,11 +16,11 @@ describe('DesignSystem', function () {
     console.log(`Begin`);
     
     //start the server
-    server = httpServer.createServer();
+    server = createServer();
     server.listen(PORT);
     console.log(`Server started  at port ${PORT}`);
     //start the browser and page
-    browser = await puppeteer.launch({
+    browser = await launch({
       headless:true,
       slowMo:0
     });
