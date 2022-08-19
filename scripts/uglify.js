@@ -6,8 +6,8 @@ var UglifyJS = require('uglify-js');
 
 //get a reference to the minified version of file-1.js, file-2.js and file-3.js
 var result = UglifyJS.minify([
+  fs.readFileSync('./build/js/govcy-mobile-OTP.js', "utf8"),
   fs.readFileSync("./build/js/main.js", "utf8"),
-  fs.readFileSync('./build/js/app.js', "utf8")
 ]);
 
 //view the output
