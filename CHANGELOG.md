@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [v2.1.0] - 2022-08-19
+### Added
+- `.eslintignore` file added to ignore the `app.min.js` from linting.
+- `.eslintrc.json` file added for the linting rules.
+- `govcy-mobile-OTP.js` file added in `src/js`.
+- `main.js` file added in `src/js`.
+### Updated
+- Component `Confirm a phone number` html code updated.
+- Accessibility features on `Confirm a phone number with error` component updated.
+- `uglify.js` file updated (`govcy-mobile-OTP.js` file entry).
+### Changed
+- `app.js` removed from `src/js`.
+
 ## [v2.0.0] - 2022-08-18
 ### Added
 - Installed and configured `Uglify` to minify/compress the js files to create(`app.min.js`) for the production.

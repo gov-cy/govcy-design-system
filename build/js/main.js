@@ -1,2 +1,2 @@
 /** test **/
-console.log(main.js);
+govcyMobileOtp();
