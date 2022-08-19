@@ -40,9 +40,9 @@ describe('DesignSystem', function () {
   it('Loads the app', async function () {
     //go to test page
     await page.goto(`http://localhost:${PORT}/build`);
-      //wait for element to load
-      await page.waitForSelector('h1');
-      //get snapshot
-      await percySnapshot(page, "index",{ widths: [375, 767, 1280] });
+    //wait for element to load
+    await page.waitForSelector('h1');
+    //get snapshot
+    await percySnapshot(page, "index", { widths: [375, 767, 1280] });
   });
 });

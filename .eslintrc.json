@@ -1,0 +1,17 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+      "indent": ["error", 2],
+      "arrow-spacing": ["error", { "before": true, "after": true }],
+      "comma-spacing": ["error", { "before": false, "after": true }]
+    }
+}

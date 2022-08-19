@@ -1,20 +1,22 @@
 {
     "name": "govcy-design-system",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "",
     "main": "index.html",
     "author": "DMRID - DSF Team",
     "license": "MIT",
     "sasslintConfig": "test/config/.sasslintrc",
     "scripts": {
-        "build-all": "npm run css-build && npm run css-build-distribution",
-        "css-build": "copyfiles -u 2 src/js/app.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
+      "build-all": "npm run css-build && npm run css-build-distribution && npm run js-build",
+        "css-build": "copyfiles -u 2 src/js/*.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
         "css-build-distribution": "sass --no-source-map src/sass/main.scss dist/css/main.min.css --style compressed",
         "css-watch": "npm run css-build -- --watch",
         "css-start": "npm run css-watch",
         "sass-lint": "sass-lint -v",
         "watch-css": "npm run css-watch",
         "test-percy": "percy exec -- mocha --recursive --exit",
+        "es-lint": "eslint src/js/*.js",
+        "js-build": "node scripts/uglify.js",
         "start": "http-server -c-1 -p 3000 -o build/"
     },
     "dependencies": {
@@ -26,10 +28,12 @@
         "@percy/cli": "^1.0.0-beta.75",
         "@percy/puppeteer": "^2.0.0",
         "copyfiles": "^2.4.1",
+        "eslint": "^8.22.0",
         "http-server": "^13.0.2",
         "mocha": "^9.2.0",
         "puppeteer": "13.2.0",
-        "sass-lint": "^1.13.0"
+        "sass-lint": "^1.13.0",
+        "uglify-js": "^3.17.0"
     },
     "overrides": {
         "@percy/puppeteer": {
