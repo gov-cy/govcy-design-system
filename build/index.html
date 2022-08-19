@@ -2236,10 +2236,10 @@
     <div class="govcy-container">
       <h1>Check your phone</h1>
       <p>We’ve sent you a text message with a security code.</p>
-      <form action="" novalidate class="govcy-form">
+      <form action="" novalidate="" class="govcy-form">
         <div class="govcy-form-control">
             <label class="govcy-label" for="input">Security code</label>
-            <input type="text" class="govcy-text-input govcy-text-input-char_5" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code" />
+            <input type="text" class="govcy-text-input govcy-text-input-char_5" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code">
             <button type="button" class="govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4">Continue</button>
             <a href="">Not received a text message?</a>
         </div>
@@ -2249,10 +2249,10 @@
         <code>
           &lt;h1&gt;Check your phone&lt;/h1&gt;
           &lt;p&gt;We&rsquo;ve sent you a text message with a security code.&lt;/p&gt;
-          &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
+          &lt;form action=&quot;&quot; novalidate=&quot;&quot; class=&quot;govcy-form&quot;&gt;
             &lt;div class=&quot;govcy-form-control&quot;&gt;
                 &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Security code&lt;/label&gt;
-                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot; maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot; /&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-char_5&quot; maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot;&gt;
                 &lt;button type=&quot;button&quot; class=&quot;govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4&quot;&gt;Continue&lt;/button&gt;
                 &lt;a href=&quot;&quot;&gt;Not received a text message?&lt;/a&gt;
             &lt;/div&gt;
@@ -2266,11 +2266,11 @@
       <h1>Check your phone</h1>
       <form action="" novalidate class="govcy-form">
         <div class="govcy-form-control govcy-form-control-error">
-            <label class="govcy-label" for="security-code-input">Security code</label>
+            <label class="govcy-label" for="input">Security code</label>
             <p id="security-code-input-error" class="govcy-input-error-msg">
               <span class="govcy-visually-hidden-error">Error:</span>Please enter valid security code
             </p>
-            <input class="govcy-text-input govcy-text-input-error govcy-text-input-char_5" id="enter-your-full-name" aria-describedby="security-code-input-error" maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code">
+            <input type="text" class="govcy-text-input govcy-text-input-error govcy-text-input govcy-text-input-char_5" aria-describedby="security-code-input-error"  maxlength="5" name="token" inputmode="numeric" pattern="[0-9]" autocomplete="one-time-code">
             <button type="button" class="govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4">Continue</button>
             <a href="">Not received a text message?</a>
         </div>
@@ -2278,14 +2278,13 @@
 
       <pre>
         <code>
-          &lt;h1&gt;Check your phone&lt;/h1&gt;
           &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
             &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
-                &lt;label class=&quot;govcy-label&quot; for=&quot;security-code-input&quot;&gt;Security code&lt;/label&gt;
+                &lt;label class=&quot;govcy-label&quot; for=&quot;input&quot;&gt;Security code&lt;/label&gt;
                 &lt;p id=&quot;security-code-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
                   &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Please enter valid security code
                 &lt;/p&gt;
-                &lt;input class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_5&quot; id=&quot;enter-your-full-name&quot; aria-describedby=&quot;security-code-input-error&quot; maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input govcy-text-input-char_5&quot; aria-describedby=&quot;security-code-input-error&quot;  maxlength=&quot;5&quot; name=&quot;token&quot; inputmode=&quot;numeric&quot; pattern=&quot;[0-9]&quot; autocomplete=&quot;one-time-code&quot;&gt;
                 &lt;button type=&quot;button&quot; class=&quot;govcy-btn-sm govcy-btn-primary govcy-d-block govcy-mt-4&quot;&gt;Continue&lt;/button&gt;
                 &lt;a href=&quot;&quot;&gt;Not received a text message?&lt;/a&gt;
             &lt;/div&gt;
