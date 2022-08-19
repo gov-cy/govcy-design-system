@@ -17,8 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - `app.js` removed from `src/js`.
 
-
-
 ## [v2.0.0] - 2022-08-18
 ### Added
 - Installed and configured `Uglify` to minify/compress the js files to create(`app.min.js`) for the production.
