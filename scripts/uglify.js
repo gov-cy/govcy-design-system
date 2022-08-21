@@ -1,16 +1,15 @@
-//get a reference to the file system module
-var fs = require('fs');
+const fs = require('fs');
+const path = require('path');
 
-//get a reference to the uglify-js module
-var UglifyJS = require('uglify-js');
+const uglifyJS = require('uglify-js');
+const fileNames = fs.readdirSync('./build/js');
 
-//get a reference to the minified version of file-1.js, file-2.js and file-3.js
-var result = UglifyJS.minify([
-  fs.readFileSync('./build/js/govcy-mobile-OTP.js', "utf8"),
-  fs.readFileSync("./build/js/main.js", "utf8"),
-]);
+let filesContents = fileNames.map(function (file) {
+  return fs.readFileSync('./build/js/'+file, 'utf8');
+})
 
-//view the output
+let result = uglifyJS.minify(filesContents);
+
 console.log(result.code);
 
 fs.writeFile('./dist/js/app.min.js', result.code, function(err) {
