@@ -12,6 +12,3 @@ const govcyDropDown = (selector) => {
       console.log(a)
   })
 }
-
-// Mobile OTP
-govcyMobileOtp();
