@@ -2378,41 +2378,35 @@
     <h4>Dropdown Autocomplete/Typeahead</h4>
     <div class="govcy-container">
       <form class="govcy-form" novalidate method="post">
-        <div class="govcy-form-control govcy-col-4">
-          <label class="govcy-label" for="countries">Countries</label>
-          <input class="govcy-text-input govcy-lh-1" list="countrylist" id="countries" name="countries" size="" autocomplete="off" />
-          <datalist id="countrylist">
-            <option>Afghanistan</option>
-            <option>Aland Islands</option>
-            <option>Albania</option>
-            <option>Algeria</option>
-            <option>American Samoa</option>
-            <option>Andorra</option>
-            <option>Angola</option>
-            <option>Anguilla</option>
-            <option>Antarctica</option>
-          </datalist>
-        </div>
+        <div class="govcy-container">
+          <div class="govcy-form-control govcy-col-8">
+            <label for="govcy-autocomplete">Select your country</label>
+            <select id="govcy-country-picker">
+              <option value=""></option>
+              <option value="fr">France</option>
+              <option value="de">Germany</option>
+              <option value="gb">United Kingdom</option>
+            </select>
+            <div id="text"></div>
+          </div>
+        </div>  
       </form>
 
       <pre>
         <code>
           &lt;form class=&quot;govcy-form&quot; novalidate method=&quot;post&quot;&gt;
-            &lt;div class=&quot;govcy-form-control govcy-col-4&quot;&gt;
-              &lt;label class=&quot;govcy-label&quot; for=&quot;countries&quot;&gt;Countries&lt;/label&gt;
-              &lt;input class=&quot;govcy-text-input govcy-lh-1&quot; list=&quot;countrylist&quot; id=&quot;countries&quot; name=&quot;countries&quot; size=&quot;&quot; autocomplete=&quot;off&quot; /&gt;
-              &lt;datalist id=&quot;countrylist&quot;&gt;
-                &lt;option&gt;Afghanistan&lt;/option&gt;
-                &lt;option&gt;Aland Islands&lt;/option&gt;
-                &lt;option&gt;Albania&lt;/option&gt;
-                &lt;option&gt;Algeria&lt;/option&gt;
-                &lt;option&gt;American Samoa&lt;/option&gt;
-                &lt;option&gt;Andorra&lt;/option&gt;
-                &lt;option&gt;Angola&lt;/option&gt;
-                &lt;option&gt;Anguilla&lt;/option&gt;
-                &lt;option&gt;Antarctica&lt;/option&gt;
-              &lt;/datalist&gt;
-            &lt;/div&gt;
+            &lt;div class=&quot;govcy-container&quot;&gt;
+              &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
+                &lt;label for=&quot;govcy-autocomplete&quot;&gt;Select your country&lt;/label&gt;
+                &lt;select id=&quot;govcy-country-picker&quot;&gt;
+                  &lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+                  &lt;option value=&quot;fr&quot;&gt;France&lt;/option&gt;
+                  &lt;option value=&quot;de&quot;&gt;Germany&lt;/option&gt;
+                  &lt;option value=&quot;gb&quot;&gt;United Kingdom&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;div id=&quot;text&quot;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;  
           &lt;/form&gt;
         </code>
       </pre>
