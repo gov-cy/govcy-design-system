@@ -115,6 +115,8 @@ $govcy-border-colors: (
   'input':     $govcy-body,
 );
 
+// Govcy background colors
+$govcy-option-bg: map-get($govcy-brand-colors, 'link-standard');
 
 // Govcy background colors (rgb)
 $govcy-bg-colors: (

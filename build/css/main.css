@@ -25330,6 +25330,201 @@ ul li a {
   display: inline-block;
 }
 
+.autocomplete__wrapper {
+  position: relative;
+}
+
+.autocomplete__hint {
+  -moz-box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  border: 3px solid #272525;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #6d6e70;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 0;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+}
+
+.autocomplete__input {
+  -moz-box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  background-color: transparent;
+  border: 3px solid #272525;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+.autocomplete__input--default {
+  padding: 5px;
+}
+
+.autocomplete__input--focused {
+  outline: 4px solid #ffdd00;
+  outline-offset: 0;
+}
+
+.autocomplete__input--show-all-values {
+  cursor: pointer;
+  padding: 5px 34px 5px 5px;
+}
+
+.autocomplete__dropdown-arrow-down {
+  display: inline-block;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  transform: scale(0.6);
+  width: 24px;
+  z-index: -1;
+}
+
+.autocomplete__menu {
+  background-color: #ffffff;
+  border: 2px solid #272525;
+  border-top: 0;
+  color: #0b0c0c;
+  margin: 0;
+  max-height: 342px;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.autocomplete__menu--visible {
+  display: block;
+}
+
+.autocomplete__menu--hidden {
+  display: none;
+}
+
+.autocomplete__menu--overlay {
+  box-shadow: rgba(0, 0, 0, 0.256863) 0 2px 6px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+}
+
+.autocomplete__menu--inline {
+  position: relative;
+}
+
+.autocomplete__option {
+  border-bottom: solid #bbbcbf;
+  border-width: 1px 0;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 5px;
+  position: relative;
+}
+.autocomplete__option > * {
+  pointer-events: none;
+}
+.autocomplete__option:first-of-type {
+  border-top-width: 0;
+}
+.autocomplete__option:last-of-type {
+  border-bottom-width: 0;
+}
+.autocomplete__option:hover {
+  background-color: #1d70b8;
+  border-color: #1d70b8;
+  color: #ffffff;
+  outline: 0;
+}
+
+.autocomplete__option--odd {
+  background-color: #fafafa;
+}
+
+.autocomplete__option--focused {
+  background-color: #1d70b8;
+  border-color: #1d70b8;
+  color: #ffffff;
+  outline: 0;
+}
+
+.autocomplete__option--no-results {
+  background-color: #fafafa;
+  color: #646b6f;
+  cursor: not-allowed;
+}
+
+@media (-ms-high-contrast: active) {
+  .autocomplete__menu {
+    border-color: FieldText;
+  }
+  .autocomplete__option {
+    background-color: Field;
+    color: FieldText;
+  }
+  .autocomplete__option:hover {
+    background-color: SelectedItem;
+    border-color: SelectedItem;
+    color: SelectedItemText;
+    forced-color-adjust: none;
+    outline-color: SelectedItemText;
+  }
+  .autocomplete__option--focused {
+    background-color: SelectedItem;
+    border-color: SelectedItem;
+    color: SelectedItemText;
+    forced-color-adjust: none;
+    outline-color: SelectedItemText;
+  }
+}
+@media (forced-colors: active) {
+  .autocomplete__menu {
+    border-color: FieldText;
+  }
+  .autocomplete__option {
+    background-color: Field;
+    color: FieldText;
+  }
+  .autocomplete__option:hover {
+    background-color: SelectedItem;
+    border-color: SelectedItem;
+    color: SelectedItemText;
+    forced-color-adjust: none;
+    outline-color: SelectedItemText;
+  }
+  .autocomplete__option--focused {
+    background-color: SelectedItem;
+    border-color: SelectedItem;
+    color: SelectedItemText;
+    forced-color-adjust: none;
+    outline-color: SelectedItemText;
+  }
+}
+@media (min-width: 641px) {
+  .autocomplete__hint {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+  .autocomplete__input {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+  .autocomplete__option {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
 .govcy-visually-hidden-error {
   border: 0 !important;
   clip: rect(0, 0, 0, 0) !important;
