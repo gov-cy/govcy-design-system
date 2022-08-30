@@ -752,12 +752,13 @@
               <code>
                 &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
                   &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
-                      &lt;label class=&quot;govcy-label&quot; for=&quot;errorTextInput&quot;&gt;Label&lt;/label&gt;
-                      &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
-                      &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
-                      &lt;input id=&quot;errorTextInput&quot; type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error&quot; placeholder=&quot;input&quot; /&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;enter-your-full-name&quot;&gt;Label&lt;/label&gt;
+                      &lt;p id=&quot;full-name-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                        &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Enter your full name
+                      &lt;/p&gt;
+                      &lt;input class=&quot;govcy-text-input govcy-text-input-error&quot; id=&quot;enter-your-full-name&quot; name=&quot;name&quot; type=&quot;text&quot; aria-describedby=&quot;full-name-input-error&quot; autocomplete=&quot;name&quot;&gt;
                   &lt;/div&gt;
-                &lt;/form&gt;
+              &lt;/form&gt;
               </code>
             </pre>
     
@@ -881,12 +882,13 @@
 
             <pre>
               <code>
-                &lt;form action=&quot;&quot; novalidate=&quot;&quot; class=&quot;govcy-form&quot;&gt;
+                &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
                   &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
-                      &lt;label class=&quot;govcy-label&quot; for=&quot;errorTextInput02&quot;&gt;Label&lt;/label&gt;
-                      &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
-                      &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
-                      &lt;input type=&quot;errorTextInput02&quot; type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-input-error&quot; placeholder=&quot;input&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;enter-your-first-name&quot;&gt;Label&lt;/label&gt;
+                      &lt;p id=&quot;first-name-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                        &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Enter your full name
+                      &lt;/p&gt;
+                      &lt;input class=&quot;govcy-text-input govcy-text-input-error&quot; id=&quot;enter-your-first-name&quot; name=&quot;name&quot; type=&quot;text&quot; aria-describedby=&quot;first-name-input-error&quot; autocomplete=&quot;name&quot;&gt;
                   &lt;/div&gt;
                 &lt;/form&gt;
               </code>
@@ -928,13 +930,14 @@
             <pre>
               <code>
                 &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
-                  &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
-                      &lt;label class=&quot;govcy-label&quot; for=&quot;textAreaInputError&quot;&gt;Textarea Input with error&lt;/label&gt;
-                      &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
-                      &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
-                      &lt;textarea  id=&quot;textAreaInputError&quot; class=&quot;govcy-text-area govcy-text-area-error&quot; placeholder=&quot;input&quot;&gt;&lt;/textarea&gt;
-                      &lt;span class=&quot;govcy-hint&quot;&gt;You have 150 characters remaining&lt;/span&gt;
-                  &lt;/div&gt;
+                    &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                        &lt;label class=&quot;govcy-label&quot; for=&quot;textAreaInputError&quot;&gt;Textarea Input with error&lt;/label&gt;
+                        &lt;p id=&quot;text-area-input-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                          &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Text area input error
+                        &lt;/p&gt;
+                        &lt;textarea  id=&quot;textAreaInputError&quot; class=&quot;govcy-text-area govcy-text-area-error&quot; placeholder=&quot;input&quot; aria-describedby=&quot;text-area-input-error&quot;&gt;&lt;/textarea&gt;
+                        &lt;span class=&quot;govcy-hint&quot;&gt;You have 150 characters remaining&lt;/span&gt;
+                    &lt;/div&gt;
                 &lt;/form&gt;
               </code>
             </pre>
@@ -984,13 +987,14 @@
           <pre>
             <code>
               &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
-                &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
-                    &lt;label class=&quot;govcy-label&quot; for=&quot;mobilenoError&quot;&gt;Telephone/Mobile&lt;/label&gt;
-                    &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
-                    &lt;span class=&quot;govcy-input-error-msg&quot;&gt;Mobile is required&lt;/span&gt;
-                    &lt;span class=&quot;govcy-hint&quot;&gt;Will be used for the purposes of this application only&lt;/span&gt;
-                    &lt;input  id=&quot;mobilenoError&quot;&gt; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_20&quot; placeholder=&quot;Telephone&quot; maxlength=&quot;20&quot; id=&quot;tel&quot; name=&quot;tel&quot; type=&quot;tel&quot; spellcheck=&quot;false&quot; aria-describedby=&quot;tel-number&quot; autocomplete=&quot;tel&quot;&gt;
-                &lt;/div&gt;
+                  &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                      &lt;label class=&quot;govcy-label&quot; for=&quot;mobilenoError&quot;&gt;Telephone/Mobile&lt;/label&gt;
+                      &lt;p id=&quot;mobile-no-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                        &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;Mobile is required
+                      &lt;/p&gt;
+                      &lt;span class=&quot;govcy-hint&quot;&gt;Will be used for the purposes of this application only&lt;/span&gt;
+                      &lt;input id=&quot;mobilenoError&quot; class=&quot;govcy-text-input govcy-text-input-error govcy-text-input-char_20&quot; placeholder=&quot;Telephone&quot; maxlength=&quot;20&quot; id=&quot;tel&quot; name=&quot;tel&quot; type=&quot;tel&quot; spellcheck=&quot;false&quot; aria-describedby=&quot;mobile-no-error&quot; autocomplete=&quot;tel&quot;&gt;
+                  &lt;/div&gt;
               &lt;/form&gt;
             </code>
           </pre>
@@ -1092,27 +1096,28 @@
               <code>
                 &lt;form action=&quot;&quot; novalidate class=&quot;govcy-form&quot;&gt;
                   &lt;fieldset class=&quot;govcy-fieldset&quot;&gt;
-                  &lt;legend class=&quot;govcy-legend&quot;&gt;Contact Address&lt;/legend&gt;
-                    &lt;div class=&quot;govcy-form-control&quot;&gt;
-                        &lt;label class=&quot;govcy-label&quot; for=&quot;address2&quot;&gt;Address / Number&lt;/label&gt;
-                        &lt;input id=&quot;address2&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Addresss and number&quot; /&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
-                        &lt;label class=&quot;govcy-label&quot; for=&quot;village2&quot;&gt;District / Village&lt;/label&gt;
-                        &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error&lt;/span&gt;
-                        &lt;span class=&quot;govcy-input-error-msg&quot;&gt;There is an error&lt;/span&gt;
-                        &lt;input id=&quot;village2&quot; type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-area-error&quot; placeholder=&quot;District or village&quot; /&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;govcy-form-control&quot;&gt;    
-                        &lt;label class=&quot;govcy-label&quot; for=&quot;district2&quot;&gt;District&lt;/label&gt;
-                        &lt;input id=&quot;district2&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;District&quot; /&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;govcy-form-control&quot;&gt;
-                      &lt;label class=&quot;govcy-label&quot; for=&quot;potalCode2&quot;&gt;Postal code&lt;/label&gt;
-                      &lt;input id=&quot;postalCode2&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Postal code&quot; /&gt;
-                    &lt;/div&gt;
-                  &lt;/fieldset&gt;
-                &lt;/form&gt;
+                    &lt;legend class=&quot;govcy-legend&quot;&gt;Contact Address&lt;/legend&gt;
+                      &lt;div class=&quot;govcy-form-control&quot;&gt;
+                          &lt;label class=&quot;govcy-label&quot; for=&quot;address2&quot;&gt;Address / Number&lt;/label&gt;
+                          &lt;input id=&quot;address2&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Addresss and number&quot; /&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;govcy-form-control govcy-form-control-error&quot;&gt;
+                          &lt;label class=&quot;govcy-label&quot; for=&quot;village2&quot;&gt;District / Village&lt;/label&gt;
+                          &lt;p id=&quot;village2-error&quot; class=&quot;govcy-input-error-msg&quot;&gt;
+                            &lt;span class=&quot;govcy-visually-hidden-error&quot;&gt;Error:&lt;/span&gt;There is an error
+                          &lt;/p&gt;
+                          &lt;input id=&quot;village2&quot; type=&quot;text&quot; class=&quot;govcy-text-input govcy-text-area-error&quot; aria-describedby=&quot;village2-error&quot; placeholder=&quot;District or village&quot; /&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;govcy-form-control&quot;&gt;    
+                          &lt;label class=&quot;govcy-label&quot; for=&quot;district2&quot;&gt;District&lt;/label&gt;
+                          &lt;input id=&quot;district2&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;District&quot; /&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;govcy-form-control&quot;&gt;
+                          &lt;label class=&quot;govcy-label&quot; for=&quot;postalCode2&quot;&gt;Postal code&lt;/label&gt;
+                          &lt;input id=&quot;postalCode2&quot; type=&quot;text&quot; class=&quot;govcy-text-input&quot; placeholder=&quot;Postal code&quot; /&gt;
+                      &lt;/div&gt;
+                    &lt;/fieldset&gt;
+                  &lt;/form&gt;
               </code>
             </pre>
           </div>
