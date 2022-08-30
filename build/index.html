@@ -740,10 +740,11 @@
 
             <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control govcy-form-control-error">
-                    <label class="govcy-label" for="errorTextInput">Label</label>
-                    <span class="govcy-visually-hidden-error">Error</span>
-                    <span class="govcy-input-error-msg">There is an error</span>
-                    <input id="errorTextInput" type="text" class="govcy-text-input govcy-text-input-error" placeholder="input" />
+                    <label class="govcy-label" for="enter-your-full-name">Label</label>
+                    <p id="full-name-input-error" class="govcy-input-error-msg">
+                      <span class="govcy-visually-hidden-error">Error:</span>Enter your full name
+                    </p>
+                    <input class="govcy-text-input govcy-text-input-error" id="enter-your-full-name" name="name" type="text" aria-describedby="full-name-input-error" autocomplete="name">
                 </div>
             </form>
 
@@ -868,14 +869,15 @@
               </code>
             </pre>
 
-            <form action="" novalidate="" class="govcy-form">
+            <form action="" novalidate class="govcy-form">
               <div class="govcy-form-control govcy-form-control-error">
-                  <label class="govcy-label" for="errorTextInput02">Label</label>
-                  <span class="govcy-visually-hidden-error">Error</span>
-                  <span class="govcy-input-error-msg">There is an error</span>
-                  <input id="errorTextInput02" type="text" class="govcy-text-input govcy-text-input-error" placeholder="input">
+                  <label class="govcy-label" for="enter-your-first-name">Label</label>
+                  <p id="first-name-input-error" class="govcy-input-error-msg">
+                    <span class="govcy-visually-hidden-error">Error:</span>Enter your full name
+                  </p>
+                  <input class="govcy-text-input govcy-text-input-error" id="enter-your-first-name" name="name" type="text" aria-describedby="first-name-input-error" autocomplete="name">
               </div>
-            </form>
+          </form>
 
             <pre>
               <code>
@@ -915,9 +917,10 @@
             <form action="" novalidate class="govcy-form">
                 <div class="govcy-form-control govcy-form-control-error">
                     <label class="govcy-label" for="textAreaInputError">Textarea Input with error</label>
-                    <span class="govcy-visually-hidden-error">Error</span>
-                    <span class="govcy-input-error-msg">There is an error</span>
-                    <textarea  id="textAreaInputError" class="govcy-text-area govcy-text-area-error" placeholder="input"></textarea>
+                    <p id="text-area-input-error" class="govcy-input-error-msg">
+                      <span class="govcy-visually-hidden-error">Error:</span>Text area input error
+                    </p>
+                    <textarea  id="textAreaInputError" class="govcy-text-area govcy-text-area-error" placeholder="input" aria-describedby="text-area-input-error"></textarea>
                     <span class="govcy-hint">You have 150 characters remaining</span>
                 </div>
             </form>
@@ -970,10 +973,11 @@
             <form action="" novalidate class="govcy-form">
               <div class="govcy-form-control govcy-form-control-error">
                   <label class="govcy-label" for="mobilenoError">Telephone/Mobile</label>
-                  <span class="govcy-visually-hidden-error">Error</span>
-                  <span class="govcy-input-error-msg">Mobile is required</span>
+                  <p id="mobile-no-error" class="govcy-input-error-msg">
+                    <span class="govcy-visually-hidden-error">Error:</span>Mobile is required
+                  </p>
                   <span class="govcy-hint">Will be used for the purposes of this application only</span>
-                  <input id="mobilenoError" class="govcy-text-input govcy-text-input-error govcy-text-input-char_20" placeholder="Telephone" maxlength="20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-number" autocomplete="tel">
+                  <input id="mobilenoError" class="govcy-text-input govcy-text-input-error govcy-text-input-char_20" placeholder="Telephone" maxlength="20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="mobile-no-error" autocomplete="tel">
               </div>
           </form>
 
@@ -1068,9 +1072,10 @@
                 </div>
                 <div class="govcy-form-control govcy-form-control-error">
                     <label class="govcy-label" for="village2">District / Village</label>
-                    <span class="govcy-visually-hidden-error">Error</span>
-                    <span class="govcy-input-error-msg">There is an error</span>
-                    <input id="village2" type="text" class="govcy-text-input govcy-text-area-error" placeholder="District or village" />
+                    <p id="village2-error" class="govcy-input-error-msg">
+                      <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                    </p>
+                    <input id="village2" type="text" class="govcy-text-input govcy-text-area-error" aria-describedby="village2-error" placeholder="District or village" />
                 </div>
                 <div class="govcy-form-control">    
                     <label class="govcy-label" for="district2">District</label>
