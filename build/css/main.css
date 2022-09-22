@@ -24994,6 +24994,10 @@ h6, .h6 {
 .govcy-form .govcy-form-control .govcy-text-area-char_10 {
   width: 7.8rem;
 }
+.govcy-form .govcy-form-control .govcy-text-input-char_7,
+.govcy-form .govcy-form-control .govcy-text-area-char_7 {
+  width: 5.8rem;
+}
 .govcy-form .govcy-form-control .govcy-text-input-char_6,
 .govcy-form .govcy-form-control .govcy-text-area-char_6 {
   width: 5.5rem;
@@ -25312,7 +25316,7 @@ a.govcy-sign-out:hover {
 }
 
 ul {
-  padding-left: 0;
+  padding-left: 1.5rem;
 }
 ul li a {
   display: inline-block;
