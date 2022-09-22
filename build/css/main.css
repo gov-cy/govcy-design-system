@@ -15976,7 +15976,7 @@ textarea.form-control-lg {
 }
 
 .govcy-br-info {
-  border-color: #52879d !important;
+  border-color: #487d93 !important;
 }
 
 .govcy-br-input {
@@ -16164,7 +16164,7 @@ textarea.form-control-lg {
 }
 
 .govcy-br-top-info {
-  border-top-color: #52879d !important;
+  border-top-color: #487d93 !important;
 }
 
 .govcy-br-top-input {
@@ -16192,7 +16192,7 @@ textarea.form-control-lg {
 }
 
 .govcy-br-right-info {
-  border-right-color: #52879d !important;
+  border-right-color: #487d93 !important;
 }
 
 .govcy-br-right-input {
@@ -16220,7 +16220,7 @@ textarea.form-control-lg {
 }
 
 .govcy-br-bottom-info {
-  border-bottom-color: #52879d !important;
+  border-bottom-color: #487d93 !important;
 }
 
 .govcy-br-bottom-input {
@@ -16248,7 +16248,7 @@ textarea.form-control-lg {
 }
 
 .govcy-br-left-info {
-  border-left-color: #52879d !important;
+  border-left-color: #487d93 !important;
 }
 
 .govcy-br-left-input {
@@ -16874,7 +16874,7 @@ textarea.form-control-lg {
 }
 
 .govcy-bg-info {
-  background-color: rgb(82, 135, 157) !important;
+  background-color: rgb(72, 125, 147) !important;
 }
 
 .govcy-bg-danger {
@@ -16918,7 +16918,7 @@ textarea.form-control-lg {
 }
 
 .govcy-table-info {
-  background-color: #dce7eb !important;
+  background-color: #dae5e9 !important;
 }
 
 .govcy-table-danger {
@@ -16970,7 +16970,7 @@ textarea.form-control-lg {
 }
 
 .govcy-text-info {
-  color: #52879d !important;
+  color: #487d93 !important;
 }
 
 .govcy-text-body {
@@ -18090,7 +18090,7 @@ textarea.form-control-lg {
     border-color: #d4351c !important;
   }
   .govcy-br-sm-info {
-    border-color: #52879d !important;
+    border-color: #487d93 !important;
   }
   .govcy-br-sm-input {
     border-color: #272525 !important;
@@ -18231,7 +18231,7 @@ textarea.form-control-lg {
     border-top-color: #d4351c !important;
   }
   .govcy-br-top-sm-info {
-    border-top-color: #52879d !important;
+    border-top-color: #487d93 !important;
   }
   .govcy-br-top-sm-input {
     border-top-color: #272525 !important;
@@ -18252,7 +18252,7 @@ textarea.form-control-lg {
     border-right-color: #d4351c !important;
   }
   .govcy-br-right-sm-info {
-    border-right-color: #52879d !important;
+    border-right-color: #487d93 !important;
   }
   .govcy-br-right-sm-input {
     border-right-color: #272525 !important;
@@ -18273,7 +18273,7 @@ textarea.form-control-lg {
     border-bottom-color: #d4351c !important;
   }
   .govcy-br-bottom-sm-info {
-    border-bottom-color: #52879d !important;
+    border-bottom-color: #487d93 !important;
   }
   .govcy-br-bottom-sm-input {
     border-bottom-color: #272525 !important;
@@ -18294,7 +18294,7 @@ textarea.form-control-lg {
     border-left-color: #d4351c !important;
   }
   .govcy-br-left-sm-info {
-    border-left-color: #52879d !important;
+    border-left-color: #487d93 !important;
   }
   .govcy-br-left-sm-input {
     border-left-color: #272525 !important;
@@ -18608,7 +18608,7 @@ textarea.form-control-lg {
     background-color: rgb(0, 112, 60) !important;
   }
   .govcy-bg-sm-info {
-    background-color: rgb(82, 135, 157) !important;
+    background-color: rgb(72, 125, 147) !important;
   }
   .govcy-bg-sm-danger {
     background-color: rgb(212, 53, 28) !important;
@@ -18641,7 +18641,7 @@ textarea.form-control-lg {
     background-color: #cce2d8 !important;
   }
   .govcy-table-sm-info {
-    background-color: #dce7eb !important;
+    background-color: #dae5e9 !important;
   }
   .govcy-table-sm-danger {
     background-color: #f6d7d2 !important;
@@ -19389,7 +19389,7 @@ textarea.form-control-lg {
     border-color: #d4351c !important;
   }
   .govcy-br-md-info {
-    border-color: #52879d !important;
+    border-color: #487d93 !important;
   }
   .govcy-br-md-input {
     border-color: #272525 !important;
@@ -19530,7 +19530,7 @@ textarea.form-control-lg {
     border-top-color: #d4351c !important;
   }
   .govcy-br-top-md-info {
-    border-top-color: #52879d !important;
+    border-top-color: #487d93 !important;
   }
   .govcy-br-top-md-input {
     border-top-color: #272525 !important;
@@ -19551,7 +19551,7 @@ textarea.form-control-lg {
     border-right-color: #d4351c !important;
   }
   .govcy-br-right-md-info {
-    border-right-color: #52879d !important;
+    border-right-color: #487d93 !important;
   }
   .govcy-br-right-md-input {
     border-right-color: #272525 !important;
@@ -19572,7 +19572,7 @@ textarea.form-control-lg {
     border-bottom-color: #d4351c !important;
   }
   .govcy-br-bottom-md-info {
-    border-bottom-color: #52879d !important;
+    border-bottom-color: #487d93 !important;
   }
   .govcy-br-bottom-md-input {
     border-bottom-color: #272525 !important;
@@ -19593,7 +19593,7 @@ textarea.form-control-lg {
     border-left-color: #d4351c !important;
   }
   .govcy-br-left-md-info {
-    border-left-color: #52879d !important;
+    border-left-color: #487d93 !important;
   }
   .govcy-br-left-md-input {
     border-left-color: #272525 !important;
@@ -19907,7 +19907,7 @@ textarea.form-control-lg {
     background-color: rgb(0, 112, 60) !important;
   }
   .govcy-bg-md-info {
-    background-color: rgb(82, 135, 157) !important;
+    background-color: rgb(72, 125, 147) !important;
   }
   .govcy-bg-md-danger {
     background-color: rgb(212, 53, 28) !important;
@@ -19940,7 +19940,7 @@ textarea.form-control-lg {
     background-color: #cce2d8 !important;
   }
   .govcy-table-md-info {
-    background-color: #dce7eb !important;
+    background-color: #dae5e9 !important;
   }
   .govcy-table-md-danger {
     background-color: #f6d7d2 !important;
@@ -20688,7 +20688,7 @@ textarea.form-control-lg {
     border-color: #d4351c !important;
   }
   .govcy-br-lg-info {
-    border-color: #52879d !important;
+    border-color: #487d93 !important;
   }
   .govcy-br-lg-input {
     border-color: #272525 !important;
@@ -20829,7 +20829,7 @@ textarea.form-control-lg {
     border-top-color: #d4351c !important;
   }
   .govcy-br-top-lg-info {
-    border-top-color: #52879d !important;
+    border-top-color: #487d93 !important;
   }
   .govcy-br-top-lg-input {
     border-top-color: #272525 !important;
@@ -20850,7 +20850,7 @@ textarea.form-control-lg {
     border-right-color: #d4351c !important;
   }
   .govcy-br-right-lg-info {
-    border-right-color: #52879d !important;
+    border-right-color: #487d93 !important;
   }
   .govcy-br-right-lg-input {
     border-right-color: #272525 !important;
@@ -20871,7 +20871,7 @@ textarea.form-control-lg {
     border-bottom-color: #d4351c !important;
   }
   .govcy-br-bottom-lg-info {
-    border-bottom-color: #52879d !important;
+    border-bottom-color: #487d93 !important;
   }
   .govcy-br-bottom-lg-input {
     border-bottom-color: #272525 !important;
@@ -20892,7 +20892,7 @@ textarea.form-control-lg {
     border-left-color: #d4351c !important;
   }
   .govcy-br-left-lg-info {
-    border-left-color: #52879d !important;
+    border-left-color: #487d93 !important;
   }
   .govcy-br-left-lg-input {
     border-left-color: #272525 !important;
@@ -21206,7 +21206,7 @@ textarea.form-control-lg {
     background-color: rgb(0, 112, 60) !important;
   }
   .govcy-bg-lg-info {
-    background-color: rgb(82, 135, 157) !important;
+    background-color: rgb(72, 125, 147) !important;
   }
   .govcy-bg-lg-danger {
     background-color: rgb(212, 53, 28) !important;
@@ -21239,7 +21239,7 @@ textarea.form-control-lg {
     background-color: #cce2d8 !important;
   }
   .govcy-table-lg-info {
-    background-color: #dce7eb !important;
+    background-color: #dae5e9 !important;
   }
   .govcy-table-lg-danger {
     background-color: #f6d7d2 !important;
@@ -21987,7 +21987,7 @@ textarea.form-control-lg {
     border-color: #d4351c !important;
   }
   .govcy-br-xl-info {
-    border-color: #52879d !important;
+    border-color: #487d93 !important;
   }
   .govcy-br-xl-input {
     border-color: #272525 !important;
@@ -22128,7 +22128,7 @@ textarea.form-control-lg {
     border-top-color: #d4351c !important;
   }
   .govcy-br-top-xl-info {
-    border-top-color: #52879d !important;
+    border-top-color: #487d93 !important;
   }
   .govcy-br-top-xl-input {
     border-top-color: #272525 !important;
@@ -22149,7 +22149,7 @@ textarea.form-control-lg {
     border-right-color: #d4351c !important;
   }
   .govcy-br-right-xl-info {
-    border-right-color: #52879d !important;
+    border-right-color: #487d93 !important;
   }
   .govcy-br-right-xl-input {
     border-right-color: #272525 !important;
@@ -22170,7 +22170,7 @@ textarea.form-control-lg {
     border-bottom-color: #d4351c !important;
   }
   .govcy-br-bottom-xl-info {
-    border-bottom-color: #52879d !important;
+    border-bottom-color: #487d93 !important;
   }
   .govcy-br-bottom-xl-input {
     border-bottom-color: #272525 !important;
@@ -22191,7 +22191,7 @@ textarea.form-control-lg {
     border-left-color: #d4351c !important;
   }
   .govcy-br-left-xl-info {
-    border-left-color: #52879d !important;
+    border-left-color: #487d93 !important;
   }
   .govcy-br-left-xl-input {
     border-left-color: #272525 !important;
@@ -22505,7 +22505,7 @@ textarea.form-control-lg {
     background-color: rgb(0, 112, 60) !important;
   }
   .govcy-bg-xl-info {
-    background-color: rgb(82, 135, 157) !important;
+    background-color: rgb(72, 125, 147) !important;
   }
   .govcy-bg-xl-danger {
     background-color: rgb(212, 53, 28) !important;
@@ -22538,7 +22538,7 @@ textarea.form-control-lg {
     background-color: #cce2d8 !important;
   }
   .govcy-table-xl-info {
-    background-color: #dce7eb !important;
+    background-color: #dae5e9 !important;
   }
   .govcy-table-xl-danger {
     background-color: #f6d7d2 !important;
@@ -23286,7 +23286,7 @@ textarea.form-control-lg {
     border-color: #d4351c !important;
   }
   .govcy-br-xxl-info {
-    border-color: #52879d !important;
+    border-color: #487d93 !important;
   }
   .govcy-br-xxl-input {
     border-color: #272525 !important;
@@ -23427,7 +23427,7 @@ textarea.form-control-lg {
     border-top-color: #d4351c !important;
   }
   .govcy-br-top-xxl-info {
-    border-top-color: #52879d !important;
+    border-top-color: #487d93 !important;
   }
   .govcy-br-top-xxl-input {
     border-top-color: #272525 !important;
@@ -23448,7 +23448,7 @@ textarea.form-control-lg {
     border-right-color: #d4351c !important;
   }
   .govcy-br-right-xxl-info {
-    border-right-color: #52879d !important;
+    border-right-color: #487d93 !important;
   }
   .govcy-br-right-xxl-input {
     border-right-color: #272525 !important;
@@ -23469,7 +23469,7 @@ textarea.form-control-lg {
     border-bottom-color: #d4351c !important;
   }
   .govcy-br-bottom-xxl-info {
-    border-bottom-color: #52879d !important;
+    border-bottom-color: #487d93 !important;
   }
   .govcy-br-bottom-xxl-input {
     border-bottom-color: #272525 !important;
@@ -23490,7 +23490,7 @@ textarea.form-control-lg {
     border-left-color: #d4351c !important;
   }
   .govcy-br-left-xxl-info {
-    border-left-color: #52879d !important;
+    border-left-color: #487d93 !important;
   }
   .govcy-br-left-xxl-input {
     border-left-color: #272525 !important;
@@ -23804,7 +23804,7 @@ textarea.form-control-lg {
     background-color: rgb(0, 112, 60) !important;
   }
   .govcy-bg-xxl-info {
-    background-color: rgb(82, 135, 157) !important;
+    background-color: rgb(72, 125, 147) !important;
   }
   .govcy-bg-xxl-danger {
     background-color: rgb(212, 53, 28) !important;
@@ -23837,7 +23837,7 @@ textarea.form-control-lg {
     background-color: #cce2d8 !important;
   }
   .govcy-table-xxl-info {
-    background-color: #dce7eb !important;
+    background-color: #dae5e9 !important;
   }
   .govcy-table-xxl-danger {
     background-color: #f6d7d2 !important;
@@ -24993,6 +24993,14 @@ h6, .h6 {
 .govcy-form .govcy-form-control .govcy-text-input-char_10,
 .govcy-form .govcy-form-control .govcy-text-area-char_10 {
   width: 7.8rem;
+}
+.govcy-form .govcy-form-control .govcy-text-input-char_9,
+.govcy-form .govcy-form-control .govcy-text-area-char_9 {
+  width: 6.9rem;
+}
+.govcy-form .govcy-form-control .govcy-text-input-char_8,
+.govcy-form .govcy-form-control .govcy-text-area-char_8 {
+  width: 6.2rem;
 }
 .govcy-form .govcy-form-control .govcy-text-input-char_7,
 .govcy-form .govcy-form-control .govcy-text-area-char_7 {
