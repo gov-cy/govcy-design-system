@@ -2381,7 +2381,7 @@
         <div class="govcy-container">
           <div class="govcy-form-control govcy-col-8">
             <label for="govcy-autocomplete">Select your country</label>
-            <select id="govcy-country-picker">
+            <select id="govcy-country-picker" name="govcy-country">
               <option value=""></option>
               <option value="fr">France</option>
               <option value="de">Germany</option>
@@ -2398,7 +2398,7 @@
             &lt;div class=&quot;govcy-container&quot;&gt;
               &lt;div class=&quot;govcy-form-control govcy-col-8&quot;&gt;
                 &lt;label for=&quot;govcy-autocomplete&quot;&gt;Select your country&lt;/label&gt;
-                &lt;select id=&quot;govcy-country-picker&quot;&gt;
+                &lt;select id=&quot;govcy-country-picker&quot;&gt name=&quot;govcy-country&quot;&gt;
                   &lt;option value=&quot;&quot;&gt;&lt;/option&gt;
                   &lt;option value=&quot;fr&quot;&gt;France&lt;/option&gt;
                   &lt;option value=&quot;de&quot;&gt;Germany&lt;/option&gt;
@@ -2664,10 +2664,10 @@
     </div>
     <hr>
     <a class="govcy-d-block" href="/NoChild">Are any of your children missing from this list?</a>
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/build/js/app.min.js"></script>
     <script type="application/javascript">
       govcyMobileOtp();
-      govcyDropDown('#govcy-country-picker');
+      govcyTypeAheadDropDown('#govcy-country-picker');
     </script>
 </body>
 
