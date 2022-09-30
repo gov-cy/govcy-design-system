@@ -14,7 +14,7 @@
         "css-watch": "npm run css-build -- --watch",
 
         "js-build": "uglifyjs src/js/govcy-typeahead.js src/js/govcy-mobile-OTP.js src/js/accessible-autocomplete.js -c drop_debugger=false -m -o build/js/app.min.js",
-        "js-build-ditribution": "uglifyjs src/js/govcy-typeahead.js src/js/govcy-mobile-OTP.js src/js/accessible-autocomplete.js -c -m -o dist/js/app.min.js",
+        "js-build-distribution": "uglifyjs src/js/govcy-typeahead.js src/js/govcy-mobile-OTP.js src/js/accessible-autocomplete.js -c -m -o dist/js/app.min.js",
         "js-watch": "fswatch -or src/js| xargs -n1 -I{} npm run js-build",
     
         "test-percy": "percy exec -- mocha --recursive --exit",
