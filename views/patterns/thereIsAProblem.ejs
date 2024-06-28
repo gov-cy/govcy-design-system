@@ -1,0 +1,114 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./patterns') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>There is a problem with the service pages</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li>
+                <a href="#when-to-use-this-pattern">When to use this pattern</a>
+              </li>
+
+              <li><a href="#how-it-works">How it works</a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Tell the user there is something wrong with the service. These are
+          also known as 500 and internal server error pages.
+        </p>
+        <h2 id="when-to-use-this-pattern" tabindex="-1">
+          When to use this pattern
+          <a class="anchor-link" href="#when-to-use-this-pattern"> </a>
+        </h2>
+        <p>
+          Use this page when there is an unexpected problem with the service.
+          Use the same page for all unexpected problems.
+        </p>
+        <p>Log all errors and fix them as quickly as possible.</p>
+        <p>
+          Only display the page for a short time. If a problem cannot be fixed
+          quickly, close the service and use a
+          <a href="../service-unavailable-pages">service unavailable page</a>.
+        </p>
+        <h2 id="how-it-works" tabindex="-1">
+          How it works <a class="anchor-link" href="#how-it-works"> </a>
+        </h2>
+        <p>The page should have:</p>
+        <ul>
+          <li>
+            as the page title:
+            <ul>
+              <li>
+                in Greek ‘Λυπούμαστε, υπάρχει πρόβλημα με την υπηρεσία – service
+                name – gov.cy’
+              </li>
+              <li>
+                in English ‘Sorry, there is a problem with the service – service
+                name – gov.cy’
+              </li>
+            </ul>
+          </li>
+          <li>
+            as the H1
+            <ul>
+              <li>in Greek ‘Λυπούμαστε, υπάρχει πρόβλημα με την υπηρεσία’</li>
+              <li>in English ‘Sorry, there is a problem with the service’</li>
+            </ul>
+          </li>
+          <li>
+            if possible, information about what has happened to their answers if
+            they are in the middle of a transaction
+          </li>
+          <li>contact information, if it exists and helps meet a user need</li>
+          <li>
+            a link to another service, if they can use it to do what they came
+            to do
+          </li>
+        </ul>
+        <p>Have clear and concise content and do not use:</p>
+        <ul>
+          <li>breadcrumbs</li>
+          <li>jargon like 500 or bad request</li>
+          <li>‘We are experiencing technical difficulties’</li>
+          <li>red text to warn people</li>
+        </ul>
+        <p><em>Example in Greek</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <!--beforeMain-->
+          <!--main-->
+          <main class="govcy-container" id="mainContainer">
+            <h1>Λυπούμαστε, υπάρχει πρόβλημα με την υπηρεσία</h1>
+            <p>
+              Προσπαθούμε να το διορθώσουμε το συντομότερο δυνατόν. Δοκιμάστε
+              ξανά αργότερα.
+            </p>
+          </main>
+        </div>
+        <p><em>Example in English</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <!--beforeMain-->
+          <!--main-->
+          <main class="govcy-container" id="mainContainer">
+            <h1>Sorry, there is a problem with the service</h1>
+            <p>
+              We're working to fix the issue as soon as possible. Try again
+              later.
+            </p>
+          </main>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

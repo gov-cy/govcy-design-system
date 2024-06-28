@@ -1,0 +1,351 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Summary list</h2>
+        <dl class="govcy-summary-list">
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Name
+            </dt>
+            <dd class="govcy-summary-list-value">
+              Andreas Andreou
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> name</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Date of birth
+            </dt>
+            <dd class="govcy-summary-list-value">
+              10 March 1990
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> date of birth</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Address
+            </dt>
+            <dd class="govcy-summary-list-value">
+              50 Enton Street<br>Nicosia<br>2066
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> address</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Contact details
+            </dt>
+            <dd class="govcy-summary-list-value">
+              99123456<br />abc@windowslive.com
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> contact details</span></a>
+            </dd>
+          </div>
+        </dl>
+        <h2>Multiple actions</h2>
+        <dl class="govcy-summary-list">
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Name
+            </dt>
+            <dd class="govcy-summary-list-value">
+              Andreas Andreou
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <ul class="list-inline govcy-my-0">
+                <li class="list-inline-item"><a href="#">Change<span class="govcy-visually-hidden-error">
+                      name</span></a></li>
+                <li class="list-inline-item"><a href="#">Remove<span class="govcy-visually-hidden-error">
+                      name</span></a></li>
+              </ul>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Date of birth
+            </dt>
+            <dd class="govcy-summary-list-value">
+              10 March 1990
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <ul class="list-inline govcy-my-0">
+                <li class="list-inline-item"><a href="#">Change<span class="govcy-visually-hidden-error"> date of
+                      birth</span></a></li>
+                <li class="list-inline-item"><a href="#">Remove<span class="govcy-visually-hidden-error"> date of
+                      birth</span></a></li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+        <h2>Removing borders</h2>
+        <dl class="govcy-summary-list govcy-summary-list-no-border">
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Name
+            </dt>
+            <dd class="govcy-summary-list-value">
+              Andreas Andreou
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Telephone
+            </dt>
+            <dd class="govcy-summary-list-value">
+              99123456
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Address
+            </dt>
+            <dd class="govcy-summary-list-value">
+              50 Enton Street<br>Nicosia<br>2066
+            </dd>
+          </div>
+        </dl>
+        <h2>Showing missing (or not entered) information</h2>
+        <dl class="govcy-summary-list">
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Name
+            </dt>
+            <dd class="govcy-summary-list-value">
+              Andreas Andreou
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> name</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Date of birth
+            </dt>
+            <dd class="govcy-summary-list-value">
+              10 March 1990
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> date of birth</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Address
+            </dt>
+            <dd class="govcy-summary-list-value">
+              <a href="#">Enter address</a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Contact details
+            </dt>
+            <dd class="govcy-summary-list-value">
+              <a href="#">Enter contact details</a>
+            </dd>
+          </div>
+        </dl>
+        <h2>Showing complex information</h2>
+        <dl class="govcy-summary-list">
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Name
+            </dt>
+            <dd class="govcy-summary-list-value">
+              Andreas Andreou
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> name</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Date of birth
+            </dt>
+            <dd class="govcy-summary-list-value">
+              <a href="#">Enter date of birth</a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Contact telephone
+            </dt>
+            <dd class="govcy-summary-list-value">
+              99123456
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> contact telephone</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Bank Account
+            </dt>
+            <dd class="govcy-summary-list-value">
+              <dl class="govcy-summary-list-row-internal">
+                <dt class="govcy-summary-list-key-internal">Account name</dt>
+                <dd class="govcy-summary-list-value-internal">Andreas Andreou current</dd>
+                <dt class="govcy-summary-list-key-internal">Bank</dt>
+                <dd class="govcy-summary-list-value-internal">Bank of Cyprus</dd>
+                <dt class="govcy-summary-list-key-internal">Account number</dt>
+                <dd class="govcy-summary-list-value-internal">1234567890</dd>
+              </dl>
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> bank account</span></a>
+            </dd>
+          </div>
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Payments <span class="govcy-visually-hidden-error"> 2 entries</span>
+            </dt>
+            <dd class="govcy-summary-list-value">
+              <dl class="govcy-summary-list-row-internal-multiple">
+                <dt><span class="govcy-visually-hidden-error">Entry 1</span></dt>
+                <dt class="govcy-summary-list-key-internal">Date</dt>
+                <dd class="govcy-summary-list-value-internal">10 February 2024</dd>
+                <dt class="govcy-summary-list-key-internal">Description</dt>
+                <dd class="govcy-summary-list-value-internal">Electricity bill payment</dd>
+                <dt class="govcy-summary-list-key-internal">Amount</dt>
+                <dd class="govcy-summary-list-value-internal">€200</dd>
+              </dl>
+              <dl class="govcy-summary-list-row-internal-multiple">
+                <dt><span class="govcy-visually-hidden-error">Entry 2</span></dt>
+                <dt class="govcy-summary-list-key-internal">Date</dt>
+                <dd class="govcy-summary-list-value-internal">16 February 2024</dd>
+                <dt class="govcy-summary-list-key-internal">Description</dt>
+                <dd class="govcy-summary-list-value-internal">Telephone bill payment</dd>
+                <dt class="govcy-summary-list-key-internal">Amount</dt>
+                <dd class="govcy-summary-list-value-internal">50</dd>
+              </dl>
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> payments</span></a>
+            </dd>
+          </div>
+        </dl>
+        <h2>Making arrays screen reader friendly</h2>
+        <dl class="govcy-summary-list">
+          <div class="govcy-summary-list-row">
+            <dt class="govcy-summary-list-key">
+              Payments <span class="govcy-visually-hidden-error"> 2 entries</span>
+            </dt>
+            <dd class="govcy-summary-list-value">
+              <dl class="govcy-summary-list-row-internal-multiple">
+                <dt><span class="govcy-visually-hidden-error">Entry 1</span></dt>
+                <dt class="govcy-summary-list-key-internal">Date</dt>
+                <dd class="govcy-summary-list-value-internal">10 February 2024</dd>
+                <dt class="govcy-summary-list-key-internal">Description</dt>
+                <dd class="govcy-summary-list-value-internal">Electricity bill payment</dd>
+                <dt class="govcy-summary-list-key-internal">Amount</dt>
+                <dd class="govcy-summary-list-value-internal">€200</dd>
+              </dl>
+              <dl class="govcy-summary-list-row-internal-multiple">
+                <dt><span class="govcy-visually-hidden-error">Entry 2</span></dt>
+                <dt class="govcy-summary-list-key-internal">Date</dt>
+                <dd class="govcy-summary-list-value-internal">16 February 2024</dd>
+                <dt class="govcy-summary-list-key-internal">Description</dt>
+                <dd class="govcy-summary-list-value-internal">Telephone bill payment</dd>
+                <dt class="govcy-summary-list-key-internal">Amount</dt>
+                <dd class="govcy-summary-list-value-internal">50</dd>
+              </dl>
+            </dd>
+            <dd class="govcy-summary-list-actions">
+              <a href="#">Change<span class="govcy-visually-hidden-error"> payments</span></a>
+            </dd>
+          </div>
+        </dl>
+        <h2>Showing repeated information without a key</h2>
+        <h1>Confirm telephone numbers</h1>
+        <table class="govcy-table govcy-table-responsive-vertical">
+          <tbody>
+            <tr class="govcy-summary-list-row-internal">
+              <td>
+                <span class="govcy-visually-hidden-error">Entry 1 </span>+35799123456
+              </td>
+              <td class="govcy-text-sm-start govcy-text-md-end">
+                <ul class="list-inline govcy-my-0">
+                  <li class="list-inline-item"><a href="#">Change<span class="govcy-visually-hidden-error">
+                        +35799123456</span></a></li>
+                  <li class="list-inline-item"><a href="#">Remove<span class="govcy-visually-hidden-error">
+                        +35799123456</span></a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="govcy-summary-list-row-internal">
+              <td>
+                <span class="govcy-visually-hidden-error">Entry 2 </span>+35799654321
+              </td>
+              <td class="govcy-text-sm-start govcy-text-md-end">
+                <ul class="list-inline govcy-my-0">
+                  <li class="list-inline-item"><a href="#">Change<span class="govcy-visually-hidden-error">
+                        +35799654321</span></a></li>
+                  <li class="list-inline-item"><a href="#">Remove<span class="govcy-visually-hidden-error">
+                        +35799654321</span></a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>More complex Info</h2>
+        <table class="govcy-table govcy-table-responsive-vertical">
+          <tbody>
+            <tr class="govcy-summary-list-row-internal">
+              <td>
+                <dl class="govcy-summary-list-row-internal">
+                  <dt><span class="govcy-visually-hidden-error">Entry 1</span></dt>
+                  <dt class="govcy-summary-list-key-internal">Date</dt>
+                  <dd class="govcy-summary-list-value-internal">10 February 2024</dd>
+                  <dt class="govcy-summary-list-key-internal">Description</dt>
+                  <dd class="govcy-summary-list-value-internal">Electricity bill payment</dd>
+                  <dt class="govcy-summary-list-key-internal">Amount</dt>
+                  <dd class="govcy-summary-list-value-internal">€200</dd>
+                </dl>
+              </td>
+              <td class="govcy-text-sm-start govcy-text-md-end">
+                <ul class="list-inline govcy-my-0">
+                  <li class="list-inline-item"><a href="#">Change<span class="govcy-visually-hidden-error"> Entry
+                        1</span></a></li>
+                  <li class="list-inline-item"><a href="#">Remove<span class="govcy-visually-hidden-error"> Entry
+                        1</span></a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="govcy-summary-list-row-internal">
+              <td>
+                <dl class="govcy-summary-list-row-internal">
+                  <dt><span class="govcy-visually-hidden-error">Entry 2</span></dt>
+                  <dt class="govcy-summary-list-key-internal">Date</dt>
+                  <dd class="govcy-summary-list-value-internal">16 February 2024</dd>
+                  <dt class="govcy-summary-list-key-internal">Description</dt>
+                  <dd class="govcy-summary-list-value-internal">Telephone bill payment</dd>
+                  <dt class="govcy-summary-list-key-internal">Amount</dt>
+                  <dd class="govcy-summary-list-value-internal">50</dd>
+                </dl>
+              </td>
+              <td class="govcy-text-sm-start govcy-text-md-end">
+                <ul class="list-inline govcy-my-0">
+                  <li class="list-inline-item"><a href="#">Change<span class="govcy-visually-hidden-error"> Entry
+                        2</span></a></li>
+                  <li class="list-inline-item"><a href="#">Remove<span class="govcy-visually-hidden-error"> Entry
+                        2</span></a></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </article>
+  </main>
+</div>

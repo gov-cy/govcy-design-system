@@ -1,0 +1,38 @@
+name: Accessibility test
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: |
+          export HUSKY=0
+          npm install
+
+    - name: Start server
+      run: npm start &
+
+    - name: Run pa11y tests
+      run: npm run pa11y:test
+
+    - name: Upload pa11y report as an artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: pa11y-issues
+        path: pa11y_issues.json
+    

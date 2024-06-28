@@ -1,0 +1,101 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the buttons, if any.
+// --------------------------------------------------------------------------
+
+// Create govcy-btn mixin by extending bootstrap .btn class
+
+@mixin govcy-btn-variants {
+  @extend .btn;
+  margin-bottom: $govcy-default-margin-bottom;
+
+  &:not(.disabled):not(:disabled) {
+    &:hover {
+      color: $govcy-white;
+    }
+
+    &:focus {
+      background-color: $govcy-btn-focus;
+      border: 2px solid;
+      box-shadow: none;
+      color: $govcy-body;
+    }
+  }
+}
+
+.govcy-btn {
+  @include govcy-btn-variants;
+  border: 2px solid transparent;
+
+  &-sm {
+    @extend .btn-sm;
+    border: 2px solid transparent;
+  }
+
+  &-lg {
+    @extend .btn-lg;
+    border: 2px solid transparent;
+  }
+}
+
+// create GOVCY Primary button by using govcy-btn mixin
+
+.govcy-btn-primary,
+.govcy-btn-primary:disabled,
+.govcy-btn-primary:visited {
+  @include govcy-btn-variants;
+  background-color: $govcy-primary;
+  color: $govcy-white;
+
+  &:hover {
+    background-color: $govcy-btn-primary-hover;
+  }
+}
+
+// create GOVCY secondary button by using govcy-btn mixin
+
+.govcy-btn-secondary,
+.govcy-btn-secondary:disabled,
+.govcy-btn-secondary:visited {
+  @include govcy-btn-variants;
+  background-color: $govcy-btn-secondary;
+  color: $govcy-body !important;
+
+  &:hover {
+    background-color: $govcy-btn-secondary-hover;
+  }
+}
+
+// create GOVCY Success button by using govcy-btn mixin
+
+.govcy-btn-success,
+.govcy-btn-success:disabled,
+.govcy-btn-success:visited {
+  @include govcy-btn-variants;
+  background-color: $govcy-btn-success;
+  color: $govcy-white;
+
+  &:hover {
+    background-color: $govcy-btn-success-hover;
+  }
+}
+
+// create GOVCY Warning button by using govcy-btn mixin
+
+.govcy-btn-warning,
+.govcy-btn-warning:disabled,
+.govcy-btn-warning:visited {
+  @include govcy-btn-variants;
+  background-color: $govcy-btn-tirtiary;
+  color: $govcy-white;
+
+  &:hover {
+    background-color: $govcy-btn-tirtiary-hover;
+  }
+}
+
+.govcy-btn-primary:disabled,
+.govcy-btn-secondary:disabled,
+.govcy-btn-warning:disabled,
+.govcy-btn-success:disabled {
+  opacity: var(--bs-btn-disabled-opacity);
+}

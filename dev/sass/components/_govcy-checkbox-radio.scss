@@ -1,0 +1,121 @@
+// ---------------------------------------------------------------------------------------------
+// This file contains the custom styles for govcy-checkbox and govcy-radio
+// ---------------------------------------------------------------------------------------------
+
+.govcy-checkbox,
+.govcy-radio {
+  cursor: pointer;
+  display: block;
+  margin-bottom: map-get($govcy-spacers, 3);
+  padding-left: 44px;
+  position: relative;
+  //user-select: none;
+  clear: left;
+
+  label,
+  label.govcy-label {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 10px 16px;
+    cursor: pointer;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-weight: normal;
+  }
+
+  // Hide the default checkbox styles
+  .govcy-checkbox-input,
+  .govcy-radio-input {
+    cursor: pointer;
+    position: absolute;
+    height: 44px;
+    opacity: 0;
+    width: 44px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    &:focus + label::before {
+      content: '';
+      box-shadow: 0 0 0 4px $govcy-focus;
+      outline: none;
+    }
+
+    &:checked + label::after {
+      content: '';
+      display: block;
+    }
+  }
+
+  // Create custom checkbox styles
+  .govcy-checkbox-input + label::before {
+    content: '';
+    cursor: pointer;
+    touch-action: manipulation;
+    border: $govcy-default-border $govcy-body;
+    height: 44px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 44px;
+    margin: 0;
+  }
+
+  // Tickbox/indicator (hidden when not checked) */
+  .govcy-checkbox-input + label::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid $govcy-body;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: none;
+    height: 24px;
+    left: 16px;
+    position: absolute;
+    top: 7px;
+    transform: rotate(45deg);
+    width: 13px;
+  }
+
+  // Create custom radio button style
+  .govcy-radio-input + label::before {
+    content: '';
+    border: $govcy-default-border $govcy-body;
+    border-radius: 50%;
+    height: 44px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 44px;
+  }
+
+  .govcy-radio-input + label::after {
+    content: '';
+    background-color: $govcy-body;
+    border: solid $govcy-body;
+    border-radius: 50%;
+    content: '';
+    display: none;
+    height: 20px;
+    left: 12px;
+    position: absolute;
+    top: 12px;
+    width: 20px;
+  }
+
+  span {
+    &.govcy-hint {
+      padding-left: 16px;
+    }
+  }
+}
+
+.govcy-radio__conditional--hidden {
+  display: none;
+}
+
+.govcy-radio {
+  &__conditional--hiden {
+    display: none;
+  }
+}

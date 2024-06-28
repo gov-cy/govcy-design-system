@@ -1,0 +1,62 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>File Upload</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+            <h1><label class="govcy-label govcy-label-primary" for="file1">Upload a file</label></h1>
+            <span id="file1-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+            <input class="govcy-file-upload" type="file" id="file1" name="file1" aria-describedby="file1-hint">
+          </div>
+        </div>
+        <h2>More than one question on the page</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="file2">Upload a file</label>
+            <span id="file2-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+            <input class="govcy-file-upload" type="file" id="file2" name="file2" aria-describedby="file2-hint">
+          </div>
+        </div>
+        <h2>Previously uploaded file</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+            <p class="govcy-label govcy-label-primary">You have uploaded the company’s certificate of liquidation</p>
+            <span class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+            <a href="#">View<span class="govcy-visually-hidden-error"> the company’s certificate of liquidation
+                file</span></a>
+            <a class="govcy-ml-3" href="#">Delete<span class="govcy-visually-hidden-error"> the company’s certificate of
+                liquidation file</span></a>
+          </div>
+        </div>
+        <h2>Error Messahes</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control govcy-form-control-error">
+            <h1><label class="govcy-label govcy-label-primary" for="file4">Upload a file</label></h1>
+            <span id="file4-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+            <p id="file4-error" class="govcy-input-error-msg">
+              <span class="govcy-visually-hidden-error">Error:</span>There is an error
+            </p>
+            <input class="govcy-file-upload" type="file" id="file4" name="file4"
+              aria-describedby="file4-hint file4-error">
+          </div>
+        </div>
+        <h2>Error Messahes with more than one question page.</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label govcy-label-primary" for="file5">Upload a file</label>
+            <span id="file5-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+            <p id="file5-error" class="govcy-input-error-msg">
+              <span class="govcy-visually-hidden-error">Error:</span>There is an error
+            </p>
+            <input class="govcy-file-upload" type="file" id="file5" name="file5"
+              aria-describedby="file5-hint file5-error">
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

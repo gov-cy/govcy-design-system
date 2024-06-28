@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the hint.
+// -----------------------------------------------------------------------------
+
+// Govcy hint
+.govcy-hint {
+  color: $govcy-hint;
+  display: block;
+  margin-bottom: map-get($govcy-spacers, 3);
+}

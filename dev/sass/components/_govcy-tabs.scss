@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the tabs.
+// -----------------------------------------------------------------------------
+
+.govcy-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 0;
+
+  .govcy-tab-item {
+    .govcy-tab-link {
+      background: 0 0;
+      border: 1px solid transparent;
+      border-top-left-radius: 0rem;
+      border-top-right-radius: 0rem;
+      padding: 0.65rem 1rem;
+      margin: 0.24rem 0.24rem 0.24rem 0;
+      text-decoration: underline;
+      background-color: #e6e6e7;
+      outline: none !important;
+      color: $govcy-body;
+
+      &.active {
+        color: $govcy-body;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+        padding: 1rem 1.5rem;
+        margin: 0 0.24rem -1px 0;
+      }
+
+      &:focus,
+      &.active:focus {
+        background-color: $govcy-btn-focus;
+        box-shadow: none;
+        color: $govcy-body;
+      }
+    }
+  }
+}
+
+.govcy-tab-content {
+  @extend .tab-content;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: $govcy-default-margin-bottom;
+
+  .govcy-tab-pane {
+    @extend .tab-pane;
+    padding: 1rem;
+    h1, h2, h3, h4 {
+      padding: 0;
+    }
+
+    .govcy-caption {
+      padding-top: map-get($govcy-spacers, 3);
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.govcy-table.dataTable,
+.dataTables_scrollHead,
+.dataTables_scrollHeadInner,
+.dataTables_scrollBody {
+  width: 100% !important;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-color: transparent !important;
+}
+
+.dataTables_wrapper {
+  margin-bottom: $govcy-default-margin-bottom;
+
+  button.dt-button {
+    background: $govcy-primary;
+    color: $govcy-white;
+    border-radius: 4px;
+    border: $govcy-default-border transparent;
+
+    &:active:not(.disabled),
+    &:hover:not(.disabled) {
+      background: $govcy-btn-primary-hover;
+      border: $govcy-default-border $govcy-border-standard;
+    }
+
+    &:focus:not(.disabled),
+    &:focus-within:not(.disabled) {
+      background: $govcy-btn-focus;
+      border: $govcy-default-border;
+      box-shadow: none;
+      color: $govcy-body;
+      text-shadow: none;
+    }
+  }
+
+  .dataTables_filter {
+    > label > input {
+      margin-left: 8px !important;
+      margin-bottom: 5px;
+      border: $govcy-default-border $govcy-body;
+      padding: 5px;
+      border-radius: 0;
+
+      &:focus {
+        box-shadow: 0 0 0 4pt $govcy-focus;
+        outline: none;
+      }
+    }
+  }
+
+  > .dataTables_paginate {
+    a.paginate_button {
+      background: $govcy-white;
+      color: $govcy-black;
+      border-radius: 4px;
+      border: $govcy-default-border transparent;
+
+      &:active,
+      &:hover {
+        color: $govcy-black !important;
+        background: map-get($govcy-brand-colors, 'main-shade-2') !important;
+        background-color: map-get(
+          $govcy-brand-colors,
+          'main-shade-2'
+        ) !important;
+        border: $govcy-default-border $govcy-border-standard;
+        box-shadow: none !important;
+      }
+
+      &:focus,
+      &:focus-within {
+        background: $govcy-btn-focus !important;
+        border: $govcy-default-border !important;
+        box-shadow: none !important;
+        color: $govcy-body !important;
+      }
+
+      &.current {
+        background: $govcy-primary;
+        color: $govcy-white !important;
+        border-radius: 4px;
+        border: $govcy-default-border $govcy-border-standard;
+        box-shadow: none !important;
+
+        &:hover {
+          background-color: $govcy-btn-primary-hover !important;
+          color: $govcy-white !important;
+          border: $govcy-default-border $govcy-border-standard;
+        }
+
+        &:focus,
+        &:focus-within {
+          border: $govcy-default-border !important;
+          color: $govcy-body !important;
+        }
+      }
+    }
+  }
+
+  .govcy-table {
+    &.dataTable {
+      > tbody th,
+      > thead th,
+      > tbody td {
+        padding: $table-cell-padding-y $table-cell-padding-x;
+        background-color: transparent;
+        &:focus-visible {
+          //outline: 3px solid $govcy-link-focus;
+          border: 3px solid $govcy-link-focus !important;
+          outline: 0px;
+        }
+      }
+
+      thead > tr > th,
+      thead > tr > td {
+        &.sorting:before,
+        &.sorting:after,
+        &.sorting_asc:before,
+        &.sorting_asc:after,
+        &.sorting_desc:before,
+        &.sorting_desc:after,
+        &.sorting_asc_disabled:before,
+        &.sorting_asc_disabled:after,
+        &.sorting_desc_disabled:before,
+        &.sorting_desc_disabled:after {
+          line-height: 11px;
+        }
+
+        &.sorting:before,
+        &.sorting:after,
+        &.sorting_asc:after,
+        &.sorting_desc:before,
+        &.sorting_asc_disabled:before,
+        &.sorting_asc_disabled:after,
+        &.sorting_desc_disabled:before,
+        &.sorting_desc_disabled:after {
+          opacity: 0.1;
+        }
+
+        &.sorting_asc:before,
+        &.sorting_desc:after {
+          opacity: 0.45;
+        }
+      }
+
+      &.no-footer {
+        border-bottom: none;
+
+        &.dtr-inline {
+          padding-top: map-get($govcy-spacers, 3);
+          padding-bottom: map-get($govcy-spacers, 6);
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

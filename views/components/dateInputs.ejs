@@ -1,0 +1,390 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Single question page</h2>
+        <div class="govcy-form">
+          <fieldset
+            class="govcy-fieldset"
+            role="group"
+            aria-describedby="date1-hint"
+          >
+            <legend class="govcy-legend govcy-mb-6"><h1>Date input</h1></legend>
+            <div class="govcy-form-control">
+              <span class="govcy-hint" id="date1-hint"
+                >For example, 12 11 2007</span
+              >
+              <div class="govcy-d-flex govcy-flex-wrap">
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="day_1"
+                    >Day</label
+                  >
+                  <input
+                    id="day_1"
+                    class="govcy-text-input govcy-text-input-char_3"
+                    maxlength="2"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="month_1"
+                    >Month</label
+                  >
+                  <select id="month_1" class="govcy-select">
+                    <option value="" selected=""></option>
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="year_1"
+                    >Year</label
+                  >
+                  <input
+                    id="year_1"
+                    class="govcy-text-input govcy-text-input-char_6"
+                    placeholder=""
+                    maxlength="4"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <h2>More than one question on the page</h2>
+        <div class="govcy-form">
+          <fieldset
+            class="govcy-fieldset"
+            role="group"
+            aria-describedby="date2-hint"
+          >
+            <legend class="govcy-legend">Date input</legend>
+            <div class="govcy-form-control">
+              <span class="govcy-hint" id="date2-hint"
+                >For example, 12 11 2007</span
+              >
+              <div class="govcy-d-flex govcy-flex-wrap">
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="day_2"
+                    >Day</label
+                  >
+                  <input
+                    id="day_2"
+                    class="govcy-text-input govcy-text-input-char_3"
+                    maxlength="2"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="month_2"
+                    >Month</label
+                  >
+                  <select id="month_2" class="govcy-select">
+                    <option value="" selected=""></option>
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="year_2"
+                    >Year</label
+                  >
+                  <input
+                    id="year_2"
+                    class="govcy-text-input govcy-text-input-char_6"
+                    placeholder=""
+                    maxlength="4"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <h2>Autocomplete for a date of birth</h2>
+        <div class="govcy-form">
+          <fieldset
+            class="govcy-fieldset"
+            role="group"
+            aria-describedby="date3-hint"
+          >
+            <legend class="govcy-legend">Date of birth</legend>
+            <div class="govcy-form-control">
+              <span class="govcy-hint" id="date3-hint"
+                >For example, 12 11 2007</span
+              >
+              <div class="govcy-d-flex govcy-flex-wrap">
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="day_3"
+                    >Day</label
+                  >
+                  <input
+                    id="day_3"
+                    class="govcy-text-input govcy-text-input-char_3"
+                    maxlength="2"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    autocomplete="bday-day"
+                  />
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="month_3"
+                    >Month</label
+                  >
+                  <select
+                    id="month_3"
+                    class="govcy-select"
+                    autocomplete="bday-month"
+                  >
+                    <option value="" selected=""></option>
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="year_3"
+                    >Year</label
+                  >
+                  <input
+                    id="year_3"
+                    class="govcy-text-input govcy-text-input-char_6"
+                    placeholder=""
+                    maxlength="4"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    autocomplete="bday-year"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <h2>Error messages</h2>
+        <div class="govcy-form">
+          <fieldset
+            class="govcy-fieldset"
+            role="group"
+            aria-describedby="date-err1-hint date-err1-error"
+          >
+            <legend class="govcy-legend">Date of birth</legend>
+            <div class="govcy-form-control govcy-form-control-error">
+              <span class="govcy-hint" id="date-err1-hint"
+                >For example, 12 11 2007</span
+              >
+              <p id="date-err1-error" class="govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Error:</span>There is
+                an error
+              </p>
+              <div class="govcy-d-flex govcy-flex-wrap">
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="day_err1"
+                    >Day</label
+                  >
+                  <input
+                    id="day_err1"
+                    class="govcy-text-input govcy-text-input-char_3 govcy-text-input-error"
+                    maxlength="2"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    autocomplete="bday-day"
+                  />
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="month_err1"
+                    >Month</label
+                  >
+                  <select
+                    id="month_err1"
+                    class="govcy-select govcy-select-error"
+                    autocomplete="bday-month"
+                  >
+                    <option value="" selected=""></option>
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="year_err1"
+                    >Year</label
+                  >
+                  <input
+                    id="year_err1"
+                    class="govcy-text-input govcy-text-input-char_6 govcy-text-input-error"
+                    placeholder=""
+                    maxlength="4"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    autocomplete="bday-year"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="govcy-form">
+          <fieldset
+            class="govcy-fieldset"
+            role="group"
+            aria-describedby="date-err2-hint date-err2-error"
+          >
+            <legend class="govcy-legend">Date of birth</legend>
+            <div class="govcy-form-control govcy-form-control-error">
+              <span class="govcy-hint" id="date-err2-hint"
+                >For example, 12 11 2007</span
+              >
+              <p id="date-err2-error" class="govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Error:</span>Date of
+                birth must include a month and a year
+              </p>
+              <div class="govcy-d-flex govcy-flex-wrap">
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="day_err2"
+                    >Day</label
+                  >
+                  <input
+                    id="day_err2"
+                    class="govcy-text-input govcy-text-input-char_3"
+                    maxlength="2"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    autocomplete="bday-day"
+                  />
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="month_err2"
+                    >Month</label
+                  >
+                  <select
+                    id="month_err2"
+                    class="govcy-select govcy-select-error"
+                    autocomplete="bday-month"
+                  >
+                    <option value="" selected=""></option>
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="year_err2"
+                    >Year</label
+                  >
+                  <input
+                    id="year_err2"
+                    class="govcy-text-input govcy-text-input-char_6 govcy-text-input-error"
+                    placeholder=""
+                    maxlength="4"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                    autocomplete="bday-year"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

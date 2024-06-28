@@ -1,0 +1,123 @@
+// ---------------------------------------------------------------------------------------------
+// This file contains the custom styles for the form, fieldset, legend, label,
+// ---------------------------------------------------------------------------------------------
+
+
+.govcy-form {
+  
+  h3,
+  h4 {
+    padding: 0;
+  }
+
+  &.govcy-search-form {
+    background: map-get($govcy-brand-colors, 'main-shade-4');
+    padding: 1.5rem 1rem;
+    margin-bottom: $govcy-default-margin-bottom;
+
+    input[type='submit'],
+    input[type='button'],
+    button {
+      margin-bottom: 0;
+    }
+  }
+
+  .govcy-label-primary {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    .govcy-label-primary {
+      font-size: unset;
+      font-weight: 700 !important;
+    }
+  }
+
+  .govcy-fieldset {
+
+    legend,
+    .govcy-legend {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: map-get($govcy-spacers, 3);
+    }
+    .govcy-legend:has(h1, h2, h3, h4) {
+      margin-bottom: 0;
+    }
+  }
+
+  // Govcy form control
+  .govcy-form-control {
+    margin-bottom: $govcy-default-margin-bottom;
+
+    &.govcy-form-inline-control {
+      display: flex;
+
+      .govcy-radio {
+        margin-bottom: 0;
+      }
+    }
+
+    &-error {
+      border-left: 4px solid $govcy-danger;
+      padding-left: 13px;
+
+      .govcy-text-input ~ .govcy-date-picker__button {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyOCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI0LjY2NiAzLjAwMDE2SDIzLjMzMjdWMC4zMzM0OTZIMjAuNjY2VjMuMDAwMTZINy4zMzI2OFYwLjMzMzQ5Nkg0LjY2NjAyVjMuMDAwMTZIMy4zMzI2OEMxLjg2NjAyIDMuMDAwMTYgMC42NjYwMTYgNC4yMDAxNiAwLjY2NjAxNiA1LjY2NjgzVjI3LjAwMDJDMC42NjYwMTYgMjguNDY2OCAxLjg2NjAyIDI5LjY2NjggMy4zMzI2OCAyOS42NjY4SDI0LjY2NkMyNi4xMzI3IDI5LjY2NjggMjcuMzMyNyAyOC40NjY4IDI3LjMzMjcgMjcuMDAwMlY1LjY2NjgzQzI3LjMzMjcgNC4yMDAxNiAyNi4xMzI3IDMuMDAwMTYgMjQuNjY2IDMuMDAwMTZaTTI0LjY2NiAyNy4wMDAySDMuMzMyNjhWOS42NjY4M0gyNC42NjZWMjcuMDAwMloiIGZpbGw9IiNENDM1MUMiLz4KPC9zdmc+Cg=='),
+          linear-gradient(transparent, transparent) !important;
+      }
+    }
+
+    &-hint {
+      border-left: 4px solid $govcy-hint;
+      padding-left: 13px;
+    }
+
+    // Govcy label
+    label,
+    .govcy-label-primary {
+      color: $govcy-black;
+      display: block;
+      font-weight: 500;
+      margin-bottom: map-get($govcy-spacers, 3);
+
+      ~ .govcy-input-error-msg {
+        margin-top: 0.75rem;
+      }
+    }
+
+    // Govcy hint and input error message
+    .govcy-hint,
+    .govcy-input-error-msg {
+      color: $govcy-hint;
+      display: block;
+      line-height: 28px;
+    }
+
+    // Govcy input error message
+    .govcy-input-error-msg {
+      color: $govcy-danger;
+      font-weight: 600;
+      margin-top: map-get($govcy-spacers, 3);
+      margin-bottom: map-get($govcy-spacers, 3);
+    }
+
+    @media screen and (max-width: 576px) {
+      .govcy-file-upload {
+        width: 100%;
+      }
+
+      &.govcy-form-inline-control {
+        flex-direction: column;
+        margin-bottom: map-get($govcy-spacers, 3);
+
+        .govcy-radio {
+          margin-bottom: map-get($govcy-spacers, 3);
+        }
+      }
+    }
+  }
+  section {
+    margin-bottom: $govcy-default-margin-bottom;
+  }
+}

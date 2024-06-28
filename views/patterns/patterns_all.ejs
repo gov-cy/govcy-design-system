@@ -1,0 +1,255 @@
+<div class="govcy-col-12">
+    <main id="mainContainer">
+        <article>
+            <h1>Addresses</h1>
+
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset">
+                    <legend class="govcy-legend"><h3 class="govcy-m-0">What is your address?</h3></legend>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label" for="">Address line 1</label>
+                        <input id="" type="text" class="govcy-text-input">
+                    </div>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label" for="">Address line 2</label>
+                        <input id="" type="text" class="govcy-text-input">
+                    </div>
+                    <div class="govcy-form-control">    
+                        <label class="govcy-label" for="">Town or city</label>
+                        <input id="" type="text" class="govcy-text-input">
+                    </div>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label" for="">Country</label>
+                        <input id="" type="text" class="govcy-text-input">
+                    </div>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label" for="">Postcode</label>
+                        <input id="" type="text" class="govcy-text-input">
+                    </div>
+                </fieldset>
+            </form>
+            
+            <h2>Error messages</h2>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="input">Postcode</label>
+                    <span class="govcy-visually-hidden-error">Error: </span>
+                    <span class="govcy-input-error-msg">Enter a real postcode</span>
+                    <input id="input" type="text" class="govcy-text-input govcy-text-input-error">
+                </div>
+            </form>
+            
+            <h2>Text area</h2>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">What is your address?</label>
+                    <textarea id="input" class="govcy-text-area" rows="5"></textarea>
+                </div>
+            </form>
+            
+            <hr>
+            
+            <h1>Bank details</h1>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset">
+                    <legend class="govcy-legend"><h1>Bank account details</h1></legend>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label" for="input">IBAN</label>
+                        <span class="govcy-hint">You can ask your bank or check your bank statement</span>
+                        <input id="input" type="text" maxlength="34" class="govcy-text-input govcy-text-input-char_35">
+                    </div>
+                    <div class="govcy-form-control">
+                        <button type="submit" class="govcy-btn-primary">Continue</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+            <h2>SWIFT</h2>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input"><h1>BIC or SWIFT code</h1></label>
+                    <span class="govcy-hint">Must be between 8 and 11 characters long. You can ask your bank or check your bank statement</span>
+                    <input id="" type="text" class="govcy-text-input govcy-text-input-char_35" maxlength="11">
+                </div>
+            </form>
+            
+            <h2>Error</h2> 
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="input"><h1>IBAN</h1></label>
+                    <span class="govcy-visually-hidden-error">Error: </span>
+                    <span class="govcy-hint">You can ask your bank or check your bank statement</span>
+                    <span class="govcy-input-error-msg">There is an error</span>
+                    <input id="input" type="text" maxlength="34" class="govcy-text-input govcy-text-input-char_20 govcy-text-input-error">
+                </div>
+            </form>
+            
+            <hr>
+            
+            <h1>Dates</h1>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset">
+                    <div class="govcy-form-control">
+                        <legend class="govcy-legend" for=""><h1>When was your passport issued?</h1></legend>
+                        <span class="govcy-hint govcy-mb-3">For example, 20 07 2013</span>
+                        <div class="govcy-d-flex">
+                            <div class="govcy-d-block">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Day</label>
+                                <input class="govcy-text-input govcy-text-input-char_3" placeholder="" maxlength="2" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                            <div class="govcy-d-block govcy-ml-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Month</label>
+                                <select class="govcy-select" required="">
+                                    <option value="" selected=""></option>
+                                    <option value="01">01 - January</option>
+                                    <option value="02">02 - February</option>
+                                    <option value="03">03 - March</option>
+                                    <option value="04">04 - April</option>
+                                    <option value="05">05 - May</option>
+                                    <option value="06">06 - June</option>
+                                    <option value="07">07 - July</option>
+                                    <option value="08">08 - August</option>
+                                    <option value="09">09 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                </select>
+                            </div>
+                            <div class="govcy-d-block govcy-ml-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2" for="">Year</label>
+                                <input class="govcy-text-input govcy-text-input-char_6" placeholder="" maxlength="4" type="text" pattern="[0-9]*" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            
+            <h2>Date picker</h2>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="appointment-date"><h1>Date of birth</h1></label>
+                    <span class="govcy-hint govcy-mb-3">dd/mm/yyyy</span>
+                    <div class="govcy-date-picker">
+                        <input type="text" class="govcy-text-input" 
+                            id="appointment-date"
+                            name="appointment-date"
+                            aria-labelledby="appointment-date-label"
+                            aria-describedby="appointment-date-hint"/>
+                    </div>
+                </div>
+            </form>
+            
+            <hr>
+            
+            <h1>Email Addresses</h1>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="email-h1"><h1>Email address</h1></label>
+                    <span class="govcy-hint">We’ll only use this email address for this application</span>
+                    <input id="email-h1" type="email" class="govcy-text-input" aria-describedby="email-hint" autocomplete="email" spellcheck="false">
+                </div>
+            </form>
+            
+            <h2>Error messages</h2>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="email-h1a"><h1>Email address</h1></label>
+                    <span class="govcy-hint">We’ll only use this email address for this application</span>
+                    <span class="govcy-visually-hidden-error">Error: </span>
+                    <span class="govcy-input-error-msg">Enter an email address in the correct format, like name@example.com</span>
+                    <input id="email-h1a" type="email" class="govcy-text-input govcy-text-input-error" aria-describedby="email-hint" autocomplete="email" spellcheck="false">
+                </div>
+            </form>
+            
+            <hr>
+            
+            <h1>Names</h1>
+            
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input"><h1>Full name</h1></label>
+                    <input id="input "type="text" class="govcy-text-input">
+                </div>
+            </form>
+            
+            <h2>Error messages</h2>
+            
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="input"><h1>Full name</h1></label>
+                    <span class="govcy-visually-hidden-error">Error: </span>
+                    <span class="govcy-input-error-msg">Enter your full name</span>
+                    <input id="input "type="text" class="govcy-text-input govcy-text-input-error">
+                </div>
+            </form>
+            
+            <hr>
+            
+            <h1>Social Insurance Numbers</h1>
+            
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input"><h1>Below you can find your Social Insurance number</h1></label>
+                    <input type="text" class="govcy-text-input govcy-text-primary govcy-text-input-char_10" value="1234567890">
+                </div>
+            </form>
+            
+            <h2>Error messages</h2>
+            <div class="govcy-warning-text">
+                <span class="govcy-warning-text-icon" aria-hidden="true">!</span>
+                <span class="govcy-warning-text-message">Your Social Insurance number could not be found</span>
+            </div>
+            <p>You can enter or edit your Social Insurance number from this <a href="#">page</a>.</p>
+            <p>For further assistance contact the numbers below</p>
+            <p><strong>Telephone</strong>: <a href="tel:22123456">22123456</a></p>
+            <p><strong>Opening Times</strong>: <br/>Monday to Friday, 9am to 5pm<br/>Saturday and Sunday, 9am to 5pm</p>
+            
+            <hr>
+            
+            <h1>Telephone Numbers</h1>
+            
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Cyprus telephone number</label>
+                    <input id="input" class="govcy-text-input govcy-text-input-char_20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-hint" autocomplete="tel">
+                </div>
+            </form>
+            
+            <h2>Displaying</h2> 
+            
+            <a href="tel:+4412345678">+4412345678</a>
+            
+            <a href="tel:+35722123456">22123456</a>
+            
+            <h2>Error messages</h2>
+            
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label" for="input">Cyprus telephone number</label>
+                    <span class="govcy-visually-hidden-error">Error: </span>
+                    <span class="govcy-input-error-msg">Enter a telephone number in the correct format, like 99123456</span>
+                    <input id="input" class="govcy-text-input govcy-text-input-error govcy-text-input-char_20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-hint" autocomplete="tel">
+                </div>
+            </form>
+            
+            <h2>specific hint</h2>
+            
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control">
+                    <label class="govcy-label" for="input">Cyprus telephone number</label>
+                    <span class="govcy-hint">For international numbers include the country code</span>
+                    <input id="input" class="govcy-text-input govcy-text-input-char_20" id="tel" name="tel" type="tel" spellcheck="false" aria-describedby="tel-hint" autocomplete="tel">
+                </div>
+            </form>
+        </article>
+    </main>
+</div>

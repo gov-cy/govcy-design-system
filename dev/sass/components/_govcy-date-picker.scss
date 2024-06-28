@@ -1,0 +1,266 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the date picker.
+// -----------------------------------------------------------------------------
+
+.govcy-date-picker {
+  .govcy-date-picker__wrapper {
+    position: relative;
+    display: flex;
+    max-width: 30rem;
+  }
+
+  .govcy-date-picker__calendar__date:not([disabled]):hover,
+  .govcy-date-picker__calendar__month-selection:not([disabled]):hover,
+  .govcy-date-picker__calendar__month:not([disabled]):hover,
+  .govcy-date-picker__calendar__next-month:not([disabled]):hover,
+  .govcy-date-picker__calendar__next-year-chunk:not([disabled]):hover,
+  .govcy-date-picker__calendar__next-year:not([disabled]):hover,
+  .govcy-date-picker__calendar__previous-month:not([disabled]):hover,
+  .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):hover,
+  .govcy-date-picker__calendar__previous-year:not([disabled]):hover,
+  .govcy-date-picker__calendar__year-selection:not([disabled]):hover,
+  .govcy-date-picker__calendar__year:not([disabled]):hover {
+    outline: $govcy-default-border $govcy-link !important;
+    background-color: $govcy-white;
+    outline-offset: -2px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .govcy-date-picker__calendar__date:not([disabled]):focus,
+  .govcy-date-picker__calendar__month-selection:not([disabled]):focus,
+  .govcy-date-picker__calendar__month:not([disabled]):focus,
+  .govcy-date-picker__calendar__next-month:not([disabled]):focus,
+  .govcy-date-picker__calendar__next-year-chunk:not([disabled]):focus,
+  .govcy-date-picker__calendar__next-year:not([disabled]):focus,
+  .govcy-date-picker__calendar__previous-month:not([disabled]):focus,
+  .govcy-date-picker__calendar__previous-year-chunk:not([disabled]):focus,
+  .govcy-date-picker__calendar__previous-year:not([disabled]):focus,
+  .govcy-date-picker__calendar__year-selection:not([disabled]):focus,
+  .govcy-date-picker__calendar__year:not([disabled]):focus {
+    outline: $govcy-default-border $govcy-link-focus;
+    outline-offset: -2px;
+    background-color: $govcy-link-focus;
+    color: $govcy-black;
+  }
+
+  .govcy-date-picker__calendar__date--current-month:not([disabled]),
+  .govcy-date-picker__calendar__year-selection:not([disabled]),
+  .govcy-date-picker__calendar__month-selection:not([disabled]) {
+    color: $govcy-body;
+  }
+
+  .govcy-date-picker__button {
+    border: 0;
+    background-image: url('data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIwIDNoLTFWMWgtMnYySDdWMUg1djJINGMtMS4xIDAtMiAuOS0yIDJ2MTZjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY1YzAtMS4xLS45LTItMi0yem0wIDE4SDRWOGgxNnYxM3oiLz48L3N2Zz4='),
+      linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    align-self: stretch;
+    background-color: transparent;
+    background-position: center;
+    background-size: 1.5rem;
+    width: 3em;
+  }
+
+  &.govcy-date-picker--active .govcy-date-picker__button:not([disabled]),
+  .govcy-date-picker__button:not([disabled]):focus {
+    border: map-get($govcy-border-widths, 4) $govcy-link-focus;
+    background-color: $govcy-link-focus;
+  }
+
+  .govcy-text-input-error ~ .govcy-date-picker__button {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAyOCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI0LjY2NiAzLjAwMDE2SDIzLjMzMjdWMC4zMzM0OTZIMjAuNjY2VjMuMDAwMTZINy4zMzI2OFYwLjMzMzQ5Nkg0LjY2NjAyVjMuMDAwMTZIMy4zMzI2OEMxLjg2NjAyIDMuMDAwMTYgMC42NjYwMTYgNC4yMDAxNiAwLjY2NjAxNiA1LjY2NjgzVjI3LjAwMDJDMC42NjYwMTYgMjguNDY2OCAxLjg2NjAyIDI5LjY2NjggMy4zMzI2OCAyOS42NjY4SDI0LjY2NkMyNi4xMzI3IDI5LjY2NjggMjcuMzMyNyAyOC40NjY4IDI3LjMzMjcgMjcuMDAwMlY1LjY2NjgzQzI3LjMzMjcgNC4yMDAxNiAyNi4xMzI3IDMuMDAwMTYgMjQuNjY2IDMuMDAwMTZaTTI0LjY2NiAyNy4wMDAySDMuMzMyNjhWOS42NjY4M0gyNC42NjZWMjcuMDAwMloiIGZpbGw9IiNENDM1MUMiLz4KPC9zdmc+Cg=='),
+      linear-gradient(transparent, transparent);
+  }
+
+  .govcy-date-picker__button:focus {
+    background-color: map-get($govcy-brand-colors, 'main-shade-3');
+    outline: none;
+  }
+
+  .govcy-date-picker__calendar {
+    background-color: map-get($govcy-brand-colors, 'main-shade-3');
+    left: auto;
+    max-width: 20rem;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    border: 1px solid $govcy-border-standard;
+  }
+
+  .govcy-date-picker__calendar__row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .govcy-date-picker__calendar__table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+  }
+
+  .govcy-date-picker__calendar__table th {
+    font-weight: 400;
+  }
+
+  .govcy-date-picker__calendar__day-of-week {
+    padding: 6px 0;
+  }
+
+  .govcy-date-picker__calendar__table td {
+    padding: 0;
+  }
+
+  .govcy-date-picker__calendar__date--next-month:not([disabled]),
+  .govcy-date-picker__calendar__date--previous-month:not([disabled]) {
+    color: #5d5d52;
+  }
+
+  .govcy-date-picker__button:not([disabled]),
+  .govcy-date-picker__calendar__date:not([disabled]),
+  .govcy-date-picker__calendar__month-selection:not([disabled]),
+  .govcy-date-picker__calendar__month:not([disabled]),
+  .govcy-date-picker__calendar__next-month:not([disabled]),
+  .govcy-date-picker__calendar__next-year-chunk:not([disabled]),
+  .govcy-date-picker__calendar__next-year:not([disabled]),
+  .govcy-date-picker__calendar__previous-month:not([disabled]),
+  .govcy-date-picker__calendar__previous-year-chunk:not([disabled]),
+  .govcy-date-picker__calendar__previous-year:not([disabled]),
+  .govcy-date-picker__calendar__year-selection:not([disabled]),
+  .govcy-date-picker__calendar__year:not([disabled]) {
+    cursor: pointer;
+  }
+
+  .govcy-date-picker__calendar__cell--center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .govcy-date-picker__calendar__month,
+  .govcy-date-picker__calendar__next-year-chunk,
+  .govcy-date-picker__calendar__previous-year-chunk,
+  .govcy-date-picker__calendar__year {
+    background-color: map-get($govcy-brand-colors, 'main-shade-3');
+    border: 0;
+    width: 100%;
+  }
+
+  .govcy-date-picker__calendar__date {
+    padding: 10px 0;
+  }
+
+  .govcy-date-picker__calendar__date--focused {
+    outline: 2px solid $govcy-link;
+    background-color: $govcy-white;
+    outline-offset: -2px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .govcy-date-picker__calendar__cell {
+    background-color: map-get($govcy-brand-colors, 'main-shade-3');
+    flex: 1;
+  }
+
+  .govcy-date-picker__calendar__month-label {
+    flex: 4;
+    text-align: center;
+  }
+
+  .govcy-date-picker__calendar__previous-year:not([disabled]) {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMTEuNDEgNy40MSAxMCA2bC02IDYgNiA2IDEuNDEtMS40MUw2LjgzIDEyem04IDBMMTggNmwtNiA2IDYgNiAxLjQxLTEuNDFMMTQuODMgMTJ6Ii8+PC9zdmc+'),
+      linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+  }
+
+  .govcy-date-picker__calendar__next-year:not([disabled]) {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJtMTQgNi0xLjQxIDEuNDFMMTcuMTcgMTJsLTQuNTggNC41OUwxNCAxOGw2LTZ6TTYgNiA0LjU5IDcuNDEgOS4xNyAxMmwtNC41OCA0LjU5TDYgMThsNi02eiIvPjwvc3ZnPg=='),
+      linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+  }
+
+  .govcy-date-picker__calendar__previous-year-chunk:not([disabled]),
+  .govcy-date-picker__calendar__previous-month:not([disabled]) {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuNDEgNy40MSAxNCA2bC02IDYgNiA2IDEuNDEtMS40MUwxMC44MyAxMnoiLz48L3N2Zz4='),
+      linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+  }
+
+  .govcy-date-picker__calendar__next-year-chunk:not([disabled]),
+  .govcy-date-picker__calendar__next-month:not([disabled]) {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgNiA4LjU5IDcuNDEgMTMuMTcgMTJsLTQuNTggNC41OUwxMCAxOGw2LTZ6Ii8+PC9zdmc+'),
+      linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+  }
+
+  .govcy-date-picker__calendar__next-month,
+  .govcy-date-picker__calendar__next-year,
+  .govcy-date-picker__calendar__previous-month,
+  .govcy-date-picker__calendar__previous-year {
+    background-position: center;
+    background-size: auto 1.5rem;
+    height: 1.5rem;
+    padding: 20px 10px;
+  }
+  .govcy-date-picker__calendar__date,
+  .govcy-date-picker__calendar__next-month,
+  .govcy-date-picker__calendar__next-year,
+  .govcy-date-picker__calendar__previous-month,
+  .govcy-date-picker__calendar__previous-year {
+    background-color: map-get($govcy-brand-colors, 'main-shade-3');
+    border: 0;
+    width: 100%;
+  }
+
+  .govcy-date-picker__calendar__month-selection,
+  .govcy-date-picker__calendar__year-selection {
+    display: inline-block;
+    height: 100%;
+    padding: 8px 4px;
+    width: auto;
+    background-color: map-get($govcy-brand-colors, 'main-shade-3');
+    border: 0;
+  }
+
+  .govcy-date-picker__calendar__month,
+  .govcy-date-picker__calendar__year {
+    padding: 10px 0;
+  }
+
+  .govcy-date-picker__calendar__year--selected:not([disabled]),
+  .govcy-date-picker__calendar__month--selected:not([disabled]),
+  .govcy-date-picker__calendar__date--selected:not([disabled]) {
+    background-color: $govcy-link;
+    color: $govcy-white;
+  }
+
+  .govcy-date-picker__calendar__year--selected:not([disabled]):hover,
+  .govcy-date-picker__calendar__month--selected:not([disabled]):hover,
+  .govcy-date-picker__calendar__date--selected:not([disabled]):hover {
+    background-color: transparent;
+    color: $govcy-black;
+  }
+
+  .govcy-date-picker__calendar__year--focused,
+  .govcy-date-picker__calendar__month--focused {
+    outline: 2px solid $govcy-link;
+    background-color: $govcy-white;
+    outline-offset: -2px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .govcy-date-picker__calendar__next-year-chunk,
+  .govcy-date-picker__calendar__previous-year-chunk {
+    background-position: center;
+    background-size: auto 2rem;
+    margin: auto;
+    padding: 40px 0;
+  }
+}

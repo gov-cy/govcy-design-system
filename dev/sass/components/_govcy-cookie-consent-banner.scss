@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the consent banner.
+// -----------------------------------------------------------------------------
+
+.govcy-cookie-consent-banner {
+  z-index: 9999999999;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: map-get($govcy-brand-colors, 'main-shade-4');
+  padding: 2rem 0;
+  a {
+    margin-bottom: 0;
+  } 
+
+  h3 {
+    font-weight: 600;
+    font-size: 1.563rem;
+    padding-top: 0;
+  }
+}

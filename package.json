@@ -1,57 +1,69 @@
 {
-    "name": "govcy-design-system",
-    "version": "2.2.0",
-    "description": "",
-    "main": "index.html",
-    "author": "DMRID - DSF Team",
-    "license": "MIT",
-    "sasslintConfig": "test/config/.sasslintrc",
-    "scripts": {
-      "build-all": "npm run css-build && npm run css-build-distribution && npm run js-build",
-        "css-build": "copyfiles -u 2 src/js/*.js build/js && sass --no-source-map --load-path=node_modules src/sass/main.scss build/css/main.css",
-        "css-build-distribution": "sass --no-source-map src/sass/main.scss dist/css/main.min.css --style compressed",
-        "css-watch": "npm run css-build -- --watch",
-        "css-start": "npm run css-watch",
-        "sass-lint": "sass-lint -v",
-        "watch-css": "npm run css-watch",
-        "test-percy": "percy exec -- mocha --recursive --exit",
-        "es-lint": "eslint src/js/*.js",
-        "js-build": "node scripts/uglify.js",
-        "start": "http-server -c-1 -p 3000 -o build/"
-    },
-    "dependencies": {
-        "bootstrap": "^5.1.3",
-        "minimist": "^1.2.6",
-        "sass": "^1.43.4"
-    },
-    "devDependencies": {
-        "@percy/cli": "^1.0.0-beta.75",
-        "@percy/puppeteer": "^2.0.0",
-        "copyfiles": "^2.4.1",
-        "eslint": "^8.22.0",
-        "http-server": "^13.0.2",
-        "mocha": "^9.2.0",
-        "puppeteer": "13.2.0",
-        "sass-lint": "^1.13.0",
-        "uglify-js": "^3.17.0"
-    },
-    "overrides": {
-        "@percy/puppeteer": {
-            "node-fetch": ">=2.6.7"
-        },
-        "ansi-regex": "^5.0.1",
-        "minimist": "^1.2.6",
-        "sass-lint": {
-            "merge": "^2.1.1",
-            "gonzales-pe-sl": {
-                "minimist": "^1.2.6"
-            },
-            "eslint": {
-                "shelljs": "0.8.5",
-                "table": {
-                    "ajv": ">=6.12.3"
-                }
-            }
-        }
-    }
+  "name": "govcy-design-system",
+  "version": "3.0.0",
+  "description": "Design your service using GOV.CY unified design system framework",
+  "main": "app.js",
+  "license": "MIT",
+  "author": "DMRID - DSF Team",
+  "browserslist": [
+    "defaults and supports es6-module"
+  ],
+  "scripts": {
+    "pre-build": "node prebuild.mjs",
+    "build-all": "concurrently \"npm run build\" \"npm run build-distribution\"",
+    "build": "concurrently \"npm run css-build\" \"npm run js-build\"",
+    "build-distribution": "concurrently \"npm run css-build-distribution\" \"npm run js-build-distribution\"",
+    "css-build": "npm run pre-build && sass --no-source-map --load-path=node_modules dev/sass/main.scss public/css/govcy.uds.css",
+    "css-build-distribution": "npm run pre-build && sass --no-source-map dev/sass/main.scss dist/css/govcy.uds.min.css --style compressed",
+    "js-build": "rollup --config rollup.config.dev.mjs",
+    "js-build-distribution": "rollup --config rollup.config.prod.mjs",
+    "css-watch": "npm run css-build -- --watch",
+    "watch-css": "npm run css-watch",
+    "start": "nodemon app.js",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "eslint:check": "eslint .",
+    "eslint:fix": "eslint --fix .",
+    "stylelint": "stylelint '**/*.scss'",
+    "stylelint:fix": "stylelint '**/*.scss' --fix",
+    "prepare": "husky",
+    "pa11y:watch": "nodemon -e ejs -x \"npm run pa11y:test\"",
+    "pa11y:test": "concurrently \"pa11y-ci --config pa11yci.js\" \"pa11y-ci --config pa11yci.js --json > pa11y_issues.json\"",
+    "test-visual": "percy exec -- mocha \"test/visual/percy.test.mjs\" --exit"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "chrome-launcher": "^1.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.10",
+    "@percy/cli": "^1.28.6",
+    "@percy/puppeteer": "^2.0.2",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@web/rollup-plugin-copy": "^0.5.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "mocha": "^10.4.0",
+    "pa11y-ci": "^2.4.2",
+    "pa11y-ci-reporter-html": "^3.0.3",
+    "prettier": "^3.2.5",
+    "puppeteer": "^22.9.0",
+    "rollup": "^4.12.0",
+    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-sass-guidelines": "^11.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.1.0"
+  }
 }

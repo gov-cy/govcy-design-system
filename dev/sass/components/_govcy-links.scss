@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the Links.
+// -----------------------------------------------------------------------------
+
+// Govcy Links
+
+.govcy-link {
+  @extend a;
+}
+
+.govcy-link-no-visited-state {
+  @extend .govcy-link;
+  &:visited {
+    color: map-get($govcy-brand-colors, 'link-standard') !important;
+  }
+}
+
+.govcy-link-inverse,
+.govcy-link-inverse:visited {
+  @extend .govcy-link;
+  color: map-get($govcy-brand-colors, 'white') !important;
+}
+
+.govcy-link-no-underline,
+.govcy-text-decoration-underline {
+  @extend .text-decoration-none;
+}
+
+//defining govcy - back link, user's name and signout styles on :hover :active and :visited state
+a.govcy-sign-out {
+  color: $govcy-body !important;
+
+  &:hover,
+  &:visited,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration-thickness: 3px !important;
+  }
+}
+
+//defining govcy - skip to content link
+.govcy-skip-link {
+  border-bottom: 0 !important;
+  display: block;
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  text-decoration: underline !important;
+  top: auto;
+  width: 1px;
+
+  &:focus {
+    height: auto;
+    position: static;
+    width: 100%;
+  }
+}

@@ -1,0 +1,146 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./patterns') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Names</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li>
+                <a href="#how-it-works">How it works</a>
+
+                <ol>
+                  <li>
+                    <a href="#single-or-multiple-name-fields"
+                      >Single or multiple name fields</a
+                    >
+                  </li>
+
+                  <li><a href="#show-errors">Show errors</a></li>
+                </ol>
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>Follow this pattern whenever you need to ask for a user’s name .</p>
+        <h2 id="how-it-works" tabindex="-1">
+          How it works <a class="anchor-link" href="#how-it-works"> </a>
+        </h2>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="full-name">Full name</label>
+              <input
+                class="govcy-text-input"
+                id="full-name"
+                name="full-name"
+                type="text"
+                spellcheck="false"
+                autocomplete="name"
+              />
+            </div>
+          </form>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Full name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>
+          When asking users for their name, you must make it clear why you’re
+          asking.
+        </p>
+        <p>
+          Make sure the field is long enough to accommodate the names of your
+          users. Support all the characters users may need to enter.
+        </p>
+        <p>
+          Make it clear whether you need someone’s common name, or their name as
+          it’s written on official documents such as a passport.
+        </p>
+        <p>Help users to enter a valid email address by:</p>
+        <ul>
+          <li>allowing users to paste the name</li>
+          <li>
+            setting the <code>spellcheck</code> attribute to
+            <code>false</code> so that browsers do not spellcheck the email
+            address
+          </li>
+          <li>
+            setting the <code>autocomplete</code> attribute to
+            <code>name</code>. If you are asking users to enter their name in
+            multiple fields, set the autocomplete attribute on both fields
+            using: <code>given-name</code> for fields labelled ‘First name’ and
+            <code>family-name</code> for fields labelled ‘Last name’
+          </li>
+        </ul>
+        <h3 id="single-or-multiple-name-fields" tabindex="-1">
+          Single or multiple name fields
+          <a class="anchor-link" href="#single-or-multiple-name-fields"> </a>
+        </h3>
+        <p>
+          Use single or multiple fields depending on your user’s needs. Not
+          everyone’s name fits the first-name, last-name format. Using multiple
+          name fields mean there’s more risk that a person’s name will not fit
+          the format you’ve chosen and that it is entered incorrectly.
+        </p>
+        <p>
+          A single name field can accommodate the broadest range of name types,
+          but means you cannot reliably extract parts of a name.
+        </p>
+        <p>Label single name fields:</p>
+        <ul>
+          <li>‘Full name’</li>
+        </ul>
+        <p>For multiple name fields, use:</p>
+        <ul>
+          <li>‘First name’</li>
+          <li>‘Last name’</li>
+        </ul>
+        <h3 id="show-errors" tabindex="-1">
+          Show errors <a class="anchor-link" href="#show-errors"> </a>
+        </h3>
+        <p>
+          Error messages should follow the guidance in
+          <a href="../../components/errorSummary">error message</a> as shown in
+          the example below.
+        </p>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control govcy-form-control-error">
+              <label class="govcy-label" for="full-name-2">Full name</label>
+              <p class="govcy-input-error-msg" id="error2">
+                <span class="govcy-visually-hidden-error">Error: </span>Name is
+                required
+              </p>
+              <input
+                class="govcy-text-input govcy-text-input-error"
+                id="full-name-2"
+                name="full-name-2"
+                type="text"
+                spellcheck="false"
+                autocomplete="name"
+                aria-describedby="error2"
+              />
+            </div>
+          </form>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control govcy-form-control-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Full name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-input-error-msg<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-visually-hidden-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Error: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>Name is required<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-error<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name-2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>full-name-2<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+      </section>
+    </article>
+  </main>
+</div>

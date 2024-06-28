@@ -1,0 +1,217 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Tabs Component</h2>
+        <p>
+          This component is currently experimental because more research is
+          needed to validate it. The tabs component lets users navigate between
+          related sections of content, displaying one section at a time.
+        </p>
+        <ul class="govcy-tabs" id="pastTab" role="tablist">
+          <li class="govcy-tab-item" role="presentation">
+            <button
+              class="govcy-tab-link active"
+              id="past-day-tab"
+              data-govcy-target="#past-day-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="Past day"
+              aria-selected="true"
+            >
+              Past Day
+            </button>
+          </li>
+          <li class="govcy-tab-item" role="presentation">
+            <button
+              class="govcy-tab-link"
+              id="past-week-tab"
+              data-govcy-target="#past-week-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Past Week
+            </button>
+          </li>
+          <li class="govcy-tab-item" role="presentation">
+            <button
+              class="govcy-tab-link"
+              id="past-month-tab"
+              data-govcy-target="#past-month-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              Past Month
+            </button>
+          </li>
+          <li class="govcy-tab-item" role="presentation">
+            <button
+              class="govcy-tab-link"
+              id="past-year-tab"
+              data-govcy-target="#past-year-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              Past Year
+            </button>
+          </li>
+        </ul>
+        <div class="govcy-tab-content" id="pastTabContent">
+          <div
+            class="govcy-tab-pane show active"
+            id="past-day-tab-pane"
+            role="tabpanel"
+            aria-labelledby="past-day-tab"
+          >
+            <table class="govcy-table">
+              <caption class="govcy-caption-top govcy-caption">
+                <h2>Past Day</h2>
+              </caption>
+              <thead>
+                <tr class="govcy-br-input">
+                  <th>Case manager</th>
+                  <th>Open cases</th>
+                  <th>Closed cases</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kyriacou Antonis</td>
+                  <td>2</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Andreou Andreas</td>
+                  <td>5</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Daphne Mariou</td>
+                  <td>6</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="govcy-tab-pane"
+            id="past-week-tab-pane"
+            role="tabpanel"
+            aria-labelledby="past-week-tab"
+          >
+            <table class="govcy-table">
+              <caption class="govcy-caption-top govcy-caption">
+                <h2>Past Week</h2>
+              </caption>
+              <thead>
+                <tr class="govcy-br-input">
+                  <th>Case manager</th>
+                  <th>Open cases</th>
+                  <th>Closed cases</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Constantinou Antonis</td>
+                  <td>7</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Panagou Andreas</td>
+                  <td>2</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Chrysos Andreas</td>
+                  <td>5</td>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="govcy-tab-pane"
+            id="past-month-tab-pane"
+            role="tabpanel"
+            aria-labelledby="past-month-tab"
+          >
+            <table class="govcy-table">
+              <caption class="govcy-caption-top govcy-caption">
+                <h2>Past Month</h2>
+              </caption>
+              <thead>
+                <tr class="govcy-br-input">
+                  <th>Case manager</th>
+                  <th>Open cases</th>
+                  <th>Closed cases</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kyriacou Antonis</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Andreou Andreas</td>
+                  <td>2</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Daphne Mariou</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="govcy-tab-pane"
+            id="past-year-tab-pane"
+            role="tabpanel"
+            aria-labelledby="past-year-tab"
+          >
+            <table class="govcy-table">
+              <caption class="govcy-caption-top govcy-caption">
+                <h2>Past Year</h2>
+              </caption>
+              <thead>
+                <tr class="govcy-br-input">
+                  <th>Case manager</th>
+                  <th>Open cases</th>
+                  <th>Closed cases</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Constantinou Antonis</td>
+                  <td>2</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Panagou Andreas</td>
+                  <td>3</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Chrysos Andreas</td>
+                  <td>1</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

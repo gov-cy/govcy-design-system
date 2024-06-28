@@ -1,0 +1,298 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./patterns') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Confirm a phone number</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li>
+                <a href="#when-to-use-this-pattern">When to use this pattern</a>
+              </li>
+
+              <li>
+                <a href="#how-it-works">How it works</a>
+
+                <ol>
+                  <li>
+                    <a href="#1.-ask-the-user-to-enter-their-mobile-number."
+                      >1. Ask the user to enter their mobile number.</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#2.-send-confirmation-code-via-sms"
+                      >2. Send confirmation code via SMS</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#3.-ask-the-use-to-enter-the-confirmation-code."
+                      >3. Ask the use to enter the confirmation code.</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#expiry-conditions-and-policy"
+                      >Expiry conditions and policy</a
+                    >
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Check that a user has access to a specific mobile phone number using a
+          security code sent by text message.
+        </p>
+        <h2 id="when-to-use-this-pattern" tabindex="-1">
+          When to use this pattern
+          <a class="anchor-link" href="#when-to-use-this-pattern"> </a>
+        </h2>
+        <p>
+          Ask the user to enter a security code when there is a need to verify
+          that the user has access to a specific mobile phone number.
+        </p>
+        <p>Only use this pattern if:</p>
+        <ul>
+          <li>
+            critical functionality in the service is only available via mobile,
+            for example, a password reset
+          </li>
+          <li>
+            accidentally using the wrong phone number would give someone else
+            access to sensitive information about the user
+          </li>
+        </ul>
+        <p>
+          Remember that confirmed phone numbers do not prove a person’s
+          identity, just that they have access to that mobile phone number at
+          the time they confirmed.
+        </p>
+        <h2 id="how-it-works" tabindex="-1">
+          How it works <a class="anchor-link" href="#how-it-works"> </a>
+        </h2>
+        <p>
+          This pattern can be disruptive because they force users to switch from
+          your service to their SMS application and back again.
+        </p>
+        <p>That could cause problems like:</p>
+        <ul>
+          <li>confusing users about the journey outside the service</li>
+          <li>assuming users have access to their SMS</li>
+          <li>SMS being sent to spam</li>
+          <li>taking too long to send the confirmation SMS</li>
+        </ul>
+        <p>
+          To reduce these issues for the user, you must design the service with
+          the following considerations:
+        </p>
+        <ul>
+          <li>set expiry conditions on the SMS confirmation code</li>
+          <li>let users resend their SMS confirmation code</li>
+          <li>
+            use the
+            <a
+              href="../../components/text_input/#mobile-and-finger-friendly-numeric-inputs"
+              >mobile friendly number pattern</a
+            >
+            for the input page of the confirmation code
+          </li>
+          <li>
+            use <code>autocomplete="one-time-code"</code> and the
+            <code>app.min.js</code> to autocomplete the confirmation code on
+            devices and browsers that support the functionality
+          </li>
+        </ul>
+        <p>
+          Use the following flow to confirm the mobile phone number via SMS.
+        </p>
+        <ol>
+          <li>Ask the user to enter their mobile number.</li>
+          <li>Send confirmation code via SMS</li>
+          <li>Ask the user to enter the confirmation code.</li>
+        </ol>
+        <p>
+          <img
+            src="../../img/phone_confirm_pattern.png"
+            alt="Mobile phone confirmation flow"
+            class="img-fluid"
+          />
+        </p>
+        <h3 id="1.-ask-the-user-to-enter-their-mobile-number." tabindex="-1">
+          1. Ask the user to enter their mobile number.
+          <a
+            class="anchor-link"
+            href="#1.-ask-the-user-to-enter-their-mobile-number."
+          >
+          </a>
+        </h3>
+        <p>
+          Use the <a href="../telephone/">telephone pattern</a> to ask the user
+          for their mobile number:
+        </p>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control">
+              <h1><label for="Mobile">What is your mobile number?</label></h1>
+              <span class="govcy-hint" id="tel-hint"
+                >Country code only needed for numbers outside of Cyprus</span
+              >
+              <input
+                class="govcy-text-input govcy-text-input-char_20"
+                id="Mobile"
+                name="Mobile"
+                type="tel"
+                spellcheck="false"
+                aria-describedby="tel-hint"
+                autocomplete="tel"
+              />
+            </div>
+            <button
+              id="btnMobileSubmit"
+              type="button"
+              class="govcy-btn-primary"
+            >
+              Continue
+            </button>
+          </form>
+        </div>
+        <p><em>Sample Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Mobile<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>What is your mobile number?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-hint<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel-hint<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Country code only needed for numbers outside of Cyprus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-char_20<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Mobile<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Mobile<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel-hint<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btnMobileSubmit<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-btn-primary  govcy-mb-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Continue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h3 id="2.-send-confirmation-code-via-sms" tabindex="-1">
+          2. Send confirmation code via SMS
+          <a class="anchor-link" href="#2.-send-confirmation-code-via-sms"> </a>
+        </h3>
+        <p>Send an SMS with the following format:</p>
+        <pre
+          class="language-html"
+        ><code class="language-html">[CODE] EINAI O KΩΔIKOΣ AΣΦAΛEIAΣ ΣAΣ ΓIA THN YΠHPEΣIA [SERVICE-NAME-GREEK]. ΛHΓEI ΣE 15 ΛEΠTA. <br><br>[CODE] IS YOUR SECURITY CODE FOR THE [SERVICE-NAME-ENGLISH] SERVICE. IT EXPIRES IN 15 MINUTES. <br>@[SERVICE-DOMAIN] #[CODE]</code></pre>
+        <p>
+          In order to be aligned with the
+          <a href="https://wicg.github.io/sms-one-time-codes/"
+            >origin-bound one-time codes delivered via SMS</a
+          >
+          specification and take advantage of the autocomplete functionality,
+          make sure that the last line consists of the domain of the service
+          prefixed with an <code>@</code>, followed by a space and then by a
+          <code>#</code> symbol and the confirmation code, like this:
+        </p>
+        <pre
+          class="language-html"
+        ><code class="language-html">@example.service.gov.cy #12345</code></pre>
+        <p>
+          Here is a complete example of a confirmation SMS with sample code,
+          service name and service domain:
+        </p>
+        <pre
+          class="language-html"
+        ><code class="language-html">1234 EINAI O KΩΔIKOΣ AΣΦAΛEIAΣ ΣAΣ ΓIA THN YΠHPEΣIA ENHMEPΩΣH TΩN ΠPOΣΩΠIKΩN MOY ΣTOIXEIΩN. ΛHΓEI ΣE 15 ΛEΠTA. <br><br>1234 IS YOUR SECURITY CODE FOR THE UPDATE MY PERSONAL DETAILS SERVICE. IT EXPIRES IN 15 MINUTES. <br>@update-my-details.staging.service.gov.cy #1234</code></pre>
+        <h3 id="3.-ask-the-use-to-enter-the-confirmation-code." tabindex="-1">
+          3. Ask the use to enter the confirmation code.
+          <a
+            class="anchor-link"
+            href="#3.-ask-the-use-to-enter-the-confirmation-code."
+          >
+          </a>
+        </h3>
+        <p>
+          Use the
+          <a
+            href="../../components/textbox/#mobile-and-finger-friendly-numeric-inputs"
+            >mobile friendly number pattern</a
+          >
+          to ask the user for the confirmation code. Make sure to include the
+          <code>autocomplete="one-time-code" </code> attribute on your text box
+          and include the <code>app.min.js</code> as described in the
+          <a href="../../getting_started/#css-and-javascript"
+            >getting started page</a
+          >, in order to take advantage of the autocomplete functionality on
+          devices and browsers that support it.
+        </p>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <h1>Check your phone</h1>
+          <p>
+            We've sent you a text message with a security code to
+            <span><strong>+35799123456</strong></span>
+          </p>
+          <form class="govcy-form" action="" novalidate="">
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="Otp"
+                >Enter the security code</label
+              >
+              <input
+                type="text"
+                class="govcy-text-input govcy-text-input-char_4"
+                id="Otp"
+                name="Otp"
+                value=""
+                autocomplete="one-time-code"
+                maxlength="4"
+                spellcheck="false"
+                pattern="[0-9]*"
+                inputmode="numeric"
+              />
+            </div>
+            <button class="govcy-btn-primary">Continue</button>
+          </form>
+          <p>
+            If you have not received the security code after a few minutes,
+            check the phone number above is correct.
+          </p>
+          <p>
+            You can
+            <a href="#"
+              >enter the phone number again or try a different phone number</a
+            >.
+          </p>
+        </div>
+        <p><em>Sample Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Check your phone<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><br>    We've sent you a text message with a security code to <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>+35799123456<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span><br>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Otp<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Enter the security code<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-char_4 <span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Otp<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Otp<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>one-time-code<span class="token punctuation">"</span></span> <span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[0-9]*<span class="token punctuation">"</span></span> <span class="token attr-name">inputmode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>numeric<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Continue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>If you have not received the security code after a few minutes, check the phone number above is correct.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>You can <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>enter the phone number again or try a different phone number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h3 id="expiry-conditions-and-policy" tabindex="-1">
+          Expiry conditions and policy
+          <a class="anchor-link" href="#expiry-conditions-and-policy"> </a>
+        </h3>
+        <p>
+          The SMS confirmation code should expire after 15 minutes or when a new
+          confirmation SMS is sent for the same cause.
+        </p>
+        <p>
+          This prevents the user becoming stuck if they did not receive an SMS,
+          you should allow them to go back to the mobile phone entry page,
+          change the phone number entered and send a new confirmation SMS. You
+          should also allow the user to re-sent a confirmation SMS even if they
+          did not change the phone number. Note that if the user changes the
+          phone number you should not store the number unless it is confirmed.
+        </p>
+        <p>In order to prevent abuse:</p>
+        <ul>
+          <li>
+            allow the users to send a confirmation SMS at most 5 times per
+            session
+          </li>
+          <li>
+            allow the users to have 3 attempts for each confirmation code that
+            is sent.
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</div>

@@ -1,0 +1,78 @@
+name: Version Change
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # Duplicated from `.github/workflows/version-sanity-checks.yml` could use https://github.blog/2022-02-10-using-reusable-workflows-github-actions ?
+  tag-and-publish-on-version-change:
+    name: Tag and publish on version change
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: EndBug/version-check@v2.1.0
+        with:
+          static-checking: localIsNew
+          file-url: https://raw.githubusercontent.com/gov-cy/govcy-design-system/latest/package.json
+        id: version-check
+      - name: Check version not decreased
+        if: steps.version-check.outputs.changed == 'true' && steps.version-check.outputs.type == 'undefined'
+        run: echo "You should NEVER decrement/ decrease the version in the package.json. This will undermine confidence in our ability to follow semver rules"; exit 1
+      - name: Check version not increased
+        if: steps.version-check.outputs.changed == 'false'
+        run: echo "Version remained the same. Exiting..."; 
+        # These steps will only run if the version has increased
+      - name: Create 'vX.X.X' version git tag
+        if: steps.version-check.outputs.changed == 'true'
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/v' + '${{ steps.version-check.outputs.version }}',
+              sha: context.sha
+            })
+      - uses: dev-drprasad/delete-tag-and-release@v0.2.1
+        if: steps.version-check.outputs.changed == 'true'
+        with:
+          tag_name: latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create 'latest' git tag
+        if: steps.version-check.outputs.changed == 'true'
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/latest',
+              sha: context.sha
+            })
+      - name: Zip /dist folder
+        if: steps.version-check.outputs.changed == 'true'
+        run: zip -r dist.zip dist
+      - name: Create Release
+        if: steps.version-check.outputs.changed == 'true'
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name:  'v${{ steps.version-check.outputs.version }}'
+          release_name: Release ${{ steps.version-check.outputs.version }}
+          draft: false
+          prerelease: false
+      - name: Upload Release Asset
+        if: steps.version-check.outputs.changed == 'true'
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist.zip
+          asset_name: dist.zip
+          asset_content_type: application/zip
+      

@@ -1,0 +1,70 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+    <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+    <main id="mainContainer">
+        <article>
+            <section>
+                <h2>Text Area Single question page</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control">
+                        <h1><label class="govcy-label govcy-label-primary" for="input1">Can you provide more
+                                detail?</label></h1>
+                        <textarea id="input1" class="govcy-text-area" rows="5"></textarea>
+                    </div>
+                </form>
+                <h2>More than one question on the page</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="input2">Can you provide more detail?</label>
+                        <textarea id="input2" class="govcy-text-area" rows="5"></textarea>
+                    </div>
+                </form>
+                <h2>Hint text</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="input3">Can you provide more detail?</label>
+                        <span class="govcy-hint" id="govcy-hint3">Do not include personal or financial information like
+                            your National Insurance number or credit card details.</span>
+                        <textarea id="input3" class="govcy-text-area" rows="5"
+                            aria-describedby="govcy-hint3"></textarea>
+                    </div>
+                </form>
+                <h2>Use appropriately-sized textareas</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="input4">Can you provide more detail?</label>
+                        <span class="govcy-hint" id="govcy-hint4">Do not include personal or financial information like
+                            your National Insurance number or credit card details.</span>
+                        <textarea id="input4" class="govcy-text-area" rows="10"
+                            aria-describedby="govcy-hint4"></textarea>
+                    </div>
+                </form>
+                <h2>Error Message</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <h1><label class="govcy-label govcy-label-primary" for="input-err">What is your job
+                                description?</label></h1>
+                        <p id="job-description-input-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Enter a valid Job description
+                        </p>
+                        <textarea id="input-err" class="govcy-text-area govcy-text-area-error"
+                            aria-describedby="job-description-input-error" rows="5"></textarea>
+                    </div>
+                </form>
+                <h2>Error Message with multible question</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <label class="govcy-label govcy-label-primary" for="input-err1">What is your job
+                            description?</label>
+                        <p id="job-description-input-error1" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Enter a valid Job description
+                        </p>
+                        <textarea id="input-err1" class="govcy-text-area govcy-text-area-error"
+                            aria-describedby="job-description-input-error1" rows="5"></textarea>
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+</div>

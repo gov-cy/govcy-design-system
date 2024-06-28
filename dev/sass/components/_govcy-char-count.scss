@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the char count.
+// -----------------------------------------------------------------------------
+
+// Govcy char count
+.govcy-character-count {
+  margin-bottom: $govcy-default-margin-bottom;
+  display: block;
+
+  .govcy-character-remaining-counter {
+    color: $govcy-hint;
+  }
+
+  .govcy-character-more-counter {
+    color: $govcy-danger;
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+name: Check govcy.uds.min.js
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build JS
+      run: npm run js-build
+
+    - name: Build JS Distribution
+      run: npm run js-build-distribution
+
+    - name: Check for differences
+      id: check_diff
+      run: |
+        git diff --exit-code dist/js/govcy.uds.min.js
+
+    - name: Show message if JS mismatch
+      if: failure() && steps.check_diff.outcome == 'failure'
+      run: |
+        echo "The compiled JS for govcy.uds.js does not match the distribution version. You need to run \`npm run js-build-distribution\`"

@@ -1,0 +1,73 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+    <aside>
+        <%- include('./components') %>
+    </aside>
+</div>
+<script src="/public/js/locales/govcy.datepicker.en.js"></script>
+<script src="/public/js/locales/govcy.datepicker.el.js"></script>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+    <main id="mainContainer">
+
+        <article>
+            <section>
+                <h2>Single question page</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control">
+                        <h1><label class="govcy-label govcy-label-primary" for="appointment1-date">Appointment
+                                Date</label></h1>
+                        <span id="appointment1-date-hint" class="govcy-hint">For example, 13/8/2007</span>
+                        <div class="govcy-date-picker">
+                            <input type="text" class="govcy-text-input" id="appointment1-date" name="appointment1-date"
+                                aria-describedby="appointment1-date-hint" />
+                        </div>
+                    </div>
+                </form>
+                <h2>More than one question on the page</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="appointment2-date">Appointment Date</label>
+                        <span id="appointment2-date-hint" class="govcy-hint">For example, 13/8/2007</span>
+                        <div class="govcy-date-picker">
+                            <input type="text" class="govcy-text-input" id="appointment2-date" name="appointment2-date"
+                                aria-describedby="appointment2-date-hint" />
+                        </div>
+                    </div>
+                </form>
+                <h2>Error messages</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <h1><label class="govcy-label govcy-label-primary" for="appointment-err-date">Appointment
+                                Date</label></h1>
+                        <span id="appointment-err-date-hint" class="govcy-hint">For example, 13/8/2007</span>
+                        <p id="appointment-err-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Appointment Date must include a year
+                        </p>
+                        <div class="govcy-date-picker">
+                            <input type="text" class="govcy-text-input govcy-text-input-error" id="appointment-err-date"
+                                name="appointment-err-date"
+                                aria-describedby="appointment-err-date-hint appointment-err-error" />
+                        </div>
+                    </div>
+                </form>
+                <h2>Error messages with more than one question page</h2>
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <label class="govcy-label govcy-label-primary" for="appointment-err-date1">Appointment
+                            Date</label>
+                        <span id="appointment-err-date-hint1" class="govcy-hint">For example, 13/8/2007</span>
+                        <p id="appointment-err-error1" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Appointment Date must include a year
+                        </p>
+                        <div class="govcy-date-picker">
+                            <input type="text" class="govcy-text-input govcy-text-input-error"
+                                id="appointment-err-date1" name="appointment-err-date1"
+                                aria-describedby="appointment-err-date-hint1 appointment-err-error1" />
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </article>
+
+    </main>
+</div>

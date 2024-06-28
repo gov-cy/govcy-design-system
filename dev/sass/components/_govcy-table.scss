@@ -1,0 +1,94 @@
+// Create  govcy-table and custom styles by extending .table class
+.govcy-table {
+  @extend .table;
+  margin-bottom: $govcy-default-margin-bottom;
+  vertical-align: middle;
+
+  > thead,
+  > tbody > tr {
+    border-color: $govcy-border-standard;
+  }
+
+  > tbody > tr > th {
+    font-weight: 700;
+  }
+
+}
+// Change placement of captions with a class
+.govcy-caption {
+  @extend caption;
+  color: $govcy-body;
+  padding: 0;
+  h1, h2, h3, h4 {
+    padding: 0;
+  }
+}
+
+// Change placement of captions with a class
+.govcy-caption-top {
+  @extend .caption-top;
+}
+
+// Condensed table w/ half padding
+.govcy-table-sm {
+  @extend .table-sm;
+}
+
+// Add or remove borders all around the table and between all the columns
+.govcy-table-bordered {
+  @extend .table-bordered;
+}
+
+.govcy-table-borderless {
+  @extend .table-borderless;
+}
+
+// Govcy table active
+.govcy-table-active {
+  @extend .table-active;
+}
+
+// Govcy table hover
+.govcy-table-hover {
+  @extend .table-hover;
+}
+
+.govcy-table-responsive,
+.govcy-table-responsive-vertical {
+  @extend .table-responsive;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
+
+.govcy-table-responsive-vertical {
+  width: 100%;
+  vertical-align: top !important;
+}
+
+// Responsive tables
+@include media-breakpoint-down(md) {
+  .govcy-table-responsive-vertical {
+    thead {
+      display: none;
+    }
+    
+    tr {
+      border-bottom-width: 1px;
+
+      &:nth-of-type(2n) {
+        background-color: inherit;
+;
+      }
+    }
+
+    tbody {
+      td,
+      th {
+        border-bottom-width: 0 !important;
+        display: block;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}

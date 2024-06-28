@@ -1,0 +1,175 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Check boxes</h2>
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset">
+            <legend class="govcy-legend">Legend</legend>
+            <div class="govcy-form-control">
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check1-checkbox-group" type="checkbox" id="check1-option1">
+                <label class="govcy-label" for="check1-option1">Option 1</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check1-checkbox-group" type="checkbox" id="check1-option2">
+                <label class="govcy-label" for="check1-option2">Option 2</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check1-checkbox-group" type="checkbox" id="check1-option3">
+                <label class="govcy-label" for="check1-option3">Option 3</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <h2>Single question page</h2>
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset">
+            <legend class="govcy-legend govcy-mb-6">
+              <h1>What is your nationality?</h1>
+            </legend>
+            <div class="govcy-form-control">
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check2-checkbox-group" type="checkbox"
+                  id="check2-nationality">
+                <label class="govcy-label" for="check2-nationality">Cypriot</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check2-checkbox-group" type="checkbox"
+                  id="check2-otherEurope">
+                <label class="govcy-label" for="check2-otherEurope">Other European Union country</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check2-checkbox-group" type="checkbox"
+                  id="check2-anotherCountry">
+                <label class="govcy-label" for="check2-anotherCountry">Citizen of another country</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <h2>Asking more than one question on the page</h2>
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset">
+            <legend class="govcy-legend">What is your nationality?</legend>
+            <div class="govcy-form-control">
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check3-checkbox-group" type="checkbox"
+                  id="check3-nationality">
+                <label class="govcy-label" for="check3-nationality">Cypriot</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check3-checkbox-group" type="checkbox"
+                  id="check3-otherEurope">
+                <label class="govcy-label" for="check3-otherEurope">Other European Union country</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check3-checkbox-group" type="checkbox"
+                  id="check3-anotherCountry">
+                <label class="govcy-label" for="check3-anotherCountry">Citizen of another country</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <h2>Checkbox items with hints</h2>
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset" aria-describedby="check4-fildset-hint">
+            <legend class="govcy-legend">What is your nationality?</legend>
+            <div class="govcy-form-control">
+              <span class="govcy-hint" id="check4-fildset-hint">If you have dual nationality, select all options that
+                are relevant to you. </span>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check4-checkbox-group" type="checkbox"
+                  id="check4-nationality">
+                <label class="govcy-label" for="check4-nationality">Cypriot</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check4-checkbox-group" type="checkbox"
+                  id="check4-otherEurope">
+                <label class="govcy-label" for="check4-otherEurope">Other European Union country</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check4-checkbox-group" type="checkbox"
+                  id="check4-anotherCountry" aria-describedby="check4-anotherCountry-hint">
+                <label class="govcy-label" for="check4-anotherCountry">Citizen of another country</label>
+                <span class="govcy-hint" id="check4-anotherCountry-hint">Check this if you do not have nationality from
+                  a country</span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <h2>Add an option for ‘none’</h2>
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset">
+            <legend class="govcy-legend">Did you travel to any of these destinations last year?</legend>
+            <div class="govcy-form-control">
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check5-checkbox-group" type="checkbox"
+                  id="check5-otherEurope">
+                <label class="govcy-label" for="check5-otherEurope">European Union</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check5-checkbox-group" type="checkbox" id="check5-other">
+                <label class="govcy-label" for="check5-other">Other destination</label>
+              </div>
+              <p class="govcy-ml-3 govcy-mb-3">Or</p>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check5-checkbox-group" type="checkbox" id="check5-no">
+                <label class="govcy-label" for="check5-no"><span class="govcy-visually-hidden-error">Or, </span>I did
+                  not travel last year</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <h2>Error messages</h2>
+
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset" aria-describedby="check-er-input-error">
+            <legend class="govcy-legend govcy-mb-6">
+              <h1>Legend</h1>
+            </legend>
+            <div class="govcy-form-control govcy-form-control-error">
+              <p id="check-er-input-error" class="govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Error:</span>There is an error
+              </p>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check-er-checkbox-group" type="checkbox"
+                  id="check-er-option7">
+                <label class="govcy-label" for="check-er-option7">Option 1</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check-er-checkbox-group" type="checkbox"
+                  id="check-er-option8">
+                <label class="govcy-label" for="check-er-option8">Option 2</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <h2>Error messages with the component used in a more than one question page.</h2>
+        <div class="govcy-form">
+          <fieldset class="govcy-fieldset" aria-describedby="check-er-input-error1">
+            <legend class="govcy-legend">Legend</legend>
+            <div class="govcy-form-control govcy-form-control-error">
+              <p id="check-er-input-error1" class="govcy-input-error-msg">
+                <span class="govcy-visually-hidden-error">Error:</span>There is an error
+              </p>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check-er-checkbox-group1" type="checkbox"
+                  id="check-er-option10">
+                <label class="govcy-label" for="check-er-option10">Option 1</label>
+              </div>
+              <div class="govcy-checkbox">
+                <input class="govcy-checkbox-input" name="check-er-checkbox-group1" type="checkbox"
+                  id="check-er-option11">
+                <label class="govcy-label" for="check-er-option11">Option 2</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

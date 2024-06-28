@@ -1,0 +1,260 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./patterns') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Telephone</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li>
+                <a href="#how-it-works">How it works</a>
+
+                <ol>
+                  <li>
+                    <a href="#when-to-ask-for-repeat-or-loop"
+                      >When to ask for repeat or loop</a
+                    >
+                  </li>
+
+                  <li><a href="#show-errors">Show errors</a></li>
+
+                  <li>
+                    <a href="#displaying-phone-number"
+                      >Displaying phone number</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#storing-phone-number">Storing phone number</a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Follow this pattern whenever you need to ask for a telephone address.
+        </p>
+        <h2 id="how-it-works" tabindex="-1">
+          How it works <a class="anchor-link" href="#how-it-works"> </a>
+        </h2>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in-tel"
+                >Cyprus telephone number</label
+              >
+              <span class="govcy-hint" id="tel-hint"
+                >We’ll only use this for this application</span
+              >
+              <input
+                class="govcy-text-input govcy-text-input-char_20"
+                id="in-tel"
+                name="in-tel"
+                type="tel"
+                spellcheck="false"
+                aria-describedby="tel-hint"
+                autocomplete="tel"
+              />
+            </div>
+          </form>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in-tel<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Cyprus telephone number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-hint<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel-hint<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>We’ll only use this for this application<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-char_20<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in-tel<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in-tel<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel-hint<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>
+          When asking users for their telephone, you must make it clear why
+          you’re asking.
+        </p>
+        <p>
+          Users should be allowed to enter telephone numbers in whatever format
+          is familiar to them. You should allow for additional spaces, hyphens,
+          brackets and dashes, and be able to accommodate country and area
+          codes.
+        </p>
+        <p>
+          Make it clear what type of telephone number you need whether that is a
+          Cypriot, international or mobile telephone number.
+        </p>
+        <p>Help users to enter a valid tel address by:</p>
+        <ul>
+          <li>checking they have entered the correct format</li>
+          <li>allowing users to paste the telephone address</li>
+          <li>
+            setting the <code>type</code> attribute to <code>tel</code> so that
+            devices display the correct keyboard
+          </li>
+          <li>
+            setting the <code>spellcheck</code> attribute to
+            <code>false</code> so that browsers do not spellcheck the telephone
+          </li>
+          <li>
+            setting the <code>autocomplete</code> attribute to <code>tel</code>.
+            This lets browsers autofill the telephone on a user’s behalf if
+            they’ve entered it previously.
+          </li>
+        </ul>
+        <h3 id="when-to-ask-for-repeat-or-loop" tabindex="-1">
+          When to ask for repeat or loop
+          <a class="anchor-link" href="#when-to-ask-for-repeat-or-loop"> </a>
+        </h3>
+        <p>
+          Only ask users to repeat their telephone if your user research shows
+          it to be effective.
+        </p>
+        <p>
+          If telphone is an essential part of your service - for example for two
+          step authentication - you can confirm whether the user has access to
+          the telephone they give you using an sms confirmation loop. However,
+          these are disruptive and should be avoided as far as possible.
+        </p>
+        <h3 id="show-errors" tabindex="-1">
+          Show errors <a class="anchor-link" href="#show-errors"> </a>
+        </h3>
+        <p>
+          Error messages should follow the guidance in
+          <a href="../../components/errorSummary">error message</a> as shown in
+          the example below.
+        </p>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control govcy-form-control-error">
+              <label class="govcy-label" for="in-tel-2">Telephone Number</label>
+              <p class="govcy-input-error-msg" id="error2">
+                <span class="govcy-visually-hidden-error">Error: </span>Enter a
+                telephone number in the correct format, like 99 123456
+              </p>
+              <input
+                class="govcy-text-input govcy-text-input-char_20 govcy-text-input-error"
+                id="in-tel-2"
+                name="in-tel-2"
+                type="tel"
+                spellcheck="false"
+                aria-describedby="tel-hint"
+                autocomplete="tel"
+              />
+            </div>
+          </form>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control govcy-form-control-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in-tel-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Telephone Number<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-input-error-msg<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-visually-hidden-error<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Error: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>Enter a telephone number in the correct format, like 99 123456<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-char_20 govcy-text-input-error<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in-tel-2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in-tel-2<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel-hint<span class="token punctuation">"</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>error2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h3 id="displaying-phone-number" tabindex="-1">
+          Displaying phone number
+          <a class="anchor-link" href="#displaying-phone-number"> </a>
+        </h3>
+        <p>
+          When displaying a submitted or stored international phone number
+          (either in a text input, hyperlink or text) replace
+          <code>00</code> with <code>+</code> as users are more familiar with
+          these format.
+        </p>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel:+4412345678<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>+4412345678<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>
+          When displaying a local phone number, make sure you include
+          <code>+357</code> in the hyperlink.
+        </p>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tel:+35722123456<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>22123456<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h3 id="storing-phone-number" tabindex="-1">
+          Storing phone number
+          <a class="anchor-link" href="#storing-phone-number"> </a>
+        </h3>
+        <p>
+          If the phone numbers will be used to send notifications, prefer to
+          store them in the following form:
+        </p>
+        <pre
+          class="language-json"
+        ><code class="language-json"><span class="token number">00</span><span class="token punctuation">[</span>county code<span class="token punctuation">]</span><span class="token punctuation">[</span>local phone number<span class="token punctuation">]</span></code></pre>
+        <p>
+          This format will reduce the risk of unsuccessful SMS being sent by a
+          notification gateway.
+        </p>
+        <p>To convert a phone number to the preferred stored format:</p>
+        <ol>
+          <li>Remove space and <code>-</code> dash characters.</li>
+          <li>
+            If the 1st character is <code>+</code> replace it with
+            <code>00</code>.
+          </li>
+          <li>
+            If phone doesn’t start with <code>00</code> add
+            <code>00357</code> at the start of the number.
+          </li>
+        </ol>
+        <p>
+          The preferred stored format also makes it easier to perform
+          validations such as:
+        </p>
+        <ul>
+          <li>
+            Validating that the phone number consists of only digits with 8 to
+            15 digits length.
+          </li>
+          <li>
+            Validating if they are Cypriot phone number for numbers starting
+            with <code>00357</code> or International for the rest.
+          </li>
+          <li>
+            Validating that the phone number is a mobile number (if mobile
+            number is required).
+          </li>
+        </ul>
+        <p>
+          Here are some examples of the Preferred stored and Display format :
+        </p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Input by user</th>
+              <th>Preferred stored format</th>
+              <th>Display form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>99 123456</td>
+              <td>0035799123456</td>
+              <td>+35799123456</td>
+            </tr>
+            <tr>
+              <td>+44-1234 567</td>
+              <td>00441234567</td>
+              <td>+441234567</td>
+            </tr>
+            <tr>
+              <td>001 1234 567</td>
+              <td>0011234567</td>
+              <td>+11234567</td>
+            </tr>
+            <tr>
+              <td>00357 99123456</td>
+              <td>0035799123456</td>
+              <td>+35799123456</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+</div>

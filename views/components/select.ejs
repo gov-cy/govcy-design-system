@@ -1,0 +1,87 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Select Component</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+            <h1><label class="govcy-label govcy-label-primary" for="sort2">Sort by</label></h1>
+            <select class="govcy-select" id="sort2" name="sort2">
+              <option value="" selected>None</option>
+              <option value="published">Recently published</option>
+              <option value="updated">Recently updated</option>
+              <option value="views">Most views</option>
+              <option value="comments">Most comments</option>
+            </select>
+          </div>
+        </div>
+        <h2>More than one question on the page</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="sort1">Sort by</label>
+            <select class="govcy-select" id="sort1" name="sort1">
+              <option value="" selected>None</option>
+              <option value="published">Recently published</option>
+              <option value="updated">Recently updated</option>
+              <option value="views">Most views</option>
+              <option value="comments">Most comments</option>
+            </select>
+          </div>
+        </div>
+        <h2>Hint text</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="sort3">Sort by</label>
+            <span id="sort3-hint" class="govcy-hint">Will sort results accordingly</span>
+            <select class="govcy-select" id="sort3" name="sort3" aria-describedby="sort3-hint">
+              <option value="" selected>None</option>
+              <option value="published">Recently published</option>
+              <option value="updated">Recently updated</option>
+              <option value="views">Most views</option>
+              <option value="comments">Most comments</option>
+            </select>
+          </div>
+        </div>
+        <h2>Error messages</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control govcy-form-control-error">
+            <h1><label class="govcy-label govcy-label-primary" for="sort-err">Sort by</label></h1>
+            <span id="sort-err-hint" class="govcy-hint">Will sort results accordingly</span>
+            <p id="sort-err-error" class="govcy-input-error-msg">
+              <span class="govcy-visually-hidden-error">Error:</span>Please select valid options
+            </p>
+            <select class="govcy-select govcy-select-error" id="sort-err" name="sort-err"
+              aria-describedby="sort-err-hint sort-err-error">
+              <option value="" selected>None</option>
+              <option value="published">Recently published</option>
+              <option value="updated">Recently updated</option>
+              <option value="views">Most views</option>
+              <option value="comments">Most comments</option>
+            </select>
+          </div>
+        </div>
+        <h2>Error messages with more than one page example</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control govcy-form-control-error">
+            <label class="govcy-label govcy-label-primary" for="sort-err1">Sort by</label>
+            <span id="sort-err-hint1" class="govcy-hint">Will sort results accordingly</span>
+            <p id="sort-err-error1" class="govcy-input-error-msg">
+              <span class="govcy-visually-hidden-error">Error:</span>Please select valid options
+            </p>
+            <select class="govcy-select govcy-select-error" id="sort-err1" name="sort-err1"
+              aria-describedby="sort-err-hint1 sort-err-error1">
+              <option value="" selected>None</option>
+              <option value="published">Recently published</option>
+              <option value="updated">Recently updated</option>
+              <option value="views">Most views</option>
+              <option value="comments">Most comments</option>
+            </select>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

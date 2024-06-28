@@ -1,0 +1,27 @@
+name: Compiled CSS matches Sass
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  diff-sass-and-css:
+    name:  Diff SASS and CSS 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - run: |
+          npm install ci
+          npm exec -c "sass --version"
+      - run: npm exec -c "sass --no-source-map --load-path=node_modules dev/sass/main.scss" | diff public/css/govcy.uds.css -
+        id: build-sass-diff
+      - if: always() && (steps.build-sass-diff.outcome == 'failure')
+        run: echo "You have made changes to the SASS files without compiling them to the /build directory. The compiled SASS and does not match what is in the build/ directory. You need to run `npm run css-build`"; exit 1
+      - if: always()
+        run: npm exec -c "sass --no-source-map --load-path=node_modules dev/sass/main.scss --style compressed" | diff dist/css/govcy.uds.min.css -
+        id: dist-sass-diff
+      - if: always() && (steps.dist-sass-diff.outcome == 'failure')
+        run: echo "You have made changes to the SASS files without compiling them to the /dist directory. The compiled SASS and does not match what is in the dist/ directory. You need to run `npm run css-build-distribution`"; exit 1

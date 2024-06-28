@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended",
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "rule-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "scss/no-global-function-names": null,
+    "scss/dollar-variable-colon-space-after": null,
+    "unit-allowed-list": ["%", "deg", "px", "rem", "em", "pt", "ms", "vw", "s"],
+
+    "import-notation": null,
+    "length-zero-no-unit": null,
+    "property-no-vendor-prefix": null,
+    "annotation-no-unknown": null,
+
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": ["map-get", "map-merge", "to-rgb", "shift-color"]
+      }
+    ],
+
+    "max-nesting-depth": [
+      8,
+      {
+        "ignore": ["blockless-at-rules", "pseudo-classes"]
+      }
+    ],
+
+    "no-descending-specificity": null,
+    "selector-max-compound-selectors": null,
+    "selector-class-pattern": null,
+    "scss/at-mixin-pattern": null,
+    "selector-no-vendor-prefix": null,
+    "no-duplicate-selectors": null,
+    "media-feature-range-notation": null,
+    "selector-not-notation": null,
+    "selector-pseudo-element-colon-notation": null,
+    "value-keyword-case": null,
+    "color-hex-length": null,
+    "function-url-quotes": null,
+    "declaration-property-value-disallowed-list": null,
+    "comment-whitespace-inside": null,
+    "selector-type-case": null,
+    "selector-type-no-unknown": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "declaration-block-no-duplicate-properties": null,
+    "comment-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "color-named": null,
+    "scss/at-import-partial-extension-blacklist": null,
+    "selector-attribute-quotes": null,
+    "number-max-precision": null,
+    "custom-property-empty-line-before": null,
+    "media-query-no-invalid": null,
+
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute", "class", "id"]
+      }
+    ]
+  }
+}

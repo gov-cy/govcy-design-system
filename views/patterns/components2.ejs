@@ -1,0 +1,570 @@
+<div class="govcy-col-12">
+    <main id="mainContainer">
+        <article>
+            This page will contain all components and variations in one page
+
+            <h1>Details</h1>
+
+            <details class="govcy-details">
+                <summary class="govcy-details__summary">
+                    <span class="govcy-details__summary-text">How to control cookies</span>
+                </summary>
+                <p class="govcy-details__text">
+                    You can delete all cookies that are already on your computer and you can set most browsers to
+                    prevent them from being placed. If you do this, however, you may have to manually adjust some
+                    preferences every time you visit a site and some services and functionalities may not work.
+                </p>
+            </details>
+
+            <hr>
+
+            <h1>Error message</h1>
+
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <h1><label class="govcy-label govcy-label-primary" for="in-error">Label</label></h1>
+                    <p id="in-error-error" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                    </p>
+                    <input id="in-error" type="text" class="govcy-text-input govcy-text-input-error"
+                        aria-describedby="in-error-error">
+                </div>
+            </form>
+
+            <form action="" class="govcy-form" novalidate>
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="in-error1">Label</label>
+                    <p id="in-error-error1" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                    </p>
+                    <input id="in-error1" type="text" class="govcy-text-input govcy-text-input-error"
+                        aria-describedby="in-error-error1">
+                </div>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="input-err1">What is your job
+                        description?</label>
+                    <p id="job-description-input-error1" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>Enter a valid Job description
+                    </p>
+                    <textarea id="input-err1" class="govcy-text-area govcy-text-area-error"
+                        aria-describedby="job-description-input-error1" rows="5"></textarea>
+                </div>
+            </form>
+
+            <form action="" novalidate class="govcy-form">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="sort-err1">Sort by</label>
+                    <span id="sort-err-hint1" class="govcy-hint">Will sort results accordingly</span>
+                    <p id="sort-err-error1" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>Please select valid options
+                    </p>
+                    <select class="govcy-select govcy-select-error" id="sort-err1" name="sort-err1"
+                        aria-describedby="sort-err-hint1 sort-err-error1">
+                        <option value="" selected>None</option>
+                        <option value="published">Recently published</option>
+                        <option value="updated">Recently updated</option>
+                        <option value="views">Most views</option>
+                        <option value="comments">Most comments</option>
+                    </select>
+                </div>
+            </form>
+
+            <form action="" class="govcy-form" novalidate>
+                <fieldset class="govcy-fieldset" aria-describedby="option6-error">
+                    <legend class="govcy-legend">Do you wish to continue?</legend>
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <p id="option6-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                        </p>
+                        <div class="govcy-radio">
+                            <input class="govcy-radio-input" type="radio" name="option6" id="option6-yes">
+                            <label class="govcy-label" for="option6-yes">Yes</label>
+                        </div>
+                        <div class="govcy-radio">
+                            <input class="govcy-radio-input" type="radio" name="option6" id="option6-no">
+                            <label class="govcy-label" for="option6-no">No</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="" class="govcy-form" novalidate>
+                <fieldset class="govcy-fieldset" aria-describedby="option7-error">
+                    <legend class="govcy-legend">Do you wish to continue?</legend>
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <p id="option7-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                        </p>
+                        <div class="govcy-radio govcy-d-sm-inline-block">
+                            <input class="govcy-radio-input" type="radio" name="option7" id="option7-yes">
+                            <label class="govcy-label" for="option7-yes">Yes</label>
+                        </div>
+                        <div class="govcy-radio govcy-d-sm-inline-block">
+                            <input class="govcy-radio-input" type="radio" name="option7" id="option7-no">
+                            <label class="govcy-label" for="option7-no">No</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset">
+                    <legend class="govcy-legend">What email should we use?</legend>
+                    <div class="govcy-form-control">
+                        <div class="govcy-radio">
+                            <input class="govcy-radio-input govcy-collapsable" name="collapseGroupErr" type="radio"
+                                id="option8-email" data-govcy-target=".email1.show">
+                            <label class="govcy-label" for="option8-email">Use existing email address</label>
+                        </div>
+                        <div class="govcy-radio">
+                            <input class="govcy-radio-input govcy-collapsable collapsed" name="collapseGroupErr"
+                                type="radio" id="option8-emailDif" data-govcy-target=".email1:not(.show)"
+                                aria-expanded="true" checked="">
+                            <label class="govcy-label" for="option8-emailDif"><span
+                                    class="govcy-visually-hidden-error">This option expands and has more
+                                    questions,</span>No, use different email address</label>
+                        </div>
+                        <div class="email1 govcy-pl-4 govcy-ml-1 collapse show">
+                            <div class="govcy-form-control govcy-form-control-error">
+                                <label class="govcy-label" for="in2">Email Address</label>
+                                <span id="in2-hint" class="govcy-hint">We'll only use this for applying</span>
+                                <p id="in2-error" class="govcy-input-error-msg">
+                                    <span class="govcy-visually-hidden-error">Error:</span>Enter email address
+                                </p>
+                                <input id="in2" type="text" class="govcy-text-input govcy-text-input-error"
+                                    aria-describedby="in2-hint in2-error">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="file5-err">Upload a file</label>
+                    <span id="file5-err-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+                    <p id="file5-err-error" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                    </p>
+                    <input class="govcy-file-upload" type="file" id="file5-err" name="file5-err"
+                        aria-describedby="file5-err-hint file5-err-error">
+                </div>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="appointment-err-date1">Appointment Date</label>
+                    <span id="appointment-err-date-hint1" class="govcy-hint">For example, 13/8/2007</span>
+                    <p id="appointment-err-error1" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>Appointment Date must include a year
+                    </p>
+                    <div class="govcy-date-picker">
+                        <input type="text" class="govcy-text-input govcy-text-input-error" id="appointment-err-date1"
+                            name="appointment-err-date1"
+                            aria-describedby="appointment-err-date-hint1 appointment-err-error1" />
+                    </div>
+                </div>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset" role="group" aria-describedby="date-err1-hint date-err1-error">
+                    <legend class="govcy-legend">Date of birth</legend>
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <span class="govcy-hint" id="date-err1-hint">For example, 12 11 2007</span>
+                        <p id="date-err1-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                        </p>
+                        <div class="govcy-d-flex govcy-flex-wrap">
+                            <div class="govcy-d-block govcy-mr-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                                    for="day_err1">Day</label>
+                                <input id="day_err1"
+                                    class="govcy-text-input govcy-text-input-char_3 govcy-text-input-error"
+                                    maxlength="2" type="text" pattern="[0-9]*" inputmode="numeric"
+                                    autocomplete="bday-day">
+                            </div>
+                            <div class="govcy-d-block govcy-mr-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                                    for="month_err1">Month</label>
+                                <select id="month_err1" class="govcy-select govcy-select-error"
+                                    autocomplete="bday-month">
+                                    <option value="" selected=""></option>
+                                    <option value="1">1 - January</option>
+                                    <option value="2">2 - February</option>
+                                    <option value="3">3 - March</option>
+                                    <option value="4">4 - April</option>
+                                    <option value="5">5 - May</option>
+                                    <option value="6">6 - June</option>
+                                    <option value="7">7 - July</option>
+                                    <option value="8">8 - August</option>
+                                    <option value="9">9 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                </select>
+                            </div>
+                            <div class="govcy-d-block govcy-mr-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                                    for="year_err1">Year</label>
+                                <input id="year_err1"
+                                    class="govcy-text-input govcy-text-input-char_6 govcy-text-input-error"
+                                    placeholder="" maxlength="4" type="text" pattern="[0-9]*" inputmode="numeric"
+                                    autocomplete="bday-year">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset" aria-describedby="check-er-input-error1">
+                    <legend class="govcy-legend">Legend</legend>
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <p id="check-er-input-error1" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                        </p>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" name="check-er-checkbox-group1" type="checkbox"
+                                id="check-er-option10">
+                            <label class="govcy-label" for="check-er-option10">Option 1</label>
+                        </div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" name="check-er-checkbox-group1" type="checkbox"
+                                id="check-er-option11">
+                            <label class="govcy-label" for="check-er-option11">Option 2</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="input3">Enter a job description</label>
+                    <p id="job-description-input-error" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>Job description must be 150 characters or
+                        less
+                    </p>
+                    <textarea id="input3" class="govcy-text-area govcy-text-area-error"
+                        aria-describedby="govcy-hint-hint3 job-description-input-error" rows="5">A content designer works on the end-to-end journey of a service to help users complete their goal and government deliver a policy intent. Their work may involve the creation of, or change to, a transaction, product or single piece of content that stretches across digital and offline channels. They make sure appropriate content is shown to a user in the right place and in the best format. A content designer works on the end-to-end journey of a service to help users complete their goal and government deliver a policy intent. Their work may involve the creation of, or change to, a transaction, product or single piece of content that stretches across digital and offline channels. They make sure appropriate content is shown to a user in the right place and in the best format. A content designer works on the end-to-end journey of a service to help users complete their goal and government deliver a policy intent. Their work may involve the creation of, or change to, a transaction, product or single piece of content that stretches across digital and offline channels. They make sure appropriate content is shown to a user in the right place and in the best format.
+        </textarea>
+                    <div id="govcy-hint-hint3" class="govcy-character-count" data-maxwords="150">
+                        <div class="govcy-character-remaining-counter">You have <span></span> words remaining</div>
+                        <div class="govcy-character-more-counter">You have entered <span></span> words more</div>
+                    </div>
+                </div>
+            </form>
+
+            <hr>
+
+            <h1>Error summary</h1>
+            <h2>Default</h2>
+            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+                <h2>There is a problem</h2>
+                <p class="govcy-mb-0">
+                    <a href="#">Enter your full name</a>
+                    <a href="#">Social insurance number should be 16 digit long</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <h2>With text error</h2>
+
+            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+                <h2>There is a problem</h2>
+                <p>
+                    <a href="#in3">Enter your full name</a>
+                </p>
+            </div>
+            <div class="govcy-row">
+                <form action="" class="govcy-form" novalidate="">
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <h1><label class="govcy-label govcy-label-primary" for="in3">Fullname</label></h1>
+                        <p id="in3-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Enter your full name
+                        </p>
+                        <input id="in3" type="text" class="govcy-text-input govcy-text-input-error"
+                            aria-describedby="in3-error">
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+
+            <h2>With date input</h2>
+            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+                <h2>There is a problem</h2>
+                <p>
+                    <a href="#year_err2">Date of birth must include a year</a>
+                </p>
+            </div>
+            <form action="" class="govcy-form" novalidate="">
+                <fieldset class="govcy-fieldset" role="group" aria-describedby="date-err2-hint date-err2-error">
+                    <legend class="govcy-legend">
+                        <h1>What is your date of birth?</h1>
+                    </legend>
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <span class="govcy-hint" id="date-err2-hint">For example, 12 11 2007</span>
+                        <p id="date-err2-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Date of birth must include a year
+                        </p>
+                        <div class="govcy-d-flex govcy-flex-wrap">
+                            <div class="govcy-d-block govcy-mr-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                                    for="day_err2">Day</label>
+                                <input id="day_err2" class="govcy-text-input govcy-text-input-char_3" maxlength="2"
+                                    type="text" pattern="[0-9]*" inputmode="numeric" autocomplete="bday-day">
+                            </div>
+                            <div class="govcy-d-block govcy-mr-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                                    for="month_err2">Month</label>
+                                <select id="month_err2" class="govcy-select" autocomplete="bday-month">
+                                    <option value="" selected=""></option>
+                                    <option value="1">1 - January</option>
+                                    <option value="2">2 - February</option>
+                                    <option value="3">3 - March</option>
+                                    <option value="4">4 - April</option>
+                                    <option value="5">5 - May</option>
+                                    <option value="6">6 - June</option>
+                                    <option value="7">7 - July</option>
+                                    <option value="8">8 - August</option>
+                                    <option value="9">9 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                </select>
+                            </div>
+                            <div class="govcy-d-block govcy-mr-3">
+                                <label class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                                    for="year_err2">Year</label>
+                                <input id="year_err2"
+                                    class="govcy-text-input govcy-text-input-char_6 govcy-text-input-error"
+                                    placeholder="" maxlength="4" type="text" pattern="[0-9]*" inputmode="numeric"
+                                    autocomplete="bday-year">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <hr>
+
+            <h2> With radio or checkbox</h2>
+
+            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+                <h2>There is a problem</h2>
+                <p>
+                    <a href="#check4-nationality">Select if you are Cypriot, from other European country, or citizen
+                        from another country</a>
+                </p>
+            </div>
+            <form action="" class="govcy-form" novalidate>
+                <fieldset class="govcy-fieldset" aria-describedby="check4-fildset-hint check-er-input-error">
+                    <legend class="govcy-legend">
+                        <h1>What is your nationality?</h1>
+                    </legend>
+                    <div class="govcy-form-control govcy-form-control-error">
+                        <span class="govcy-hint" id="check4-fildset-hint">If you have dual nationality, select all
+                            options that are relevant to you. </span>
+                        <p id="check-er-input-error" class="govcy-input-error-msg">
+                            <span class="govcy-visually-hidden-error">Error:</span>Select if you are Cypriot, from other
+                            European country, or citizen from another country
+                        </p>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" name="check4-checkbox-group" type="checkbox"
+                                id="check4-nationality">
+                            <label class="govcy-label" for="check4-nationality">Cypriot</label>
+                        </div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" name="check4-checkbox-group" type="checkbox"
+                                id="check4-otherEurope">
+                            <label class="govcy-label" for="check4-otherEurope">Other European Union country</label>
+                        </div>
+                        <div class="govcy-checkbox">
+                            <input class="govcy-checkbox-input" name="check4-checkbox-group" type="checkbox"
+                                id="check4-anotherCountry" aria-describedby="check4-anotherCountry-hint">
+                            <label class="govcy-label" for="check4-anotherCountry">Citizen of another country</label>
+                            <span class="govcy-hint" id="check4-anotherCountry-hint">Check this if you do not have
+                                nationality from a country</span>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <hr>
+
+            <h2>Error allowing to continue</h2>
+            <div class="govcy-alert-error govcy-br-5 govcy-br-danger govcy-p-3">
+                <h2>There is a problem</h2>
+                <p>
+                    <a href="#">Enter your full name</a>
+                    <a href="#">Social insurance number should be 16 digit long</a>
+                </p>
+                <p>You can continue with other sections of your application, but you will have to complete the missing
+                    information before you can submit.</p>
+                <a href="#">Back to home page</a>
+            </div>
+
+            <hr>
+
+            <form class="govcy-form" novalidate action="">
+                <fieldset class="govcy-fieldset" aria-describedby="address-hint1">
+                    <legend class="govcy-legend">
+                        <h1>What is your address?</h1>
+                    </legend>
+                    <span class="govcy-hint" id="address-hint1">The address will only be used for correspondence</span>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="cyManualAddressLine1">Address line 1</label>
+                        <input id="cyManualAddressLine1" name="cyManualAddressLine1" type="text"
+                            class="govcy-text-input" autocomplete="address-line1">
+                    </div>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="cyManualAddressLine2">Address line 2
+                            (optional)</label>
+                        <input id="cyManualAddressLine2" name="cyManualAddressLine2" type="text"
+                            class="govcy-text-input" autocomplete="address-line2">
+                    </div>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="cyManualTownOrCity">Town or city</label>
+                        <input id="cyManualTownOrCity" name="cyManualTownOrCity" type="text" class="govcy-text-input"
+                            autocomplete="address-level2">
+                    </div>
+                    <div class="govcy-form-control">
+                        <label class="govcy-label govcy-label-primary" for="cyManualPostalCode">Postcode</label>
+                        <input id="cyManualPostalCode" name="cyManualPostalCode" type="text"
+                            class="govcy-text-input govcy-text-input-char_20 " autocomplete="postal-code">
+                    </div>
+                </fieldset>
+            </form>
+
+            <hr>
+
+            <h1>File upload</h1>
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <h1><label class="govcy-label govcy-label-primary" for="file1">Upload a file</label></h1>
+                    <span id="file1-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+                    <input class="govcy-file-upload" type="file" id="file1" name="file1" aria-describedby="file1-hint">
+                </div>
+            </form>
+
+            <h2>Multiple questions</h2>
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control">
+                    <label class="govcy-label govcy-label-primary" for="file2">Upload a file</label>
+                    <span id="file2-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+                    <input class="govcy-file-upload" type="file" id="file2" name="file2" aria-describedby="file2-hint">
+                </div>
+            </form>
+
+            <h2>Previously uploaded file</h2>
+            <div class="govcy-form">
+                <div class="govcy-form-control">
+                    <p class="govcy-label govcy-label-primary">You have uploaded the company’s certificate of
+                        liquidation</p>
+                    <span class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+                    <a href="#">View<span class="govcy-visually-hidden-error"> the company’s certificate of liquidation
+                            file</span></a>
+                    <a class="govcy-ml-3" href="#">Delete<span class="govcy-visually-hidden-error"> the company’s
+                            certificate of liquidation file</span></a>
+                </div>
+            </div>
+
+            <h2>Error</h2>
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <h1><label class="govcy-label govcy-label-primary" for="file4">Upload a file</label></h1>
+                    <span id="file4-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+                    <p id="file4-error" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                    </p>
+                    <input class="govcy-file-upload" type="file" id="file4" name="file4"
+                        aria-describedby="file4-hint file4-error">
+                </div>
+            </form>
+
+            <form action="" class="govcy-form" novalidate="">
+                <div class="govcy-form-control govcy-form-control-error">
+                    <label class="govcy-label govcy-label-primary" for="file5">Upload a file</label>
+                    <span id="file5-hint" class="govcy-hint">PDF, JPG, JPEG, PNG are the acceptable formats</span>
+                    <p id="file5-error" class="govcy-input-error-msg">
+                        <span class="govcy-visually-hidden-error">Error:</span>There is an error
+                    </p>
+                    <input class="govcy-file-upload" type="file" id="file5" name="file5"
+                        aria-describedby="file5-hint file5-error">
+                </div>
+            </form>
+
+            <hr>
+
+            <h1>Insert text</h1>
+
+            <blockquote class="govcy-inset-text">
+                <p>It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the
+                    application.</p>
+            </blockquote>
+            <p>Compared to normal text </p>
+
+            <hr>
+
+            <h1>Panel</h1>
+
+            <div class="govcy-alert-completed-notification">
+                <div class="govcy-alert-completed-notification-body govcy-bg-success">
+                    <h1>Η αίτησή σας έχει σταλεί</h1>
+                    <p>Ο αριθμός αναφοράς σας</p>
+                    <p class="fw-bold">DSF2204111303108618</p>
+                </div>
+            </div>
+
+            <hr>
+
+
+            <h1>Phase banner</h1>
+
+            Your banner must be directly under the gov.cy header and colour bar.
+
+            <div class="govcy-phase-banner">
+                <span class="govcy-tag">TESTING</span>
+                <span class="govcy-ml-2">This is not a real service. It is only used for testing purposes. Any
+                    submissions made through this service will be ignored.</span>
+            </div>
+
+            <div class="govcy-phase-banner">
+                <span class="govcy-tag">ALPHA</span>
+                <span class="govcy-ml-2">This is a new service - your <a href="#">feedback</a> will help us improve
+                    it.</span>
+            </div>
+
+            <div class="govcy-phase-banner">
+                <span class="govcy-tag">BETA</span>
+                <span class="govcy-ml-2">This is a new service - your <a href="#">feedback</a> will help us improve
+                    it.</span>
+            </div>
+
+            <div class="govcy-phase-banner">
+                <span class="govcy-tag">PILOT</span>
+                <span class="govcy-ml-2">This is a new service - your <a href="#">feedback</a> will help us improve
+                    it.</span>
+            </div>
+
+            <div class="govcy-phase-banner">
+                <span class="govcy-tag">NEW SERVICE</span>
+                <span class="govcy-ml-2">This is a new service - your <a href="#">feedback</a> will help us improve
+                    it.</span>
+            </div>
+
+            <h2> Light version</h2>
+
+            <div class="govcy-phase-banner govcy-phase-banner-light">
+                <span class="govcy-tag">NEW SERVICE</span>
+                <span class="govcy-ml-2">This is a new service - your <a href="#">feedback</a> will help us improve
+                    it.</span>
+            </div>
+
+        </article>
+    </main>
+</div>
