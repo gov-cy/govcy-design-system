@@ -1,0 +1,26 @@
+{
+  "base": "http://localhost:3000/",
+  "paths": [
+    "components/accordion",
+    "components/backLink",
+    "components/breadCrumbs",
+    "components/button",
+    "components/characterCount",
+    "components/checkboxes",
+    "components/dateInputs",
+    "components/details",
+    "components/errorSummary",
+    "components/fileUpload",
+    "components/header",
+    "components/panel",
+    "components/phaseBanner",
+    "components/radios",
+    "components/select",
+    "components/summary",
+    "components/table",
+    "components/tabs",
+    "components/tagColors",
+    "components/textbox"
+  ]
+}
+  

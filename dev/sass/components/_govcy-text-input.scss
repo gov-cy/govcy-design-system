@@ -1,0 +1,104 @@
+// ---------------------------------------------------------------------------------------------
+// This file contains the custom styles for the textinput and textarea
+// ---------------------------------------------------------------------------------------------
+
+
+.govcy-text-input,
+    .govcy-text-area {
+      border-radius: 0;
+      border: $govcy-default-border;
+      height: 44px;
+      padding: 5px;
+      width: 100%;
+
+      // Defalult
+      &::placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // Firefox 19+ia
+      &::-moz-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // Firefox 18-
+      &:-moz-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // IE
+      &:-ms-input-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      // Safari
+      &::-webkit-input-placeholder {
+        font-size: 14px;
+        top: 12px;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 4pt $govcy-focus;
+        outline: none;
+      }
+
+      &-error {
+        border-color: $govcy-danger;
+      }
+
+      &-char_50 {
+        max-width: 31rem;
+      }
+
+      &-char_35 {
+        max-width: 22.5rem;
+      }
+
+      &-char_20 {
+        max-width: 14.16rem;
+      }
+
+      &-char_10 {
+        max-width: 7.8rem;
+      }
+
+      &-char_9 {
+        max-width: 6.9rem;
+      }
+
+      &-char_8 {
+        max-width: 6.2rem;
+      }
+
+      &-char_7 {
+        max-width: 5.8rem;
+      }
+
+      &-char_6 {
+        max-width: 5.5rem;
+      }
+
+      &-char_5 {
+        max-width: 4.5rem;
+      }
+
+      &-char_4 {
+        max-width: 3.8rem;
+      }
+
+      &-char_3 {
+        max-width: 3.1rem;
+      }
+
+      &-char_2 {
+        max-width: 2.2rem;
+      }
+    }
+
+    .govcy-text-area {
+      height: auto;
+    }

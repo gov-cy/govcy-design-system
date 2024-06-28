@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the list.
+// -----------------------------------------------------------------------------
+
+// Govcy list
+@mixin govcy-unstyled-list {
+  padding-left: 1.5rem;
+}
+ul {
+  @include govcy-unstyled-list;
+
+  li {
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.govcy-list-unstyled {
+  @extend .list-unstyled;
+}
+
+.govcy-list-medium li {
+  margin-bottom: map-get($govcy-spacers, 3) !important;
+}
+
+.govcy-list-large li {
+  margin-bottom: $govcy-default-margin-bottom;
+}

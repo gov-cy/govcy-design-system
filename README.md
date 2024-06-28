@@ -1,47 +1,22 @@
-[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/percy.yml)
-[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-lint.yml)
-[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-sanity-checks.yml)
-[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass.yml)
-[![](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/diff-sass-and-css.yml)
 
+![License](https://img.shields.io/github/license/gov-cy/govcy-design-system)
+[![Accessibility test](https://github.com/gov-cy/govcy-design-system/actions/workflows/a11y-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/a11y-test.yml)
+[![Check govcy.uds.min.js](https://github.com/gov-cy/govcy-design-system/actions/workflows/js-build-and-distribution-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/js-build-and-distribution-test.yml)
+[![Compiled CSS matches Sass](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-build-and-distribution-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/sass-build-and-distribution-test.yml)
+[![Version Change](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-change.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-change.yml)
+[![Visual test](https://github.com/gov-cy/govcy-design-system/actions/workflows/visual-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/visual-test.yml)
 
+# govcy-unified-design-system
 
-# govcy-design-system
-
-This is the readme for the `govcy-design-system` code repository. If you are looking for information on using the Design System in a service you should first check the [gov.cy Design System Documentation](https://gov-cy.github.io/govcy-design-system-docs)
-
-The gov.cy Design System is a package containing:
-* [SASS](https://sass-lang.com/) files (in `/src`)
-  * **The files in `/src` are the only files a developer should manually need to change to update the design system code**
-  * SASS files compile into [CSS Stylesheets](https://www.w3schools.com/css/css_howto.asp)
-  * You can reference CSS in html files to get the look and feel of a gov.cy service
-
-* An already compiled and minified [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) so you don't have to compile it yourself, located in `/dist`
-
-* Some tools to make adding or changing the CSS easier
-  * Development dependencies installed by [npm](https://www.npmjs.com/) and listed in `package.json::devDependencies`
-  * A set of commands to compile the [SASS files](https://sass-lang.com/) into a [CSS Stylesheet](https://www.w3schools.com/css/css_howto.asp) in `package.json::scripts`
-  * A [simple command line development server](https://github.com/http-party/http-server)
-  * A development site where you can see the components and styles that are a result of the css located at `build/index.html` which runs at `http://localhost:3000`
-
-## Updating Documentation
-
-The documentation site lives in a different repository
-
-[govcy-design-system-docs](https://github.com/gov-cy/govcy-design-system-docs
-)
-
-It is published on github pages here:
-
-[gov.cy Design System Documentation](https://gov-cy.github.io/govcy-design-system-docs)
-
+This is repository for the developer assets of the Unified Design System for gov.cy. If you are looking for information on using the Design System in an online service or a website, you should first check the ==gov.cy Unified Design System Documentation==
+    
 ## Installation
 
 `govcy-design-system` uses [NPM](https://www.npmjs.com) to manage it's dependencies. Therefore [NPM](https://www.npmjs.com) is a requirement of installing the design system.
 
 You can find information about installing NPM [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-We use `npm>=8.x` to make use of the `package.json::overrides` functionality.
+We use `npm>=10.x` to make use of the `package.json::overrides` functionality.
 
 ```
 git clone https://github.com/gov-cy/govcy-design-system.git
@@ -49,106 +24,118 @@ cd govcy-design-system
 npm install
 ```
 
-## Commands
+## Usage
+The project uses [SASS](https://sass-lang.com/) to compile the sass files into css and [rollup](https://rollupjs.org/) to compile the javascript files.
 
-#### npm run css-build
+We also use [express](https://expressjs.com/) to serve the pages build on [EJS](https://ejs.co).
 
-The `css-build` command:
+### Developer Assets
 
-* compiles the sass files in `/src/sass` into a css stylesheet and puts it with the development server files in `/build/css` ready to be served by the development server
-* copies the javascript file `/src/js/app.js` from `/src/js` to `/build/js` ready to be served by the development server
+All the assets (CSS, JS, images) that any implementation team will need to build a website or an online service using the UDS, are in the `dist/` directory.
 
-#### npm run css-build-distribution
+### Contributing/ Updating/ Using
 
-The `css-build-distribution` command:
+To make changes in the UDS developers should only need to make code changes to the files in the `src/` directory. Updating these files then running the build commands to update the files in `dist/` or `build/` will give you `.css` and `.js` files that you can use in a web page.
 
-Compiles the sass files in `/src/sass` into a _minified_ css stylesheet and puts it in `/dist/css` ready to be distributed as a release and included in other peoples websites.
+### Directory Structure
+This is the directory structure of the design system.
 
+- `.github`: Github actions
+- `dev`: Development files (SASS and JS)
+- `dist`: Distribution files with minified versions of the developer assets (CSS, JS) and images 
+- `public`: Contains the assets used by express to serve the pages with un-minified versions of the developer assets (CSS, JS)
+- `routes`: Routes for the express server
+- `test`: Test scripts
+- `views`: EJS templates
 
-#### npm run start
+### Scripts and Commands
 
-The `start` command:
+Listed below are is a list of the commands you can use to start the server and build the code.
 
-Runs a [simple command line development server](https://github.com/http-party/http-server) that serves the static files in the `/build` directory on port 3000. This means that when you have run this command you should be able to see your version of the Design System at [http://localhost:3000](http://localhost:3000)
+#### Start server
+To view changes live you can run the `npm start` command and navigate to [http://localhost:3000](http://localhost:3000). It will serve the the EJS views, based on the defined routes including the assets in the `public` folder.
 
-The `/build/index.html` file forms the entry point for the design system and shows all the components on a single page so you can see what effect your changes have.
+#### Build
 
-#### npm run css-start / npm run css-watch / npm run watch-css
+##### `npm run pre-build`
 
-The watch css commands:
+This will prepare the files to include the necessary comments (for example version number)
 
-* All do the same thing
-* Watch the sass files in `/src/sass` and check for any changes. When it detects changes it re compiles the sass into a css stylesheet into the `/build/css` directory automatically. This means that if you are also running the development server you can just refresh the page to see your changes.
+##### `npm run build-all`
 
-## Tests
+This will run build the SASS and JS files into minified versions in the `dist` directory.
+
+##### `npm run build`
+
+This will run build the SASS and JS files into un-minified versions in the `public` directory.
+
+### Visual Regression Tests
+
+The project uses [Percy](https://percy.io/) to make visual regression tests on pages dedicated to regression testing. To do this we use [puppeteer](https://github.com/puppeteer/puppeteer) to run the tests in headless mode. 
+
+The tests are run by the [Github Actions](https://github.com/features/actions) action found at [.github/workflows/visual-test.yml](.github/workflows/visual-test.yml)
+
+The tests can also be run ad-hoc by running the `npm run test-visual` command. More information are in the [NOTES.md](NOTES.md) file.
+
+### Accessibility Tests
+
+The project uses [pa11y](https://pa11y.org/) to make accessibility tests on pages dedicated to accessibility testing. 
+
+The tests are run by the [Github Actions](https://github.com/features/actions) action found at [.github/workflows/a11y-test.yml](.github/workflows/a11y-test.yml)
+
+The tests can also be run ad-hoc by running the `npm run pa11y:test` command.
 
 ### Linting
 
-We have automated code quality/ linting tests that are run using [sass-lint](https://github.com/sasstools/sass-lint).This library is currently maintained but we haven't found a suitable alternative. Occasionally it causes problems with sub-dependencies/ transitive dependencies that need to be overriden. See the [Dependency Management section of this guidance](#dependency-management) for more information or the `package.json::overrides` section.
+The project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for automated code quality/ linting tests.
 
-The linting is controlled by the configuration file ar [test/config/.sasslintrc](test/config/.sasslintrc). You can read more about how to configure [sass-lint here](https://github.com/sasstools/sass-lint#configuration-documentation).
+The tests are run with [husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) and are done when staging and committing the code before pushing it to GitHub.
 
-The configuration file ([test/config/.sasslintrc](test/config/.sasslintrc)) is provided to the [sass-lint](https://github.com/sasstools/sass-lint) command line tool by the [package.json::sasslintConfig](package.json) entry.
+The tests can also be run ad-hoc by running the `npm format:check`, `npm run eslint:check`, `npm run stylelint` commands.
 
-These are currently run by a simple [Github Actions](https://github.com/features/actions) action found at [.github/workflows/sass-lint.yml](.github/workflows/sass-lint.yml)
-
-### Visual Regression
-
-We have visual regression tests that are required to pass before pull requests are merged. There are a number of components used to make this happen, they are explained below.
-
-#### [Percy](https://percy.io/)
-
-'Percy' is a service/ website that allows you to upload and check visual regression images. It shows a nice diff on the interface that one can apporve or reject. If you send it 2 screenshots it will tell you the difference between them.
-
-#### [http-server](https://www.npmjs.com/package/http-server/)
-
-`http-server` is a lightweight javascript development web server. In our tests it is used to 'serve' our web pages that are screenshotted.
-
-#### [puppeteer](https://github.com/puppeteer/puppeteer)
-
-`puppeteer` is a library that provides a browser to visit the served pages and take the screenshots.
-
-#### [percy/puppeteer](https://docs.percy.io/docs/puppeteer)
-
-`percy/puppeteer` is just a customised distribution of the above with some small tweaks to make it work better with Percy.
-
-#### [Mocha](https://mochajs.org/#the-test-directory)
-
-Is a testing framework and command that will find all our tests and run them one by one.
-
-#### [percy/cli](https://github.com/percy/cli)
-
-`percy/cli` is a group of shortcut commands that upload the resulting screenshots to the service/ website.
-
-## Dependency Management
+### Dependency Management
 
 Dependencies are managed in the `package.json` file.
 
-We use [overrides](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) to control sub dependencies in the case of a security vunerability found in a sub/ transitive dependency.
+### Automatic Versioning
 
-## Contributing/ Updating/ Using
+This repository automatically tags new versions. The automatic versioning is done by the [Github Actions](https://github.com/features/actions) action found at [.github/workflows/version-change.yml](.github/workflows/version-change.yml)
 
-Developers should only need to make code changes to the files in the `src/` directory. Updating these files then running the build commands to update the files in `dist/` or `build/` will give you `.css` files that you can use in a web page.
-
-Everything you can do in `CSS` you can do in `SASS` and more. If you are directly editing `.css` files in this repository you have done something wrong.
-
-
-
-## Automatic Versioning
-
-This repository automatically tags new versions.
-
-For this to happen 3 criteria _must_ be met:
+For this to happen 4 criteria _must_ be met:
 
 1. The developer must have incremented the `version` string in the [package.json](package.json) upwards
-2. The developer must have run the `npm run build-all` command to make sure the changes to `src/` are reflected in the `dist/` files
-3. There must be some change in the `dist/` files
-
-
-
+2. There changes are documented in the [CHANGELOG.md](CHANGELOG.md) file
+3. The developer must have run the `npm run build-all` command to make sure the changes to `src/` are reflected in the `dist/` files
+4. The changes are merged into the `main` branch
 
 When a pull request that meets these criteria is merged a [Github Action](https://github.com/features/actions):
 1. Creates a new tag with the new version number
 2. Tags the new code as `latest`
 
 
+More details on versioning policy can be found in the [VERSIONING.md](VERSIONING.md) file.
+
+## Changes to version 3 from version 2.2.0
+
+* New components 
+    * calendar 
+    * Summary list 
+    * data table 
+    * tabs 
+    * accordion 
+    * tags 
+
+* Enhancements
+    * header design 
+    * footer 
+    * vertical spacing change on HTML elements 
+    * radio 
+    * checkbox 
+    * textbox 
+    * textarea 
+    * tables 
+    * dates 
+    * select 
+
+## Contact Information
+If you have any questions or feedback, please feel free to reach out to us at dsf-admin@dits.dmrid.gov.cy.

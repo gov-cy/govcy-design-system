@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the accordion.
+// -----------------------------------------------------------------------------
+
+.govcy-accordion {
+  --bs-accordion-border-radius: 0rem;
+  --bs-accordion-inner-border-radius: 0rem;
+  margin-bottom: $govcy-default-margin-bottom;
+  @extend .accordion;
+
+  .govcy-accordion-item {
+    @extend .accordion-item;
+    margin: 5px 0;
+    border: var(--bs-accordion-border-width) solid transparent !important;
+
+    &.govcy-accordion-bordered {
+      border: var(--bs-accordion-border-width) solid
+        var(--bs-accordion-border-color) !important;
+    }
+
+    .govcy-accordion-header {
+      @extend .accordion-header;
+      padding-top: 0;
+
+      .govcy-accordion-button,
+      .govcy-accordion-button:not(.collapsed) {
+        @extend .accordion-button;
+        transition: none;
+        box-shadow: none;
+        border: 2px solid transparent !important;
+        background-color: $govcy-gray;
+        color: $govcy-body;
+
+        &:focus {
+          background-color: $govcy-btn-focus;
+          box-shadow: none;
+          color: $govcy-body;
+          border-color: $govcy-body !important;
+          border: 2px solid;
+        }
+      }
+    }
+
+    .govcy-accordion-collapse {
+      @extend .accordion-collapse;
+    }
+
+    .govcy-accordion-body {
+      @extend .accordion-body;
+    }
+  }
+
+  &.govcy-accordion-steps {
+    padding-left: 3rem;
+
+    .govcy-accordion-item {
+      position: relative;
+
+      .govcy-accordion-button {
+        font-weight: 700;
+      }
+
+      .govcy-accordion-step {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        border: var(--bs-accordion-border-width) solid
+          var(--bs-accordion-border-color);
+        background-color: $govcy-gray;
+        top: 15px;
+        border-radius: 9999px;
+        left: -42px;
+        z-index: 3;
+        display: flex;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+
+        &.govcy-accordion-step-conditional {
+          background-color: $govcy-white;
+          border: var(--bs-accordion-border-width) solid $govcy-white;
+        }
+      }
+
+      &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        width: 0;
+        height: calc(100% + 1rem);
+        border-left: solid 1px #b1b4b6;
+        left: -30px;
+        top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for insets.
+// -----------------------------------------------------------------------------
+
+.govcy-phase-banner {
+  margin-bottom: $govcy-default-margin-bottom;
+  display: flex;
+  align-items: center;
+
+  .govcy-tag {
+    background-color: $govcy-primary;
+    border-radius: 0.25rem;
+    border: 1px solid $govcy-primary;
+  }
+
+  &.govcy-phase-banner-light {
+    .govcy-tag {
+      background-color: $govcy-white;
+      color: $govcy-primary;
+      border-color: $govcy-primary !important;
+    }
+  }
+}

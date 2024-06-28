@@ -1,0 +1,62 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Single question page</h2>
+        <div class="govcy-form">
+          <div class="govcy-form-control">
+              <h1><label class="govcy-label govcy-label-primary" for="input4">Can you provide more detail?</label></h1>
+              <span class="govcy-hint" id="govcy-hint4">Do not include personal or financial information like your National Insurance number or credit card details.</span>
+              <textarea id="input4" class="govcy-text-area" rows="5" aria-describedby="govcy-hint-hint4 govcy-hint4"></textarea>
+              <div id="govcy-hint-hint4" class="govcy-character-count" data-maxchars="150">
+                  <div class="govcy-character-remaining-counter">You have <span></span> characters remaining</div>
+                  <div class="govcy-character-more-counter">You have entered <span></span> characters more</div>
+              </div>
+          </div>
+        </div>
+      <h2>More than one question on the page</h2>
+      <div class="govcy-form">
+        <div class="govcy-form-control">
+            <label class="govcy-label govcy-label-primary" for="input1">Can you provide more detail?</label>
+            <span class="govcy-hint" id="govcy-hint1">Do not include personal or financial information like your National Insurance number or credit card details.</span>
+            <textarea id="input1" class="govcy-text-area" rows="5" aria-describedby="govcy-hint-hint1 govcy-hint1"></textarea>
+            <div id="govcy-hint-hint1" class="govcy-character-count" data-maxchars="150">
+                <div class="govcy-character-remaining-counter">You have <span></span> characters remaining</div>
+                <div class="govcy-character-more-counter">You have entered <span></span> characters more</div>
+            </div>
+        </div>
+      </div>
+    <h2>Word count instead of character count</h2>
+    <div class="govcy-form">
+      <div class="govcy-form-control">
+          <label class="govcy-label govcy-label-primary" for="input2">Enter a job description</label>
+          <textarea id="input2" class="govcy-text-area" rows="5" aria-describedby="govcy-hint-hint2"></textarea>
+          <div id="govcy-hint-hint2" class="govcy-character-count" data-maxwords="150">
+              <div class="govcy-character-remaining-counter">You have <span></span> words remaining</div>
+              <div class="govcy-character-more-counter">You have entered <span></span> words more</div>
+          </div>
+      </div>
+    </div>
+  <h2>Error messages</h2>
+  <div class="govcy-form">
+    <div class="govcy-form-control govcy-form-control-error">
+        <h1><label class="govcy-label govcy-label-primary" for="input3">Enter a job description</label></h1>
+        <p id="job-description-input-error" class="govcy-input-error-msg">
+            <span class="govcy-visually-hidden-error">Error:</span>Job description must be 150 characters or less
+        </p>
+        <textarea id="input3" class="govcy-text-area govcy-text-area-error" aria-describedby="govcy-hint-hint3 job-description-input-error" rows="5">A content designer works on the end-to-end journey of a service to help users complete their goal and government deliver a policy intent. Their work may involve the creation of, or change to, a transaction, product or single piece of content that stretches across digital and offline channels. They make sure appropriate content is shown to a user in the right place and in the best format. A content designer works on the end-to-end journey of a service to help users complete their goal and government deliver a policy intent. Their work may involve the creation of, or change to, a transaction, product or single piece of content that stretches across digital and offline channels. They make sure appropriate content is shown to a user in the right place and in the best format. A content designer works on the end-to-end journey of a service to help users complete their goal and government deliver a policy intent. Their work may involve the creation of, or change to, a transaction, product or single piece of content that stretches across digital and offline channels. They make sure appropriate content is shown to a user in the right place and in the best format.
+        </textarea>
+        <div  id="govcy-hint-hint3" class="govcy-character-count" data-maxwords="150">
+            <div class="govcy-character-remaining-counter">You have <span></span> words remaining</div>
+            <div class="govcy-character-more-counter">You have entered <span></span> words more</div>
+        </div>
+    </div>
+  </div>
+      </section>
+    </article>
+  </main>
+</div>

@@ -1,0 +1,40 @@
+// container max-width per breakpoint
+$govcy-container-max-width: (
+  sm: 100%,
+  md: 720px,
+  lg: 960px,
+  xl: 1100px,
+  xxl: 1200px
+);
+
+// container padding per breakpoint
+$govcy-container-padding: (
+  xs: 1rem,
+  sm: 2rem,
+  md: 0
+);
+
+// override default bootstrap container width
+$container-max-widths: $govcy-container-max-width;
+
+.govcy-container {
+  @extend .container-md;
+}
+
+// create govcy-container-fluid by extending bootstrap .container-fluid
+.govcy-container-fluid {
+  @extend .container-fluid;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// custom padding for the container
+@each $breakpoint, $padding in $govcy-container-padding {
+  @include media-breakpoint-up($breakpoint) {
+    .govcy-container,
+    .container {
+      padding-right: $padding !important;
+      padding-left: $padding !important;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+    <aside>
+      <%- include('./components') %>
+    </aside>
+  </div>
+  
+  <div class="govcy-col-md-9 govcy-col-lg-10">
+    <main id="mainContainer">
+  
+      <article>
+        <section>
+          <h2>Field Set</h2>
+          <form class="govcy-form" novalidate action="">
+            <fieldset class="govcy-fieldset" aria-describedby="address-hint1">
+                <legend class="govcy-legend govcy-mb-6"><h1>What is your address?</h1></legend>
+                <span class="govcy-hint" id="address-hint1">The address will only be used for correspondence</span>
+                <div class="govcy-form-control">
+                    <label class="govcy-label govcy-label-primary" for="cyManualAddressLine1">Address line 1</label>
+                       <input id="cyManualAddressLine1" name="cyManualAddressLine1" type="text" class="govcy-text-input" autocomplete="address-line1"> 
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label govcy-label-primary" for="cyManualAddressLine2">Address line 2 (optional)</label>
+                        <input id="cyManualAddressLine2" name="cyManualAddressLine2" type="text" class="govcy-text-input" autocomplete="address-line2">  
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label govcy-label-primary" for="cyManualTownOrCity">Town or city</label>
+                        <input id="cyManualTownOrCity" name="cyManualTownOrCity" type="text" class="govcy-text-input" autocomplete="address-level2">
+                </div>
+                <div class="govcy-form-control">
+                    <label class="govcy-label govcy-label-primary" for="cyManualPostalCode">Postcode</label>
+                    <input id="cyManualPostalCode" name="cyManualPostalCode" type="text" class="govcy-text-input govcy-text-input-char_20 " autocomplete="postal-code">
+                </div>
+            </fieldset>
+        </form>
+        </section>
+      </article>
+ 
+    </main>
+  </div>

@@ -1,0 +1,240 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./styles') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Page Templates</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li><a href="#max-width">Max-width</a></li>
+
+              <li>
+                <a href="#responsive-breakpoint">Responsive breakpoint</a>
+              </li>
+
+              <li><a href="#page-templates">Page templates</a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <h2 id="max-width" tabindex="-1">
+          Max-width <a class="anchor-link" href="#max-width"> </a>
+        </h2>
+        <div class="heading-children">
+          <div>
+            <p>Max-width defines the maximum width of the content of a page.</p>
+          </div>
+          <div>
+            <p>
+              Note that some sections such as&nbsp;<code>Body start</code
+              >&nbsp;and&nbsp;<code>Body end</code>&nbsp;use a fluid design for
+              background colour and styling, but content such as text, links and
+              icons are restricted within the max-width limit.
+            </p>
+          </div>
+          <div>
+            <p>The default maximum width is&nbsp;<code>1200px</code>.</p>
+          </div>
+        </div>
+        <h2 id="responsive-breakpoint" tabindex="-1">
+          Responsive breakpoint
+          <a class="anchor-link" href="#responsive-breakpoint"> </a>
+        </h2>
+        <p>
+          Breakpoint is the width that determines how your responsive layout
+          behaves across devices. The default breakpoint is <code>≥768px</code>.
+        </p>
+        <h2 id="page-templates" tabindex="-1">
+          Page templates <a class="anchor-link" href="#page-templates"> </a>
+        </h2>
+        <p>
+          All pages must use the following structure inside the
+          <code>&lt;body&gt;</code> tag. The page width is on the
+          <a href="#max-width">max-width</a> limit. Note the <code>id</code> tag
+          is for reference and can be
+        </p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Section Name</th>
+                <th>HTML Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Body start</td>
+                <td>
+                  <code
+                    >&lt;section class="govcy-container-fluid"
+                    id="bodyStartContainer"&gt; &lt;/section&gt;</code
+                  >
+                </td>
+                <td>
+                  To be used to render the content before
+                  the&nbsp;<code>&lt;header&gt;</code>&nbsp;such as
+                  <mark>skip link</mark> and <mark>cookie consent</mark> (Skip
+                  link must always be first). Width must be fluid, same as the
+                  viewport.
+                </td>
+              </tr>
+              <tr>
+                <td>Header</td>
+                <td>
+                  <code
+                    >&lt;header class="govcy-header" id="headerContainer"&gt;
+                    &lt;/header&gt;</code
+                  >
+                </td>
+                <td>
+                  To be used as the page&nbsp;<mark>header</mark>. Width must be
+                  fluid, same as the viewport.
+                </td>
+              </tr>
+              <tr>
+                <td>Before main</td>
+                <td>
+                  <code
+                    >&lt;section class="govcy-container"
+                    id="beforeMainContainer"&gt; &lt;/section&gt;</code
+                  >
+                </td>
+                <td>
+                  To be used to render the content before
+                  the&nbsp;<code>&lt;main&gt;</code>&nbsp;(i.e.&nbsp;<mark
+                    >back link</mark
+                  >&nbsp;&amp;&nbsp;<mark>breadcrumbs</mark>&nbsp;only ) . Must
+                  comply with the&nbsp;<mark>max-width</mark>&nbsp;reference
+                  above and be placed in the center of the viewport.
+                </td>
+              </tr>
+              <tr>
+                <td>Main</td>
+                <td>
+                  <code
+                    >&lt;main class="govcy-container" id="mainContainer"&gt;
+                    &lt;/main&gt;</code
+                  >
+                </td>
+                <td>
+                  To be used to render the service/website content
+                  (i.e.&nbsp;<mark>question page</mark>). Must comply with
+                  the&nbsp;<mark>max-width</mark>&nbsp;reference above and be
+                  placed in the center of the viewport. This section can have
+                  one of the layouts described in the&nbsp;<mark
+                    >layout section</mark
+                  >.
+                </td>
+              </tr>
+              <tr>
+                <td>Footer</td>
+                <td>
+                  <code
+                    >&lt;footer class="govcy-footer" id="footerContainer"&gt;
+                    &lt;/footer&gt;</code
+                  >
+                </td>
+                <td>
+                  To be used as the page&nbsp;<mark>footer</mark>. Width must be
+                  fluid, same as the viewport
+                </td>
+              </tr>
+              <tr>
+                <td>Body end</td>
+                <td>
+                  <code
+                    >&lt;section class="govcy-container-fluid"
+                    id="bodyEndContainer"&gt; &lt;/section&gt;</code
+                  >
+                </td>
+                <td>
+                  To be used to render the content after
+                  the&nbsp;<code>&lt;footer&gt;</code>. Width must be fluid,
+                  same as the viewport.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+        <p>
+          Use the sample HTML Code below as a page template. The code below
+          includes all the sections described above and uses apprpriatre govcy
+          classes to accomodate
+          <a href="../vertical_spacing">vertical spacing</a>,
+          <a href="../../components/header">header</a> and
+          <a href="../../components/footer">footer</a> components :
+        </p>
+        <pre
+          class="language-html"
+          tabindex="0"
+        ><code class="language-html is-loaded"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!--bodyStart--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bodyStartContainer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#mainContainer<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-skip-link<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Skip to main content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+      ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!--Header--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-header<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>headerContainer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!--beforeMain--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>beforeMainContainer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!--main--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mainContainer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!-- Footer --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-footer<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>footerContainer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!--bodyEnd--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span>  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container-fluid<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bodyEndContainer<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code><button class="copy-code-button">Copy</button></pre>
+        <p>
+          <img
+            src="/img/template_sample.png"
+            alt="Sample template"
+            class="img-fluid"
+          />
+        </p>
+        <p>
+          Take a look at this
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="../../samples/page_templates_demo/"
+            >template page</a
+          >
+          with different sections highlighted with different colours.
+        </p>
+        <p>
+          Also take a look at a
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="../../samples/sample/"
+            >simple sample page</a
+          >
+          with components of the Design System incorporated in it’s content.
+        </p>
+      </section>
+    </article>
+  </main>
+</div>

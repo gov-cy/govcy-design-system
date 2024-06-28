@@ -5,6 +5,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v3.0.0] – YYYY-MM-DD
+**Major version change**
+
+Total redesign of the design system, with branding and styling changes. Also we have added changed existing components and created new elements to accommodate both services and websites.
+
+### Added
+We have added new elements to the design system:
+- 11 new components
+	- accordion 
+	- character count
+	- cookie banner
+	- data tables
+	- date picker
+	- inset text
+	- phase banner
+	- summary list
+	- tag
+	- textarea
+	- warning text
+- 1 style
+	- Images
+- 14 patterns
+	- accessibility statement page
+	- addresses
+	- bank details
+	- confirm an email address
+	- confirmation pages
+	- contact page
+	- cookies page
+	- filter results
+	- gender or sex
+	- numeric inputs
+	- privacy policy
+	- social insurance number
+	- step by step navigation
+	- task list page
+
+### Changed
+
+All styles, components and patters have changed. 
+
 ## [v2.2.0] - 2022-07-10
 No changes made on CSS or JS. Added documentation patterns for 'Add multiple things' and 'Structuring a service'
 
@@ -110,7 +151,6 @@ No changes made on CSS or JS. Added documentation patterns for 'Add multiple thi
 
 - margin-bottom property has been removed from the `.govcy-fieldset`
 
-
 ## [v1.0.1] - 2022-03-23
 
 ### Added
@@ -127,9 +167,7 @@ No changes made on CSS or JS. Added documentation patterns for 'Add multiple thi
 
 - Removed tabindex attribute from html
 
-
 ## [v1.0.0] - 2022-03-18
-
 
 ### Added
 
@@ -155,4 +193,4 @@ No changes made on CSS or JS. Added documentation patterns for 'Add multiple thi
 ### Removed
 - Text area height: 44px has been removed.
 
-
+[3.0.0] https://github.com/gov-cy/govcy-design-system/tree/v3.0.0

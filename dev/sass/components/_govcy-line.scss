@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the line.
+// -----------------------------------------------------------------------------
+
+// Govcy line;
+
+hr {
+  &.govcy-line {
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid $govcy-body !important;
+    padding-top: map-get($govcy-spacers, 5) !important;
+    margin-bottom: map-get($govcy-spacers, 5) !important;
+  }
+
+  &.govcy-line-no-bottom {
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid $govcy-body !important;
+    padding-top: map-get($govcy-spacers, 5) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  hr {
+    &.govcy-line {
+      padding-top: map-get($govcy-spacers, 3) !important;
+    }
+
+    &.govcy-line-no-bottom {
+      padding-top: map-get($govcy-spacers, 3) !important;
+    }
+  }
+}

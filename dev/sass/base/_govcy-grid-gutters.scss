@@ -1,0 +1,27 @@
+// default govcy gutter
+$grid-gutter-width: 1.5rem;
+
+// custom govcy grid gutters width per breakpoint
+$govcy-gutter-widths: (
+  xs: 0.5rem,
+  sm: 1rem,
+  md: $grid-gutter-width,
+  lg: $grid-gutter-width,
+  xl: $grid-gutter-width,
+  xxl: $grid-gutter-width
+);
+
+@each $breakpoint, $gutter-width in $govcy-gutter-widths {
+  @include media-breakpoint-up($breakpoint) {
+    $gutter-half-width: calc($gutter-width / 2);
+    .row:not(.no-gutters) {
+      margin-right: -$gutter-half-width;
+      margin-left: -$gutter-half-width;
+    }
+    .row:not(.no-gutters) > .col,
+    .row:not(.no-gutters) > [class*='col-'] {
+      padding-right: $gutter-half-width;
+      padding-left: $gutter-half-width;
+    }
+  }
+}

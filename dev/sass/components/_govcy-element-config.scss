@@ -1,0 +1,265 @@
+
+// vertical spacing for the HTML elements
+
+$govcy-breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin responsive-element-breakpoints($map) {
+  @each $breakpoint, $values in $map {
+    $min-width: map-get($govcy-breakpoints, $breakpoint); // Get the min-width from $govcy-breakpoints
+    @media (min-width: $min-width) {
+      @each $tag, $styles in $values {
+        #{$tag} {
+          @each $property, $value in $styles {
+            #{$property}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+$govcy-styles: (
+    xs: (
+        a: (
+           margin-bottom: 0
+        ),
+        img: (
+            max-width: 100%
+        ),
+        picture: (
+            max-width: 100%
+        ),
+        h1: (
+            margin-bottom: 1.5rem,
+            padding:0,
+            font-size: 1.813rem
+        ),
+        h2: (
+            margin-bottom: 1.5rem,
+            padding:0.75rem 0 0 0,
+            font-size: 1.438rem
+        ),
+        h3: (
+            margin-bottom: 1.5rem,
+            padding:0.75rem 0 0 0,
+            font-size: 1.125rem
+        ),
+        h4: (
+            margin-bottom: 1.5rem,
+            padding:0.75rem 0 0 0,
+            font-size: 1rem
+        )
+    ),
+    sm: (
+        a: (
+             margin-bottom: 0
+        ),
+        img: (
+            max-width: 100%
+        ),
+        picture: (
+            max-width: 100%
+        ),
+        h1: (
+            margin-bottom: 1.5rem,
+            padding:0,
+            font-size: 2rem
+        ),
+        h2: (
+            margin-bottom: 1.5rem,
+            padding: 0.75rem 0 0 0,
+            font-size: 1.563rem
+        ),
+        h3: (
+            margin-bottom: 1.5rem,
+            padding: 0.75rem 0 0 0,
+            font-size: 1.125rem
+        ),
+        h4: (
+            margin-bottom: 1.5rem,
+            padding: 0.75rem 0 0 0,
+            font-size: 1rem
+        )
+    ),
+    md: (
+        a: (
+            margin-bottom: 0
+        ),
+        img: (
+            max-width: 570px
+        ),
+        picture: (
+            max-width: 570px
+        ),
+        h1: (
+            margin-bottom: 1.5rem,
+            padding:0,
+            font-size: 2.188rem
+        ),
+        h2: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.688rem
+        ),
+        h3: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.188rem
+        ),
+        h4: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1rem
+        )
+    ),
+    lg: (
+        a: (
+            margin-bottom: 0
+        ),
+        img: (
+            max-width: 660px
+        ),
+        picture: (
+            max-width: 660px
+        ),
+        h1: (
+            margin-bottom: 1.5rem,
+            padding:0,
+            font-size: 2.375rem
+        ),
+        h2: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.8125rem
+        ),
+        h3: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.3125rem
+        ),
+        h4: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.0625rem
+        )
+    ),
+    xl: (
+        a: (
+            margin-bottom: 0
+        ),
+        img: (
+            max-width: 840px
+        ),
+        picture: (
+            max-width: 840px
+        ),
+        h1: (
+            margin-bottom: 1.5rem,
+            padding:0,
+            font-size: 2.5625rem
+        ),
+        h2: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.9375rem
+        ),
+        h3: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.4375rem
+        ),
+        h4: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.0625rem
+        )
+    ),
+    xxl: (
+        a: (
+             margin-bottom: 0
+        ),
+        img: (
+            max-width: 940px
+        ),
+        picture: (
+            max-width: 940px
+        ),
+        h1: (
+            margin-bottom: 1.5rem,
+            padding:0,
+            font-size: 2.8125rem
+        ),
+        h2: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 2.125rem
+        ),
+        h3: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.5625rem
+        ),
+        h4: (
+            margin-bottom: 1.5rem,
+            padding: 1.25rem 0 0 0,
+            font-size: 1.125rem
+        )
+    )
+);
+
+
+@include responsive-element-breakpoints($govcy-styles);
+
+// Anchor tag styles
+a {
+    &.danger:hover {
+      color: $govcy-link-danger-hover;
+    }
+  
+    &:visited {
+      border-color: $govcy-link-visited;
+      color: $govcy-link-visited;
+    }
+  
+    &:active {
+      border-color: $govcy-link-active;
+      color: $govcy-link-active;
+    }
+  
+    &:focus {
+      -webkit-box-shadow:
+        0 -2px $govcy-link-focus,
+        0 3px $govcy-body;
+      background-color: $govcy-link-focus;
+      // border-bottom: 3px solid $govcy-body;
+      box-shadow:
+        0 -2px $govcy-link-focus,
+        0 3px $govcy-body;
+      color: $govcy-body !important;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  // styles for img and picture
+  img,
+  picture {
+    margin-bottom: $govcy-default-margin-bottom;
+    width: auto;
+  }
+
+  main img,
+  main picture {
+    aspect-ratio: 3/2;
+  }
+
+  .govcy-img-ar-auto {
+    aspect-ratio: auto !important;
+  }

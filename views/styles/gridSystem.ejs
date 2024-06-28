@@ -1,0 +1,300 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./styles') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Grid system</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li>
+                <a href="#grid-gutter-and-padding">Grid gutter and padding</a>
+              </li>
+
+              <li>
+                <a href="#using-grid-system-with-govcy-css"
+                  >Using Grid system with GOVCY CSS</a
+                >
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Use the grid system to lay out the content on your service’s pages.
+        </p>
+        <p>
+          The system uses 12 columns to lay out the content in the desktop
+          viewport. The content in the columns is laid out vertically on
+          viewports smaller than the defined
+          <a href="../page_templates/#responsive-breakpoint"
+            >responsive breakpoint</a
+          >.
+        </p>
+        <h2 id="grid-gutter-and-padding" tabindex="-1">
+          Grid gutter and padding
+          <a class="anchor-link" href="#grid-gutter-and-padding"> </a>
+        </h2>
+        <p>
+          Gutters are the gaps between column content, created by horizontal
+          padding. The gutter width is <strong>24px</strong>. This means that
+          each column must have the following properties, that also define their
+          inner content spacing:
+        </p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Propery</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>padding-right</td>
+              <td>12px</td>
+            </tr>
+            <tr>
+              <td>padding-left</td>
+              <td>12px</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="using-grid-system-with-govcy-css" tabindex="-1">
+          Using Grid system with GOVCY CSS
+          <a class="anchor-link" href="#using-grid-system-with-govcy-css"> </a>
+        </h2>
+        <p>
+          The grid system uses a series of containers, rows, and columns to
+          layout and align content.
+        </p>
+        <p>
+          Use <code>container</code> classes to contain, pad, and (sometimes)
+          center the content within them. While containers can be nested, most
+          layouts do not require a nested container.
+        </p>
+        <p>The design system comes with two different container classes:</p>
+        <ul>
+          <li>
+            <code>.govcy-container</code>, which sets to max-width at each
+            responsive breakpoint
+          </li>
+          <li>
+            <code>.govcy-container-fluid</code>, which is width: 100% at all
+            breakpoints
+          </li>
+        </ul>
+        <p>
+          Use <code>row</code> class to distinguish rows.<br />
+          Use <code>govcy-col-*</code> classes to distinguish columns. Replace
+          the asterisk (*) on the naming classes convention with a number from 1
+          to 12 to define how many column widths the element should have.
+        </p>
+        <p><em>Example</em></p>
+        <div class="govcy-container govcy-p-4 govcy-bg-info govcy-mb-4">
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div
+              class="govcy-col-11 govcy-bg-light govcy-br-primary govcy-br-1"
+            >
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div
+              class="govcy-col-10 govcy-bg-light govcy-br-primary govcy-br-1"
+            >
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-3 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-9 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-4 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-8 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-5 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-7 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-6 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-6 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-7 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-5 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-8 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-4 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-9 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-3 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div
+              class="govcy-col-10 govcy-bg-light govcy-br-primary govcy-br-1"
+            >
+              col
+            </div>
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div
+              class="govcy-col-11 govcy-bg-light govcy-br-primary govcy-br-1"
+            >
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div
+              class="govcy-col-12 govcy-bg-light govcy-br-primary govcy-br-1"
+            >
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-6 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-6 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-4 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-4 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-4 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-3 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-3 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-3 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-3 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-2 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+          <div class="row govcy-mb-2">
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+            <div class="govcy-col-1 govcy-bg-light govcy-br-primary govcy-br-1">
+              col
+            </div>
+          </div>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-11<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-10<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-9<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-7<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-7<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-9<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-10<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-11<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>   <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>col<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+      </section>
+    </article>
+  </main>
+</div>

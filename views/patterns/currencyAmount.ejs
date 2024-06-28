@@ -1,0 +1,260 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./patterns') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Currency amount</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li><a href="#how-to-ask">How to ask</a></li>
+
+              <li>
+                <a href="#displaying-currency-amounts"
+                  >Displaying currency amounts</a
+                >
+              </li>
+
+              <li><a href="#contribute">Contribute</a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Follow this pattern whenever you need to display or ask users for an
+          amount of money.
+        </p>
+        <h2 id="how-to-ask" tabindex="-1">
+          How to ask <a class="anchor-link" href="#how-to-ask"> </a>
+        </h2>
+        <p>
+          Use a <a href="../../components/text_input/">text input</a> to allow
+          users input the amount of money. Consider using an
+          <a
+            href="../../components/text_input/#use-appropriately-sized-text-inputs"
+            >appropriately-sized text input</a
+          >, depending on the maximum length of the desired input.
+        </p>
+        <p>
+          If you only allow whole numbers, use set the
+          <code>inputmode</code> attribute to <code>numeric</code> to use the
+          numeric keypad on devices with on-screen keyboards instead of
+          <code>type=”number”</code>.
+        </p>
+        <p><em>Example for whole numbers</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in1">Enter your income (€)</label>
+              <input
+                type="text"
+                spellcheck="false"
+                pattern="[0-9]*"
+                inputmode="numeric"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in1"
+              />
+            </div>
+          </form>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span> <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Enter your income (€)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>  <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>[0-9]*<span class="token punctuation">"</span></span> <span class="token attr-name">inputmode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>numeric<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-char_20<span class="token punctuation">"</span></span> <span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> <br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>
+          If you allow decimal numbers, use <code>type=”text”</code>. Do not set
+          the <code>inputmode</code> attribute to <code>decimal</code> as it
+          causes some devices to bring up a keypad without a key for the decimal
+          separator.
+        </p>
+        <p><em>Example for decimal numbers</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in2">Enter your income (€)</label>
+              <input
+                type="text"
+                spellcheck="false"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in2"
+              />
+            </div>
+          </form>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form<span class="token punctuation">"</span></span> <span class="token attr-name">novalidate</span><span class="token punctuation">&gt;</span></span> <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-form-control<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Enter your income (€)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>  <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">spellcheck</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-text-input govcy-text-input-char_20<span class="token punctuation">"</span></span> <span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>20<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>in2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  <br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> <br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span> </code></pre>
+        <p>Allow the user to enter numbers with or without:</p>
+        <ul>
+          <li>comma “,” as decimals separator (if allowed by the service)</li>
+        </ul>
+        <p>
+          When validating the amount, ignore leading and ending spaces and make
+          sure to ignore these characters when converting the amount to a
+          number.
+        </p>
+        <p>
+          If your service does not allow decimals, consider if it is appropriate
+          to allow decimals on user input and round up or down any amounts
+          before validating and storing.
+        </p>
+        <p>
+          Only allow the user to enter whole numbers, or numbers with one or 2
+          decimal places, for example, 10, 10,4 or 10,40. Do not allow numbers
+          with more than 2 decimal places.
+        </p>
+        <p>For example, the following are valid amounts:</p>
+        <ul>
+          <li>123456</li>
+          <li>123456,12</li>
+          <li>1234567</li>
+          <li>12</li>
+          <li>123,2</li>
+          <li>125</li>
+        </ul>
+        <h2 id="displaying-currency-amounts" tabindex="-1">
+          Displaying currency amounts
+          <a class="anchor-link" href="#displaying-currency-amounts"> </a>
+        </h2>
+        <p>
+          When displaying stored or summitted amounts of money, they should
+          start with the currency sign (for example “€” for EUR) and then the
+          amount. The amount should be displayed with digit grouping separators
+          (i.e. using “.” to separate thousands, millions and so on). If your
+          service allows decimals (for example cents) display 2 decimal places.
+        </p>
+        <p>For example:</p>
+        <ul>
+          <li>€123.456</li>
+          <li>€1.234.567</li>
+          <li>€123.456.789,12</li>
+          <li>€123,20</li>
+          <li>€12</li>
+        </ul>
+        <p>
+          Screen readers have trouble recognizing the thousands and decimal
+          separators in conjunction with a currency sign. When displaying the
+          amounts, use a combination of <code>aria-label</code> and
+          <code>aria-hidden=”true”</code> to help screen readers read the amount
+          as a number. In <code>aria-label</code> the whole part of the amount
+          should be written as integer and the digits part written as cents. For
+          example:
+        </p>
+        <p><em>In English</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1234566 euros and 30 cents<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  <br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>€1.234.566,30<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>  <br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> </code></pre>
+        <p><em>In Greek</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1234566 ευρώ και 30 σεντ<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  <br>	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>€1.234.566,30<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>  <br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> </code></pre>
+        <p>
+          When filling up stored or submitted amounts of money within text
+          inputs, they should appear in the form that is appropriate for input,
+          without digit grouping separators (i.e. using “.” to separate
+          thousands, millions and so on) and 2 decimal places.
+        </p>
+        <p><em>Example of filled up currency amount inputs:</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <form action="" class="govcy-form" novalidate="">
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in3">Whole number (€)</label>
+              <input
+                type="text"
+                value="123456"
+                spellcheck="false"
+                pattern="[0-9]*"
+                inputmode="numeric"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in3"
+              />
+            </div>
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in4"
+                >Large decimal number (€)</label
+              >
+              <input
+                type="text"
+                value="123456789,12"
+                spellcheck="false"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in4"
+              />
+            </div>
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in5"
+                >Small whole number (€)</label
+              >
+              <input
+                type="text"
+                value="123"
+                spellcheck="false"
+                pattern="[0-9]*"
+                inputmode="numeric"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in5"
+              />
+            </div>
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in6"
+                >Small decimal number (€)</label
+              >
+              <input
+                type="text"
+                value="123,02"
+                spellcheck="false"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in6"
+              />
+            </div>
+            <div class="govcy-form-control">
+              <label class="govcy-label" for="in7"
+                >Another small decimal number (€)</label
+              >
+              <input
+                type="text"
+                value="123,20"
+                spellcheck="false"
+                class="govcy-text-input govcy-text-input-char_20"
+                maxlength="20"
+                id="in7"
+              />
+            </div>
+          </form>
+        </div>
+        <h2 id="contribute" tabindex="-1">
+          Contribute <a class="anchor-link" href="#contribute"> </a>
+        </h2>
+        <p>
+          If you have used or researched this pattern, please et us know what
+          you found so we can make it better for everyone. Send us an email at
+          <a href="mailto:dsf@dits.dmrid.gov.cy" target="_blank"
+            >dsf@dits.dmrid.gov.cy</a
+          >
+          to get in touch.
+        </p>
+        <p>We are particularly interested in:</p>
+        <ul>
+          <li>research on screen readers</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</div>

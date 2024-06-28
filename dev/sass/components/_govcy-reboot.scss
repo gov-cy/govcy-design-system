@@ -1,0 +1,76 @@
+@use 'sass:math';
+
+// Typography
+
+// 1. headings
+h1 {
+  @extend %heading;
+  outline: 0;
+}
+
+h2 {
+  @extend %heading;
+  outline: 0;
+}
+
+h3 {
+  @extend %heading;
+  outline: 0;
+}
+
+h4 {
+  @extend %heading;
+  outline: 0;
+}
+
+h5 {
+  @extend %heading;
+  outline: 0;
+}
+
+h6 {
+  @extend %heading;
+  outline: 0;
+}
+
+.govcy-h1 {
+  @extend .h1;
+}
+
+.govcy-h2 {
+  @extend .h2;
+}
+
+.govcy-h3 {
+  @extend .h3;
+}
+
+.govcy-h4 {
+  @extend .h4;
+}
+
+// 2. paragraphs
+.govcy-lead {
+  @extend .lead;
+}
+
+.govcy-ms-auto {
+  @extend .ms-auto;
+}
+
+ol,
+ul,
+dl {
+  margin-bottom: $govcy-default-margin-bottom;
+}
+
+// Make Headings use different padding-top and font-size per breakpoint
+// @each $breakpoint, $heading in $govcy-breakpoints {
+//   @include media-breakpoint-up($breakpoint) {
+//     @each $element, $attributes in $heading {
+//       #{$element} {
+//         font-size: map-get($attributes, 'font-size') * 1;
+//       }     
+//     }
+//   }
+// }

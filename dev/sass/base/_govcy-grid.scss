@@ -1,0 +1,53 @@
+// GOVCY Grid variables
+
+// grid system breakpoints
+$govcy-grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+// override default bootstrap grid system breakpoints
+$grid-breakpoints: $govcy-grid-breakpoints;
+
+// Extend row classes
+.govcy-row {
+  @extend .row;
+}
+
+.govcy-row-cols-auto {
+  @extend .row-cols-auto;
+}
+
+@for $size from 1 through 12 {
+  .govcy-row-cols-#{$size} {
+    @extend .row-cols-#{$size} !optional;
+  }
+  @each $breakpoint, $width in $govcy-grid-breakpoints {
+    .govcy-row-cols-#{$breakpoint}-#{$size} {
+      @extend .row-cols-#{$breakpoint}-#{$size} !optional;
+    }
+  }
+}
+
+// Extend col classes
+.govcy-col {
+  @extend .col-md;
+}
+
+.govcy-col-auto {
+  @extend .col-auto;
+}
+
+@for $size from 1 through 12 {
+  .govcy-col-#{$size} {
+    @extend .col-md-#{$size} !optional;
+  }
+  @each $breakpoint, $width in $govcy-grid-breakpoints {
+    .govcy-col-#{$breakpoint}-#{$size} {
+      @extend .col-#{$breakpoint}-#{$size} !optional;
+    }
+  }
+}

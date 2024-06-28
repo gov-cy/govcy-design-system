@@ -1,0 +1,449 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./styles') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Typography</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li><a href="#base-fonts">Base fonts</a></li>
+
+              <li><a href="#responsive-text">Responsive text</a></li>
+
+              <li><a href="#paragraph">Paragraph</a></li>
+
+              <li><a href="#headings">Headings</a></li>
+
+              <li><a href="#unordered-list">Unordered list</a></li>
+
+              <li><a href="#ordered-list">Ordered list</a></li>
+
+              <li><a href="#links">Links</a></li>
+
+              <li>
+                <a href="#opening-links-in-a-new-tab"
+                  >Opening links in a new tab</a
+                >
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <h2 id="base-fonts" tabindex="-1">
+          Base fonts <a class="anchor-link" href="#base-fonts"> </a>
+        </h2>
+        <p>
+          Unless otherwise stated, use the following font properties for the
+          default body fonts.
+        </p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Propery</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>font-family</td>
+              <td>Roboto</td>
+            </tr>
+            <tr>
+              <td>font-size</td>
+              <td>18px</td>
+            </tr>
+            <tr>
+              <td>font-weight</td>
+              <td>normal</td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td><a href="../colour/">body</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="responsive-text" tabindex="-1">
+          Responsive text <a class="anchor-link" href="#responsive-text"> </a>
+        </h2>
+        <p>
+          The Design System uses the
+          <a href="https://github.com/twbs/rfs/">Responsive Font Size (RFS)</a>
+          engine to resize font sizes. The engine generates CSS that
+          automatically calculates the appropriate values for your font sizes
+          based on the dimensions of the browser viewport.
+        </p>
+        <p>
+          See below some examples of how the font-size and line-height changes
+          in different viewports.
+        </p>
+        <p><strong>1200 px width</strong></p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>font-size (px)</th>
+              <th>line-height (px)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>p</td>
+              <td>18</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>h1</td>
+              <td>45</td>
+              <td>54</td>
+            </tr>
+            <tr>
+              <td>h2</td>
+              <td>36</td>
+              <td>43.2</td>
+            </tr>
+            <tr>
+              <td>h3</td>
+              <td>31.5</td>
+              <td>37.8</td>
+            </tr>
+            <tr>
+              <td>h4</td>
+              <td>27</td>
+              <td>32.4</td>
+            </tr>
+            <tr>
+              <td>h5</td>
+              <td>22.5</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>h6</td>
+              <td>18</td>
+              <td>21.6</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>833 px width</strong></p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>font-size (px)</th>
+              <th>line-height (px)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>p</td>
+              <td>18</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>h1</td>
+              <td>38.1</td>
+              <td>45.75</td>
+            </tr>
+            <tr>
+              <td>h2</td>
+              <td>31.584</td>
+              <td>37.92</td>
+            </tr>
+            <tr>
+              <td>h3</td>
+              <td>28.326</td>
+              <td>34.005</td>
+            </tr>
+            <tr>
+              <td>h4</td>
+              <td>25.068</td>
+              <td>30.09</td>
+            </tr>
+            <tr>
+              <td>h5</td>
+              <td>26.172</td>
+              <td>26.175</td>
+            </tr>
+            <tr>
+              <td>h6</td>
+              <td>18</td>
+              <td>21.6</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>373 px width</strong></p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>font-size (px)</th>
+              <th>line-height (px)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>p</td>
+              <td>18</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>h1</td>
+              <td>29.5</td>
+              <td>35.4</td>
+            </tr>
+            <tr>
+              <td>h2</td>
+              <td>26.08</td>
+              <td>31.296</td>
+            </tr>
+            <tr>
+              <td>h3</td>
+              <td>24.37</td>
+              <td>29.244</td>
+            </tr>
+            <tr>
+              <td>h4</td>
+              <td>22.66</td>
+              <td>27.192</td>
+            </tr>
+            <tr>
+              <td>h5</td>
+              <td>20.95</td>
+              <td>25.14</td>
+            </tr>
+            <tr>
+              <td>h6</td>
+              <td>18</td>
+              <td>21.6</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          If you use the Design System’s CSS for
+          <a href="#paragraph">paragraphs</a> and
+          <a href="#headings">headings</a> CSS, text will resize automatically.
+        </p>
+        <h2 id="paragraph" tabindex="-1">
+          Paragraph <a class="anchor-link" href="#paragraph"> </a>
+        </h2>
+        <p>
+          To be used for paragraph text. Use the default fonts described above.
+        </p>
+        <h2 id="headings" tabindex="-1">
+          Headings <a class="anchor-link" href="#headings"> </a>
+        </h2>
+        <p>
+          To be used for headings h1, h2, h3, h4, h5 and h6. Use the default
+          fonts described above with the following differences.
+        </p>
+        <ul>
+          <li>Font-Weight: <strong>700</strong>;</li>
+          <li>
+            Font-Size: The size is calculated in relation to the
+            <a href="#base-fonts">base font</a> size as described in the table
+            below.
+          </li>
+        </ul>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Heading</th>
+              <th>Size</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>h1</td>
+              <td>$font-size-base * 2.5;</td>
+            </tr>
+            <tr>
+              <td>h2</td>
+              <td>$font-size-base * 2;</td>
+            </tr>
+            <tr>
+              <td>h3</td>
+              <td>$font-size-base * 1.75;</td>
+            </tr>
+            <tr>
+              <td>h4</td>
+              <td>$font-size-base * 1.5;</td>
+            </tr>
+            <tr>
+              <td>h5</td>
+              <td>$font-size-base * 1.25;</td>
+            </tr>
+            <tr>
+              <td>h6</td>
+              <td>$font-size-base</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Heading 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Heading 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Heading 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>Heading 4<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">&gt;</span></span>Heading 5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">&gt;</span></span>Heading 6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h2 id="unordered-list" tabindex="-1">
+          Unordered list
+          <ul>
+            <a class="anchor-link" href="#unordered-list"> </a>
+          </ul>
+        </h2>
+        <p>To be used for unordered vertical lists (i.e. bullet points).</p>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <ul>
+            <li>one</li>
+            <li>two</li>
+          </ul>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h2 id="ordered-list" tabindex="-1">
+          Ordered list
+          <ol>
+            <a class="anchor-link" href="#ordered-list"> </a>
+          </ol>
+        </h2>
+        <p>To be used for ordered vertical lists.</p>
+        <p><em>Example</em></p>
+        <div
+          class="govcy-container govcy-p-4 govcy-br-1 govcy-br-standard govcy-mb-4"
+        >
+          <ol>
+            <li>one</li>
+            <li>two</li>
+          </ol>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h2 id="links" tabindex="-1">
+          Links <a class="anchor-link" href="#links"> </a>
+        </h2>
+        <p>
+          Unless otherwise stated, use the following properties for the links
+          style.
+        </p>
+        <table class="govcy-table-borderless">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Default state</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td><a href="../colour/#link-colours">link standard</a></td>
+            </tr>
+            <tr>
+              <td>text-decoration</td>
+              <td>underline</td>
+            </tr>
+            <tr>
+              <td><strong>Hover state</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td><a href="../colour/#link-colours">link hover</a></td>
+            </tr>
+            <tr>
+              <td>text-decoration</td>
+              <td>underline</td>
+            </tr>
+            <tr>
+              <td><strong>Visited state</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td><a href="../colour/#link-colours">link visited</a></td>
+            </tr>
+            <tr>
+              <td>text-decoration</td>
+              <td>underline</td>
+            </tr>
+            <tr>
+              <td><strong>Active state</strong></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td><a href="../colour/#link-colours">link active</a></td>
+            </tr>
+            <tr>
+              <td>text-decoration</td>
+              <td>underline</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="opening-links-in-a-new-tab" tabindex="-1">
+          Opening links in a new tab
+          <a class="anchor-link" href="#opening-links-in-a-new-tab"> </a>
+        </h2>
+        <p>
+          Avoid opening links in a new tab or window. It can be disorienting -
+          and can cause accessibility problems for people who cannot visually
+          perceive that the new tab has opened.
+        </p>
+        <p>
+          If you need a link to open in a new tab, then include the words ‘opens
+          in new tab’ as part of the link.
+        </p>
+        <p>
+          Include <code>rel="noreferrer noopener"</code> along with
+          <code>target="_blank"</code> to reduce the risk of
+          <a href="https://owasp.org/www-community/attacks/Reverse_Tabnabbing"
+            >reverse tabnabbing</a
+          >
+          as shown in the following example.
+        </p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>noreferrer noopener<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>some link (opens in new tab)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>Use the following best practices:</p>
+        <ul>
+          <li>
+            If your link is at the end of a sentence or paragraph, make sure
+            that the linked text does not include the full stop.
+          </li>
+          <li>
+            If it’s an external link to a non-government website, make that
+            clear in the link text. For example, read advice on writing link
+            text from [name of organisation]’.
+          </li>
+          <li>
+            Avoid opening links in a new tab or window. It can be disorienting -
+            and can cause accessibility problems for people who cannot visually
+            perceive that the new tab has opened.
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
+</div>

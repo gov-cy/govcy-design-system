@@ -1,0 +1,104 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./styles') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Vertical Spacing</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li><a href="#component-margin">Component margin</a></li>
+
+              <li>
+                <a href="#vertical-spacing-with-govcy-css"
+                  >Vertical spacing with GOVCY CSS</a
+                >
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Use the design system to lay out the content on your service’s pages
+          vertically in a uniform and consisted manner.
+        </p>
+        <h2 id="component-margin" tabindex="-1">
+          Component margin <a class="anchor-link" href="#component-margin"> </a>
+        </h2>
+        <p>
+          The system uses margin bottom attribute on each component to manage
+          vertical spacing and distinguishes
+          <a href="../typography">typography</a> ( i.e.
+          <code>&lt;p&gt;,&lt;ul&gt;,&lt;ol&gt; </code>),
+          <a href="../typography/#headings">headings </a> (i.e.
+          <code
+            >&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code
+          >) from the <a href="../../components">rest of the components</a>.
+        </p>
+        <p>The following margin bottom values must be applied:</p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Component Type</th>
+              <th>margin-bottom value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>typography</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>headings</td>
+              <td>24px</td>
+            </tr>
+            <tr>
+              <td>rest of components</td>
+              <td>24px</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="vertical-spacing-with-govcy-css" tabindex="-1">
+          Vertical spacing with GOVCY CSS
+          <a class="anchor-link" href="#vertical-spacing-with-govcy-css"> </a>
+        </h2>
+        <p>
+          The grid system automatically adjusts vertical spacing when using
+          the<a href="../../getting_started/#css-and-javascript"> govcy css</a>
+          for typography, headings and components that include the
+          <code>govcy-form-control</code> class.
+        </p>
+        <p>
+          If you like to implement the same vertical spacing as decribed above,
+          you can use the
+          <a href="../../css_utilities/#margin%2C-padding"
+            >margin utility classes</a
+          >
+          as follows
+        </p>
+        <table class="govcy-table">
+          <thead>
+            <tr>
+              <th>Utility Class</th>
+              <th>margin-bottom value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>govcy-mb-3</td>
+              <td>16px</td>
+            </tr>
+            <tr>
+              <td>govcy-mb-4</td>
+              <td>24px</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+</div>

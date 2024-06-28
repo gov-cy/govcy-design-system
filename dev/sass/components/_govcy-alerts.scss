@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the alerts.
+// -----------------------------------------------------------------------------
+
+// Govcy Alerts
+
+//Govcy Alerts-Error
+.govcy-alert-error {
+  margin-bottom: $govcy-default-margin-bottom;
+   h1, h2, h3, h4 {
+    padding: 0;
+  }
+  
+  p > a,
+  ul li a {
+    color: $govcy-danger;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: $govcy-link-danger-hover;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 5px;
+
+    li a {
+      display: inline-block;
+    }
+  }
+}
+
+//Govcy Alerts-Notification
+.govcy-alert-notification {
+  margin-bottom: $govcy-default-margin-bottom;
+
+  .govcy-alert-notification-header {
+    color: $govcy-white;
+    padding-left: 20px;
+  }
+
+  .govcy-alert-notification-body {
+    p {
+      a {
+        color: $govcy-primary;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+//Govcy Alerts-Completed-Notification
+.govcy-alert-completed-notification {
+  color: $govcy-white;
+  margin-bottom: $govcy-default-margin-bottom;
+
+  .govcy-alert-completed-notification-body {
+    
+    padding: 32px;
+    text-align: center;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+//Govcy Alerts-Warning
+.govcy-alert-warning {
+  margin-bottom: $govcy-default-margin-bottom;
+
+  .govcy-alert-warning-icon {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 7px;
+  }
+
+  .govcy-alert-warning-text {
+    font-size: 24px;
+  }
+}
+
+// Govcy Alerts-Article part
+.govcy-article-part-warning {
+  margin-bottom: $govcy-default-margin-bottom;
+  padding: 1.5rem;
+  border-bottom: 1px solid map-get($govcy-brand-colors, 'secondary');
+  background-color: $govcy-light;
+}

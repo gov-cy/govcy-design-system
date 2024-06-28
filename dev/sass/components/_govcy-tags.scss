@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for the tags.
+// -----------------------------------------------------------------------------
+
+.govcy-tag {
+  @extend .badge;
+  background-color: map-get($govcy-brand-colors, 'link-standard');
+  font-weight: bold;
+}
+
+.govcy-tag-gray {
+  background-color: $govcy-gray;
+}
+
+.govcy-tag-green {
+  background-color: $govcy-success;
+}
+
+.govcy-tag-darkgreen {
+  background-color: #274e13;
+}
+
+.govcy-tag-purple {
+  background-color: $govcy-link-visited;
+}
+
+.govcy-tag-yellow {
+  background-color: $govcy-focus;
+}
+
+.govcy-tag-cyan {
+  background-color: $govcy-info;
+}
+
+.govcy-tag-red {
+  background-color: #aa1d13;
+}
+
+.govcy-tag-blue {
+  background-color: map-get($govcy-brand-colors, 'main-shade-0');
+}
+
+.govcy-tag-orange {
+  background-color: $govcy-danger;
+}
+
+.govcy-tag-gray,
+.govcy-tag-yellow {
+  color: $govcy-body;
+}

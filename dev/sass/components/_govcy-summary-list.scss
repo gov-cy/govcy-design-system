@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for summary list.
+// -----------------------------------------------------------------------------
+
+.govcy-summary-list {
+  margin-bottom: $govcy-default-margin-bottom;
+
+  &:not(.govcy-summary-list-no-border) .govcy-summary-list-row {
+    border-bottom: 1px solid $govcy-gray;
+  }
+
+  .govcy-summary-list-row {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @include media-breakpoint-down(md) {
+    .govcy-summary-list-row {
+      flex-direction: column;
+      padding: 0.625rem 0;
+
+      .govcy-summary-list-key,
+      .govcy-summary-list-value,
+      .govcy-summary-list-actions {
+        width: 100%;
+        padding: 0.5rem 0;
+        text-align: left;
+      }
+
+      .govcy-summary-list-actions {
+        padding-top: 0.625rem;
+      }
+    }
+  }
+
+  .govcy-summary-list-key,
+  .govcy-summary-list-value,
+  .govcy-summary-list-actions {
+    padding: 0.5rem 0;
+    margin-bottom: 0;
+  }
+
+  .govcy-summary-list-key {
+    width: 30%;
+    font-weight: 600;
+  }
+
+  .govcy-summary-list-value {
+    width: 50%;
+    flex: 1;
+  }
+
+  .govcy-summary-list-actions {
+    width: 20%;
+    text-align: right;
+  }
+
+  .govcy-summary-list-actions {
+    padding-right: 0;
+  }
+}
+
+
+.govcy-summary-list-row-internal {
+  margin-bottom: 0px;
+
+  .govcy-summary-list-key-internal,
+  .govcy-summary-list-value-internal,
+  .govcy-summary-list-actions-internal {
+    padding: 0.5rem 0rem;
+    margin-bottom: 0;
+  }
+
+  .govcy-summary-list-key-internal {
+    font-weight: 600;
+  }
+
+  .govcy-summary-list-actions-internal {
+    text-align: right;
+  }
+}
+
+dl.govcy-summary-list-row-internal,
+tr.govcy-summary-list-row-internal {
+  border-bottom: 1px solid #E6E6E7;
+  border-color: #E6E6E7 !important;
+}
+
+dl:last-child.govcy-summary-list-row-internal {
+  border-bottom: 0px;
+}

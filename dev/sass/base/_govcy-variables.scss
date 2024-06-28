@@ -1,0 +1,233 @@
+// // -----------------------------------------------------------------------------
+// // This file contains all scss variables declarations, if any.
+// // -----------------------------------------------------------------------------
+
+// base colours
+
+$govcy-brand-colors: (
+  'primary': #31576f,
+  'secondary': #ffad2d,
+  'danger': #d4351c,
+  'info': #487d93,
+  'focus': #ffdd00,
+  'success': #00703c,
+  'body': #272525,
+  'outer-space': #474545,
+  'hint': #6d6e70,
+  'link-standard': #1d70b8,
+  'link-hover': #003078,
+  'link-visited': #4c2c92,
+  'link-danger-hover': #942514,
+  'border-standard': #bbbcbf,
+  'button-success-hover': #274e13,
+  'button-primary-hover': #254355,
+  'button-secondary': #d0d1d3,
+  'button-secondary-hover': #a6a8aa,
+  'button-tirtiary-hover': #aa1d13,
+  'black': #272525,
+  'white': #ffffff,
+  'light-gray': #e6e6e7,
+  'dark-gray': #999999,
+  'main-shade-0': #2e5268,
+  'main-shade-1': #ccdbe2,
+  'main-shade-2': #dae5ea,
+  'main-shade-3': #ebf1f3,
+  'main-shade-4': #f5f8f9
+);
+
+$govcy-primary: map-get($govcy-brand-colors, 'primary');
+$govcy-secondary: map-get($govcy-brand-colors, 'secondary');
+
+// Govcy status colors
+$govcy-success: map-get($govcy-brand-colors, 'success');
+$govcy-danger: map-get($govcy-brand-colors, 'danger');
+$govcy-info: map-get($govcy-brand-colors, 'info');
+
+// Govcy typography colors
+$govcy-body: map-get($govcy-brand-colors, 'body');
+$govcy-heading: $govcy-body;
+$govcy-hint: map-get($govcy-brand-colors, 'hint');
+$govcy-white: map-get($govcy-brand-colors, 'white');
+$govcy-black: map-get($govcy-brand-colors, 'black');
+$govcy-gray: map-get($govcy-brand-colors, 'light-gray');
+$govcy-dark-gray: map-get($govcy-brand-colors, 'dark-gray');
+$govcy-light: map-get($govcy-brand-colors, 'main-shade-3');
+
+// Govcy link colors
+$govcy-link: map-get($govcy-brand-colors, 'link-standard');
+$govcy-link-hover: map-get($govcy-brand-colors, 'link-hover');
+$govcy-link-visited: map-get($govcy-brand-colors, 'link-visited');
+$govcy-link-active: $govcy-body;
+$govcy-link-danger-hover: map-get($govcy-brand-colors, 'link-danger-hover');
+$govcy-link-focus: map-get($govcy-brand-colors, 'focus');
+
+// Govcy border colors
+$govcy-border-standard: map-get($govcy-brand-colors, 'border-standard');
+$govcy-border-input: $govcy-body;
+
+// Govcy button colors
+$govcy-btn-primary: $govcy-primary;
+$govcy-btn-primary-hover: map-get($govcy-brand-colors, 'button-primary-hover');
+
+$govcy-btn-secondary: map-get($govcy-brand-colors, 'button-secondary');
+$govcy-btn-secondary-hover: map-get(
+  $govcy-brand-colors,
+  'button-secondary-hover'
+);
+
+$govcy-btn-tirtiary: $govcy-danger;
+$govcy-btn-tirtiary-hover: map-get(
+  $govcy-brand-colors,
+  'button-tirtiary-hover'
+);
+
+$govcy-btn-success: $govcy-success;
+$govcy-btn-success-hover: map-get($govcy-brand-colors, 'button-success-hover');
+
+$govcy-btn-focus: map-get($govcy-brand-colors, 'focus');
+
+// Govcy text input
+$govcy-focus: map-get($govcy-brand-colors, 'focus');
+
+// Govcy border width
+$govcy-border-widths: (
+  0: 0,
+  1: 1px solid,
+  2: 2px solid,
+  3: 3px solid,
+  4: 4px solid,
+  5: 5px solid,
+  6: 6px solid,
+  7: 7px solid,
+  8: 8px solid,
+  'hidden': hidden
+);
+
+
+//Default border width
+$govcy-default-border: map-get($govcy-border-widths, 2);
+
+// Govcy border radius
+$govcy-border-rounded: (
+  0: 0,
+  1: 0.2rem,
+  2: 0.4rem,
+  3: 0.6rem,
+  circle: 50%,
+  pill: 50rem
+);
+
+//Govcy border colors
+$govcy-border-colors: (
+  'primary': $govcy-primary,
+  'secondary': $govcy-secondary,
+  'success': $govcy-success,
+  'standard': $govcy-border-standard,
+  'danger': $govcy-danger,
+  'info': $govcy-info,
+  'input': $govcy-body,
+  'transparent': transparent
+);
+
+// default border color
+$border-color: $govcy-border-standard;
+
+// Govcy background colors (rgb)
+$govcy-bg-colors: (
+  'primary': rgb + '(' + to-rgb($govcy-primary) + ')',
+  'secondary': rgb + '(' + to-rgb($govcy-secondary) + ')',
+  'success': rgb + '(' + to-rgb($govcy-success) + ')',
+  'info': rgb + '(' + to-rgb($govcy-info) + ')',
+  'danger': rgb + '(' + to-rgb($govcy-danger) + ')',
+  'light': rgb + '(' + to-rgb($govcy-light) + ')',
+  'dark': rgb + '(' + to-rgb($govcy-black) + ')',
+  'white': rgb + '(' + to-rgb($govcy-white) + ')',
+  'gray': rgb + '(' + to-rgb($govcy-gray) + ')',
+  'blue': rgb + '(' + to-rgb($govcy-link) + ')',
+  'sub-menu': rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'main-shade-0')) +
+    ')',
+  'body': rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'body')) + ')',
+  'hint': rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'hint')) + ')',
+  'outer-space': rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'outer-space')) +
+    ')',
+  'light-gray': rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'light-gray')) +
+    ')',
+  'dark-gray': rgb + '(' + to-rgb(map-get($govcy-brand-colors, 'dark-gray')) +
+    ')',
+  'main-shade-0': rgb + '(' +
+    to-rgb(map-get($govcy-brand-colors, 'main-shade-0')) + ')',
+  'main-shade-1': rgb + '(' +
+    to-rgb(map-get($govcy-brand-colors, 'main-shade-1')) + ')',
+  'main-shade-2': rgb + '(' +
+    to-rgb(map-get($govcy-brand-colors, 'main-shade-2')) + ')',
+  'main-shade-3': rgb + '(' +
+    to-rgb(map-get($govcy-brand-colors, 'main-shade-3')) + ')',
+  'main-shade-4': rgb + '(' +
+    to-rgb(map-get($govcy-brand-colors, 'main-shade-4')) + ')'
+);
+
+//Govcy text color
+$govcy-text-colors: (
+  'primary': $govcy-primary,
+  'secondary': $govcy-secondary,
+  'success': $govcy-success,
+  'danger': $govcy-danger,
+  'info': $govcy-info,
+  'body': $govcy-body,
+  'dark': $govcy-black,
+  'white': $govcy-white
+);
+
+$govcy-font-sizes: (
+  'large': large,
+  'larger': larger,
+  'initial': initial,
+  'medium': medium,
+  'small': small,
+  'smaller': smaller,
+  'x-large': x-large,
+  'x-small': x-small,
+  'xx-large': xx-large,
+  'xx-small': xx-small,
+  'xxx-large': xxx-large,
+  'webkit-large': -webkit-xxx-large
+);
+
+// Govcy table variables
+
+$govcy-table-bg-scale: -80%;
+
+$govcy-table-variants: (
+  'primary': shift-color($govcy-primary, $govcy-table-bg-scale),
+  'secondary': shift-color($govcy-secondary, $govcy-table-bg-scale),
+  'success': shift-color($govcy-success, $govcy-table-bg-scale),
+  'info': shift-color($govcy-info, $govcy-table-bg-scale),
+  'danger': shift-color($govcy-danger, $govcy-table-bg-scale),
+  'light': $govcy-light,
+  'dark': $govcy-body
+);
+
+$govcy-spacer: 1rem !default;
+$govcy-spacers: (
+  0: 0,
+  1: $govcy-spacer * 0.25,
+  2: $govcy-spacer * 0.5,
+  3: $govcy-spacer * 0.75,
+  4: $govcy-spacer,
+  5: $govcy-spacer * 1.25,
+  6: $govcy-spacer * 1.5,
+  7: $govcy-spacer * 1.75,
+  8: $govcy-spacer * 2,
+  9: $govcy-spacer * 2.25,
+  10: $govcy-spacer * 2.5,
+  11: $govcy-spacer * 2.75,
+  12: $govcy-spacer * 3,
+  13: $govcy-spacer * 3.25,
+  14: $govcy-spacer * 3.5,
+  15: $govcy-spacer * 3.75,
+  16: $govcy-spacer * 4,
+  20: $govcy-spacer * 5
+) !default;
+
+// default margin bottom for most elements
+$govcy-default-margin-bottom: map-get($govcy-spacers, 6);

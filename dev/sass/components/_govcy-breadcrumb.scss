@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for breadcrumbs.
+// -----------------------------------------------------------------------------
+
+.govcy-breadcrumb {
+  @extend .breadcrumb;
+
+  --bs-breadcrumb-item-padding-x: 1rem;
+  --bs-breadcrumb-margin-bottom: 1.5rem;
+
+  .govcy-breadcrumb-item {
+    @extend .breadcrumb-item;
+
+    padding-left: 0 !important;
+    padding-right: 1rem;
+
+    &::before {
+      padding-top: 0.2rem;
+    }
+
+    .govcy-breadcrumb-link,
+    .govcy-breadcrumb-link:visited {
+      color: map-get($govcy-brand-colors, 'body');
+    }
+  }
+
+  &.govcy-breadcrumbs-collapse-on-mobile {
+    @include media-breakpoint-down(sm) {
+      .govcy-breadcrumb-item {
+        display: none;
+      }
+
+      .govcy-breadcrumb-item:first-child,
+      .govcy-breadcrumb-item:last-child {
+        display: inline-block !important;
+      }
+    }
+  }
+}

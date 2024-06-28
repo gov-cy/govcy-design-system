@@ -1,0 +1,17 @@
+//Overiding bootstrap tag
+$govcy-tag-border-radius: 0;
+$govcy-tag-padding-y: 0.5rem;
+$govcy-tag-padding-x: 1rem;
+$govcy-tag-font-size: 0.875rem;
+
+$badge-border-radius: $govcy-tag-border-radius;
+$badge-padding-y: $govcy-tag-padding-y;
+$badge-padding-x: $govcy-tag-padding-x;
+$badge-font-size: $govcy-tag-font-size;
+
+// Overiding bootstrap breadbrumb
+$govcy-breadcrumb-divider: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDggMTUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDE0TDcgNy41TDEgMSIgc3Ryb2tlPSIjMjcyNTI1Ii8+Cjwvc3ZnPgo=');
+$breadcrumb-divider: $govcy-breadcrumb-divider;
+
+// Overiding bootstrap table padding y
+$table-cell-padding-y: 0.75rem;

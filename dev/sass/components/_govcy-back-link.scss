@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains the custom styles for backlink.
+// -----------------------------------------------------------------------------
+
+a.govcy-back-link {
+  margin-bottom: $govcy-default-margin-bottom;
+  position: relative;
+  display: inline-block;
+  color: map-get($govcy-brand-colors, 'body');
+
+  &:before {
+    position: relative;
+    top: 3px;
+    margin-right: 0.25rem;
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDggMTUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik03IDFMMSA3LjVMNyAxNCIgc3Ryb2tlPSIjMjcyNTI1IiBzdHJva2Utd2lkdGg9IjAuOTI4NTcxIi8+Cjwvc3ZnPgo=');
+  }
+
+  &:visited {
+      color: map-get($govcy-brand-colors, 'body');
+    }
+}

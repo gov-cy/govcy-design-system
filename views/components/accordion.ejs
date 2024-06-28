@@ -1,0 +1,214 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./components') %></aside>
+</div>
+
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h2>Simple accordion</h2>
+        <div class="govcy-accordion">
+          <div class="govcy-accordion-item">
+            <h2 class="govcy-accordion-header" id="headingOne">
+              <button class="govcy-accordion-button" type="button" data-govcy-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Writing well for the web
+              </button>
+            </h2>
+            <div id="collapseOne" class="govcy-accordion-collapse collapse show" aria-label="headingOne">
+              <div class="govcy-accordion-body">
+                This is the content for Writing well for the web.
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item">
+            <h2 class="govcy-accordion-header" id="headingTwo">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Writing well for specialists
+              </button>
+            </h2>
+            <div id="collapseTwo" class="govcy-accordion-collapse collapse" aria-label="headingTwo">
+              <div class="govcy-accordion-body">
+                This is the content for Writing well for specialists.
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item">
+            <h2 class="govcy-accordion-header" id="headingThree">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Know your audience
+              </button>
+            </h2>
+            <div id="collapseThree" class="govcy-accordion-collapse collapse" aria-label="headingThree">
+              <div class="govcy-accordion-body">
+                This is the content for Know your audience.
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Accordion with borders</h2>
+        <div class="govcy-accordion">
+          <div class="govcy-accordion-item govcy-accordion-bordered">
+            <h2 class="govcy-accordion-header" id="headingOneBordered">
+              <button class="govcy-accordion-button" type="button" data-govcy-target="#collapseOneBordered"
+                aria-expanded="true" aria-controls="collapseOneBordered">
+                Writing well for the web
+              </button>
+            </h2>
+            <div id="collapseOneBordered" class="govcy-accordion-collapse collapse show"
+              aria-label="headingOneBordered">
+              <div class="govcy-accordion-body">
+                This is the content for Writing well for the web.
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item govcy-accordion-bordered">
+            <h2 class="govcy-accordion-header" id="headingTwoBordered">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseTwoBordered"
+                aria-expanded="false" aria-controls="collapseTwoBordered">
+                Writing well for specialists
+              </button>
+            </h2>
+            <div id="collapseTwoBordered" class="govcy-accordion-collapse collapse" aria-label="headingTwoBordered">
+              <div class="govcy-accordion-body">
+                This is the content for Writing well for specialists.
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item govcy-accordion-bordered">
+            <h2 class="govcy-accordion-header" id="headingThreeBordered">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseThreeBordered"
+                aria-expanded="false" aria-controls="collapseThreeBordered">
+                Know your audience
+              </button>
+            </h2>
+            <div id="collapseThreeBordered" class="govcy-accordion-collapse collapse" aria-label="headingThreeBordered">
+              <div class="govcy-accordion-body">
+                This is the content for Know your audience.
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Step by step accordion</h2>
+        <div class="govcy-accordion govcy-accordion-steps">
+          <div class="govcy-accordion-item">
+            <div class="govcy-accordion-step">1</div>
+            <h2 class="govcy-accordion-header" id="headingStepOne">
+              <button class="govcy-accordion-button" type="button" data-govcy-target="#collapseStepOne"
+                aria-expanded="true" aria-controls="collapseStepOne">
+                <span class="govcy-visually-hidden-error">Step 1, </span>Make sure you’re allowed to drive
+              </button>
+            </h2>
+            <div id="collapseStepOne" class="govcy-accordion-collapse collapse show" aria-label="headingStepOne">
+              <div class="govcy-accordion-body">
+                <p>Most people can start learning to drive when they’re 17.</p>
+                <ul class="govcy-list-spaced govcy-list-unstyled">
+                  <li><a href="#">Check what age you can drive</a></li>
+                  <li><a href="#">Requirements for driving legally</a></li>
+                  <li><a href="#">Driving eyesight rules</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item">
+            <div class="govcy-accordion-step">2</div>
+            <h2 class="govcy-accordion-header" id="headingStepTwo">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseStepTwo"
+                aria-expanded="false" aria-controls="collapseStepTwo">
+                <span class="govcy-visually-hidden-error">Step 2, </span>Get a provisional licence
+              </button>
+            </h2>
+            <div id="collapseStepTwo" class="govcy-accordion-collapse collapse" aria-label="headingStepTwo">
+              <div class="govcy-accordion-body">
+                <p>Most people can start learning to drive when they’re 17.</p>
+                <ul class="govcy-list-spaced govcy-list-unstyled">
+                  <li><a href="#">Apply for your first provisional driving licence</a> - €20 to €50</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Step by step using “and”</h2>
+        <div class="govcy-accordion govcy-accordion-steps">
+          <div class="govcy-accordion-item">
+            <div class="govcy-accordion-step">1</div>
+            <h2 class="govcy-accordion-header" id="headingStepAndOne">
+              <button class="govcy-accordion-button" type="button" data-govcy-target="#collapseStepAndOne"
+                aria-expanded="true" aria-controls="collapseStepAndOne">
+                <span class="govcy-visually-hidden-error">Step 1, </span>Make sure you’re allowed to drive
+              </button>
+            </h2>
+            <div id="collapseStepAndOne" class="govcy-accordion-collapse collapse show" aria-label="headingStepAndOne">
+              <div class="govcy-accordion-body">
+                <p>Most people can start learning to drive when they’re 17.</p>
+                <ul class="govcy-list-spaced govcy-list-unstyled">
+                  <li><a href="#">Check what age you can drive</a></li>
+                  <li><a href="#">Requirements for driving legally</a></li>
+                  <li><a href="#">Driving eyesight rules</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item">
+            <div class="govcy-accordion-step govcy-accordion-step-conditional">and</div>
+            <h2 class="govcy-accordion-header" id="headingStepAndTwo">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseStepAndTwo"
+                aria-expanded="false" aria-controls="collapseStepAndTwo">
+                <span class="govcy-visually-hidden-error">And, </span>Get a provisional licence
+              </button>
+            </h2>
+            <div id="collapseStepAndTwo" class="govcy-accordion-collapse collapse" aria-label="headingStepAndTwo">
+              <div class="govcy-accordion-body">
+                <p>Most people can start learning to drive when they’re 17.</p>
+                <ul class="govcy-list-spaced govcy-list-unstyled">
+                  <li><a href="#">Apply for your first provisional driving licence</a> - €20 to €50</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Step by step using “or”</h2>
+        <div class="govcy-accordion govcy-accordion-steps">
+          <div class="govcy-accordion-item">
+            <div class="govcy-accordion-step">1</div>
+            <h2 class="govcy-accordion-header" id="headingStepOrOne">
+              <button class="govcy-accordion-button" type="button" data-govcy-target="#collapseStepOrOne"
+                aria-expanded="true" aria-controls="collapseStepOrOne">
+                <span class="govcy-visually-hidden-error">Step 1, </span>Make sure you’re allowed to drive
+              </button>
+            </h2>
+            <div id="collapseStepOrOne" class="govcy-accordion-collapse collapse show" aria-label="headingStepOrOne">
+              <div class="govcy-accordion-body">
+                <p>Most people can start learning to drive when they’re 17.</p>
+                <ul class="govcy-list-spaced govcy-list-unstyled">
+                  <li><a href="#">Check what age you can drive</a></li>
+                  <li><a href="#">Requirements for driving legally</a></li>
+                  <li><a href="#">Driving eyesight rules</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="govcy-accordion-item">
+            <div class="govcy-accordion-step govcy-accordion-step-conditional">or</div>
+            <h2 class="govcy-accordion-header" id="headingStepOrTwo">
+              <button class="govcy-accordion-button collapsed" type="button" data-govcy-target="#collapseStepOrTwo"
+                aria-expanded="false" aria-controls="collapseStepOrTwo">
+                <span class="govcy-visually-hidden-error">Or, </span>Get a provisional licence
+              </button>
+            </h2>
+            <div id="collapseStepOrTwo" class="govcy-accordion-collapse collapse" aria-label="headingStepOrTwo">
+              <div class="govcy-accordion-body">
+                <p>Most people can start learning to drive when they’re 17.</p>
+                <ul class="govcy-list-spaced govcy-list-unstyled">
+                  <li><a href="#">Apply for your first provisional driving licence</a> - €20 to €50</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+</div>

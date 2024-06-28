@@ -1,0 +1,134 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+  <aside><%- include('./styles') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+  <main id="mainContainer">
+    <article>
+      <section>
+        <h1>Layout</h1>
+
+        <aside class="toc-outter">
+          <strong>On this page</strong>
+          <nav class="toc">
+            <ol>
+              <li><a href="#two-thirds-layout">Two-thirds layout</a></li>
+
+              <li><a href="#max-width-layout">Max-width layout</a></li>
+
+              <li>
+                <a href="#one-third-%2B-two-thirds-layout"
+                  >One-third + Two-thirds layout</a
+                >
+              </li>
+            </ol>
+          </nav>
+        </aside>
+
+        <p>
+          Layouts section concerns content that resides inside the
+          <code>&lt;main&gt;</code> element of the
+          <a href="../page_templates">page template</a>.
+        </p>
+        <h2 id="two-thirds-layout" tabindex="-1">
+          Two-thirds layout
+          <a class="anchor-link" href="#two-thirds-layout"> </a>
+        </h2>
+        <p>
+          This layout uses one column and takes up the two thirds of the
+          <code>&lt;main&gt;</code>.
+        </p>
+        <p>
+          To be used when there is no need for a side menu and when components
+          do not require the use of the full width of the page.
+        </p>
+        <p>
+          For most types of page, we recommend using this layout as it stops
+          lines of text getting so long that the page becomes difficult to read
+          on desktop devices. This would usually mean no more than 60 characters
+          per line.
+        </p>
+        <p><em>Example</em></p>
+        <div class="govcy-container">
+          <div class="row">
+            <article class="govcy-col-8" style="background-color: aqua">
+              Article <br /><br />
+            </article>
+          </div>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h2 id="max-width-layout" tabindex="-1">
+          Max-width layout <a class="anchor-link" href="#max-width-layout"> </a>
+        </h2>
+        <p>
+          This layout uses one column and takes up the full size of the
+          <code>&lt;main&gt;</code>. To be used when there is no need for a side
+          menu and when components require the use of the full width of the
+          page.
+        </p>
+        <p><em>Example</em></p>
+        <div class="govcy-container">
+          <div class="row">
+            <article class="govcy-col-12" style="background-color: aqua">
+              Article <br /><br />
+            </article>
+          </div>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>                        <br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <h2 id="one-third-%2B-two-thirds-layout" tabindex="-1">
+          One-third + Two-thirds layout
+          <a class="anchor-link" href="#one-third-%2B-two-thirds-layout"> </a>
+        </h2>
+        <p>Use this page layout for services that need a side menu.</p>
+        <p>
+          The <code>&lt;aside&gt;</code> container must appear on the left of
+          the <code>&lt;article&gt;</code> container on Desktop screens and last
+          on mobile screens. It’s width must take ⅓ of the
+          <code>service</code> section.
+        </p>
+        <p>
+          The <code>&lt;article&gt;</code> container must appear on the right of
+          the <code>&lt;aside&gt;</code> container on Desktop screens and first
+          on mobile screens.It’s width must take ⅔ of the
+          <code>service</code> section.
+        </p>
+        <p><em>Example</em></p>
+        <div class="govcy-container">
+          <div class="row">
+            <article
+              class="govcy-col-8 govcy-order-last"
+              style="background-color: aqua"
+            >
+              Article <br /><br />
+            </article>
+            <aside
+              class="govcy-col-4 govcy-order-first"
+              style="background-color: yellowgreen"
+            >
+              aside
+            </aside>
+          </div>
+        </div>
+        <p><em>Sample HTML Code</em></p>
+        <pre
+          class="language-html"
+        ><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-8 govcy-order-last<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>govcy-col-4 govcy-order-first<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        <p>
+          Take a look at this
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="../../samples/layouts/"
+            >demo page with layouts</a
+          >
+          as the would appear inside the <code>&lt;main&gt;</code> section.
+        </p>
+      </section>
+    </article>
+  </main>
+</div>
