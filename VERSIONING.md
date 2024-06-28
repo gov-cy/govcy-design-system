@@ -36,9 +36,9 @@ Versions are implemented using Github's tags.
 
 ## How developers can use developer assets of a specific version
 
-Developers can use Github's tags to use developer assets from the `/dist` folder of a specific version. You can navigate directly to a specific version using the Github tags in the Githubs url. For example https://github.com/gov-cy/govcy-unified-design-system/tree/v3.0.0/dist/
+Developers can use Github's tags to use developer assets from the `/dist` folder of a specific version. You can navigate directly to a specific version using the Github tags in the Githubs url. For example https://github.com/gov-cy/govcy-design-system/tree/v3.0.0/dist/
 
-You can also use jsdeliver CDN to navigate directly to a specific version using the Github tags in the jsdeliver url. For example https://cdn.jsdelivr.net/gh/gov-cy/govcy-unified-design-system@v3.0.0/dist/css/govcy.uds.min.css
+You can also use jsdeliver CDN to navigate directly to a specific version using the Github tags in the jsdeliver url. For example https://cdn.jsdelivr.net/gh/gov-cy/govcy-design-system@v3.0.0/dist/css/govcy.uds.min.css
 
 Developers can use the latest version of the developer assets with the same **MAJOR** version number, without the risk of breaking their code. For example if you are using v3.0.0, you can use v3.0.1 or v3.1.0 without the risk of breaking your code and benefit from the new version enhancements.
 

@@ -6,9 +6,9 @@
 [![Version Change](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-change.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/version-change.yml)
 [![Visual test](https://github.com/gov-cy/govcy-design-system/actions/workflows/visual-test.yml/badge.svg)](https://github.com/gov-cy/govcy-design-system/actions/workflows/visual-test.yml)
 
-# govcy-unified-design-system
+# govcy-design-system
 
-This is repository for the developer assets of the Unified Design System for gov.cy. If you are looking for information on using the Design System in an online service or a website, you should first check the ==gov.cy Unified Design System Documentation==
+This is repository for the developer assets of the Unified Design System for gov.cy. If you are looking for information on using the Design System in an online service or a website, you should first check the gov.cy Unified Design System Documentation==
     
 ## Installation
 
