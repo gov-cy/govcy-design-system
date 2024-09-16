@@ -29,7 +29,7 @@ jobs:
     - name: Check for differences
       id: check_diff
       run: |
-        git diff --exit-code dist/js/govcy.uds.min.js
+        git diff --ignore-space-at-eol --exit-code dist/js/govcy.uds.min.js
 
     - name: Show message if JS mismatch
       if: failure() && steps.check_diff.outcome == 'failure'
