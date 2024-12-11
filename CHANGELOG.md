@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [v3.0.1] - 2024-12-11
 ### Updated
 - `govcy_details` sass `.govcy-details__text` margin buttom `0`
+- `govcy_summary-list` sass `.govcy-summary-list-key` padding-rigth `0.5 rem`
 ## [v3.0.0] – 2024-06-28
 **Major version change**
 

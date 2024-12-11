@@ -32335,9 +32335,10 @@ a.govcy-back-link:visited, .govcy-back-link.govcy-link:visited, .govcy-back-link
 .govcy-summary-list .govcy-summary-list-key {
   width: 30%;
   font-weight: 600;
+  padding-right: 0.5rem;
 }
 .govcy-summary-list .govcy-summary-list-value {
-  width: 50%;
+  width: 58%;
   flex: 1;
 }
 .govcy-summary-list .govcy-summary-list-actions {
