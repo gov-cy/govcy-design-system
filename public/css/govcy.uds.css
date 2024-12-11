@@ -32338,7 +32338,7 @@ a.govcy-back-link:visited, .govcy-back-link.govcy-link:visited, .govcy-back-link
   padding-right: 0.5rem;
 }
 .govcy-summary-list .govcy-summary-list-value {
-  width: 58%;
+  width: 50%;
   flex: 1;
 }
 .govcy-summary-list .govcy-summary-list-actions {
