@@ -76,7 +76,7 @@
 
   &__text {
     border-left: 5px solid $govcy-border-standard;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 0px 20px;
   }
 
   &[open] > .govcy-details__summary::before {

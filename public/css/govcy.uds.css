@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * gov.cy UDS v3.0.0
+ * gov.cy UDS v3.0.1
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*!
@@ -31779,7 +31779,7 @@ a.govcy-sign-out:hover, .govcy-sign-out.govcy-link:hover, .govcy-sign-out.govcy-
 }
 .govcy-details__text {
   border-left: 5px solid #bbbcbf;
-  padding: 20px 0 20px 20px;
+  padding: 20px 0 0px 20px;
 }
 .govcy-details[open] > .govcy-details__summary::before {
   -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
