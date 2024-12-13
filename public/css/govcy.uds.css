@@ -31779,7 +31779,10 @@ a.govcy-sign-out:hover, .govcy-sign-out.govcy-link:hover, .govcy-sign-out.govcy-
 }
 .govcy-details__text {
   border-left: 5px solid #bbbcbf;
-  padding: 20px 0 0px 20px;
+  padding: 20px 0 20px 20px;
+}
+.govcy-details__text > :last-child {
+  margin-bottom: 0px;
 }
 .govcy-details[open] > .govcy-details__summary::before {
   -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
