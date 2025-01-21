@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 - `govcy_details` sass `.govcy-details__text` margin buttom `0` at last child
 - `govcy_summary-list` sass `.govcy-summary-list-key` padding-rigth `0.5 rem`
+- `govcy_checkbox-radio` sass `.govcy-radio__conditional label' and '.govcy-radio__conditional legend` font-size `1 rem`
 ## [v3.0.0] – 2024-06-28
 **Major version change**
 

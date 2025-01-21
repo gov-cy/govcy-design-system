@@ -31495,6 +31495,11 @@ dl {
   display: none;
 }
 
+.govcy-radio__conditional label,
+.govcy-radio__conditional legend {
+  font-size: 1rem !important;
+}
+
 .govcy-radio__conditional--hiden {
   display: none;
 }
