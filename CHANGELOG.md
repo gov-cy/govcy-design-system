@@ -4,11 +4,20 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-## [v3.0.1] - 2024-12-11
-### Updated
-- `govcy_details` sass `.govcy-details__text` margin buttom `0` at last child
-- `govcy_summary-list` sass `.govcy-summary-list-key` padding-rigth `0.5 rem`
-- `govcy_checkbox-radio` sass `.govcy-radio__conditional label' and '.govcy-radio__conditional legend` font-size `1 rem`
+
+## [v3.1.0] - 2025-02-03
+### Added
+- [Accessibility statement pages pattern](https://gov-cy.github.io/govcy-design-system-docs/patterns/accessibility_pages/). New pattern. Updated the documentation website, there are no changes on CSS or JS for this change.
+- [Privacy policy pages pattern](https://gov-cy.github.io/govcy-design-system-docs/patterns/privacy_policy_page/). New pattern. Updated the documentation website, there are no changes on CSS or JS for this change.
+- [Date Input: Mobile friendly variant](https://gov-cy.github.io/govcy-design-system-docs/components/date_input/#mobile-friendly-input). New component variant. Updated the documentation website, there are no changes on CSS or JS for this change.
+- [Step by step: Always visible variant](https://gov-cy.github.io/govcy-design-system-docs/patterns/step_by_step_navigation/#always-visible-step-by-step-navigation). New pattern variant. Updated the documentation website, there are no changes on CSS or JS for this change.
+- [Confirmation pages: Next steps variant](https://gov-cy.github.io/govcy-design-system-docs/patterns/confirmation-pages/#next-steps). New pattern variant. Updated the documentation website, there are no changes on CSS or JS for this change.
+
+### Fixed
+- [Details component](https://gov-cy.github.io/govcy-design-system-docs/components/details/): Better bottom spacing, updated `govcy_details` sass to set `.govcy-details__text` margin buttom `0` at last child
+- [Summary List](https://gov-cy.github.io/govcy-design-system-docs/components/summary_list/): Better spacing between key and value, updates `govcy_summary-list` sass `.govcy-summary-list-key` padding-rigth `0.5 rem`
+- [Conditional radio](https://gov-cy.github.io/govcy-design-system-docs/components/radio/#conditional-radios-(revealing-a-question)): Better font size for labels and legends inside conditional radios, updated `govcy_checkbox-radio` sass `.govcy-radio__conditional label' and '.govcy-radio__conditional legend` font-size `1 rem`
+
 ## [v3.0.0] – 2024-06-28
 **Major version change**
 
