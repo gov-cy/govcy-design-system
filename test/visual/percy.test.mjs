@@ -15,6 +15,7 @@ describe('UDS visual tests', function () {
       console.log(`Before`);
       //start the puppeteer browser and page
       browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
         headless:true,
         slowMo:0
       });

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * gov.cy UDS v3.0.0
+ * gov.cy UDS v3.1.0
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*!
@@ -31495,6 +31495,11 @@ dl {
   display: none;
 }
 
+.govcy-radio__conditional label,
+.govcy-radio__conditional legend {
+  font-size: 1rem !important;
+}
+
 .govcy-radio__conditional--hiden {
   display: none;
 }
@@ -31780,6 +31785,9 @@ a.govcy-sign-out:hover, .govcy-sign-out.govcy-link:hover, .govcy-sign-out.govcy-
 .govcy-details__text {
   border-left: 5px solid #bbbcbf;
   padding: 20px 0 20px 20px;
+}
+.govcy-details__text > :last-child {
+  margin-bottom: 0px;
 }
 .govcy-details[open] > .govcy-details__summary::before {
   -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
@@ -32335,6 +32343,7 @@ a.govcy-back-link:visited, .govcy-back-link.govcy-link:visited, .govcy-back-link
 .govcy-summary-list .govcy-summary-list-key {
   width: 30%;
   font-weight: 600;
+  padding-right: 0.5rem;
 }
 .govcy-summary-list .govcy-summary-list-value {
   width: 50%;
