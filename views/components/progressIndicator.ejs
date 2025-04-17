@@ -1,0 +1,67 @@
+<div class="d-none d-md-block govcy-col-md-3 govcy-col-lg-2">
+    <aside><%- include('./components') %></aside>
+</div>
+<div class="govcy-col-md-9 govcy-col-lg-10">
+    <main id="mainContainer">
+        <article>
+            <section>
+                <h2>With labels</h2>
+                <div class="govcy-step-indicator">
+                    <ol class="govcy-step-indicator__segments">
+                        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete">
+                            <span class="govcy-step-indicator__label">
+                                Personal information <span class="govcy-visually-hidden">completed</span>
+                            </span>
+                        </li>
+                        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current"
+                            aria-current="step">
+                            <span class="govcy-step-indicator__label">
+                                Phone number
+                            </span>
+                        </li>
+                        <li class="govcy-step-indicator__segment">
+                            <span class="govcy-step-indicator__label">
+                                Address <span class="govcy-visually-hidden">not completed</span>
+                            </span>
+                        </li>
+                        <li class="govcy-step-indicator__segment">
+                            <span class="govcy-step-indicator__label">
+                                Other details <span class="govcy-visually-hidden">not completed</span>
+                            </span>
+                        </li>
+                        <li class="govcy-step-indicator__segment">
+                            <span class="govcy-step-indicator__label">
+                                Consent <span class="govcy-visually-hidden">not completed</span>
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="govcy-step-indicator__counter"><span class="govcy-visually-hidden">Step </span><span
+                        class="govcy-step-indicator__current-counter">2</span> of 5</div>
+
+                <h2>No labels</h2>
+                <div class="govcy-step-indicator">
+                    <ol class="govcy-step-indicator__segments" aria-hidden="true">
+                        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--complete">
+                        </li>
+                        <li class="govcy-step-indicator__segment govcy-step-indicator__segment--current"
+                            aria-current="step">
+                        </li>
+                        <li class="govcy-step-indicator__segment">
+                        </li>
+                        <li class="govcy-step-indicator__segment">
+                        </li>
+                        <li class="govcy-step-indicator__segment">
+                        </li>
+                    </ol>
+                </div>
+                <div class="govcy-step-indicator__counter"><span class="govcy-visually-hidden">Step </span><span
+                        class="govcy-step-indicator__current-counter">2</span> of 5</div>
+
+                <h2>No labels, no segments</h2>
+                <div class="govcy-step-indicator__counter"><span class="govcy-visually-hidden">Step </span><span
+                        class="govcy-step-indicator__current-counter">2</span> of 5</div>
+            </section>
+        </article>
+    </main>
+</div>

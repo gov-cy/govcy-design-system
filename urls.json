@@ -20,7 +20,8 @@
     "components/table",
     "components/tabs",
     "components/tagColors",
-    "components/textbox"
+    "components/textbox",
+    "components/progressIndicator"
   ]
 }
   
