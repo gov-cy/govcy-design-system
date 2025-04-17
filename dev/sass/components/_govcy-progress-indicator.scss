@@ -1,0 +1,108 @@
+.govcy-step-indicator {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: .5rem !important;
+}
+
+.govcy-step-indicator__segments {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.govcy-step-indicator__segment {
+    flex: 1 1 0%;
+    margin-left: 1px;
+    margin-right: 1px;
+    max-width: 15rem;
+    min-height: 0.5rem;
+    position: relative;
+}
+
+    .govcy-step-indicator__segment::after {
+        background-color: #A6A8AA;
+        content: "";
+        display: block;
+        height: 0.5rem;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+.govcy-step-indicator__segment--complete::after {
+    background-color: #254355;
+}
+
+.govcy-step-indicator__segment--current::after {
+    background-color: #1D70B8;
+}
+
+/* Label */
+.govcy-step-indicator__label {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    color: #6d6e70;
+    line-height: 1.1rem;
+    margin-top: calc(0.75rem);
+}
+
+.govcy-step-indicator__segment--complete .govcy-step-indicator__label {
+    color: #254355;
+}
+
+.govcy-step-indicator__segment--current .govcy-step-indicator__label {
+    color: #1D70B8;
+    font-weight: 700;
+}
+
+@media (min-width: 0px) {
+    .govcy-step-indicator__counter {
+        margin-bottom: .5rem !important;
+    }
+
+    .govcy-step-indicator__current-counter {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #1D70B8;
+        background: #1D70B8;
+        color: #fff;
+        border-radius: 9999px;
+        font-weight: 600;
+        display: inline-block;
+        text-align: center;
+    }
+    /* Hide label on small screens */
+    .govcy-step-indicator__label {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .govcy-step-indicator__counter {
+        font-size: 20px;
+        line-height: 19px;
+        margin-bottom: .5rem !important;
+    }
+
+    .govcy-step-indicator__current-counter {
+        border-radius: 9999px;
+        border: 1px solid #1D70B8;
+        background: #1D70B8;
+        color: #fff;
+        padding: 10px;
+        line-height: 19px;
+        font-weight: 600;
+        font-size: 20px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    /* Show label on big screens */
+    .govcy-step-indicator__label {
+        display: block;
+    }
+}

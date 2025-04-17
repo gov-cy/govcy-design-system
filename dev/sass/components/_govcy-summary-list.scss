@@ -31,6 +31,9 @@
         padding-top: 0.625rem;
       }
     }
+    .govcy-summary-list-key {
+      font-size: 1.25rem;
+    }
   }
 
   .govcy-summary-list-key,
@@ -44,6 +47,7 @@
     width: 30%;
     font-weight: 600;
     padding-right: 0.5rem;
+   
   }
 
   .govcy-summary-list-value {
@@ -61,7 +65,9 @@
   }
 }
 
-
+.govcy-summary-list-key-internal:first-child{
+  padding-top: 0px !important;
+}
 .govcy-summary-list-row-internal {
   margin-bottom: 0px;
 

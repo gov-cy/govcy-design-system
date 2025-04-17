@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v3.2.0] - 2025-04-17
+### Added
+- Progress indicator. New component. Updated the documentation website and developer assets.
+
+### Changed
+- [Summary List](https://gov-cy.github.io/govcy-design-system-docs/components/summary_list/): Changes on key with better spacing and better typography on mobile.
+
 ## [v3.1.0] - 2025-02-03
 ### Added
 - [Accessibility statement pages pattern](https://gov-cy.github.io/govcy-design-system-docs/patterns/accessibility_pages/). New pattern. Updated the documentation website, there are no changes on CSS or JS for this change.

@@ -86,4 +86,7 @@ router.get('/textbox', (req, res) => {
 router.get('/textArea', (req, res) => {
   res.render('layout', { view: 'components/textArea' })
 })
+router.get('/progressIndicator', (req, res) => {
+  res.render('layout', { view: 'components/progressIndicator' })
+})
 module.exports = router

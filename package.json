@@ -1,6 +1,6 @@
 {
   "name": "govcy-design-system",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Design your service using GOV.CY unified design system framework",
   "main": "app.js",
   "license": "MIT",
