@@ -1,0 +1,52 @@
+publiccodeYmlVersion: 0.5.0
+name: gov.cy Unified Design System
+url: https://github.com/gov-cy/govcy-design-system.git
+landingURL: https://github.com/gov-cy/govcy-design-system
+softwareVersion: 3.2.0
+logo: https://gov-cy.github.io/govcy-design-system-docs/img/DSIconograpy.svg
+platforms:
+  - web
+categories:
+  - website-builder
+  - design-system
+  - design
+organisation:
+  uri: https://dsf.dmrid.gov.cy
+fundedBy:
+  - name: Digital Service Factory
+    uri: https://dsf.dmrid.gov.cy
+  - name: Deputy Ministry of Research, Innovation and Digital Policy
+    uri: https://www.gov.cy/dmrid
+developmentStatus: stable
+softwareType: standalone/web
+description:
+  en:
+    localisedName: gov.cy Design System
+    shortDescription: >
+      The Unified Design System was developed to empower fast and accessible
+      creation of gov.cy services and websites.
+    longDescription: >
+      At its core, the gov.cy Unified Design System (UDS) consists of universal
+      assets, elements, components, patterns, and code guidance on how to
+      design, build, and develop websites and services that make use of the
+      Cyprus government branding and image. This allows its users and teams to
+      build a citizen-centric, consistent, clean, and intuitive user experience
+      throughout gov.cy that is accessible to everyone.
+    documentation: https://gov-cy.github.io/govcy-design-system-docs
+    features:
+      - A Design System for everything gov.cy
+      - Styles
+      - Components
+      - Patterns
+      - Utilities
+      - CSS
+legal:
+  license: MIT
+maintenance:
+  type: internal
+  contacts:
+    - name: DSF Team
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - en
