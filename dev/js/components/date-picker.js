@@ -1598,7 +1598,7 @@ class DatePicker extends Component {
       }
 
       if (event.target.classList.contains(CALENDAR_NEXT_YEAR_CHUNK_CLASS)) {
-        _this.displayNextYearChunk(el.target)
+        _this.displayNextYearChunk(event.target)
       }
 
       if (event.target.classList.contains(CALENDAR_MONTH_SELECTION_CLASS)) {
