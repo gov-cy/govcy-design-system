@@ -224,6 +224,77 @@
           </fieldset>
         </div>
 
+        <h2>Mobile friendly input</h2>
+        <div class="govcy-form">
+          <fieldset
+            class="govcy-fieldset"
+            role="group"
+            aria-describedby="dateMobile-hint"
+          >
+            <legend class="govcy-legend">Date input</legend>
+            <div class="govcy-form-control">
+              <span class="govcy-hint" id="dateMobile-hint"
+                >For example, 12 11 2007</span
+              >
+              <div class="govcy-d-flex govcy-flex-wrap">
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="day_mobile"
+                    >Day</label
+                  >
+                  <input
+                    id="day_mobile"
+                    class="govcy-text-input govcy-text-input-char_3"
+                    maxlength="2"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="month_mobile"
+                    >Month</label
+                  >
+                  <select id="month_mobile" class="govcy-select">
+                    <option value="" selected=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="govcy-d-block govcy-mr-3">
+                  <label
+                    class="govcy-label govcy-mb-1 govcy-fw-normal govcy-mb-2"
+                    for="year_mobile"
+                    >Year</label
+                  >
+                  <input
+                    id="year_mobile"
+                    class="govcy-text-input govcy-text-input-char_6"
+                    placeholder=""
+                    maxlength="4"
+                    type="text"
+                    pattern="[0-9]*"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
         <h2>Error messages</h2>
         <div class="govcy-form">
           <fieldset
