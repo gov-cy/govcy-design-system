@@ -1,5 +1,5 @@
 /*!
- * gov.cy UDS v3.2.0
+ * gov.cy UDS v3.2.1
  */
 // eslint-disable-next-line no-unused-vars
 let GOVCY = (function (exports) {
@@ -1969,7 +1969,7 @@ Constants
         }
 
         if (event.target.classList.contains(CALENDAR_NEXT_YEAR_CHUNK_CLASS)) {
-          _this.displayNextYearChunk(el.target)
+          _this.displayNextYearChunk(event.target)
         }
 
         if (event.target.classList.contains(CALENDAR_MONTH_SELECTION_CLASS)) {

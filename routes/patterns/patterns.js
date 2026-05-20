@@ -14,6 +14,9 @@ router.get('/components2', (req, res) => {
 router.get('/components3', (req, res) => {
   res.render('layout-container', { view: 'patterns/components3' })
 })
+router.get('/stepByStep', (req, res) => {
+  res.render('layout-container', { view: 'patterns/stepByStep' })
+})
 router.get('/patterns_all', (req, res) => {
   res.render('layout-container', { view: 'patterns/patterns_all' })
 })
