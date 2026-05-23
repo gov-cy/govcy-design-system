@@ -13,6 +13,9 @@
   &:visited {
     color: map-get($govcy-brand-colors, 'link-standard') !important;
   }
+  &:visited:focus {
+    color: $govcy-body !important;
+  }
 }
 
 .govcy-link-inverse,

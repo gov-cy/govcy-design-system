@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * gov.cy UDS v3.2.1
+ * gov.cy UDS v3.2.2
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*!
@@ -31689,6 +31689,9 @@ dl {
 
 .govcy-link-no-visited-state:visited {
   color: #1d70b8 !important;
+}
+.govcy-link-no-visited-state:visited:focus {
+  color: #272525 !important;
 }
 
 .govcy-link-inverse,
