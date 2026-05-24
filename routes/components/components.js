@@ -68,6 +68,9 @@ router.get('/radios', (req, res) => {
 router.get('/select', (req, res) => {
   res.render('layout', { view: 'components/select' })
 })
+router.get('/share', (req, res) => {
+  res.render('layout', { view: 'components/share' })
+})
 router.get('/summary', (req, res) => {
   res.render('layout', { view: 'components/summary' })
 })
