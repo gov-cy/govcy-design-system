@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [v3.3.0] - 2026-05-23
 ### Added
-- Share component (Issue 158)
+- [Share component](https://gov-cy.github.io/govcy-design-system-docs/components/share/). Updated the documentation website. (Issue 158)
 
 ### Changed
 - Fixed issue `.govcy-link-no-visited-state:visited:focus` color issue (Issue 154)
