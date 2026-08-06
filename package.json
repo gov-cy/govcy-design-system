@@ -80,6 +80,7 @@
     "lodash": "4.18.1"
   },
   "allowScripts": {
-    "puppeteer@24.39.1": true
+    "puppeteer@24.39.1": true,
+    "@percy/core@1.31.9": true
   }
 }
